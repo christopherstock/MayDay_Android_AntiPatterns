@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- tab 'wall' -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.synapsy.android.lib.ui.widget.LibScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbHorizontal="@drawable/net_picfood_scrollbar"
+        android:scrollbarThumbVertical="@drawable/net_picfood_scrollbar"
+        android:scrollbarSize="@dimen/scrollbar_width"
+        android:fadingEdgeLength="@dimen/fading_edge_size"
+        android:requiresFadingEdge="vertical"
+        android:fadeScrollbars="true"
+        android:fillViewport="true"
+        >
+
+        <!-- scrollbar content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|top"
+            >
+
+            <!-- wall images container -->
+            <LinearLayout
+                android:id="@+id/container_wall_images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="left|top"
+                />
+
+        </LinearLayout>
+
+    </com.synapsy.android.lib.ui.widget.LibScrollView>
+
+    <!-- overlay -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        >
+
+        <!-- overlay icon -->
+        <com.synapsy.android.lib.ui.widget.LibImageView
+            android:id="@+id/overlay_icon"
+            android:layout_width="@dimen/loading_circle_size"
+            android:layout_height="@dimen/loading_circle_size"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/net_picfood_loading_circle"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>

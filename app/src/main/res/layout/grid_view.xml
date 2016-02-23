@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- individual grid view -->
+<com.synapsy.android.lib.ui.LibGridView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:verticalSpacing="0.0dp"
+    android:horizontalSpacing="0.0dp"
+    android:numColumns="auto_fit"
+    android:stretchMode="columnWidth"
+    android:gravity="left|top"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbarThumbHorizontal="@drawable/net_picfood_scrollbar"
+    android:scrollbarThumbVertical="@drawable/net_picfood_scrollbar"
+    android:scrollbarSize="@dimen/scrollbar_width"
+    android:fadingEdgeLength="@dimen/fading_edge_size"
+    android:listSelector="@drawable/net_picfood_selector_white"
+    />

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- 1.0mm ≈ 6.16dp, 5.0dp ≈ 8px -->
+
+    <!-- general -->
+
+        <!-- icons -->
+        <dimen name="icon_size">60.0dp</dimen>
+
+        <!-- fading edges -->
+        <dimen name="fading_edge_size">10.0dp</dimen>
+        <integer name="fading_edge_size">10</integer>
+
+        <!-- drop shadow over content container -->
+        <dimen name="drop_shadow_height">5.0dp</dimen>
+
+        <!-- corners -->
+        <dimen name="corner_radius_big">10.0dp</dimen>
+        <dimen name="corner_radius_normal">5.0dp</dimen>
+
+        <!-- separator lines -->
+        <dimen name="separator_line_size">@dimen/content_distance_small</dimen>
+
+        <!-- scrollbar -->
+        <dimen name="scrollbar_width">4.0dp</dimen>
+        <dimen name="scrollbar_corner_radius">4.0dp</dimen>
+
+        <!-- content wmx -->
+        <dimen name="content_distance_wmx_big">20.0dp</dimen>
+        <dimen name="content_distance_wmx_normal">10.0dp</dimen>
+        <dimen name="content_distance_wmx_small">2.5dp</dimen>
+        <dimen name="content_top_logo_height">100.0dp</dimen>
+
+        <!-- detailed images -->
+        <dimen name="image_detailed_options_button_size">50.0dp</dimen>
+        <dimen name="image_detailed_corner_radius">@dimen/corner_radius_normal</dimen>
+
+        <!-- user profile -->
+        <dimen name="user_profile_corner_radius">@dimen/corner_radius_normal</dimen>
+
+        <!-- forms -->
+        <dimen name="inputfield_height">37.0dp</dimen>
+        <dimen name="inputfield_separator_line_height">0.75dp</dimen>
+        <dimen name="inputfield_margin_horizontal">5.0dp</dimen>
+
+        <!-- loading circles -->
+        <dimen name="loading_circle_size">75.0dp</dimen>
+
+    <!-- maximum inputfield lengths -->
+        <integer name="inputfield_max_length_phone_number"              >25</integer>
+        <integer name="inputfield_max_length_password"                  >32</integer>
+        <integer name="inputfield_max_length_real_name"                 >50</integer>
+        <integer name="inputfield_max_length_website"                   >50</integer>
+        <integer name="inputfield_max_length_image_comment"             >160</integer>
+        <integer name="inputfield_max_length_report_abuse_text"         >160</integer>
+        <integer name="inputfield_max_length_biography"                 >160</integer>
+        <integer name="inputfield_max_length_email"                     >255</integer>
+        <integer name="inputfield_max_length_username"                  >255</integer>
+        <integer name="inputfield_max_length_search_term_find_friends"  >255</integer>
+        <integer name="inputfield_max_length_search_images_location"    >255</integer>
+        <integer name="inputfield_max_length_search_images_term"        >255</integer>
+        <integer name="inputfield_max_length_feedback"                  >1024</integer>
+
+    <!-- states -->
+
+        <!-- header -->
+        <dimen name="header_height">70.0dp</dimen>
+        <dimen name="header_icon_size">60.0dp</dimen>
+        <dimen name="header_margin_x">5.0dp</dimen>
+        <dimen name="header_margin_y">0.0dp</dimen>
+        <dimen name="text_header">25.0sp</dimen>
+
+        <!-- headline -->
+        <dimen name="text_headline">22.5sp</dimen>
+
+        <!-- title splash -->
+        <dimen name="title_splash_image_top_width">200.0dp</dimen>
+        <dimen name="title_splash_image_bottom_width">25.0dp</dimen>
+
+        <!-- dialog acclaim -->
+        <dimen name="acclaim_dialog_text">20.0sp</dimen>
+        <dimen name="acclaim_dialog_corner_radius">@dimen/image_detailed_corner_radius</dimen>
+        <dimen name="acclaim_dialog_border_size">1.0dp</dimen>
+        <dimen name="acclaim_dialog_drop_shadow_size">3.0dp</dimen>
+        <dimen name="acclaim_dialog_width">250.0dp</dimen>
+        <dimen name="acclaim_dialog_logo_width">175.0dp</dimen>
+        <dimen name="acclaim_fg_arrow_width">150.0dp</dimen>
+        <dimen name="acclaim_bg_icon_size">67.0dp</dimen>
+        <dimen name="acclaim_bg_icon_distance_size">10.0dp</dimen>
+        <dimen name="acclaim_logo_height">65.0dp</dimen>
+        <dimen name="acclaim_dialog_padding">25.0dp</dimen>
+
+        <!-- state 'explore' -->
+        <dimen name="explore_image_size_min">130.0dp</dimen>
+
+        <!-- pivotal menu -->
+        <dimen name="pivotal_menu_bar_height">55.0dp</dimen>
+
+        <!-- content -->
+        <dimen name="content_distance_big">10.0dp</dimen>
+        <dimen name="content_distance_normal">5.0dp</dimen>
+        <dimen name="content_distance_small">2.5dp</dimen>
+
+        <!-- profile -->
+        <dimen name="profile_icon_size">@dimen/icon_size</dimen>
+
+        <!-- state 'new entry' max image height -->
+        <dimen name="state_new_entry_max_image_height">200.0dp</dimen>
+
+        <!-- register -->
+        <dimen name="register_camera_icon_size">@dimen/icon_size</dimen>
+
+        <!-- gridview items -->
+        <dimen name="gridview_item_border_vertical">5.0dp</dimen>
+        <dimen name="gridview_item_icon_size">@dimen/icon_size</dimen>
+        <dimen name="grid_item_border_horizontal">5.0dp</dimen>
+        <dimen name="gridview_item_detailed_image_user_icon_size">@dimen/icon_size</dimen>
+
+        <!-- items -->
+        <dimen name="item_height">50.0dp</dimen>
+        <dimen name="item_padding_left">@dimen/content_distance_wmx_normal</dimen>
+        <dimen name="item_padding_right">@dimen/content_distance_wmx_small</dimen>
+        <dimen name="item_distance_vertical">@dimen/content_distance_wmx_small</dimen>
+        <dimen name="item_arrow_height">47.5dp</dimen>
+        <dimen name="item_corner_radius">@dimen/corner_radius_normal</dimen>
+        <dimen name="item_border_size">2.5dp</dimen>
+
+    <!-- buttons -->
+
+        <!-- button default -->
+        <dimen name="button_default_height">45.0dp</dimen>
+        <dimen name="button_default_width">130.0dp</dimen>
+        <dimen name="button_default_min_width">107.8dp</dimen>
+        <dimen name="button_default_padding_horizontal">15.0dp</dimen>
+
+        <!-- button small -->
+        <dimen name="button_small_height">32.5dp</dimen>
+        <dimen name="button_small_width">70.0dp</dimen>
+        <dimen name="button_small_min_width">50.0dp</dimen>
+        <dimen name="button_small_padding_horizontal">7.5dp</dimen>
+        <dimen name="button_small_corner_radius">@dimen/corner_radius_normal</dimen>
+
+        <!-- button wide -->
+        <dimen name="button_facebook_height">45.0dp</dimen>
+
+        <!-- button smiley -->
+        <dimen name="button_smiley">75.0dp</dimen>
+
+    <!-- texts -->
+
+        <dimen name="text_image_default">13.0sp</dimen>
+        <dimen name="text_image_link">13.0sp</dimen>
+        <dimen name="text_button">19.0sp</dimen>
+        <dimen name="text_button_small">13.0sp</dimen>
+        <dimen name="text_button_wide_black">22.5sp</dimen>
+        <dimen name="text_button_facebook">15.0sp</dimen>
+        <dimen name="text_tiny">13.0sp</dimen>
+        <dimen name="text_new_entry">14.0sp</dimen>
+        <dimen name="text_item_caption">17.0sp</dimen>
+        <dimen name="text_profile">13.0sp</dimen>
+        <dimen name="text_view_pager_indicator_title">17.0sp</dimen>
+        <dimen name="text_gridview_item_title">13.0sp</dimen>
+        <dimen name="text_gridview_item_description">13.0sp</dimen>
+
+        <!-- debug console -->
+        <dimen name="text_debug_console">15.5sp</dimen>
+        <dimen name="text_debug_console_line_spacing_extra">0.0dp</dimen>
+        <item  name="text_debug_console_line_spacing_multiplier" format="float" type="dimen">1.0</item>
+
+</resources>

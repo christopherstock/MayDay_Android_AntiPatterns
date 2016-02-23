@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Drop Shadow Stack -->
+<!--
+    <item android:top="@dimen/acclaim_dialog_drop_shadow_size" android:left="@dimen/acclaim_dialog_drop_shadow_size">
+        <shape>
+            <corners android:radius="@dimen/acclaim_dialog_corner_radius" />
+            <padding android:bottom="@dimen/acclaim_dialog_drop_shadow_size" android:right="@dimen/acclaim_dialog_drop_shadow_size" />
+            <solid android:color="@color/state_acclaim_dialog_drop_shadow" />
+        </shape>
+    </item>
+-->
+    <!-- fg -->
+    <item>
+        <shape android:shape="rectangle" >
+            <corners android:radius="@dimen/image_detailed_corner_radius" />
+            <solid android:color="@color/image_detailed_bg_unselect" />
+        </shape>
+    </item>
+
+</layer-list>

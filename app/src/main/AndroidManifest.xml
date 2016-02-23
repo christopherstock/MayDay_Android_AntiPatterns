@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- mandatory for each Android application -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.picfood"
+    android:versionCode="1"
+    android:versionName="0.0.1" >
+
+    <!-- support all screens -->
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:normalScreens="true" />
+
+    <!-- permissions ( mandatory ) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- optional ( requires disabling features ) -->
+<!--
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="net.picfood.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <permission android:name="net.picfood.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+-->
+
+    <!-- sdk support is now from API level 17 on -->
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="22" />
+
+    <!-- all application components - attribute android:name and the Application-context-class are history! -->
+    <application
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/appname"
+        android:theme="@style/AppTheme"
+        >
+
+        <!-- startup activity -->
+        <activity android:name="net.picfood.PicFood" android:label="@string/appname" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- login activity -->
+        <activity android:name="net.picfood.state.auth.PicFoodStateLogin" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" />
+
+        <!-- register activity -->
+        <activity android:name="net.picfood.state.auth.PicFoodStateRegister" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" />
+
+        <!-- lost password activity -->
+        <activity android:name="net.picfood.state.auth.PicFoodStateLostPassword" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" />
+
+        <!-- settings activity -->
+        <activity android:name="net.picfood.state.PicFoodStateSettings" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+
+        <!-- acclaim activity -->
+        <activity android:name="net.picfood.state.acclaim.PicFoodStateAcclaim" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+
+        <!-- title-splash activity -->
+        <activity android:name="net.picfood.state.PicFoodStateTitleSplash" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+
+        <!-- pivotal activity -->
+        <activity android:name="net.picfood.state.pivotal.PicFoodStatePivotal" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+
+        <!-- google Places activity -->
+        <activity android:name="net.picfood.state.PicFoodStateGooglePlaces" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+
+        <!-- new entry activity -->
+        <activity android:name="net.picfood.state.PicFoodStateNewEntry" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+
+        <!-- foreign profile activity -->
+        <activity android:name="net.picfood.state.PicFoodStateForeignProfile" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+
+        <!-- detailed image activity -->
+        <activity android:name="net.picfood.state.PicFoodStateDetailedImage" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+
+        <!-- image properties activity -->
+        <activity android:name="net.picfood.state.PicFoodStateImageProperties" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+
+        <!-- follow details activity -->
+        <activity android:name="net.picfood.state.PicFoodStateFollowDetails" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+
+        <!-- find friends results -->
+        <activity android:name="net.picfood.state.PicFoodStateFindFriendsResults" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+
+        <!-- search images results -->
+        <activity android:name="net.picfood.state.PicFoodStateSearchImagesResults" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+
+        <!-- facebook login activity -->
+        <activity android:name="com.facebook.LoginActivity" />
+
+        <!-- facebook SDK app-id -->
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
+
+        <!-- GCM receiver -->
+        <receiver android:name=".PicFoodReceiverGCM" android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="net.picfood" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

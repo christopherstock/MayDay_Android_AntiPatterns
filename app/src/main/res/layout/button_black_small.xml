@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/button_small_width"
+    android:layout_height="@dimen/button_small_height"
+    android:textStyle="normal"
+    android:textSize="@dimen/text_button_small"
+    android:textColor="@drawable/net_picfood_button_black_fg"
+    android:background="@drawable/net_picfood_button_black_small_bg"
+    android:minWidth="@dimen/button_small_min_width"
+    android:singleLine="true"
+    />
+
+<!--
+    android:paddingLeft="@dimen/button_small_padding_horizontal"
+    android:paddingRight="@dimen/button_small_padding_horizontal"
+    android:layout_gravity="center_horizontal|center_vertical"
+-->

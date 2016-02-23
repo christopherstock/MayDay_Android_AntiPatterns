@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- color adjustments -->
+
+        <!-- project -->
+        <color name="project_color_select">#ffa91c3e</color>
+        <color name="project_fg">#ff3b3b3b</color>
+        <color name="project_black">#ff000000</color>
+        <color name="project_grey">#ffaeafaf</color>
+        <color name="project_grey_light">#ffc9c9c9</color>
+
+        <!-- screen -->
+        <color name="screen_bg_gradient_top">#ffd9d9da</color>
+        <color name="screen_bg_gradient_bottom">#ffd9d9da</color>
+        <color name="screen_bg_external">#ff000000</color>
+        <color name="screen_fg_bright">#ffffffff</color>
+        <color name="screen_fg_bright_hover">@color/project_grey_light</color>
+        <color name="screen_fg_ambient">#fff5f5f5</color>
+
+        <color name="console_bg">@color/screen_bg_external</color>
+
+        <!-- drop shadow -->
+        <color name="drop_shadow_start">#55000000</color>
+        <color name="drop_shadow_end">#00000000</color>
+
+    <!-- components -->
+
+        <!-- links -->
+        <color name="text_link_unselect">@color/project_color_select</color>
+        <color name="text_link_hover">#ffd54f6f</color>
+        <color name="text_link_select">@color/project_color_select</color> <!-- #ffcb4767 -->
+
+        <!-- separator lines -->
+        <color name="separator_line">@color/project_grey_light</color>
+
+        <!-- header -->
+        <color name="header_bg">@color/screen_fg_bright</color>
+
+        <!-- scrollbar -->
+        <color name="scrollbar_start">@color/project_color_select</color>
+        <color name="scrollbar_end">@color/project_color_select</color>
+
+        <!-- forms -->
+<!--
+        <color name="form_group_bg">@color/screen_fg_bright</color>
+        <color name="form_inputfield_bg">@color/screen_fg_bright</color>
+-->
+        <color name="form_inputfield_fg">@color/project_fg</color>
+        <color name="form_inputfield_separator_line">@color/project_fg</color>
+
+        <!-- progress bar -->
+        <color name="progressbar_top">@color/project_fg</color>
+        <color name="progressbar_bottom">@color/project_fg</color>
+
+        <!-- images -->
+        <color name="image_detailed_bg_unselect">@color/screen_fg_bright</color>
+
+        <!-- profile -->
+        <color name="user_profile_bg_unselect">@color/screen_fg_bright</color>
+
+        <!-- items -->
+        <color name="item_bg_unselect">@color/screen_fg_bright</color>
+        <color name="item_bg_hover">@color/screen_fg_bright_hover</color>
+        <color name="item_bg_select">@color/project_color_select</color>
+        <color name="item_border">@color/project_grey</color>
+
+        <!-- default ViewPagerIndicator -->
+        <color name="default_title_indicator_footer_indicator_color">@color/project_color_select</color>
+
+        <!-- buttons -->
+        <color name="button_black_small_color_start">#ffc1c0be</color>
+        <color name="button_black_small_color_end">#ff101010</color>
+        <item name="button_black_small_color_angle" type="integer">315</item>
+
+    <!-- states -->
+
+        <!-- state 'title splash' -->
+        <color name="state_title_splash_bg_gradient_top">@color/screen_fg_bright</color>
+        <color name="state_title_splash_bg_gradient_middle">@color/screen_fg_bright</color>
+        <color name="state_title_splash_bg_gradient_bottom">@color/screen_fg_bright</color>
+
+        <!-- state 'acclaim' -->
+        <color name="state_acclaim_dialog_bg">@color/screen_fg_bright</color>
+        <color name="state_acclaim_dialog_border">@color/project_fg</color>
+        <color name="state_acclaim_dialog_drop_shadow">@color/drop_shadow_start</color>
+        <color name="state_acclaim_footer_bg">@color/screen_fg_bright</color>
+
+        <!-- state 'google places' -->
+        <color name="google_places_item_title">@color/project_fg</color>
+        <color name="google_places_item_description">@color/project_fg</color>
+
+    <!-- texts -->
+
+        <!-- header -->
+        <color name="text_header">@color/project_grey</color>
+
+        <!-- headline -->
+        <color name="text_headline">@color/project_grey</color>
+
+        <!-- dialog acclaim -->
+        <color name="text_dialog_acclaim">@color/project_fg</color>
+
+        <!-- debug console -->
+        <color name="text_debug_console">@color/screen_fg_bright</color>
+
+        <!-- button text -->
+        <color name="text_button_black_unselect">@color/screen_fg_bright</color>
+        <color name="text_button_black_hover">@color/screen_fg_bright</color>
+
+        <!-- items -->
+        <color name="text_item">@color/project_black</color>
+
+        <!-- content text -->
+        <color name="text_new_entry">@color/project_fg</color>
+
+        <!-- image text -->
+        <color name="text_image_default">@color/project_fg</color>
+
+        <!-- legal text -->
+        <color name="text_tiny">@color/project_fg</color>
+
+        <!-- view pager indicator -->
+        <color name="text_viewpagerindicator_unselect">@color/project_fg</color>
+
+        <!-- profile -->
+        <color name="text_profile">@color/project_fg</color>
+
+        <!-- grid view items -->
+        <color name="text_gridview_item_title">@color/project_color_select</color>
+        <color name="text_gridview_item_description">@color/project_fg</color>
+
+</resources>

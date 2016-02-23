@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- state 'foreign profile' - this RelativeLayout is a must! The nextedFrameLayout will not fill height otherwise! -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+
+    <!-- state 'foreign profile' -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        >
+
+        <!-- scrollbar -->
+        <com.synapsy.android.lib.ui.widget.LibScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbHorizontal="@drawable/net_picfood_scrollbar"
+            android:scrollbarThumbVertical="@drawable/net_picfood_scrollbar"
+            android:scrollbarSize="@dimen/scrollbar_width"
+            android:fadingEdgeLength="@dimen/fading_edge_size"
+            android:requiresFadingEdge="vertical"
+            android:fadeScrollbars="true"
+            android:fillViewport="true"
+            >
+
+            <!-- scrollbar content -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal|top"
+                >
+
+                <!-- title caption -->
+                <include
+                    android:id="@+id/title_profile"
+                    layout="@layout/text_headline"
+                    />
+
+                <!-- profile data container -->
+                <LinearLayout
+                    android:id="@+id/container_profile_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="left|top"
+                    android:layout_marginLeft="@dimen/content_distance_normal"
+                    android:layout_marginRight="@dimen/content_distance_normal"
+                    />
+
+                <!-- images caption -->
+                <include
+                    android:id="@+id/title_images"
+                    layout="@layout/text_headline"
+                    />
+
+                <!-- profile images container -->
+                <LinearLayout
+                    android:id="@+id/container_profile_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="left|top"
+                    />
+
+            </LinearLayout>
+
+        </com.synapsy.android.lib.ui.widget.LibScrollView>
+
+        <!-- overlay -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            >
+
+            <!-- overlay icon -->
+            <com.synapsy.android.lib.ui.widget.LibImageView
+                android:id="@+id/overlay_icon"
+                android:layout_width="@dimen/loading_circle_size"
+                android:layout_height="@dimen/loading_circle_size"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/empty_string"
+                android:src="@drawable/net_picfood_loading_circle"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

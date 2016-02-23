@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/button_default_height"
+    android:textStyle="normal"
+    android:textSize="@dimen/text_button_wide_black"
+    android:textColor="@drawable/net_picfood_button_black_fg"
+    android:background="@drawable/net_picfood_button_black_specular_bg"
+    android:minWidth="@dimen/button_default_min_width"
+    android:singleLine="true"
+    android:layout_gravity="center_horizontal|center_vertical"
+    />

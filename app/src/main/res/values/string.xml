@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- general -->
+
+        <!-- empty description -->
+        <string name="empty_string"></string>
+
+        <!-- app name -->
+        <string name="appname">PicFood</string>
+
+        <!-- facebook app-id and app-secret -->
+        <string name="facebook_app_id">506768242721819</string>
+        <string name="facebook_app_secret">5a029e68c3c3e17a9595c5f8ac4a492e</string>
+
+        <!-- time distances -->
+        <string name="time_year_singular">year</string>
+        <string name="time_year_plural">years</string>
+        <string name="time_month_singular">month</string>
+        <string name="time_month_plural">months</string>
+        <string name="time_week_singular">week</string>
+        <string name="time_week_plural">weeks</string>
+        <string name="time_day_singular">day</string>
+        <string name="time_day_plural">days</string>
+        <string name="time_hour_singular">hour</string>
+        <string name="time_hour_plural">hours</string>
+        <string name="time_minute_singular">minute</string>
+        <string name="time_minute_plural">minutes</string>
+        <string name="time_just_now">Just now</string>
+        <string name="time_distance">{time} ago</string>
+
+    <!-- states -->
+
+        <!-- state 'acclaim' -->
+        <string name="state_acclaim_register">Register</string>
+        <string name="state_acclaim_login">Login</string>
+        <string name="state_acclaim_page1">Looking for the best dinner in your area?</string>
+        <string name="state_acclaim_page2">PicFood is the first social network for rating meals.</string>
+        <string name="state_acclaim_page3">With PicFood, you can rate your local gastronomy or view other dinner recommendations.</string>
+        <string name="state_acclaim_page4">Follow your friends, have fun and stay up-to-date with their latest food snapshots.</string>
+        <string name="state_acclaim_page5">Please login or register a new account by pressing one of the buttons below.</string>
+
+        <!-- state 'login' -->
+        <string name="state_login_headline">Login</string>
+        <string name="state_login_inputfield_username">Username or E-Mail</string>
+        <string name="state_login_inputfield_password">Password</string>
+        <string name="state_login_button">Login</string>
+        <string name="state_login_lost_password">&lt;u&gt;Lost password?&lt;/u&gt;</string>
+
+        <!-- state 'lost password' -->
+        <string name="state_lost_password_headline">Lost password</string>
+        <string name="state_lost_password_inputfield_username">Username or E-Mail</string>
+        <string name="state_lost_password_button">Request password</string>
+
+        <!-- state 'register' -->
+        <string name="state_register_headline">Register</string>
+        <string name="state_register_inputfield_email">E-Mail</string>
+        <string name="state_register_inputfield_username">Username</string>
+        <string name="state_register_inputfield_password">Password</string>
+        <string name="state_register_inputfield_password_confirmation">Confirm password</string>
+        <string name="state_register_inputfield_phone">Phone (optional)</string>
+        <string name="state_register_inputfield_realname">Real name (optional)</string>
+        <string name="state_register_inputfield_biography">Biography (optional)</string>
+        <string name="state_register_inputfield_website">Website (optional)</string>
+        <string name="state_register_button">Register</string>
+        <string name="state_register_legal_text">By pressing Register you confirm that you\'ve read &amp; accept &lt;u&gt;the terms&lt;/u&gt;</string>
+        <string name="state_register_choose_profile_image">Choose profile image</string>
+        <string name="state_register_button_import_facebook_data">Import data from Facebook</string>
+
+        <!-- state 'settings' -->
+        <string name="state_settings_headline">Settings</string>
+        <string name="state_settings_item_find_friends">Find Friends</string>
+        <string name="state_settings_item_send_feedback">Send Feedback</string>
+        <string name="state_settings_item_privacy_policy">Privacy policy</string>
+        <string name="state_settings_item_terms_and_conditions">Terms and conditions</string>
+        <string name="state_settings_item_change_password">Change password</string>
+        <string name="state_settings_item_logout">Logout</string>
+        <string name="state_settings_item_delete_account">Delete account</string>
+        <string name="state_settings_item_check_update">Check for updates</string>
+        <string name="state_settings_item_change_profile">Change profile</string>
+        <string name="state_settings_item_change_profile_image">Change profile image</string>
+        <string name="state_settings_item_delete_image_cache">Delete image cache</string>
+
+        <!-- state 'upload' -->
+        <string name="state_upload_headline">Upload new image</string>
+        <string name="state_upload_from_camera">Upload from camera</string>
+        <string name="state_upload_from_gallery">Upload from gallery</string>
+
+        <!-- state 'profile' -->
+        <string name="state_profile_title_profile">Your profile</string>
+        <string name="state_profile_title_images">Your images</string>
+        <string name="state_profile_followers">Followers {count}</string>
+        <string name="state_profile_following">Following {count}</string>
+        <string name="state_profile_photo_count">Photos {count}</string>
+        <string name="state_profile_label_email">E-Mail:</string>
+        <string name="state_profile_label_phone">Phone:</string>
+        <string name="state_profile_label_biography">Biography:</string>
+        <string name="state_profile_label_website">Website:</string>
+
+        <!-- state foreign profile -->
+        <string name="state_foreign_profile_title_profile">Profile</string>
+        <string name="state_foreign_profile_title_images">Images</string>
+        <string name="state_foreign_profile_button_follow">Follow</string>
+        <string name="state_foreign_profile_button_unfollow">Unfollow</string>
+        <string name="state_foreign_profile_button_block">Block</string>
+        <string name="state_foreign_profile_you_follow">You follow this user!</string>
+
+        <!-- state 'google places' -->
+        <string name="state_google_places_headline">Select Location</string>
+        <string name="state_google_places_distance_singular">{distance} meter</string>
+        <string name="state_google_places_distance_plural">{distance} meters</string>
+
+        <!-- state 'new entry' -->
+        <string name="state_new_entry_headline">Create new entry</string>
+        <string name="state_new_entry_comment_hint">Your comment</string>
+        <string name="state_new_entry_comment_explanation">You may specify Hashtags ( e.g. #salad ) in order to tag terms or @-tags ( @username ) in order to tag other users.</string>
+        <string name="state_new_entry_button_submit">Submit</string>
+        <string name="state_new_entry_button_change_location">Change location</string>
+        <string name="state_new_entry_button_recrop_image">Re-crop image</string>
+        <string name="state_new_entry_button_cancel">Cancel</string>
+
+        <!-- state 'detailed image' -->
+        <string name="state_detailed_image_headline">Image details</string>
+
+        <!-- state 'news' -->
+        <string name="state_news_headline">News</string>
+
+        <!-- state 'image properties' -->
+        <string name="state_image_properties_likes_header">Likes</string>
+        <string name="state_image_properties_comments_header">Comments</string>
+        <string name="state_image_properties_food_ratings_header">Food ratings</string>
+
+        <!-- state 'follow details' -->
+        <string name="state_follow_details_header_followers_singular">{count} user follows {user}</string>
+        <string name="state_follow_details_header_followings_singular">{user} follows {count} user</string>
+        <string name="state_follow_details_header_followers_plural">{count} users follow {user}</string>
+        <string name="state_follow_details_header_followings_plural">{user} follows {count} users</string>
+
+        <!-- state 'find friends results' -->
+        <string name="state_find_friends_results_header">Search results</string>
+
+        <!-- state 'search images results' -->
+        <string name="state_search_images_results_header">Search results</string>
+
+    <!-- dialogs -->
+
+        <!-- dialog 'gps disabled' -->
+        <string name="dialog_gps_disabled_title">GPS disabled</string>
+        <string name="dialog_gps_disabled_body">Your GPS service is currently disabled.&lt;br&gt;&lt;br&gt;Please enable your GPS service in order to receive nearby places of your current position.</string>
+        <string name="dialog_gps_disabled_button_enable">Enable</string>
+        <string name="dialog_gps_disabled_button_cancel">Cancel</string>
+
+        <!-- dialog 'gps low' -->
+        <string name="dialog_gps_low_title">Weak GPS signal</string>
+        <string name="dialog_gps_low_body">Your GPS service is currently weak in your location.&lt;br&gt;&lt;br&gt;Please try it again later.&lt;br&gt;&lt;br&gt;Remember that GPS works best with clear view of the skies.</string>
+        <string name="dialog_gps_low_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'discard entry' -->
+        <string name="dialog_new_entry_cancel_title">Discard entry?</string>
+        <string name="dialog_new_entry_cancel_body">You you really want to discard this entry?</string>
+        <string name="dialog_new_entry_cancel_button_yes">Yes</string>
+        <string name="dialog_new_entry_cancel_button_no">No</string>
+
+        <!-- dialog 'please wait' -->
+        <string name="dialog_please_wait_title">Please wait</string>
+        <string name="dialog_please_wait_body">Please wait ..</string>
+
+        <!-- dialog 'please wait - google places' -->
+        <string name="dialog_wait_google_places_title">Please wait</string>
+        <string name="dialog_wait_google_places_body">Requesting location results ..</string>
+
+        <!-- dialog 'google places no surrounding results' -->
+        <string name="dialog_google_places_no_surrounding_results_title">No locations found</string>
+        <string name="dialog_google_places_no_surrounding_results_body">Sorry - no locations could have been found in your surrounding area.</string>
+        <string name="dialog_google_places_no_surrounding_results_button_back">Back</string>
+
+        <!-- dialog 'google places no term results' -->
+        <string name="dialog_google_places_no_term_results_title">No locations found</string>
+        <string name="dialog_google_places_no_term_results_body">Sorry - no locations could have been found that match your search term.</string>
+        <string name="dialog_google_places_no_term_results_button_back">Back</string>
+
+        <!-- dialog 'no network' -->
+        <string name="dialog_no_network_title">No network</string>
+        <string name="dialog_no_network_body">Your network connection is down.&lt;br&gt;&lt;br&gt;Please try again later.</string>
+        <string name="dialog_no_network_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'login failed' -->
+        <string name="dialog_login_failed_title">Login failed</string>
+        <string name="dialog_login_failed_body">Your username/password-combination does not exist!</string>
+        <string name="dialog_login_failed_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'technical error' -->
+        <string name="dialog_technical_error_title">Technical error occured</string>
+        <string name="dialog_technical_error_body">A technical error occured.&lt;br&gt;&lt;br&gt;We\'ll fix this as soon as possible!&lt;br&gt;&lt;br&gt;Please try again later.</string>
+        <string name="dialog_technical_error_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'username invalid' -->
+        <string name="dialog_username_invalid_title">Invalid username</string>
+        <string name="dialog_username_invalid_body">The username must have a minimum length of three characters!</string>
+        <string name="dialog_username_invalid_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'password empty' -->
+        <string name="dialog_password_empty_title">Password required</string>
+        <string name="dialog_password_empty_body">Please enter your password!</string>
+        <string name="dialog_password_empty_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'username empty' -->
+        <string name="dialog_username_empty_title">Username required</string>
+        <string name="dialog_username_empty_body">Please enter your username!</string>
+        <string name="dialog_username_empty_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'password invalid' -->
+        <string name="dialog_password_invalid_title">Password invalid</string>
+        <string name="dialog_password_invalid_body">Please enter your password!&lt;br&gt;&lt;br&gt;The password must have a minimum length of six characters!</string>
+        <string name="dialog_password_invalid_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'lost password ok' -->
+        <string name="dialog_lost_password_ok_title">Username confirmed</string>
+        <string name="dialog_lost_password_ok_body">We\'ve sent you an email to your address.&lt;br&gt;&lt;br&gt;Please follow the instructions in this email.</string>
+        <string name="dialog_lost_password_ok_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'lost password username not found' -->
+        <string name="dialog_lost_password_username_not_found_title">User not found</string>
+        <string name="dialog_lost_password_username_not_found_body">Sorry - The username or E-Mail you entered is not present in our system.</string>
+        <string name="dialog_lost_password_username_not_found_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'email exists' -->
+        <string name="dialog_email_exists_title">E-Mail exists</string>
+        <string name="dialog_email_exists_body">Sorry - This E-Mail already exists in our system.&lt;br&gt;&lt;br&gt;Please enter a different E-Mail-address.</string>
+        <string name="dialog_email_exists_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'bad email format' -->
+        <string name="dialog_email_malformed_title">Bad E-Mail format</string>
+        <string name="dialog_email_malformed_body">Sorry - The E-Mail you sent has an incorrect format.&lt;br&gt;&lt;br&gt;Please review your input and try again.</string>
+        <string name="dialog_email_malformed_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'email invalid' -->
+        <string name="dialog_email_invalid_title">Invlaid E-Mail</string>
+        <string name="dialog_email_invalid_body">Your E-Mail must have a minimum length of three characters!</string>
+        <string name="dialog_email_invalid_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'register failed' -->
+        <string name="dialog_register_failed_title">Registration failed</string>
+        <string name="dialog_register_failed_body">Registering PicFood has failed.&lt;br&gt;&lt;br&gt;Please try again later!</string>
+        <string name="dialog_register_failed_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'passwords differ' -->
+        <string name="dialog_passwords_differ_title">Mismatching passwords</string>
+        <string name="dialog_passwords_differ_body">Your entered password differs from the confirmed password!&lt;br&gt;&lt;br&gt;Please repeat your input.</string>
+        <string name="dialog_passwords_differ_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'username exists' -->
+        <string name="dialog_username_exists_title">Username exists</string>
+        <string name="dialog_username_exists_body">This username is already in use.&lt;br&gt;&lt;br&gt;Please select a different one.</string>
+        <string name="dialog_username_exists_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'username malformed' -->
+        <string name="dialog_username_malformed_title">Bad username format</string>
+        <string name="dialog_username_malformed_body">Sorry - The username you sent contains incorrect characters.&lt;br&gt;&lt;br&gt;Please review your input and try again.</string>
+        <string name="dialog_username_malformed_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'terms and conditions' -->
+        <string name="dialog_terms_and_conditions_title">Terms and conditions</string>
+        <string name="dialog_terms_and_conditions_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'privacy policy title' -->
+        <string name="dialog_privacy_policy_title">Privacy policy</string>
+        <string name="dialog_privacy_policy_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'logout confirmation' -->
+        <string name="dialog_logout_confirmation_title">Logout</string>
+        <string name="dialog_logout_confirmation_body">Do you really want to logout?</string>
+        <string name="dialog_logout_confirmation_button_yes">Yes</string>
+        <string name="dialog_logout_confirmation_button_no">No</string>
+
+        <!-- dialog 'feedback' -->
+        <string name="dialog_feedback_title">Send feedback</string>
+        <string name="dialog_feedback_body">Please provide us your feedback:</string>
+        <string name="dialog_feedback_inputfield_hint">Your feedback</string>
+        <string name="dialog_feedback_button_submit">Submit</string>
+        <string name="dialog_feedback_button_cancel">Cancel</string>
+
+        <!-- dialog 'feedback sent' -->
+        <string name="dialog_feedback_sent_title">Feedback sent</string>
+        <string name="dialog_feedback_sent_body">Thanks for your feedback.</string>
+        <string name="dialog_feedback_sent_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'feedback invalid' -->
+        <string name="dialog_feedback_invalid_title">Feedback invalid</string>
+        <string name="dialog_feedback_invalid_body">Your feedback must have a minimum length of three characters!</string>
+        <string name="dialog_feedback_invalid_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'delete account - confirm delete' -->
+        <string name="dialog_delete_account_confirm_delete_title">Delete account</string>
+        <string name="dialog_delete_account_confirm_delete_body">Are you really sure to delete your account?&lt;br&gt;&lt;br&gt;All your personal data will be lost!&lt;br&gt;&lt;br&gt;A password confirmation will be required.</string>
+        <string name="dialog_delete_account_confirm_delete_button_ok">@android:string/ok</string>
+        <string name="dialog_delete_account_confirm_delete_button_cancel">Cancel</string>
+
+        <!-- dialog 'delete account - passwort confirmation' -->
+        <string name="dialog_delete_account_confirm_password_title">Delete account</string>
+        <string name="dialog_delete_account_confirm_password_body">Please enter your passwort in order to delete your account:</string>
+        <string name="dialog_delete_account_confirm_password_inputfield_hint">Your password</string>
+        <string name="dialog_delete_account_confirm_password_button_submit">Submit</string>
+        <string name="dialog_delete_account_confirm_password_button_cancel">Cancel</string>
+
+        <!-- dialog 'delete account - empty password' -->
+        <string name="dialog_delete_account_empty_password_title">Password required</string>
+        <string name="dialog_delete_account_empty_password_body">Please enter your password!</string>
+        <string name="dialog_delete_account_empty_password_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'delete account - wrong password' -->
+        <string name="dialog_delete_account_wrong_password_title">Wrong password</string>
+        <string name="dialog_delete_account_wrong_password_body">You\'ve entered a wrong password!&lt;br&gt;&lt;br&gt;Please try again.</string>
+        <string name="dialog_delete_account_wrong_password_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'please wait - uploading image' -->
+        <string name="dialog_upload_new_entry_title">Uploading image</string>
+        <string name="dialog_upload_new_entry_body">Please wait while your image is uploaded.</string>
+
+        <!-- dialog 'upload new entry succeeded' -->
+        <string name="dialog_upload_new_entry_succeeded_title">Image uploaded</string>
+        <string name="dialog_upload_new_entry_succeeded_body">Your image has been posted successfully.</string>
+        <string name="dialog_upload_new_entry_succeeded_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'upload new entry failed' -->
+        <string name="dialog_upload_new_entry_failed_title">Image upload failed!</string>
+        <string name="dialog_upload_new_entry_failed_body">Uploading your image has failed!&lt;br&gt;&lt;br&gt;Please try again later.</string>
+        <string name="dialog_upload_new_entry_failed_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'report abuse' -->
+        <string name="dialog_report_abuse_title">Report abuse</string>
+        <string name="dialog_report_abuse_body">Please provide us your report:</string>
+        <string name="dialog_report_abuse_inputfield_hint">Your report</string>
+        <string name="dialog_report_abuse_button_submit">Submit</string>
+        <string name="dialog_report_abuse_button_cancel">Cancel</string>
+
+        <!-- dialog 'report abuse sent' -->
+        <string name="dialog_report_abuse_sent_title">Report sent</string>
+        <string name="dialog_report_abuse_sent_body">Thanks for your report.</string>
+        <string name="dialog_report_abuse_sent_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'report abuse invalid' -->
+        <string name="dialog_report_abuse_invalid_title">Invalid report</string>
+        <string name="dialog_report_abuse_invalid_body">The report must have a minimum length of three characters!</string>
+        <string name="dialog_report_abuse_invalid_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'remove image' -->
+        <string name="dialog_remove_image_title">Delete image</string>
+        <string name="dialog_remove_image_body">Are you sure to delete this image?</string>
+        <string name="dialog_remove_image_button_yes">Yes</string>
+        <string name="dialog_remove_image_button_no">No</string>
+
+        <!-- dialog 'rate food' -->
+        <string name="dialog_rate_food_title">Rate food</string>
+        <string name="dialog_rate_food_body">Please submit your food rating by pushing one of these buttons:</string>
+        <string name="dialog_rate_food_button_cancel">Cancel</string>
+
+        <!-- dialog 'image options' -->
+        <string name="dialog_image_options_title">Image options</string>
+        <string name="dialog_image_options_remove_image">Delete image</string>
+        <string name="dialog_image_options_report_abuse">Report abuse</string>
+        <string name="dialog_image_options_share_image">Share</string>
+        <string name="dialog_image_share_chooser_title">Share image via</string>
+        <string name="dialog_image_share_subject">Image from PicFood user {username}</string>
+        <string name="dialog_image_share_body">Find this great picture from {username} on PicFood!\n\nThe image has been posted by {username} on {date}.\n\n{url}</string>
+
+        <!-- dialog 'comment' -->
+        <string name="dialog_comment_title">Send comment</string>
+        <string name="dialog_comment_body">Please provide us your comment:</string>
+        <string name="dialog_comment_inputfield_hint">Your comment</string>
+        <string name="dialog_comment_button_submit">Submit</string>
+        <string name="dialog_comment_button_cancel">Cancel</string>
+
+        <!-- dialog 'comment invalid' -->
+        <string name="dialog_comment_invalid_title">Comment invalid</string>
+        <string name="dialog_comment_invalid_body">The comment must hava a minimum length of three characters!</string>
+        <string name="dialog_comment_invalid_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'comment sent' -->
+        <string name="dialog_comment_sent_title">Comment sent</string>
+        <string name="dialog_comment_sent_body">Thanks for your comment.</string>
+        <string name="dialog_comment_sent_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'change password' -->
+        <string name="dialog_change_password_inputfield_old_password_hint">Old password</string>
+        <string name="dialog_change_password_inputfield_new_password_hint">New password</string>
+        <string name="dialog_change_password_inputfield_new_password_repeat_hint">Repeat new password</string>
+        <string name="dialog_change_password_title">Change password</string>
+        <string name="dialog_change_password_body">Please enter your old password and enter your new password twice in order to change your account password.</string>
+        <string name="dialog_change_password_button_submit">Submit</string>
+        <string name="dialog_change_password_button_cancel">Cancel</string>
+
+        <!-- dialog 'change password old password empty' -->
+        <string name="dialog_change_password_empty_old_password_title">Old password empty</string>
+        <string name="dialog_change_password_empty_old_password_body">Please input your old password!</string>
+        <string name="dialog_change_password_empty_old_password_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'change password new password invalid' -->
+        <string name="dialog_change_password_invalid_new_password_title">New password invalid</string>
+        <string name="dialog_change_password_invalid_new_password_body">Your new password must have a minimum length of six characters!</string>
+        <string name="dialog_change_password_invalid_new_password_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'change password new password repeat empty' -->
+        <string name="dialog_change_password_empty_new_password_repeat_title">Password confirmation required</string>
+        <string name="dialog_change_password_empty_new_password_repeat_body">Please input your repeated password!</string>
+        <string name="dialog_change_password_empty_new_password_repeat_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'change password new password mismatching repeat' -->
+        <string name="dialog_change_password_mismatching_new_password_repeat_title">Mismatching passwords</string>
+        <string name="dialog_change_password_mismatching_new_password_repeat_body">Your new passwort and the repeated new password do not match!</string>
+        <string name="dialog_change_password_mismatching_new_password_repeat_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'change password success' -->
+        <string name="dialog_change_password_success_title">Password changed</string>
+        <string name="dialog_change_password_success_body">Your passwort has been changed successfully!</string>
+        <string name="dialog_change_password_success_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'change password wrong password' -->
+        <string name="dialog_change_password_wrong_password_title">Password wrong</string>
+        <string name="dialog_change_password_wrong_password_body">Your old passwort is wrong! Please try again!</string>
+        <string name="dialog_change_password_wrong_password_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'find friends' -->
+        <string name="dialog_find_friends_title">Find friends</string>
+        <string name="dialog_find_friends_item_facebook">Find via Facebook</string>
+        <string name="dialog_find_friends_item_phonenumber">Find via phonenumber</string>
+        <string name="dialog_find_friends_item_seachterm">Find via searchterm</string>
+
+        <!-- dialog 'find friends via searchterm' -->
+        <string name="dialog_find_friends_via_searchterm_title">Find friends</string>
+        <string name="dialog_find_friends_via_searchterm_inputfield_hint">Search term</string>
+        <string name="dialog_find_friends_via_searchterm_body">Please enter your search term to search users for:</string>
+        <string name="dialog_find_friends_via_searchterm_button_submit">Find</string>
+        <string name="dialog_find_friends_via_searchterm_button_cancel">Cancel</string>
+
+        <!-- dialog 'find friends via searchterm invalid' -->
+        <string name="dialog_search_friends_via_searchterm_invalid_title">Invalid search term</string>
+        <string name="dialog_search_friends_via_searchterm_invalid_body">The search term must have a minimum length of three characters!</string>
+        <string name="dialog_search_friends_via_searchterm_invalid_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'find friends via searchterm no results' -->
+        <string name="dialog_find_friends_searchterm_no_results_title">No results</string>
+        <string name="dialog_find_friends_searchterm_no_results_body">No users have been found that match your search term.</string>
+        <string name="dialog_find_friends_searchterm_no_results_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'find friends via facebook no results' -->
+        <string name="dialog_find_friends_facebook_no_results_title">No results</string>
+        <string name="dialog_find_friends_facebook_no_results_body">None of your facebook friends that use PicFood have been found.</string>
+        <string name="dialog_find_friends_facebook_no_results_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'find friends via phonenumber no results' -->
+        <string name="dialog_find_friends_phonenumber_no_results_title">No results</string>
+        <string name="dialog_find_friends_phonenumber_no_results_body">None of your contacts that use PicFood have been found.</string>
+        <string name="dialog_find_friends_phonenumber_no_results_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'search images' -->
+        <string name="dialog_search_images_title">Find images</string>
+        <string name="dialog_search_images_body">Please enter a term and a location to search for images.</string>
+        <string name="dialog_search_images_checkbox_use_gps">Use current GPS location.</string>
+        <string name="dialog_search_images_button_submit">Find</string>
+        <string name="dialog_search_images_button_cancel">Cancel</string>
+        <string name="dialog_search_images_inputfield_location_hint">Location</string>
+        <string name="dialog_search_images_inputfield_term_hint">Search term</string>
+
+        <!-- dialog 'search images no results' -->
+        <string name="dialog_search_images_no_results_title">No results</string>
+        <string name="dialog_search_images_no_results_body">No images have been found that match your criteria.</string>
+        <string name="dialog_search_images_no_results_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'search images - awaiting gps' -->
+        <string name="dialog_search_images_awaiting_gps_title">Checking via GPS</string>
+        <string name="dialog_search_images_awaiting_gps_body">Please wait while your current GPS location is determined.</string>
+
+        <!-- dialog 'search images - searching' -->
+        <string name="dialog_search_images_searching_title">Searching images</string>
+        <string name="dialog_search_images_searching_body">Please wait while images are searched.</string>
+
+        <!-- dialog 'search images - GPS disabled' -->
+        <string name="dialog_search_images_gps_disabled_title">GPS disabled</string>
+        <string name="dialog_search_images_gps_disabled_body">Your GPS service is currently disabled.&lt;br&gt;&lt;br&gt;Please enable your GPS service in order to receive nearby places of your current position or input a location manually.</string>
+        <string name="dialog_search_images_gps_disabled_button_enable">Enable</string>
+        <string name="dialog_search_images_gps_disabled_button_cancel">Cancel</string>
+
+        <!-- dialog 'gps low' -->
+        <string name="dialog_search_images_gps_low_title">Weak GPS signal</string>
+        <string name="dialog_search_images_gps_low_body">Your GPS service is currently weak in your location.&lt;br&gt;&lt;br&gt;Remember that GPS works best with clear view of the skies.&lt;br&gt;&lt;br&gt;Please try it again or input a location manually.</string>
+        <string name="dialog_search_images_gps_low_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'share image - no network' -->
+        <string name="dialog_share_image_no_network_title">No network</string>
+        <string name="dialog_share_image_no_network_body">Sharing the image failed because your network connection is down.&lt;br&gt;&lt;br&gt;Please try again later.</string>
+        <string name="dialog_share_image_no_network_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'share image - technical error' -->
+        <string name="dialog_share_image_technical_error_title">Technical error</string>
+        <string name="dialog_share_image_technical_error_body">Sharing the image failed because a technical error occured.&lt;br&gt;&lt;br&gt;Please try again later.</string>
+        <string name="dialog_share_image_technical_error_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'session expired' -->
+        <string name="dialog_session_expired_title">Session expired</string>
+        <string name="dialog_session_expired_body">Sorry, but your PicFood-session has just expired.&lt;br&gt;&lt;br&gt;Please login to start a new session!</string>
+        <string name="dialog_session_expired_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'no update available' -->
+        <string name="dialog_no_update_title">No update available</string>
+        <string name="dialog_no_update_body">You are using the latest version of PicFood.</string>
+        <string name="dialog_no_update_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'update optional' -->
+        <string name="dialog_update_optional_title">Update available</string>
+        <string name="dialog_update_optional_body">A new version of PicFood is available.\n\nPlease update to the latest version.</string>
+        <string name="dialog_update_optional_button_ok">@android:string/ok</string>
+        <string name="dialog_update_optional_button_cancel">Cancel</string>
+
+        <!-- dialog 'update required' -->
+        <string name="dialog_update_required_title">Update available</string>
+        <string name="dialog_update_required_body">A new version of PicFood is available.\n\nPlease update to the latest version.</string>
+        <string name="dialog_update_required_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'change profile' -->
+        <string name="dialog_change_profile_title">Change profile</string>
+        <string name="dialog_change_profile_label_realname">Change your profile data by editing the following fields.&lt;br&gt;&lt;br&gt;Your real name:</string>
+        <string name="dialog_change_profile_label_phonenumber">Your phone number:</string>
+        <string name="dialog_change_profile_label_biography">Your biography:</string>
+        <string name="dialog_change_profile_label_website">Your website:</string>
+        <string name="dialog_change_profile_button_submit">Submit</string>
+        <string name="dialog_change_profile_button_cancel">Cancel</string>
+
+        <!-- dialog 'please wait - picking profile' -->
+        <string name="dialog_please_wait_picking_profile_title">Please wait</string>
+        <string name="dialog_please_wait_picking_profile_body">Your current profile is picked.</string>
+
+        <!-- dialog 'change profile - invalid biography -->
+        <string name="dialog_change_profile_invalid_biography_title">Invalid biography</string>
+        <string name="dialog_change_profile_invalid_biography_body">The biography must have a minimum length of three characters!</string>
+        <string name="dialog_change_profile_invalid_biography_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'change profile - invalid website -->
+        <string name="dialog_change_profile_invalid_website_title">Invalid website</string>
+        <string name="dialog_change_profile_invalid_website_body">The website must have a minimum length of three characters!</string>
+        <string name="dialog_change_profile_invalid_website_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'change profile - invalid phone number -->
+        <string name="dialog_change_profile_invalid_phone_number_title">Invalid phone number</string>
+        <string name="dialog_change_profile_invalid_phone_number_body">The phone number must have a minimum length of three characters!</string>
+        <string name="dialog_change_profile_invalid_phone_number_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'change profile - invalid real name -->
+        <string name="dialog_change_profile_invalid_real_name_title">Invalid real name</string>
+        <string name="dialog_change_profile_invalid_real_name_body">The real name must have a minimum length of three characters!</string>
+        <string name="dialog_change_profile_invalid_real_name_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'change profile - succeeded -->
+        <string name="dialog_change_profile_succeeded_title">Profile changed</string>
+        <string name="dialog_change_profile_succeeded_body">Your profile has been changed successfully.</string>
+        <string name="dialog_change_profile_succeeded_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'change profile image - succeeded -->
+        <string name="dialog_change_profile_image_succeeded_title">Profile image changed</string>
+        <string name="dialog_change_profile_image_succeeded_body">Your profile image has been changed successfully.</string>
+        <string name="dialog_change_profile_image_succeeded_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'please wait - deleting cache' -->
+        <string name="dialog_please_wait_delete_cache_title">Delete image cache</string>
+        <string name="dialog_please_wait_delete_cache_body_1">Please wait while the image cache is deleted.&lt;br&gt;&lt;br&gt;Scanning files ..</string>
+        <string name="dialog_please_wait_delete_cache_body_2">Please wait while the image cache is deleted.&lt;br&gt;&lt;br&gt;Deleting files {progress}</string>
+        <string name="dialog_please_wait_delete_cache_body_3">Please wait while the image cache is deleted.&lt;br&gt;&lt;br&gt;Scanning folders ..</string>
+        <string name="dialog_please_wait_delete_cache_body_4">Please wait while the image cache is deleted.&lt;br&gt;&lt;br&gt;Deleting folders {progress}</string>
+
+        <!-- dialog 'deleting cache succeeded' -->
+        <string name="dialog_delete_image_cache_success_title">Image cache deleted</string>
+        <string name="dialog_delete_image_cache_success_body">The image cache has been deleted successfully.</string>
+        <string name="dialog_delete_image_cache_success_button_ok">@android:string/ok</string>
+
+        <!-- dialog 'auto-login' -->
+        <string name="dialog_auto_login_title">Logging in</string>
+        <string name="dialog_auto_login_body">Trying to log in with your last account.</string>
+
+    <!-- images -->
+
+        <!-- image captions -->
+        <string name="image_you_like">YOU like this!</string>
+        <string name="image_likes">Likes:</string>
+        <string name="image_comments">Comments:</string>
+        <string name="image_likes_view_all">Show all likes</string>
+        <string name="image_comments_view_all">Show all comments</string>
+
+        <string name="image_count_likes_none">No Likes</string>
+        <string name="image_count_likes_singular">{count} Like</string>
+        <string name="image_count_likes_plural">{count} Likes</string>
+        <string name="image_count_comments_none">No Comments</string>
+        <string name="image_count_comments_singular">{count} Comment</string>
+        <string name="image_count_comments_plural">{count} Comments</string>
+        <string name="image_count_food_ratings_none">No Ratings</string>
+        <string name="image_count_food_ratings_singular">{count} Rating</string>
+        <string name="image_count_food_ratings_plural">{count} Ratings</string>
+        <string name="image_average_food_rating">Average food rating:</string>
+        <string name="image_average_food_rating_none">Food has not been rated yet.</string>
+        <string name="image_location_distance">Distance: {distance} meters</string>
+
+        <!-- image buttons -->
+        <string name="image_button_like">Like</string>
+        <string name="image_button_unlike">Unlike</string>
+        <string name="image_button_comment">Comment</string>
+        <string name="image_button_options">Options</string>
+        <string name="image_button_rate">Rate</string>
+
+</resources>

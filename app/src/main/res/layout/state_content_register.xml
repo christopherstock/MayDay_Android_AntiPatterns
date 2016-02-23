@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- state 'register' -->
+<com.synapsy.android.lib.ui.widget.LibScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbarThumbHorizontal="@drawable/net_picfood_scrollbar"
+    android:scrollbarThumbVertical="@drawable/net_picfood_scrollbar"
+    android:scrollbarSize="@dimen/scrollbar_width"
+    android:fadingEdgeLength="@dimen/fading_edge_size"
+    android:requiresFadingEdge="vertical"
+    android:fadeScrollbars="true"
+    android:paddingTop="@dimen/content_distance_normal"
+    android:paddingBottom="@dimen/content_distance_normal"
+    android:paddingLeft="@dimen/content_distance_normal"
+    android:paddingRight="@dimen/content_distance_normal"
+    >
+
+    <!-- scrollbar content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|top"
+        >
+
+        <!-- white pane around input fields -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|top"
+            android:background="@drawable/net_picfood_bg_form"
+            android:layout_marginTop="@dimen/content_distance_normal"
+            android:layout_marginBottom="@dimen/content_distance_normal"
+            >
+
+            <!-- horizontal layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left|top"
+                android:layout_marginTop="@dimen/content_distance_normal"
+                >
+
+                <!-- input field 'username' -->
+                <EditText
+                    android:layout_weight="1.0"
+                    android:id="@+id/input_username"
+                    android:layout_width="0.0dp"
+                    android:layout_height="@dimen/inputfield_height"
+                    android:singleLine="true"
+                    android:inputType="textNoSuggestions|textVisiblePassword"
+                    android:hint="@string/state_register_inputfield_username"
+                    android:gravity="left|center_vertical"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:textColor="@color/form_inputfield_fg"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="@dimen/inputfield_margin_horizontal"
+                    android:paddingRight="@dimen/inputfield_margin_horizontal"
+                    android:maxLength="@integer/inputfield_max_length_username"
+                />
+
+                <!-- username check icon -->
+                <com.synapsy.android.lib.ui.widget.LibImageView
+                    android:id="@+id/username_check_icon"
+                    android:contentDescription="@string/empty_string"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/inputfield_height"
+                    android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/net_picfood_user_check"
+                    android:layout_marginRight="@dimen/content_distance_normal"
+                    />
+
+            </LinearLayout>
+
+            <!-- spacer line -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/inputfield_separator_line_height"
+                android:background="@color/form_inputfield_separator_line"
+                android:layout_margin="@dimen/content_distance_normal"
+            />
+
+            <!-- input field 'Email' -->
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/inputfield_height"
+                android:singleLine="true"
+                android:inputType="textNoSuggestions|textVisiblePassword|textEmailAddress"
+                android:hint="@string/state_register_inputfield_email"
+                android:gravity="left|center_vertical"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:textColor="@color/form_inputfield_fg"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/inputfield_margin_horizontal"
+                android:paddingRight="@dimen/inputfield_margin_horizontal"
+                android:maxLength="@integer/inputfield_max_length_email"
+            />
+
+            <!-- spacer line -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/inputfield_separator_line_height"
+                android:background="@color/form_inputfield_separator_line"
+                android:layout_margin="@dimen/content_distance_normal"
+            />
+
+            <!-- input field 'password' -->
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/inputfield_height"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="@string/state_register_inputfield_password"
+                android:gravity="left|center_vertical"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:textColor="@color/form_inputfield_fg"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/inputfield_margin_horizontal"
+                android:paddingRight="@dimen/inputfield_margin_horizontal"
+                android:maxLength="@integer/inputfield_max_length_password"
+            />
+
+            <!-- spacer line -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/inputfield_separator_line_height"
+                android:background="@color/form_inputfield_separator_line"
+                android:layout_margin="@dimen/content_distance_normal"
+            />
+
+            <!-- input field 'password confirmation' -->
+            <EditText
+                android:id="@+id/input_password_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/inputfield_height"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="@string/state_register_inputfield_password_confirmation"
+                android:gravity="left|center_vertical"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:textColor="@color/form_inputfield_fg"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/inputfield_margin_horizontal"
+                android:paddingRight="@dimen/inputfield_margin_horizontal"
+                android:maxLength="@integer/inputfield_max_length_password"
+            />
+
+        </LinearLayout>
+
+        <!-- button 'import facebook data' -->
+        <include
+            android:id="@+id/button_import_facebook_data"
+            layout="@layout/button_facebook"
+            />
+
+        <!-- white pane around input fields -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|top"
+            android:background="@drawable/net_picfood_bg_form"
+            android:layout_marginTop="@dimen/content_distance_normal"
+            android:layout_marginBottom="@dimen/content_distance_normal"
+            >
+
+            <!-- input field 'phone' -->
+            <EditText
+                android:id="@+id/input_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/inputfield_height"
+                android:singleLine="true"
+                android:inputType="textNoSuggestions|textVisiblePassword|phone"
+                android:hint="@string/state_register_inputfield_phone"
+                android:gravity="left|center_vertical"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:textColor="@color/form_inputfield_fg"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/inputfield_margin_horizontal"
+                android:paddingRight="@dimen/inputfield_margin_horizontal"
+                android:maxLength="@integer/inputfield_max_length_phone_number"
+            />
+
+            <!-- spacer line -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/inputfield_separator_line_height"
+                android:background="@color/form_inputfield_separator_line"
+                android:layout_margin="@dimen/content_distance_normal"
+            />
+
+            <!-- input field 'realname' -->
+            <EditText
+                android:id="@+id/input_realname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/inputfield_height"
+                android:singleLine="true"
+                android:inputType="textNoSuggestions|textVisiblePassword"
+                android:hint="@string/state_register_inputfield_realname"
+                android:gravity="left|center_vertical"
+                android:imeOptions="actionDone|flagNoExtractUi"
+                android:textColor="@color/form_inputfield_fg"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/inputfield_margin_horizontal"
+                android:paddingRight="@dimen/inputfield_margin_horizontal"
+                android:maxLength="@integer/inputfield_max_length_real_name"
+                />
+
+        </LinearLayout>
+
+        <!-- item 'Choose Profile Image' -->
+        <LinearLayout
+            android:id="@+id/item_choose_profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left|center_vertical"
+            >
+
+            <!-- camera icon or profile image -->
+            <com.synapsy.android.lib.ui.widget.LibImageView
+                android:id="@+id/profile_image"
+                android:contentDescription="@string/empty_string"
+                android:layout_width="@dimen/register_camera_icon_size"
+                android:layout_height="@dimen/register_camera_icon_size"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@drawable/net_picfood_icon_camera"
+                android:layout_marginLeft="@dimen/content_distance_normal"
+                android:layout_marginRight="@dimen/content_distance_normal"
+                />
+
+            <!-- text -->
+            <include
+                android:id="@+id/text_choose_profile_image"
+                layout="@layout/text_item"
+                />
+
+            <!-- spacer -->
+            <RelativeLayout
+                android:layout_width="@dimen/content_distance_normal"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+            />
+
+        </LinearLayout>
+
+        <!-- legal text -->
+        <include
+            android:id="@+id/legal_text"
+            layout="@layout/text_tiny"
+            />
+
+        <!-- spacer -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_distance_normal"
+            android:background="@android:color/transparent"
+            />
+
+        <!-- button 'register' -->
+        <include
+            android:id="@+id/button_register"
+            layout="@layout/button_black_specular_wide"
+            />
+
+    </LinearLayout>
+
+</com.synapsy.android.lib.ui.widget.LibScrollView>

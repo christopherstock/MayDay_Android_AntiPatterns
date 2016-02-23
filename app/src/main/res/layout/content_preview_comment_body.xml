@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- user profile -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="left|top"
+    android:background="@android:color/transparent"
+    android:paddingLeft="@dimen/content_distance_normal"
+    >
+
+    <!-- comment -->
+    <include
+        android:id="@+id/comment"
+        layout="@layout/text_image_comment_multiline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

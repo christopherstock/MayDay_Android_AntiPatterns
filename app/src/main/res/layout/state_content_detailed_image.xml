@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- state 'foreign profile' -->
+<com.synapsy.android.lib.ui.widget.LibScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbarThumbHorizontal="@drawable/net_picfood_scrollbar"
+    android:scrollbarThumbVertical="@drawable/net_picfood_scrollbar"
+    android:scrollbarSize="@dimen/scrollbar_width"
+    android:fadingEdgeLength="@dimen/fading_edge_size"
+    android:requiresFadingEdge="vertical"
+    android:fadeScrollbars="true"
+    android:fillViewport="true"
+    >
+
+    <!-- scrollbar content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|top"
+        >
+
+            <!-- image container -->
+            <LinearLayout
+                android:id="@+id/image_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="left|top"
+                />
+
+    </LinearLayout>
+
+</com.synapsy.android.lib.ui.widget.LibScrollView>

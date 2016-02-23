@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- right arrow in 'settings' item -->
+<com.synapsy.android.lib.ui.widget.LibImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:contentDescription="@string/empty_string"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/item_arrow_height"
+    android:layout_weight="0.0"
+    android:scaleType="centerInside"
+    android:adjustViewBounds="true"
+    android:src="@drawable/net_picfood_arrow_right"
+    android:paddingTop="@dimen/content_distance_normal"
+    android:paddingBottom="@dimen/content_distance_normal"
+    android:paddingRight="@dimen/item_padding_right"
+    />
