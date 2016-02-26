@@ -9,14 +9,15 @@
     /**********************************************************************************************
     *   The startup activity class.
     *
+    *   TODO HIGH   Try PagerTabStrip.
     *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
     *   TODO ASAP   Support latest API Level.
-    *   TODO ASAP   Create new icon.
     *
-    *   DONE        Remove old company name.
-    *   DONE        Prune old specifier everywhere!
-    *   DONE        Test on device!
-    *   DONE        Create mayflower certification file.
+    *   DONE        Created new icon.
+    *   DONE        Removed old company name.
+    *   DONE        Pruned old specifier everywhere!
+    *   DONE        Testd on device!
+    *   DONE        Created mayflower certification file.
     *   DONE        Renamed all classes to 'AntiPatterns'.
     *   DONE        Fixed linebreaks in all files.
     *   DONE        Pruned class header in all files.
