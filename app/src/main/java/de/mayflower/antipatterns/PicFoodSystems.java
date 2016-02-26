@@ -1,15 +1,12 @@
-/*  $Id: PicFoodSystems.java 50634 2013-08-19 13:43:10Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns;
 
     import  de.mayflower.antipatterns.PicFoodProject.*;
-    import  de.mayflower.antipatterns.ext.gcm.*;
     import  de.mayflower.antipatterns.flow.*;
     import  de.mayflower.antipatterns.io.*;
     import  de.mayflower.antipatterns.ui.*;
     import  android.content.*;
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
     import  de.mayflower.lib.io.*;
     import  de.mayflower.lib.io.http.*;
     import  de.mayflower.lib.ui.*;
@@ -61,9 +58,6 @@
 
             //init cache system
             initCache();
-
-            //register GoogleCloudMessaging-services
-            if ( Features.ENABLE_C2D ) PicFoodGoogleCloudMessaging.registerGCM( state.getActivity() );
 
             //perform implicit update check
             PicFoodFlowGeneral.checkAppUpdateThreaded( state );

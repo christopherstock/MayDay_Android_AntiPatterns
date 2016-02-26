@@ -6,7 +6,6 @@
     import  android.view.*;
     import de.mayflower.antipatterns.*;
     import  de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtException;
-    import  de.mayflower.antipatterns.ext.facebook.*;
     import  de.mayflower.antipatterns.flow.*;
     import  de.mayflower.antipatterns.idm.*;
     import  de.mayflower.antipatterns.state.*;
@@ -1743,23 +1742,11 @@
 
                 case EDialogShowFacebookPleaseWait:
                 {
-                    //show 'please wait'
-                    LibDialogProgress.showProgressDialogUIThreaded
-                    (
-                        PicFoodFacebookSession.callingState.getActivity(),
-                        R.string.dialog_please_wait_title,
-                        R.string.dialog_please_wait_body,
-                        EDialogShowFacebookPleaseWaitAfterProgressDialog,
-                        false,
-                        null
-                    );
                     break;
                 }
 
                 case EDialogShowFacebookPleaseWaitAfterProgressDialog:
                 {
-                    //perform facebook-job now
-                    PicFoodFacebookSession.performJobAfterSessionIsOpen();
                     break;
                 }
 

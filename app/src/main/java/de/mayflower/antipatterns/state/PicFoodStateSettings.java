@@ -5,7 +5,6 @@
 
     import de.mayflower.antipatterns.*;
     import  de.mayflower.antipatterns.action.*;
-    import  de.mayflower.antipatterns.ext.facebook.*;
     import  de.mayflower.antipatterns.flow.*;
     import  de.mayflower.antipatterns.state.PicFoodState.*;
     import  de.mayflower.lib.ui.*;
@@ -129,12 +128,6 @@
         {
             //invoke super method
             super.onActivityResult( requestCode, responseCode, data );
-
-            //propagade to facebook SDK - this is mandatory!
-            PicFoodFacebook.onActivityResult( this, requestCode, responseCode, data );
-
-            //propagade to facebook SDK - this is mandatory!
-            PicFoodFacebook.onActivityResult( this, requestCode, responseCode, data );
 
             //switch requestCode
             switch ( requestCode )

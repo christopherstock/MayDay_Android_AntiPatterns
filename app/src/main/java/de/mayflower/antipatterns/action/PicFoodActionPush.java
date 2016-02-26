@@ -1,16 +1,13 @@
-/*  $Id: PicFoodActionPush.java 50667 2013-08-22 07:22:59Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.action;
 
-    import de.mayflower.antipatterns.*;
+    import  de.mayflower.antipatterns.*;
     import  de.mayflower.antipatterns.PicFoodProject.Debug;
     import  de.mayflower.antipatterns.PicFoodProject.Debug.Simulations;
     import  de.mayflower.antipatterns.PicFoodProject.Features;
     import  de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtException;
     import  de.mayflower.antipatterns.PicFoodSettings.*;
     import  de.mayflower.antipatterns.data.*;
-    import  de.mayflower.antipatterns.ext.facebook.*;
     import  de.mayflower.antipatterns.flow.*;
     import  de.mayflower.antipatterns.flow.PicFoodFlowProfile.*;
     import  de.mayflower.antipatterns.idm.*;
@@ -20,7 +17,7 @@
     import  de.mayflower.antipatterns.state.acclaim.*;
     import  de.mayflower.antipatterns.ui.adapter.*;
     import  de.mayflower.antipatterns.ui.adapter.PicFoodAdapterManager.*;
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
     import  de.mayflower.lib.io.*;
     import  de.mayflower.lib.ui.*;
     import  de.mayflower.lib.ui.dialog.*;
@@ -436,8 +433,6 @@
 
                 case EPushRegisterImportFacebookData:
                 {
-                    //import register data from facebook
-                    PicFoodFacebook.fillRegisterData( PicFoodState.ERegister );
                     break;
                 }
 
@@ -1232,32 +1227,6 @@
 
                 case EPushFindFriendsViaFacebook:
                 {
-                    if ( Simulations.SIMULATE_FIND_FRIENDS_VIA_FACEBOOK )
-                    {
-                        //assign the last facebook-uids
-                        PicFoodFlowSearchUsers.lastFacebookUIDs     = new String[] { "1660999065", };
-                        PicFoodFlowSearchUsers.nextReloadAction     = PicFoodActionUpdate.EUpdateFindFriendsViaFacebookNextOffset;
-                        PicFoodFlowSearchUsers.lastOwnFacebookID    = "";
-
-                        //clean search data
-                        PicFoodFlowSearchUsers.reset();
-
-                        //perform 1st friends search
-                        PicFoodFlowSearchUsers.orderNextFriendsSearchViaFacebookIDs
-                        (
-                            PicFoodState.ESettings,
-                            PicFoodActionDialog.EDialogFindFriendsViaFacebookNoNetwork,
-                            PicFoodActionDialog.EDialogFindFriendsViaFacebookTechnicalError,
-                            PicFoodActionDialog.EDialogFindFriendsViaFacebookNoResults,
-                            PicFoodActionUpdate.EUpdateFindFriendsViaFacebookShowResults
-                        );
-                    }
-                    else
-                    {
-                        //pick facebook-friend-ids from facebook
-                        PicFoodFacebook.findFriendsViaFacebook( PicFoodState.ESettings );
-                    }
-
                     break;
                 }
 

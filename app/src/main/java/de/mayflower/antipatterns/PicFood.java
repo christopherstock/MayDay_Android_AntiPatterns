@@ -5,12 +5,13 @@
     import  de.mayflower.antipatterns.state.acclaim.*;
     import  android.os.*;
     import  android.app.*;
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
     import  de.mayflower.lib.ui.widget.LibDebugConsole.*;
 
     /**********************************************************************************************
     *   The startup activity class.
     *
+    *   TODO ASAP   Fix linebreaks in all files.
     *   TODO ASAP   Rename Library classes package names.
     *   TODO ASAP   Remove facebook API.
     *   TODO ASAP   Prune class header in all files.
