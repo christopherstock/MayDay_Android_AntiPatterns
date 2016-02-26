@@ -2,6 +2,13 @@
 
 <resources>
 
+    <string-array name="antipattern_all">
+        <item>rds</item>
+        <item>eus/item>
+        <item>dvs</item>
+        <item>smf</item>
+    </string-array>
+
     <string name="antipattern_name_rds">Remote Daily Standup</string>
     <string-array name="antipattern_symptom_rds">
         <item>Meetings sind nicht vorbereitet</item>
@@ -19,6 +26,24 @@
     </string-array>
     <string-array name="antipattern_remedy_eus">
         <item>Unterstütze den Product Owner bei der Formulierung der User Stories</item>
+    </string-array>
+
+    <string name="antipattern_name_dvs">Developer Stories</string>
+    <string-array name="antipattern_symptom_dvs">
+        <item>Deine User Stories formulieren nicht den wirtschaftlichen Mehrwert, sondern richten sich z.B. nach rein technischen Kriterien</item>
+    </string-array>
+    <string-array name="antipattern_remedy_dvs">
+        <item>Führe ein Story Mapping Workshop durch, um Deine Stories von den Zielen Deiner Personas ableiten zu können</item>
+    </string-array>
+
+    <string name="antipattern_name_smf">Scrummerfall</string>
+    <string-array name="antipattern_symptom_smf">
+        <item>Im Sprint laufen Planung, Entwicklung und Test sequenziell ab, statt parallel</item>
+    </string-array>
+    <string-array name="antipattern_remedy_smf">
+        <item>Halte die Zeit für die Planung kurz</item>
+        <item>Fokussiere Dich auf die Fertigstellung der User Stories</item>
+        <item>Nutze (und optimiere gegebenenfalls) Metriken wie die Cycle Time</item>
     </string-array>
 
 </resources>
