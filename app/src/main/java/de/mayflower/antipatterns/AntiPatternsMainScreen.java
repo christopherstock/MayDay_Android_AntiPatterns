@@ -57,8 +57,8 @@
 
             AntiPatternsDebug.major.out( AntiPatternsMainScreen.class + "::onCreate()" );
 
-            //init all systems
-            AntiPatternsSystems.init( this );
+
+
         }
 
         /*****************************************************************************
@@ -73,19 +73,14 @@
             AntiPatternsDebug.major.out( AntiPatternsMainScreen.class + "::onStart()" );
 
             //submit acclaim message in output and console
-            String acclaim = "Welcome to [ " + AntiPatternsVersion.getVersion() + " ]";
-            AntiPatternsDebug.major.out(acclaim);
+            AntiPatternsDebug.major.out( "Welcome to [ " + AntiPatternsVersion.getVersion() + " ]" );
 
-            setContentView(R.layout.antipatterns_main_screen);
 
-            AntiPatternsMainScreenViewPagerAdapter pagerAdapter = new AntiPatternsMainScreenViewPagerAdapter
-            (
-                this.getSupportFragmentManager(),
-                this
-            );
 
-            ViewPager viewPager = (ViewPager)findViewById( R.id.main_screen_pager );
-            viewPager.setAdapter(pagerAdapter);
+setContentView( R.layout.antipatterns_main_screen );
+setupPagerAdapter();
+
+
         }
 
         /*****************************************************************************
@@ -124,5 +119,18 @@
             }
 */
             return super.onOptionsItemSelected(item);
+        }
+
+        private void setupPagerAdapter()
+        {
+            AntiPatternsMainScreenViewPagerAdapter pagerAdapter = new AntiPatternsMainScreenViewPagerAdapter
+            (
+                this.getSupportFragmentManager()
+            );
+
+            pagerAdapter.init();
+
+            ViewPager viewPager = (ViewPager)findViewById( R.id.main_screen_pager );
+            viewPager.setAdapter(pagerAdapter);
         }
     }

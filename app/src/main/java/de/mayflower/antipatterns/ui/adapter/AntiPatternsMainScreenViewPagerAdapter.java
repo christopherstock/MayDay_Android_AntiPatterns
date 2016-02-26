@@ -16,28 +16,40 @@
     ************************************************************************/
     public class AntiPatternsMainScreenViewPagerAdapter extends FragmentPagerAdapter
     {
-        Context context;
+        private         AntiPatternsMainScreenViewPagerFragment[]       fragments       = null;
 
-        public AntiPatternsMainScreenViewPagerAdapter( FragmentManager fm, Context context )
+        public AntiPatternsMainScreenViewPagerAdapter( FragmentManager fm )
         {
             super( fm );
-            this.context = context;
+        }
+
+        public final void init()
+        {
+            fragments = new AntiPatternsMainScreenViewPagerFragment[]
+            {
+                new AntiPatternsMainScreenViewPagerFragment( 0, "Title 1" ),
+                new AntiPatternsMainScreenViewPagerFragment( 1, "Title 2" ),
+                new AntiPatternsMainScreenViewPagerFragment( 2, "Title 3" ),
+                new AntiPatternsMainScreenViewPagerFragment( 3, "Title 4" ),
+                new AntiPatternsMainScreenViewPagerFragment( 4, "Title 5" ),
+            };
         }
 
         @Override
         public Fragment getItem( int position )
         {
-            return new AntiPatternsMainScreenViewPagerFragment( position );
+            return fragments[ position ];
         }
 
         @Override
         public int getCount()
         {
-            return 5;
+            return fragments.length;
         }
 
         @Override
-        public CharSequence getPageTitle( int position ) {
-            return "Page " + ( position + 1 );
+        public CharSequence getPageTitle( int position )
+        {
+            return fragments[ position ].getTitle();
         }
     }

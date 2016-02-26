@@ -15,19 +15,20 @@
     {
         protected       int         position                        = 0;
 
-        public AntiPatternsMainScreenViewPagerFragment( int position )
+        protected       String      title                           = null;
+
+        public AntiPatternsMainScreenViewPagerFragment( int position, String title )
         {
             this.position = position;
+            this.title    = title;
         }
-
+/*
         @Override
         public void onCreate( Bundle b )
         {
             super.onCreate( b );
-
-            AntiPatternsDebug.major.out( AntiPatternsMainScreenViewPagerFragment.class + "::onCreate()" );
         }
-
+*/
         @Override
         public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState )
         {
@@ -69,5 +70,10 @@
             }
 
             return rootView;
+        }
+
+        public String getTitle()
+        {
+            return title;
         }
     }
