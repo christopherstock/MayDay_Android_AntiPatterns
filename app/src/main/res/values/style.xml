@@ -3,7 +3,15 @@
 <resources>
 
     <!-- The app's style - Disabled Title-bar -->
-    <style name="AppTheme" parent="android:Theme.NoTitleBar">
+    <style name="AppTheme2" parent="android:Theme.Black">
+
+        <!-- disable default window animation style -->
+        <item name="android:windowAnimationStyle">@null</item>
+
+    </style>
+
+    <!-- The app's style - Disabled Title-bar -->
+    <style name="AppTheme1" parent="android:Theme.NoTitleBar">
 
         <!-- remove window overlay shadow on top border -->
         <item name="android:windowContentOverlay">@null</item>

@@ -2,11 +2,11 @@
     package de.mayflower.antipatterns.state.acclaim;
 
     import  de.mayflower.antipatterns.*;
-    import de.mayflower.antipatterns.AntiPatternsProject.*;
+    import  de.mayflower.antipatterns.AntiPatternsProject.*;
     import  de.mayflower.antipatterns.action.*;
     import  de.mayflower.antipatterns.flow.*;
     import  de.mayflower.antipatterns.state.*;
-    import de.mayflower.antipatterns.state.AntiPatternsState.*;
+    import  de.mayflower.antipatterns.state.AntiPatternsState.*;
     import  de.mayflower.lib.ui.*;
     import  de.mayflower.lib.ui.adapter.*;
     import  com.viewpagerindicator.*;

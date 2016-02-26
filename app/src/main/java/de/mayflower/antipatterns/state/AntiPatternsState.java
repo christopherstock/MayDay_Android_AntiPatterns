@@ -60,7 +60,7 @@
         {
             switch ( this )
             {
-                case EStartup:              return AntiPatterns.singleton;
+                case EStartup:              return AntiPatternsOld.singleton;
                 case ETitleSplash:          return AntiPatternsStateTitleSplash.singleton;
                 case EAcclaim:              return AntiPatternsStateAcclaim.singleton;
                 case EPivotalMenu:          return AntiPatternsStatePivotal.singleton;
@@ -121,7 +121,7 @@
         )
         {
             //init all systems
-            AntiPatternsSystems.init(state);
+            AntiPatternsSystems.init(state.getActivity());
 
             //reference state layout
             state.getActivity().setContentView( R.layout.state );

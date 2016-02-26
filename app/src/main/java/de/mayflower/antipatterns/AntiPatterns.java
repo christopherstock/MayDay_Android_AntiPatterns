@@ -1,21 +1,19 @@
 
     package de.mayflower.antipatterns;
 
-    import  de.mayflower.antipatterns.state.*;
-    import  de.mayflower.antipatterns.state.acclaim.*;
-    import  android.os.*;
-    import  android.app.*;
-    import  de.mayflower.lib.*;
-    import  de.mayflower.lib.ui.widget.LibDebugConsole.*;
+    import  android.app.Activity;
+    import  android.os.Bundle;
+    import  android.view.Menu;
+    import android.view.MenuInflater;
 
     /**********************************************************************************************
     *   The startup activity class.
     *
-     *   TODO ASAP   Remove old company name.
-     *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
-     *   TODO ASAP   Support latest API Level.
-     *   TODO ASAP   Create new icon.
-     *
+    *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
+    *   TODO ASAP   Support latest API Level.
+    *   TODO ASAP   Create new icon.
+    *
+    *   DONE        Remove old company name.
     *   DONE        Prune old specifier everywhere!
     *   DONE        Test on device!
     *   DONE        Create mayflower certification file.
@@ -34,11 +32,6 @@
     public class AntiPatterns extends Activity
     {
         /*****************************************************************************
-        *   The singleton instance of this activity.
-        *****************************************************************************/
-        public      static      Activity            singleton               = null;
-
-        /*****************************************************************************
         *   Being invoked when this activity is being created.
         *****************************************************************************/
         @Override
@@ -47,13 +40,10 @@
             //invoke super method
             super.onCreate( savedInstanceState );
 
-            //assign singleton context
-            singleton = this;
-
             AntiPatternsDebug.major.out( "AntiPatterns::onCreate()" );
 
             //init all systems
-            AntiPatternsSystems.init(AntiPatternsState.EStartup);
+            AntiPatternsSystems.init( this );
         }
 
         /*****************************************************************************
@@ -65,26 +55,34 @@
             //invoke super method
             super.onStart();
 
+            AntiPatternsDebug.major.out( "AntiPatterns::onStart()" );
+
             //submit acclaim message in output and console
             String acclaim = "Welcome to [ " + AntiPatternsVersion.getVersion() + " ]";
-            AntiPatternsDebug.major.out( acclaim );
-            AntiPatternsDebug.major.log( acclaim, ConsoleColor.EGreenBright );
+            AntiPatternsDebug.major.out(acclaim);
+
+
+            setContentView( R.layout.antipatterns_main_screen);
+
+
+
 
             //launch initial state 'acclaim'
-            LibLauncher.launchActivity( singleton, AntiPatternsStateAcclaim.class, R.anim.fade_in, R.anim.fade_out );
+            //LibLauncher.launchActivity( this, AntiPatternsStateAcclaim.class, R.anim.fade_in, R.anim.fade_out );
 
-            //perform initial debug
-            {
-                //test all json-RPC connections on the new server
-                //AntiPatternsJsonRPCTest.test( this );
-            }
         }
-/*
-        @Override public boolean onCreateOptionsMenu( Menu menu )
+
+        /*****************************************************************************
+        *   Being invoked when the menu key is pressed.
+        *****************************************************************************/
+        @Override
+        public boolean onCreateOptionsMenu( Menu menu )
         {
-            //inflate menu
-            getMenuInflater().inflate( R.menu.pic_food, menu );
+            AntiPatternsDebug.major.out( "AntiPatterns::onCreateOptionsMenu()" );
+
+            MenuInflater inflater = getMenuInflater();
+            inflater.inflate( R.menu.menu_main, menu );
             return true;
         }
-*/
+
     }

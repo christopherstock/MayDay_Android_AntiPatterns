@@ -28,7 +28,7 @@
         android:allowBackup="true"
         android:icon="@drawable/app_icon"
         android:label="@string/appname"
-        android:theme="@style/AppTheme"
+        android:theme="@style/AppTheme2"
         >
 
         <!-- startup activity -->
@@ -37,6 +37,16 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <!-- old startup activity -->
+        <activity android:name=".AntiPatternsOld" android:label="@string/appname" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale">
+<!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+-->
         </activity>
 
         <!-- login activity -->

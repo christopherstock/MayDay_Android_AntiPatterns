@@ -5,6 +5,8 @@
     import  de.mayflower.antipatterns.flow.*;
     import  de.mayflower.antipatterns.io.*;
     import  de.mayflower.antipatterns.ui.*;
+
+    import android.app.Activity;
     import  android.content.*;
     import  de.mayflower.lib.*;
     import  de.mayflower.lib.io.*;
@@ -39,27 +41,27 @@
         *   Inits all systems lazy. Being invoked on entering every activity,
         *   the initialization of all systems is asserted.
         *
-        *   @param  state       The according state.
+        *   @param  activity            The according activity context.
         *****************************************************************************/
-        public static final void init( LibState state )
+        public static final void init( Activity activity )
         {
             //hide soft-keyboard if popped up
-            LibUI.hideSoftKeyboard( state.getActivity() );
+            LibUI.hideSoftKeyboard( activity );
 
             //init UncaughtExceptionHandler
             initUncaughtExceptionHandler();
 
-            //init UserAgent
-            initUserAgent();
-
             //inits external fonts
-            initFonts( state.getActivity() );
+            initFonts( activity );
+
+            //init UserAgent
+            //initUserAgent();
 
             //init cache system
-            initCache();
+            //initCache();
 
             //perform implicit update check
-            AntiPatternsFlowGeneral.checkAppUpdateThreaded(state);
+            //AntiPatternsFlowGeneral.checkAppUpdateThreaded(state);
         }
 
         /*****************************************************************************
