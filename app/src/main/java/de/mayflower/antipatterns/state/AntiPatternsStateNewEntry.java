@@ -284,7 +284,7 @@
                 case AntiPatternsSettings.ActivityRequestID.STATE_NEW_ENTRY_PICK_UPLOAD_IMAGE_GALLERY:
                 {
                     //unselect buttons
-                    //if ( false ) PicFoodActionUnselect.EUnselectButtonsPivotalUpload.run();
+                    //if ( false ) AntiPatternsActionUnselect.EUnselectButtonsPivotalUpload.run();
 
                     //handle selected image data if response code is successful
                     if ( responseCode == RESULT_OK && data != null )
@@ -303,7 +303,7 @@
                 case AntiPatternsSettings.ActivityRequestID.STATE_NEW_ENTRY_PICK_UPLOAD_IMAGE_CAMERA:
                 {
                     //unselect buttons
-                    //if ( false ) PicFoodActionUnselect.EUnselectButtonsPivotalUpload.run();
+                    //if ( false ) AntiPatternsActionUnselect.EUnselectButtonsPivotalUpload.run();
 
                     //handle selected image data if response code is successful
                     if ( responseCode == RESULT_OK && data != null )

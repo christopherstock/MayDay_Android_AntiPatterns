@@ -73,7 +73,7 @@
             }
 
             //unselect all image buttons and links
-            //PicFoodFlowWall.unselectAllImages();
+            //AntiPatternsFlowWall.unselectAllImages();
 
             //free last layout and return it
             LibUI.freeFromParent( lastLayout );

@@ -33,7 +33,7 @@
                 List<NameValuePair> nameValuePairs  = new ArrayList<NameValuePair>();
 
                 //requires permission 'READ_PHONE_STATE'
-                //LibNetworkInfo      networkInfo     = new LibNetworkInfo( PicFoodApplication.getAppContext(), null );
+                //LibNetworkInfo      networkInfo     = new LibNetworkInfo( AntiPatternsApplication.getAppContext(), null );
 
                 //add post body
                 nameValuePairs.addAll

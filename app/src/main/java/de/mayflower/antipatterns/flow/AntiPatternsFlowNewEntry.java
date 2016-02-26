@@ -104,7 +104,7 @@
                         );
 
                 //update state 'new entry'
-                //PicFoodStateNewEntry.singleton.
+                //AntiPatternsStateNewEntry.singleton.
 
                 //check if a location has already been picked
                 String googlePlacesShown = AntiPatternsSave.loadSetting(activity, SaveKey.EStateNewEntryShowedGooglePlacesPicker);
@@ -121,7 +121,7 @@
             catch ( Throwable t )
             {
                 AntiPatternsDebug.pickImage.out( "Throwable being raised on receiving cropped image data:" );
-                //AntiPatternsDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Receiving cropped image data threw an Exception" ), "Invalid JsonRPC-Response!", UncaughtException.ENo );
+                //AntiPatternsDebug.DEBUG_THROWABLE( new AntiPatternsInternalError( "Receiving cropped image data threw an Exception" ), "Invalid JsonRPC-Response!", UncaughtException.ENo );
                 AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
 
                 //leave to state 'pivotal menu'
@@ -210,7 +210,7 @@
                     AntiPatternsActionDialog.EDialogUploadNewEntryTechnicalError.run();
 
                     //report this exception!
-                    //AntiPatternsDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Technical error on uploading new entry" ), "", UncaughtException.ENo );
+                    //AntiPatternsDebug.DEBUG_THROWABLE( new AntiPatternsInternalError( "Technical error on uploading new entry" ), "", UncaughtException.ENo );
                     AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
                 }
             }

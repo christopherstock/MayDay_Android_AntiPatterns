@@ -230,7 +230,7 @@
         @Override
         public void onLocationChanged( Location l )
         {
-            iDebug.out( "PicFoodGPS::onLocationChanged() [" + l + "]" );
+            iDebug.out( "AntiPatternsGPS::onLocationChanged() [" + l + "]" );
 
             //assign current fine location
             currentLocation = l;
@@ -250,19 +250,19 @@
         @Override
         public void onProviderDisabled( String s )
         {
-            iDebug.out( "PicFoodGPS::onProviderDisabled()" );
+            iDebug.out( "AntiPatternsGPS::onProviderDisabled()" );
         }
 
         @Override
         public void onProviderEnabled( String s )
         {
-            iDebug.out( "PicFoodGPS::onProviderEnabled()" );
+            iDebug.out( "AntiPatternsGPS::onProviderEnabled()" );
         }
 
         @Override
         public void onStatusChanged( String s, int i, Bundle b )
         {
-            iDebug.out( "PicFoodGPS::onStatusChanged()" );
+            iDebug.out( "AntiPatternsGPS::onStatusChanged()" );
         }
 
         /**********************************************************************************************

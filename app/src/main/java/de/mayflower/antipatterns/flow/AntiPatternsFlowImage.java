@@ -110,7 +110,7 @@
                     AntiPatternsActionDialog.EDialogReportAbuseTechnicalError.run();
 
                     //report this exception
-                    //AntiPatternsDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Error on sending feedback" ), "", UncaughtException.ENo );
+                    //AntiPatternsDebug.DEBUG_THROWABLE( new AntiPatternsInternalError( "Error on sending feedback" ), "", UncaughtException.ENo );
                     AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
                 }
             }

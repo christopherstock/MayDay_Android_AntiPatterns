@@ -71,7 +71,7 @@
 
             //check if returning from GPS-settings
             String submitSearchDialogNextOnStart = AntiPatternsSave.loadSetting(this, SaveKey.EStatePivotalShowSearchDialogNextOnStart);
-            AntiPatternsDebug.imageSearch.out( "PicFoodStatePivotal::onStart() - submitSearchDialogNextOnStart is [" + submitSearchDialogNextOnStart + "]" );
+            AntiPatternsDebug.imageSearch.out( "AntiPatternsStatePivotal::onStart() - submitSearchDialogNextOnStart is [" + submitSearchDialogNextOnStart + "]" );
             if ( submitSearchDialogNextOnStart != null && submitSearchDialogNextOnStart.equals( "true" ) )
             {
                 //unflag
@@ -168,7 +168,7 @@
             fragments.add( Fragment.instantiate( this, AntiPatternsStatePivotalTabWall.class.getName()       ) );
             fragments.add( Fragment.instantiate( this, AntiPatternsStatePivotalTabExplore.class.getName()    ) );
             fragments.add( Fragment.instantiate( this, AntiPatternsStatePivotalTabUpload.class.getName()     ) );
-          //fragments.add( Fragment.instantiate( this, PicFoodStatePivotalTabNews.class.getName()       ) );
+          //fragments.add( Fragment.instantiate( this, AntiPatternsStatePivotalTabNews.class.getName()       ) );
             fragments.add( Fragment.instantiate( this, AntiPatternsStatePivotalTabProfile.class.getName()    ) );
 
             //setup PagerAdapter

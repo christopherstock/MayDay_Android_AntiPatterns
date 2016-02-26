@@ -102,7 +102,7 @@
         *   @param  showBackButton      Specifies if the header shall display the 'back' button.
         *   @param  showSettingsButton  Specifies if the header shall display the 'settings' button.
         *   @param  showSearchButton    Specifies if the header shall display the 'search' button.
-        *   @param  showLogo            Specifies if the header shall display the PicFood logo.
+        *   @param  showLogo            Specifies if the header shall display the AntiPatterns logo.
         *   @param  backAction          The action to perform on pressing the back-button.
         *   @return                     A reference to the content view, so specific ids of the layout
         *                               can be adjusted furthermore.
@@ -163,7 +163,7 @@
         *   @param  showBackButton      Specifies if the header shall display the 'back' button.
         *   @param  showSettingsButton  Specifies if the header shall display the 'settings' button.
         *   @param  showSearchButton    Specifies if the header shall display the 'search' button.
-        *   @param  showLogo            Specifies if the header shall display the PicFood logo.
+        *   @param  showLogo            Specifies if the header shall display the AntiPatterns logo.
         *   @param  backAction          The action to perform on pressing the back-button.
         **********************************************************************************************/
         public static final void setupHeader

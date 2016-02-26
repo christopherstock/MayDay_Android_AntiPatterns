@@ -224,7 +224,7 @@
                     //update wall AND profile because they both may contain this image!
 
                     //wall
-                    //if ( PicFoodStatePivotal.lastSelectedTab.equals( PicFoodStatePivotal.TAB_TAG_WALL ) )
+                    //if ( AntiPatternsStatePivotal.lastSelectedTab.equals( AntiPatternsStatePivotal.TAB_TAG_WALL ) )
                     {
                         AntiPatternsDebug.updateAfterImageAction.out( "Update lastImage in wall .." );
 
@@ -242,7 +242,7 @@
                     }
 
                     //profile
-                    //else if ( PicFoodStatePivotal.lastSelectedTab.equals( PicFoodStatePivotal.TAB_TAG_PROFILE ) )
+                    //else if ( AntiPatternsStatePivotal.lastSelectedTab.equals( AntiPatternsStatePivotal.TAB_TAG_PROFILE ) )
                     {
                         AntiPatternsDebug.updateAfterImageAction.out( "Update lastImage in own profile .." );
 

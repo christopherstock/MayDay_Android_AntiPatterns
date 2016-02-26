@@ -149,7 +149,7 @@
                 if ( titlePageIndicator != null )
                 {
                     //setup TitlePageIndicator
-                    //titlePageIndicator.setup(  this, this, iViewPagerAcclaim, PicFoodSystems.getFonts().TYPEFACE_BOLD );
+                    //titlePageIndicator.setup(  this, this, iViewPagerAcclaim, AntiPatternsSystems.getFonts().TYPEFACE_BOLD );
                     titlePageIndicator.setViewPager( iViewPagerAcclaim );
 
                     //hide ViewPagerIndicator ( sample usage )

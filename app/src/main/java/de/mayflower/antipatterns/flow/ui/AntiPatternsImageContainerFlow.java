@@ -377,7 +377,7 @@
         {
             if ( iImagesData != null )
             {
-                for ( PicFoodImageContainerFlowContent img : iImagesData )
+                for ( AntiPatternsImageContainerFlowContent img : iImagesData )
                 {
                     img.iImg.unselectAllButtons();
                 }

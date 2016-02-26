@@ -62,7 +62,7 @@
             iOverlayIcon                    = (ImageView)layout.findViewById( R.id.overlay_icon );
 
             //connect to GridView
-            //PicFoodAdapterManager.getSingleton( this, GridViews.ESearchImages ).connect( container );
+            //AntiPatternsAdapterManager.getSingleton( this, GridViews.ESearchImages ).connect( container );
         }
 
         @Override
@@ -76,10 +76,10 @@
                 updateNextOnStart = false;
 
                 //ditch the GridView
-                //PicFoodAdapterManager.getSingleton( this, GridViews.ESearchImages ).clearData();
+                //AntiPatternsAdapterManager.getSingleton( this, GridViews.ESearchImages ).clearData();
 
                 //update threaded!
-                //PicFoodFlowSearchImages.addNewSearchImagesResultsThreaded();
+                //AntiPatternsFlowSearchImages.addNewSearchImagesResultsThreaded();
 
                 //update threaded!
                 AntiPatternsActionUpdate.EUpdateSearchImagesResultsClean.run();

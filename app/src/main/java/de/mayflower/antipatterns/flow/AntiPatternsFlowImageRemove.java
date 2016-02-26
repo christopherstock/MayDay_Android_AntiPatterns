@@ -28,7 +28,7 @@
                     //update wall AND profile because they both may contain this image!
 
                     //wall
-                    //if ( PicFoodStatePivotal.lastSelectedTab.equals( PicFoodStatePivotal.TAB_TAG_WALL ) )
+                    //if ( AntiPatternsStatePivotal.lastSelectedTab.equals( AntiPatternsStatePivotal.TAB_TAG_WALL ) )
                     {
                         AntiPatternsDebug.updateAfterImageAction.out( "Removal has been performed on the WALL." );
 
@@ -46,7 +46,7 @@
                     }
 
                     //profile
-                    //else if ( PicFoodStatePivotal.lastSelectedTab.equals( PicFoodStatePivotal.TAB_TAG_PROFILE ) )
+                    //else if ( AntiPatternsStatePivotal.lastSelectedTab.equals( AntiPatternsStatePivotal.TAB_TAG_PROFILE ) )
                     {
                         //remove image from container
                         if ( AntiPatternsFlowProfileImages.flow != null )

@@ -184,7 +184,7 @@
                     AntiPatternsLoadingCircle.turnLoadingCircleToNoNetworkUIThreaded(state.getActivity(), overlayIcon, reloadAction);
 
                     //remove loading-circle
-                    //PicFoodLoadingCircle.removeLoadingCircleUIThreaded( activity, overlayIcon );
+                    //AntiPatternsLoadingCircle.removeLoadingCircleUIThreaded( activity, overlayIcon );
 
                     //ignore this error - The profile will just not get updated!
                     AntiPatternsDebug.DEBUG_THROWABLE(t, "Caught on updating user profile", UncaughtException.ENo);

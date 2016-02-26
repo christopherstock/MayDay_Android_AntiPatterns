@@ -72,20 +72,20 @@
         }
 
         /**********************************************************************************************
-        *   Delivers the abstract path descriptor for the PicFood project folder on the SD-card.
+        *   Delivers the abstract path descriptor for the AntiPatterns project folder on the SD-card.
         *
-        *   @return     The root folder on the SD card that shall contain all data for the PicFood project.
+        *   @return     The root folder on the SD card that shall contain all data for the AntiPatterns project.
         **********************************************************************************************/
         public static final File getSDCardProjectFolder()
         {
             final String PREFIX_TO_HIDE_THE_FOLDER = ".";
 
             File sdcard         = Environment.getExternalStorageDirectory();
-            File folderPicFood  = new File( sdcard, PREFIX_TO_HIDE_THE_FOLDER + Paramounts.PROJECT_SPECIFIER    );
+            File folderAntiPatterns  = new File( sdcard, PREFIX_TO_HIDE_THE_FOLDER + Paramounts.PROJECT_SPECIFIER    );
 
             //create this SD-card project folder on the fly
-            folderPicFood.mkdirs();
+            folderAntiPatterns.mkdirs();
 
-            return folderPicFood;
+            return folderAntiPatterns;
         }
     }

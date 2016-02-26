@@ -15,7 +15,7 @@
     import  de.mayflower.lib.ui.adapter.*;
 
     /*****************************************************************************
-    *   Delivers ui information that is specific for the PicFood project.
+    *   Delivers ui information that is specific for the AntiPatterns project.
     *
     *   @author     Christopher Stock
     *   @version    1.0
