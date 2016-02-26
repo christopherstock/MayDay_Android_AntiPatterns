@@ -32,7 +32,7 @@
         >
 
         <!-- startup activity -->
-        <activity android:name=".AntiPatterns" android:label="@string/appname" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale">
+        <activity android:name=".AntiPatternsMainScreen" android:label="@string/appname" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

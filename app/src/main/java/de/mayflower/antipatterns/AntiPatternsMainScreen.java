@@ -3,8 +3,12 @@
 
     import  android.app.Activity;
     import  android.os.Bundle;
+    import android.support.v4.app.FragmentActivity;
+    import android.support.v4.view.ViewPager;
     import  android.view.Menu;
     import android.view.MenuInflater;
+
+    import de.mayflower.antipatterns.ui.adapter.AntiPatternsMainScreenViewPagerAdapter;
 
     /**********************************************************************************************
     *   The startup activity class.
@@ -30,7 +34,7 @@
     *   @author     Christopher Stock
     *   @version    1.0
     ***********************************************************************************************/
-    public class AntiPatterns extends Activity
+    public class AntiPatternsMainScreen extends FragmentActivity
     {
         /*****************************************************************************
         *   Being invoked when this activity is being created.
@@ -62,8 +66,20 @@
             String acclaim = "Welcome to [ " + AntiPatternsVersion.getVersion() + " ]";
             AntiPatternsDebug.major.out(acclaim);
 
+            setContentView(R.layout.antipatterns_main_screen);
 
-            setContentView( R.layout.antipatterns_main_screen);
+            AntiPatternsMainScreenViewPagerAdapter pagerAdapter = new AntiPatternsMainScreenViewPagerAdapter
+            (
+                this.getSupportFragmentManager(),
+                this
+            );
+
+            ViewPager viewPager = (ViewPager)findViewById( R.id.main_screen_pager );
+            viewPager.setAdapter(pagerAdapter);
+
+
+
+
 
 
 
