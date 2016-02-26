@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- right arrow in 'settings' item -->
-<de.mayflower.lib.ui.widget.LibImageView
+<ImageView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:contentDescription="@string/empty_string"
     android:layout_width="wrap_content"

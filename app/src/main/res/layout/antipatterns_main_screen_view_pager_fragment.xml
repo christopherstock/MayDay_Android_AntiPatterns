@@ -3,7 +3,7 @@
 <!-- state container -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/state_container"
+    android:id="@+id/view_pager_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -11,10 +11,33 @@
     android:background="@color/com_facebook_blue"
     >
 
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbHorizontal="@drawable/de_mayflower_antipattern_scrollbar"
+        android:scrollbarThumbVertical="@drawable/de_mayflower_antipattern_scrollbar"
+        android:scrollbarSize="@dimen/scrollbar_width"
+        android:fadingEdgeLength="@dimen/fading_edge_size"
+        android:requiresFadingEdge="vertical"
+        android:fadeScrollbars="true"
+        >
 
+        <!-- scrollbar content -->
+        <LinearLayout
+            android:id="@+id/view_pager_scrollview_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|top"
+            android:paddingLeft="@dimen/content_distance_wmx_normal"
+            android:paddingRight="@dimen/content_distance_wmx_normal"
+            android:paddingBottom="@dimen/content_distance_wmx_normal"
+            >
 
+        </LinearLayout>
 
-
-
+    </ScrollView>
 
 </LinearLayout>

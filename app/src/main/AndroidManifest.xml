@@ -39,60 +39,8 @@
             </intent-filter>
         </activity>
 
-        <!-- old startup activity -->
-        <activity android:name=".AntiPatternsOld" android:label="@string/appname" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale">
-<!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
--->
-        </activity>
-
-        <!-- login activity -->
-        <activity android:name=".state.auth.AntiPatternsStateLogin" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" />
-
-        <!-- register activity -->
-        <activity android:name=".state.auth.AntiPatternsStateRegister" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" />
-
-        <!-- lost password activity -->
-        <activity android:name=".state.auth.AntiPatternsStateLostPassword" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" />
-
-        <!-- settings activity -->
-        <activity android:name=".state.AntiPatternsStateSettings" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
-
-        <!-- acclaim activity -->
-        <activity android:name=".state.acclaim.AntiPatternsStateAcclaim" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
-
-        <!-- title-splash activity -->
-        <activity android:name=".state.AntiPatternsStateTitleSplash" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
-
-        <!-- pivotal activity -->
-        <activity android:name=".state.pivotal.AntiPatternsStatePivotal" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
-
-        <!-- google Places activity -->
-        <activity android:name=".state.AntiPatternsStateGooglePlaces" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
-
-        <!-- new entry activity -->
-        <activity android:name=".state.AntiPatternsStateNewEntry" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
-
-        <!-- foreign profile activity -->
-        <activity android:name=".state.AntiPatternsStateForeignProfile" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
-
-        <!-- detailed image activity -->
-        <activity android:name=".state.AntiPatternsStateDetailedImage" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
-
-        <!-- image properties activity -->
-        <activity android:name=".state.AntiPatternsStateImageProperties" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
-
-        <!-- follow details activity -->
-        <activity android:name=".state.AntiPatternsStateFollowDetails" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
-
-        <!-- find friends results -->
-        <activity android:name=".state.AntiPatternsStateFindFriendsResults" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
-
-        <!-- search images results -->
-        <activity android:name=".state.AntiPatternsStateSearchImagesResults" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+        <!-- details activity -->
+        <activity android:name=".AntiPatternsDetailScreen" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" />
 
     </application>
 

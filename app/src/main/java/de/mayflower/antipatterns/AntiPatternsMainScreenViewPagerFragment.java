@@ -4,37 +4,71 @@
     import  android.os.Bundle;
     import  android.support.v4.app.Fragment;
     import  android.view.LayoutInflater;
+    import  android.view.MotionEvent;
     import  android.view.View;
     import  android.view.ViewGroup;
+    import  android.widget.LinearLayout;
+    import  de.mayflower.lib.LibLauncher;
+    import  de.mayflower.lib.util.LibMath;
 
     public class AntiPatternsMainScreenViewPagerFragment extends Fragment
     {
-        private         int     position                        = 0;
-
+        protected       int         position                        = 0;
 
         public AntiPatternsMainScreenViewPagerFragment( int position )
         {
             this.position = position;
+        }
 
+        @Override
+        public void onCreate( Bundle b )
+        {
+            super.onCreate( b );
 
-
-
-
+            AntiPatternsDebug.major.out( AntiPatternsMainScreenViewPagerFragment.class + "::onCreate()" );
         }
 
         @Override
         public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState )
         {
-            //setContentView ??
+            super.onCreateView( inflater, container, savedInstanceState );
 
-            // Inflate the layout resource that'll be returned
-            View rootView = inflater.inflate( R.layout.antipatterns_main_screen_view_pager_fragment, container, false );
+            AntiPatternsDebug.major.out(AntiPatternsMainScreenViewPagerFragment.class + "::onCreateView()");
 
-            // Get the arguments that was supplied when
-            // the fragment was instantiated in the
-            // CustomPagerAdapter
-            //Bundle args = getArguments();
-            //((TextView) rootView.findViewById(R.id.textView)).setText("Page " + args.getInt("page_position"));
+            View      rootView = inflater.inflate( R.layout.antipatterns_main_screen_view_pager_fragment, container, false );
+            ViewGroup sv       = (ViewGroup)rootView.findViewById( R.id.view_pager_scrollview_content );
+
+            int itemsToCreate = LibMath.getRandom(2, 20);
+            for ( int i = 0; i < itemsToCreate; ++i )
+            {
+                LinearLayout item = (LinearLayout)inflater.inflate( R.layout.antipatterns_list_item, container, false );
+
+                final int index = i;
+
+                item.setOnTouchListener
+                (
+                    new View.OnTouchListener()
+                    {
+                        @Override
+                        public boolean onTouch( View view, MotionEvent motionEvent )
+                        {
+                            AntiPatternsDebug.major.out("Item [" + index + "] in page [" + position + "] touched!");
+
+                            LibLauncher.launchActivity
+                            (
+                                AntiPatternsMainScreenViewPagerFragment.this.getActivity(),
+                                AntiPatternsDetailScreen.class,
+                                -1,
+                                -1
+                            );
+
+                            return true;
+                        }
+                    }
+                );
+
+                sv.addView( item );
+            }
 
             return rootView;
         }

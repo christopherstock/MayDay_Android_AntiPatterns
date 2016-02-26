@@ -31,7 +31,7 @@
         {
             //create activity launch intent and start it
             Intent launchActivity = new Intent( context, activityClassToLaunch );
-            context.startActivity(launchActivity);
+            context.startActivity( launchActivity );
 
 if (true) return;
 

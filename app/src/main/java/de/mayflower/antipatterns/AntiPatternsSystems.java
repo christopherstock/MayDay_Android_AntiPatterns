@@ -46,13 +46,13 @@
         public static final void init( Activity activity )
         {
             //hide soft-keyboard if popped up
-            LibUI.hideSoftKeyboard( activity );
+            //LibUI.hideSoftKeyboard( activity );
 
             //init UncaughtExceptionHandler
-            initUncaughtExceptionHandler();
+            //initUncaughtExceptionHandler();
 
             //inits external fonts
-            initFonts( activity );
+            //initFonts( activity );
 
             //init UserAgent
             //initUserAgent();

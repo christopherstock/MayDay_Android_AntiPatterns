@@ -6,13 +6,17 @@
     import  android.support.v4.view.ViewPager;
     import  android.view.Menu;
     import  android.view.MenuInflater;
-    import android.view.MenuItem;
-
+    import  android.view.MenuItem;
     import  de.mayflower.antipatterns.ui.adapter.AntiPatternsMainScreenViewPagerAdapter;
 
     /**********************************************************************************************
     *   The startup activity class.
     *
+    *   TODO ASAP   Hold and pass all data in instance fields!
+    *   TODO ASAP   Try animations between activity change.
+    *   TODO ASAP   Button in detailed view for returning.
+    *   TODO ASAP   Explicitly return to the last ViewPager page.
+    *   TODO ASAP   Resolve the ViewPager- cached views problem.
     *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
     *   TODO ASAP   Support latest API Level.
     *   TODO ASAP   Remove iml (trunk.iml) files on project root?
