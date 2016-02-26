@@ -10,7 +10,7 @@
     import  com.synapsy.android.lib.*;
     import  com.synapsy.android.lib.ui.*;
     import  com.synapsy.android.lib.ui.widget.*;
-    import  com.synapsy.android.lib.ui.widget.LibDebugConsole.ConsoleColor;
+    import  com.synapsy.android.lib.ui.widget.LibDebugConsole.*;
     import  com.synapsy.android.lib.util.LibUncaughtExceptionHandler.*;
 
     /*****************************************************************************
@@ -25,7 +25,7 @@
     {
         /** Logs all requests being performed via JSON-RPC. */
         jsonRpc(                    true                    ),
-      
+
         /** Logs displaying comments previews. */
         commentsPreviews(           false                   ),
         /** Logs optimization 'update image in GridView after imageAction'. */

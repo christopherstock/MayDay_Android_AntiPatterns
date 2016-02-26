@@ -1,28 +1,23 @@
-/*  $Id: PicFood.java 50822 2013-09-04 10:38:07Z schristopher $
- *  ==============================================================================================================
- */
+
     package net.picfood;
 
     import  net.picfood.state.*;
     import  net.picfood.state.acclaim.*;
-    import  android.os.Bundle;
+    import  android.os.*;
     import  android.app.*;
     import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.ui.widget.LibDebugConsole.ConsoleColor;
+    import  com.synapsy.android.lib.ui.widget.LibDebugConsole.*;
 
     /**********************************************************************************************
     *   The startup activity class.
     *
-    *   ASK     Allow non-square images?
-    *
+    *   TODO ASAP   Prune class header in all files.
+    *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
     *   TODO ASAP   Facebook button in state 'register' is fuzzy.
     *   TODO ASAP   Import Facebook-data: Try to pick email and username!
     *
-    *   DONE    Avoided NullPointerException in PicFoodActionPush.ELeaveFollowDetails.
-    *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50822 $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/PicFood.java $"
+    *   @author     Christopher Stock
+    *   @version    0.1
     ***********************************************************************************************/
     public class PicFood extends Activity
     {
@@ -43,7 +38,7 @@
             //assign singleton context
             singleton = this;
 
-            //PicFoodDebug.major.out( "PicFood::onCreate()" );
+            PicFoodDebug.major.out( "PicFood::onCreate()" );
 
             //init all systems
             PicFoodSystems.init( PicFoodState.EStartup );
@@ -64,7 +59,7 @@
             PicFoodDebug.major.log( acclaim, ConsoleColor.EGreenBright );
 
             //launch initial state 'acclaim'
-            LibLauncher.launchActivity( PicFood.singleton, PicFoodStateAcclaim.class, R.anim.fade_in, R.anim.fade_out );
+            LibLauncher.launchActivity( singleton, PicFoodStateAcclaim.class, R.anim.fade_in, R.anim.fade_out );
 
             //perform initial debug
             {
