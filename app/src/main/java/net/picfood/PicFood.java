@@ -5,16 +5,20 @@
     import  net.picfood.state.acclaim.*;
     import  android.os.*;
     import  android.app.*;
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.ui.widget.LibDebugConsole.*;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.ui.widget.LibDebugConsole.*;
 
     /**********************************************************************************************
     *   The startup activity class.
     *
+    *   TODO ASAP   Rename Library classes package names.
+    *   TODO ASAP   Remove facebook API.
     *   TODO ASAP   Prune class header in all files.
     *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
     *   TODO ASAP   Facebook button in state 'register' is fuzzy.
     *   TODO ASAP   Import Facebook-data: Try to pick email and username!
+    *
+    *   DONE        Setup IDE and code inspection.
     *
     *   @author     Christopher Stock
     *   @version    0.1

@@ -4,7 +4,7 @@
     package net.picfood.action;
 
     import  net.picfood.*;
-    import  com.synapsy.android.lib.util.LibUncaughtExceptionHandler.UncaughtException;
+    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtException;
     import  net.picfood.flow.*;
     import  net.picfood.state.*;
     import  net.picfood.state.auth.*;

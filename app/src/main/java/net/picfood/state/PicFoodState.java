@@ -9,8 +9,8 @@
     import  net.picfood.state.auth.*;
     import  net.picfood.state.pivotal.*;
 
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.ui.*;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.ui.*;
 
     import  android.app.Activity;
     import  android.view.*;

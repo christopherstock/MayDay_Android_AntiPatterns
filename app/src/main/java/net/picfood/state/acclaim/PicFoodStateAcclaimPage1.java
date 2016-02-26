@@ -9,7 +9,7 @@
     import  android.view.*;
     import  android.widget.*;
 
-    import  com.synapsy.android.lib.ui.*;
+    import  de.mayflower.lib.ui.*;
 
     /**********************************************************************************************
     *   The 1st page of the 'acclaim' ViewPager.

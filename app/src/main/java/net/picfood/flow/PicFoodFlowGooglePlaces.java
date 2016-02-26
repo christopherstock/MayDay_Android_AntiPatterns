@@ -22,12 +22,12 @@
     import  org.apache.http.util.*;
     import  org.json.*;
     import  android.location.*;
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.io.*;
-    import  com.synapsy.android.lib.ui.*;
-    import  com.synapsy.android.lib.ui.adapter.*;
-    import  com.synapsy.android.lib.ui.dialog.*;
-    import  com.synapsy.android.lib.util.LibUncaughtExceptionHandler.UncaughtException;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.io.*;
+    import  de.mayflower.lib.ui.*;
+    import  de.mayflower.lib.ui.adapter.*;
+    import  de.mayflower.lib.ui.dialog.*;
+    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtException;
 
     /*****************************************************************************
     *   Performs requests to the Google Places API.

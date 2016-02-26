@@ -14,10 +14,10 @@
     import  net.picfood.state.PicFoodState.*;
     import  net.picfood.ui.PicFoodUI.*;
 
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.io.*;
-    import  com.synapsy.android.lib.ui.*;
-    import  com.synapsy.android.lib.util.LibUncaughtExceptionHandler.*;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.io.*;
+    import  de.mayflower.lib.ui.*;
+    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.*;
     import  android.os.Bundle;
     import  android.view.*;
     import  android.widget.*;

@@ -13,7 +13,7 @@
     import  org.apache.http.client.methods.*;
     import  org.apache.http.message.*;
 
-    import  com.synapsy.android.lib.ui.*;
+    import  de.mayflower.lib.ui.*;
 
     /*****************************************************************************************
     *   8. Handles Exception-mails.

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- state 'login' -->
-<com.synapsy.android.lib.ui.widget.LibScrollView
+<de.mayflower.lib.ui.widget.LibScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -144,4 +144,4 @@ android:background="@color/form_inputfield_bg"
 
     </LinearLayout>
 
-</com.synapsy.android.lib.ui.widget.LibScrollView>
+</de.mayflower.lib.ui.widget.LibScrollView>

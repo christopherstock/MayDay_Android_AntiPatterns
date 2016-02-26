@@ -5,15 +5,15 @@
 
     import  net.picfood.*;
 
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.util.LibUncaughtExceptionHandler.UncaughtException;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtException;
     import  net.picfood.flow.*;
     import  net.picfood.idm.*;
     import  net.picfood.state.*;
     import  net.picfood.state.pivotal.*;
     import  net.picfood.ui.adapter.*;
     import  net.picfood.ui.adapter.PicFoodAdapterManager.GridViews;
-    import  com.synapsy.android.lib.ui.dialog.*;
+    import  de.mayflower.lib.ui.dialog.*;
 
     /**********************************************************************************************
     *   Holds all actions the user can trigger.

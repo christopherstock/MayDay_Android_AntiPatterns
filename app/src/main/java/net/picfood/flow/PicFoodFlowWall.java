@@ -6,10 +6,10 @@
     import  org.json.*;
     import  android.app.*;
     import  android.widget.*;
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.io.*;
-    import  com.synapsy.android.lib.util.*;
-    import  com.synapsy.android.lib.util.LibUncaughtExceptionHandler.*;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.io.*;
+    import  de.mayflower.lib.util.*;
+    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.*;
     import  net.picfood.*;
     import  net.picfood.action.*;
     import  net.picfood.flow.ui.*;

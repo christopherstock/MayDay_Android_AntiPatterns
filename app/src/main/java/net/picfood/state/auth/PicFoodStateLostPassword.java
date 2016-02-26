@@ -10,7 +10,7 @@
     import  net.picfood.state.*;
     import  net.picfood.state.PicFoodState.*;
     import  net.picfood.R;
-    import  com.synapsy.android.lib.ui.*;
+    import  de.mayflower.lib.ui.*;
     import  android.app.*;
     import  android.os.Bundle;
     import  android.view.*;

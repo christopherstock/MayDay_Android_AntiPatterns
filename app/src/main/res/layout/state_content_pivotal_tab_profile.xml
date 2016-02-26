@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     >
 
-    <com.synapsy.android.lib.ui.widget.LibScrollView
+    <de.mayflower.lib.ui.widget.LibScrollView
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -63,7 +63,7 @@
 
         </LinearLayout>
 
-    </com.synapsy.android.lib.ui.widget.LibScrollView>
+    </de.mayflower.lib.ui.widget.LibScrollView>
 
     <!-- overlay -->
     <RelativeLayout
@@ -73,7 +73,7 @@
         >
 
         <!-- overlay icon -->
-        <com.synapsy.android.lib.ui.widget.LibImageView
+        <de.mayflower.lib.ui.widget.LibImageView
             android:id="@+id/overlay_icon"
             android:layout_width="@dimen/loading_circle_size"
             android:layout_height="@dimen/loading_circle_size"

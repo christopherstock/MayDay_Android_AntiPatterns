@@ -7,11 +7,11 @@
     import  net.picfood.PicFoodProject.*;
     import  net.picfood.io.jsonrpc.*;
     import  android.util.*;
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.ui.*;
-    import  com.synapsy.android.lib.ui.widget.*;
-    import  com.synapsy.android.lib.ui.widget.LibDebugConsole.*;
-    import  com.synapsy.android.lib.util.LibUncaughtExceptionHandler.*;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.ui.*;
+    import  de.mayflower.lib.ui.widget.*;
+    import  de.mayflower.lib.ui.widget.LibDebugConsole.*;
+    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.*;
 
     /*****************************************************************************
     *   Represents the debug system consisting of switchable debug groups

@@ -33,7 +33,7 @@
             >
 
             <!-- icon -->
-            <com.synapsy.android.lib.ui.widget.LibImageView
+            <de.mayflower.lib.ui.widget.LibImageView
                 android:id="@+id/icon"
                 android:contentDescription="@string/empty_string"
                 android:layout_width="@dimen/gridview_item_detailed_image_user_icon_size"
@@ -90,7 +90,7 @@
                 />
 
             <!-- button 'options' -->
-            <com.synapsy.android.lib.ui.widget.LibImageView
+            <de.mayflower.lib.ui.widget.LibImageView
                 android:id="@+id/button_options"
                 android:contentDescription="@string/empty_string"
                 android:layout_width="@dimen/image_detailed_options_button_size"
@@ -124,7 +124,7 @@
             >
 
             <!-- image -->
-            <com.synapsy.android.lib.ui.widget.LibImageView
+            <de.mayflower.lib.ui.widget.LibImageView
                 android:id="@+id/image"
                 android:contentDescription="@string/empty_string"
                 android:layout_width="match_parent"
@@ -202,7 +202,7 @@
                         />
 
                     <!-- average food rating icon -->
-                    <com.synapsy.android.lib.ui.widget.LibImageView
+                    <de.mayflower.lib.ui.widget.LibImageView
                         android:id="@+id/average_food_rating_icon"
                         android:contentDescription="@string/empty_string"
                         android:layout_width="wrap_content"

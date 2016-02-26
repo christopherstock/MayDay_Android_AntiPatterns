@@ -14,8 +14,8 @@
     import  android.app.*;
     import  android.graphics.*;
 
-    import  com.synapsy.android.lib.io.*;
-    import  com.synapsy.android.lib.ui.*;
+    import  de.mayflower.lib.io.*;
+    import  de.mayflower.lib.ui.*;
 
     /*****************************************************************************************
     *   4. Handles all Json-RPC-requests of the group 'image'.

@@ -9,11 +9,11 @@
     import  net.picfood.io.jsonrpc.*;
     import  net.picfood.state.*;
     import  org.json.*;
-    import  com.synapsy.android.lib.io.*;
-    import  com.synapsy.android.lib.ui.*;
-    import  com.synapsy.android.lib.ui.dialog.*;
-    import  com.synapsy.android.lib.util.*;
-    import  com.synapsy.android.lib.util.LibUncaughtExceptionHandler.UncaughtException;
+    import  de.mayflower.lib.io.*;
+    import  de.mayflower.lib.ui.*;
+    import  de.mayflower.lib.ui.dialog.*;
+    import  de.mayflower.lib.util.*;
+    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtException;
 
     /**********************************************************************************************
     *   Holds all authentification tasks.

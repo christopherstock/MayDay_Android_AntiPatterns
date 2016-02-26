@@ -10,9 +10,9 @@
     import  net.picfood.ext.facebook.PicFoodFacebook.*;
     import  com.facebook.*;
     import  com.facebook.Session.OpenRequest;
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.ui.dialog.*;
-    import  com.synapsy.android.lib.util.LibUncaughtExceptionHandler.UncaughtException;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.ui.dialog.*;
+    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtException;
     import  com.facebook.Session.*;
 
     /*****************************************************************************

@@ -5,8 +5,8 @@
 
     import  org.json.*;
 
-    import  com.synapsy.android.lib.io.*;
-    import  com.synapsy.android.lib.util.LibUncaughtExceptionHandler.UncaughtException;
+    import  de.mayflower.lib.io.*;
+    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtException;
     import  net.picfood.*;
     import  net.picfood.action.*;
     import  net.picfood.data.*;

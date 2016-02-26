@@ -12,9 +12,9 @@
     import  android.content.*;
     import  android.graphics.drawable.*;
     import  android.widget.*;
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.ui.*;
-    import  com.synapsy.android.lib.ui.adapter.*;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.ui.*;
+    import  de.mayflower.lib.ui.adapter.*;
 
     /*****************************************************************************
     *   Delivers ui information that is specific for the PicFood project.

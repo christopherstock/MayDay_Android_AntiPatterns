@@ -7,8 +7,8 @@
     import  net.picfood.ui.adapter.PicFoodAdapterManager.GridViews;
     import  android.view.*;
 
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.ui.adapter.*;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.ui.adapter.*;
 
     /************************************************************************
     *   Represents one item in a GridView.

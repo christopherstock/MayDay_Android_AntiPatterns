@@ -5,13 +5,13 @@
 
     import  android.view.*;
     import  net.picfood.*;
-    import  com.synapsy.android.lib.util.LibUncaughtExceptionHandler.UncaughtException;
+    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtException;
     import  net.picfood.ext.facebook.*;
     import  net.picfood.flow.*;
     import  net.picfood.idm.*;
     import  net.picfood.state.*;
     import  net.picfood.state.pivotal.*;
-    import  com.synapsy.android.lib.ui.dialog.*;
+    import  de.mayflower.lib.ui.dialog.*;
 
     /**********************************************************************************************
     *   Holds all actions the user can trigger.

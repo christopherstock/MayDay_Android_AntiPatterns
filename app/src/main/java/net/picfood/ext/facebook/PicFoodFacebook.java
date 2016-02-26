@@ -12,7 +12,7 @@
     import  android.content.pm.*;
     import  android.util.*;
     import  com.facebook.*;
-    import  com.synapsy.android.lib.*;
+    import de.mayflower.lib.*;
 
     /*****************************************************************************
     *   Performs requests to the Facebook API.

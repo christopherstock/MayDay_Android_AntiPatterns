@@ -6,7 +6,7 @@
     import  java.io.*;
     import  org.json.*;
     import  android.location.*;
-    import  com.synapsy.android.lib.io.*;
+    import  de.mayflower.lib.io.*;
 
     /*****************************************************************************
     *   A serializable class that represents a location.

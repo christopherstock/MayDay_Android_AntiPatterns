@@ -14,7 +14,7 @@
     import  android.view.*;
     import  android.widget.*;
 
-    import  com.synapsy.android.lib.*;
+    import de.mayflower.lib.*;
 
     /**********************************************************************************************
     *   The state 'Follow details'.

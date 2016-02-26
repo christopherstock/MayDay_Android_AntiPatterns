@@ -14,12 +14,12 @@
     import  android.view.*;
     import  android.widget.*;
 
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.ui.*;
-    import  com.synapsy.android.lib.ui.dialog.*;
-    import  com.synapsy.android.lib.ui.widget.*;
-    import  com.synapsy.android.lib.util.*;
-    import  com.synapsy.android.lib.util.LibUncaughtExceptionHandler.UncaughtException;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.ui.*;
+    import  de.mayflower.lib.ui.dialog.*;
+    import  de.mayflower.lib.ui.widget.*;
+    import  de.mayflower.lib.util.*;
+    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtException;
 
     /**********************************************************************************************
     *   Manages the users' profile data area.

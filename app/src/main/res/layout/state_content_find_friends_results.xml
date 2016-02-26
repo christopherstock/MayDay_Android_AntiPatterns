@@ -32,7 +32,7 @@
             >
 
             <!-- overlay icon -->
-            <com.synapsy.android.lib.ui.widget.LibImageView
+            <de.mayflower.lib.ui.widget.LibImageView
                 android:id="@+id/overlay_icon"
                 android:layout_width="@dimen/loading_circle_size"
                 android:layout_height="@dimen/loading_circle_size"

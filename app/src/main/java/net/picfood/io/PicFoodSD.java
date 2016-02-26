@@ -6,7 +6,7 @@
     import  java.io.*;
     import  android.os.*;
 
-    import  com.synapsy.android.lib.ui.*;
+    import  de.mayflower.lib.ui.*;
 
     import  net.picfood.PicFoodProject.Paramounts;
     import  net.picfood.data.*;

@@ -9,8 +9,8 @@
     import  net.picfood.flow.*;
     import  net.picfood.state.*;
     import  net.picfood.state.PicFoodState.*;
-    import  com.synapsy.android.lib.ui.*;
-    import  com.synapsy.android.lib.ui.adapter.*;
+    import  de.mayflower.lib.ui.*;
+    import  de.mayflower.lib.ui.adapter.*;
     import  com.viewpagerindicator.*;
     import  android.os.Bundle;
     import  android.app.*;

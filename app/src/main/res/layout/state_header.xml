@@ -11,7 +11,7 @@
     >
 
     <!-- back button -->
-    <com.synapsy.android.lib.ui.widget.LibImageView
+    <de.mayflower.lib.ui.widget.LibImageView
         android:id="@+id/back_icon"
         android:contentDescription="@string/empty_string"
         android:layout_width="@dimen/header_icon_size"
@@ -24,7 +24,7 @@
         />
 
     <!-- search button -->
-    <com.synapsy.android.lib.ui.widget.LibImageView
+    <de.mayflower.lib.ui.widget.LibImageView
         android:id="@+id/search_icon"
         android:contentDescription="@string/empty_string"
         android:layout_width="@dimen/header_icon_size"
@@ -52,7 +52,7 @@
         >
 
         <!-- app logo -->
-        <com.synapsy.android.lib.ui.widget.LibImageView
+        <de.mayflower.lib.ui.widget.LibImageView
             android:id="@+id/app_logo"
             android:contentDescription="@string/empty_string"
             android:layout_width="wrap_content"
@@ -67,7 +67,7 @@
     </RelativeLayout>
 
     <!-- settings button -->
-    <com.synapsy.android.lib.ui.widget.LibImageView
+    <de.mayflower.lib.ui.widget.LibImageView
         android:id="@+id/settings_icon"
         android:contentDescription="@string/empty_string"
         android:layout_width="@dimen/header_icon_size"

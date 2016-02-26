@@ -13,8 +13,8 @@
     import  android.content.*;
     import  android.graphics.*;
 
-    import  com.synapsy.android.lib.io.*;
-    import  com.synapsy.android.lib.ui.*;
+    import  de.mayflower.lib.io.*;
+    import  de.mayflower.lib.ui.*;
 
     /*****************************************************************************************
     *   3. Handles all Json-RPC-requests of the group 'user'.

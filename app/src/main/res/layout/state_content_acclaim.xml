@@ -127,7 +127,7 @@
                     >
 
                 <!-- app logo -->
-                <com.synapsy.android.lib.ui.widget.LibImageView
+                <de.mayflower.lib.ui.widget.LibImageView
                     android:id="@+id/app_logo"
                     android:contentDescription="@string/empty_string"
                     android:layout_width="wrap_content"

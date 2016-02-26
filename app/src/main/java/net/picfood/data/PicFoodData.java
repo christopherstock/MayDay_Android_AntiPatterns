@@ -7,7 +7,7 @@
     import  android.graphics.drawable.*;
     import  android.view.*;
 
-    import  com.synapsy.android.lib.*;
+    import de.mayflower.lib.*;
 
     /************************************************************************
     *   Represents data that can be assigned into a {@link net.picfood.ui.adapter.PicFoodGridViewContent}.

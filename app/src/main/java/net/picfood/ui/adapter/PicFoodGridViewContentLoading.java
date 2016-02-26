@@ -10,9 +10,9 @@
     import  android.view.*;
     import  android.widget.*;
 
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.ui.*;
-    import  com.synapsy.android.lib.ui.adapter.*;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.ui.*;
+    import  de.mayflower.lib.ui.adapter.*;
 
     /************************************************************************
     *   Represents a GridView item that represents a spinning loading circle.

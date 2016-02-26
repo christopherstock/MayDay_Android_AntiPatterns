@@ -9,7 +9,7 @@
     import  android.view.animation.*;
     import  android.widget.*;
 
-    import  com.synapsy.android.lib.*;
+    import de.mayflower.lib.*;
 
     /*****************************************************************************
     *   Manages all tasks that are associated with displaying and changing loading circles.

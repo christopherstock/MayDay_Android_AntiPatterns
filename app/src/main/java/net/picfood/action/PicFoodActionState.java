@@ -5,7 +5,7 @@
 
     import  net.picfood.*;
 
-    import  com.synapsy.android.lib.util.LibUncaughtExceptionHandler.UncaughtException;
+    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtException;
     import  net.picfood.flow.*;
     import  net.picfood.io.*;
     import  net.picfood.io.PicFoodSave.SaveKey;
@@ -13,8 +13,8 @@
     import  net.picfood.state.acclaim.*;
     import  net.picfood.state.auth.*;
     import  net.picfood.state.pivotal.*;
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.ui.dialog.*;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.ui.dialog.*;
 
     /**********************************************************************************************
     *   Holds all actions the user can trigger.

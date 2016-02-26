@@ -13,8 +13,8 @@
     import  android.app.*;
     import  android.content.*;
 
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.ui.dialog.*;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.ui.dialog.*;
 
     /*****************************************************************************************
     *   The pivotal class for identity management.

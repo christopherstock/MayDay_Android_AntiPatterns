@@ -7,7 +7,7 @@
     import  android.content.*;
     import  android.graphics.*;
 
-    import  com.synapsy.android.lib.io.*;
+    import  de.mayflower.lib.io.*;
 
     /*****************************************************************************
     *   Holds all fonts the application is using.

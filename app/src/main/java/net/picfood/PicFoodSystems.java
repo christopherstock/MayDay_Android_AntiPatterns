@@ -9,13 +9,13 @@
     import  net.picfood.io.*;
     import  net.picfood.ui.*;
     import  android.content.*;
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.io.*;
-    import  com.synapsy.android.lib.io.http.*;
-    import  com.synapsy.android.lib.ui.*;
-    import  com.synapsy.android.lib.util.*;
-    import  com.synapsy.android.lib.util.LibUncaughtExceptionHandler.UncaughtException;
-    import  com.synapsy.android.lib.util.LibUncaughtExceptionHandler.UncaughtExceptionCallback;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.io.*;
+    import  de.mayflower.lib.io.http.*;
+    import  de.mayflower.lib.ui.*;
+    import  de.mayflower.lib.util.*;
+    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtException;
+    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtExceptionCallback;
 
     /*****************************************************************************
     *   All independent systems the application is using.

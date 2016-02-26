@@ -13,7 +13,7 @@
     import  android.os.Bundle;
     import  android.app.Activity;
     import  android.view.*;
-    import  com.synapsy.android.lib.ui.dialog.*;
+    import  de.mayflower.lib.ui.dialog.*;
 
     /**********************************************************************************************
     *   The state 'Google places'.

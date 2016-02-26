@@ -17,10 +17,10 @@ import  android.app.*;
 import  android.graphics.drawable.*;
 import  android.view.*;
 import  android.widget.*;
-import  com.synapsy.android.lib.*;
-import  com.synapsy.android.lib.io.*;
-import  com.synapsy.android.lib.ui.*;
-import  com.synapsy.android.lib.ui.widget.*;
+import de.mayflower.lib.*;
+import  de.mayflower.lib.io.*;
+import  de.mayflower.lib.ui.*;
+import  de.mayflower.lib.ui.widget.*;
 
     /**********************************************************************************************
     *   Represents all vital information for one PicFood image.

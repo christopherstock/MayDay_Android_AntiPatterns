@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- state 'settings' -->
-<com.synapsy.android.lib.ui.widget.LibScrollView
+<de.mayflower.lib.ui.widget.LibScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
         >
 
         <!-- logo -->
-        <com.synapsy.android.lib.ui.widget.LibImageView
+        <de.mayflower.lib.ui.widget.LibImageView
             android:contentDescription="@string/empty_string"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/content_top_logo_height"
@@ -344,4 +344,4 @@
 
     </LinearLayout>
 
-</com.synapsy.android.lib.ui.widget.LibScrollView>
+</de.mayflower.lib.ui.widget.LibScrollView>

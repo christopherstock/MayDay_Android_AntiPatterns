@@ -6,8 +6,8 @@
     import  net.picfood.data.*;
     import  android.view.*;
 
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.ui.widget.LibScrollView.*;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.ui.widget.LibScrollView.*;
 
     /*****************************************************************************
     *   Manages the container View and the contained image data

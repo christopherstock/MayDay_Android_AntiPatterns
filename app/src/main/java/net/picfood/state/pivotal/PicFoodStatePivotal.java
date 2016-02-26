@@ -18,8 +18,8 @@
     import  android.view.*;
     import  android.widget.*;
     import  android.widget.ImageView.ScaleType;
-    import  com.synapsy.android.lib.ui.*;
-    import  com.synapsy.android.lib.ui.adapter.*;
+    import  de.mayflower.lib.ui.*;
+    import  de.mayflower.lib.ui.adapter.*;
 
     /**********************************************************************************************
     *   This class implements the Fragment activity that maintains a TabHost using a ViewPager

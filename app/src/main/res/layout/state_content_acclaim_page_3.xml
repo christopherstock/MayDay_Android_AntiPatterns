@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- specifies the orientation -->
-<com.synapsy.android.lib.ui.widget.LibScrollView
+<de.mayflower.lib.ui.widget.LibScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -57,7 +57,7 @@
                     />
 
                 <!-- acclaim arrow right -->
-                <com.synapsy.android.lib.ui.widget.LibImageView
+                <de.mayflower.lib.ui.widget.LibImageView
                     android:contentDescription="@string/empty_string"
                     android:layout_width="@dimen/acclaim_fg_arrow_width"
                     android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
                 >
 
             <!-- fg pics -->
-            <com.synapsy.android.lib.ui.widget.LibImageView
+            <de.mayflower.lib.ui.widget.LibImageView
                 android:contentDescription="@string/empty_string"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -93,4 +93,4 @@
 
     </LinearLayout>
 
-</com.synapsy.android.lib.ui.widget.LibScrollView>
+</de.mayflower.lib.ui.widget.LibScrollView>

@@ -13,9 +13,9 @@
     import  android.content.*;
     import  android.net.*;
     import  com.google.android.gms.gcm.*;
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.io.*;
-    import  com.synapsy.android.lib.ui.*;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.io.*;
+    import  de.mayflower.lib.ui.*;
 
     /**********************************************************************************************
     *   The Google Cloud Messaging receiver.

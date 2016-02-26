@@ -8,8 +8,8 @@
     import  net.picfood.PicFoodSettings.Image;
     import  net.picfood.idm.*;
     import  android.app.*;
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.io.*;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.io.*;
 
     /*****************************************************************************************
     *   Tests all Json-RPC-requests.

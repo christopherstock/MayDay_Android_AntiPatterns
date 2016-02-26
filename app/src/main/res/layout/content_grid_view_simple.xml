@@ -36,7 +36,7 @@
             />
 
         <!-- icon -->
-        <com.synapsy.android.lib.ui.widget.LibImageView
+        <de.mayflower.lib.ui.widget.LibImageView
             android:id="@+id/icon"
             android:contentDescription="@string/empty_string"
             android:layout_width="@dimen/gridview_item_icon_size"

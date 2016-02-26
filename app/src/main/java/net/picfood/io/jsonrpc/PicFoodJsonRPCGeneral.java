@@ -8,7 +8,7 @@
     import  org.alexd.jsonrpc.*;
     import  org.json.*;
     import  android.app.*;
-    import  com.synapsy.android.lib.io.*;
+    import  de.mayflower.lib.io.*;
 
     /*****************************************************************************************
     *   6. Handles all Json-RPC-requests of the group 'general'.

@@ -3,7 +3,7 @@
  */
     package net.picfood;
 
-    import  com.synapsy.android.lib.*;
+    import de.mayflower.lib.*;
 
     /***************************************************************************************************
     *   Holds version information.

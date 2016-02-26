@@ -7,7 +7,7 @@
     import  net.picfood.PicFoodProject.Debug;
     import  net.picfood.PicFoodProject.Debug.Simulations;
     import  net.picfood.PicFoodProject.Features;
-    import  com.synapsy.android.lib.util.LibUncaughtExceptionHandler.UncaughtException;
+    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtException;
     import  net.picfood.PicFoodSettings.*;
     import  net.picfood.data.*;
     import  net.picfood.ext.facebook.*;
@@ -20,10 +20,10 @@
     import  net.picfood.state.acclaim.*;
     import  net.picfood.ui.adapter.*;
     import  net.picfood.ui.adapter.PicFoodAdapterManager.*;
-    import  com.synapsy.android.lib.*;
-    import  com.synapsy.android.lib.io.*;
-    import  com.synapsy.android.lib.ui.*;
-    import  com.synapsy.android.lib.ui.dialog.*;
+    import de.mayflower.lib.*;
+    import  de.mayflower.lib.io.*;
+    import  de.mayflower.lib.ui.*;
+    import  de.mayflower.lib.ui.dialog.*;
 
     /**********************************************************************************************
     *   Holds all actions the user can trigger.

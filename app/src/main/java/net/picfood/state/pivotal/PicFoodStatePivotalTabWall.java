@@ -11,8 +11,8 @@
     import  android.support.v4.app.Fragment;
     import  android.view.*;
     import  android.widget.*;
-    import  com.synapsy.android.lib.ui.*;
-    import  com.synapsy.android.lib.ui.widget.*;
+    import  de.mayflower.lib.ui.*;
+    import  de.mayflower.lib.ui.widget.*;
 
     /**********************************************************************************************
     *   The third fragment.
