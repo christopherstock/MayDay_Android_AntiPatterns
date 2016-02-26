@@ -2,9 +2,12 @@
     package de.mayflower.antipatterns.ui.adapter;
 
     import android.content.Context;
+    import android.os.Bundle;
     import android.support.v4.app.Fragment;
     import android.support.v4.app.FragmentManager;
     import android.support.v4.app.FragmentPagerAdapter;
+    import android.view.LayoutInflater;
+    import android.view.ViewGroup;
 
     import de.mayflower.antipatterns.AntiPatternsMainScreenViewPagerFragment;
 
@@ -27,12 +30,18 @@
         {
             fragments = new AntiPatternsMainScreenViewPagerFragment[]
             {
-                new AntiPatternsMainScreenViewPagerFragment( 0, "Title 1" ),
-                new AntiPatternsMainScreenViewPagerFragment( 1, "Title 2" ),
-                new AntiPatternsMainScreenViewPagerFragment( 2, "Title 3" ),
-                new AntiPatternsMainScreenViewPagerFragment( 3, "Title 4" ),
-                new AntiPatternsMainScreenViewPagerFragment( 4, "Title 5" ),
+                new AntiPatternsMainScreenViewPagerFragment(),
+                new AntiPatternsMainScreenViewPagerFragment(),
+                new AntiPatternsMainScreenViewPagerFragment(),
+                new AntiPatternsMainScreenViewPagerFragment(),
+                new AntiPatternsMainScreenViewPagerFragment(),
             };
+
+            fragments[ 0 ].init( 0, "Title 1" );
+            fragments[ 1 ].init( 1, "Title 2" );
+            fragments[ 2 ].init( 2, "Title 3" );
+            fragments[ 3 ].init( 3, "Title 4" );
+            fragments[ 4 ].init( 4, "Title 5" );
         }
 
         @Override

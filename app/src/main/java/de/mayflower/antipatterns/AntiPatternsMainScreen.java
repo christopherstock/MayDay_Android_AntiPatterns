@@ -7,6 +7,7 @@
     import  android.view.Menu;
     import  android.view.MenuInflater;
     import  android.view.MenuItem;
+
     import  de.mayflower.antipatterns.ui.adapter.AntiPatternsMainScreenViewPagerAdapter;
 
     /**********************************************************************************************
@@ -55,32 +56,11 @@
             //invoke super method
             super.onCreate( savedInstanceState );
 
-            AntiPatternsDebug.major.out( AntiPatternsMainScreen.class + "::onCreate()" );
+            AntiPatternsDebug.major.out("Welcome to [" + AntiPatternsVersion.getVersion() + "]");
 
+            setContentView(R.layout.antipatterns_main_screen);
 
-
-        }
-
-        /*****************************************************************************
-        *   Being invoked after this activity has been created and on returning.
-        *****************************************************************************/
-        @Override
-        public void onStart()
-        {
-            //invoke super method
-            super.onStart();
-
-            AntiPatternsDebug.major.out( AntiPatternsMainScreen.class + "::onStart()" );
-
-            //submit acclaim message in output and console
-            AntiPatternsDebug.major.out( "Welcome to [ " + AntiPatternsVersion.getVersion() + " ]" );
-
-
-
-setContentView( R.layout.antipatterns_main_screen );
-setupPagerAdapter();
-
-
+            setupPagerAdapter();
         }
 
         /*****************************************************************************
