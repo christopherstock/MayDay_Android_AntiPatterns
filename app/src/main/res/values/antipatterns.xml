@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="antipattern_name_rds">Remote Daily Standup Meeting</string>
+    <string name="antipattern_enname_rds">Remote Daily Standup</string>
+    <string-array name="antipattern_symptom">
+        <item>Ohne Vorbereitung sind solche Meetings höchst ineffizient</item>
+        <item>Nicht selten finden parallel weitere Chats statt</item>
+        <item>Fragen die im Raum beantwortet werden bekommen die Remote-Kollegen nicht mit</item>
+        <item>Das Menschliche geht komplett verloren</item>
+        <item>Remote Dailys sind reine 'Kontrollveranstaltungen'</item>
+    </string-array>
+    <string-array name="antipattern_visible">
+        <item>Meetings sind nicht vorbereitet.</item>
+        <item>Kommunikation läuft in parallelen Chats und Informationen aus Mimik, Gestik und sozialer Interaktion sind nicht möglich</item>
+    </string-array>
+    <string-array name="antipattern_gettingbetter">
+        <item>Skype/Google Hangout oder ein anderes Video-Audio-Tool nutzen</item>
+        <item>Als Scrum Master (bzw. noch besser, als HONK der Woche) weise ich die Kollegen darauf hin, dass demnächst das Daily statt findet und sich jeder vorbereitet</item>
+    </string-array>
+    <string-array name="antipattern_doingbetter">
+        <item>Nutze Audio-/Video-Tools.</item>
+        <item>Erinnere Teilnehmer an anstehende Termine</item>
+        <item>Bereite Dich als Teilnehmer auf Deinen Termin vor</item>
+    </string-array>
+
+</resources>
