@@ -7,7 +7,6 @@
     import  android.view.Menu;
     import  android.view.MenuInflater;
     import  android.view.MenuItem;
-    import android.view.ViewGroup;
 
     import  de.mayflower.antipatterns.ui.adapter.AntiPatternsMainScreenViewPagerAdapter;
 

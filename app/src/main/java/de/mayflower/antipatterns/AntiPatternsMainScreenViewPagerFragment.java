@@ -12,14 +12,13 @@
 
     public class AntiPatternsMainScreenViewPagerFragment extends Fragment
     {
-        protected       int         position                        = 0;
+        private                             int         index                   = 0;
+        private                             String      title                   = null;
 
-        protected       String      title                           = null;
-
-        public AntiPatternsMainScreenViewPagerFragment( int position, String title )
+        public void init( int index, String title )
         {
-            this.position = position;
-            this.title    = title;
+            this.index = index;
+            this.title = title;
         }
 
         @Override
@@ -29,7 +28,7 @@
 
             // TODO refactor!
 
-            AntiPatternsDebug.major.out("onCreateView for fragment [" + position + "]");
+            AntiPatternsDebug.major.out("onCreateView for fragment [" + index + "]");
 
             View      rootView = inflater.inflate( R.layout.antipatterns_main_screen_view_pager_fragment, container, false );
             ViewGroup sv       = (ViewGroup)rootView.findViewById( R.id.view_pager_scrollview_content );
@@ -47,7 +46,7 @@
                         @Override
                         public void onClick( View view )
                         {
-                            AntiPatternsDebug.major.out("Item [" + index + "] in page [" + position + "] touched!");
+                            AntiPatternsDebug.major.out("Item [" + index + "] in page [" + index + "] touched!");
 
                             LibLauncher.launchActivity
                             (
