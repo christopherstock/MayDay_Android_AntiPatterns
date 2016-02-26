@@ -45,12 +45,12 @@
 
                 final int index = i;
 
-                item.setOnTouchListener
+                item.setOnClickListener
                 (
-                    new View.OnTouchListener()
+                    new View.OnClickListener()
                     {
                         @Override
-                        public boolean onTouch( View view, MotionEvent motionEvent )
+                        public void onClick( View view )
                         {
                             AntiPatternsDebug.major.out("Item [" + index + "] in page [" + position + "] touched!");
 
@@ -58,11 +58,9 @@
                             (
                                 AntiPatternsMainScreenViewPagerFragment.this.getActivity(),
                                 AntiPatternsDetailScreen.class,
-                                -1,
-                                -1
+                                R.anim.push_left_in,
+                                R.anim.push_left_out
                             );
-
-                            return true;
                         }
                     }
                 );

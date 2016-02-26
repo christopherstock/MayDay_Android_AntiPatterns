@@ -12,14 +12,16 @@
     /**********************************************************************************************
     *   The startup activity class.
     *
-    *   TODO ASAP   Hold and pass all data in instance fields!
     *   TODO ASAP   Try animations between activity change.
-    *   TODO ASAP   Button in detailed view for returning.
-    *   TODO ASAP   Explicitly return to the last ViewPager page.
-    *   TODO ASAP   Resolve the ViewPager- cached views problem.
+    *   TODO HIGH   Button in detailed view for returning.
+    *   TODO HIGH   Check if the ViewPager TabStrip can be clickable!
+    *   TODO HIGH   Explicitly return to the last ViewPager page.
+    *   TODO HIGH   Resolve the ViewPager- cached views problem.
     *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
-    *   TODO ASAP   Support latest API Level.
+    *   TODO INIT   Hold and pass all data in instance fields!
+    *   TODO WEAK   Support latest API Level.
     *
+    *   DONE        Removed item press event colliding with swipe touch.
     *   DONE        Remove iml (trunk.iml) and unused module files on project root?
     *   DONE        Try PagerTabStrip.
     *   DONE        Created new icon.
@@ -93,6 +95,7 @@
 
             MenuInflater inflater = getMenuInflater();
             inflater.inflate( R.menu.menu_main, menu );
+
             return true;
         }
 /*

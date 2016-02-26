@@ -3,13 +3,6 @@
 
     import android.app.Activity;
     import android.os.Bundle;
-    import android.support.v4.app.FragmentActivity;
-    import android.support.v4.view.ViewPager;
-    import android.view.Menu;
-    import android.view.MenuInflater;
-    import android.view.MenuItem;
-
-    import de.mayflower.antipatterns.ui.adapter.AntiPatternsMainScreenViewPagerAdapter;
 
     /**********************************************************************************************
     *   The details screen that contains the detailed anti pattern description.
@@ -42,6 +35,6 @@
 
             AntiPatternsDebug.major.out( AntiPatternsDetailScreen.class + "::onStart()" );
 
-            setContentView(R.layout.antipatterns_detail_screen);
+            setContentView( R.layout.antipatterns_detail_screen );
         }
     }

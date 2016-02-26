@@ -33,8 +33,6 @@
             Intent launchActivity = new Intent( context, activityClassToLaunch );
             context.startActivity( launchActivity );
 
-if (true) return;
-
             //set animation if desired
             if ( animIn != -1 && animOut != -1 )
             {
