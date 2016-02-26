@@ -12,15 +12,17 @@
     /**********************************************************************************************
     *   The startup activity class.
     *
-    *   TODO HIGH   Button in detailed view for returning.
-    *   TODO HIGH   Check if the ViewPager TabStrip can be clickable!
+    *   TODO ASAP   Resolve the ViewPager- cached views problem.
+    *
+    *   TODO ASAP   Button in detailed view for returning.
     *   TODO HIGH   Explicitly return to the last ViewPager page.
     *   TODO HIGH   Animate returning from detailed view via back button hardkey.
-    *   TODO HIGH   Resolve the ViewPager- cached views problem.
     *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
     *   TODO INIT   Hold and pass all data in instance fields!
     *   TODO WEAK   Support latest API Level.
+    *   TODO WEAK   Remove all old classes and references.
     *
+    *   DONE        Check if the ViewPager TabStrip can be clickable!
     *   DONE        Try animations between activity change.
     *   DONE        Removed item press event colliding with swipe touch.
     *   DONE        Remove iml (trunk.iml) and unused module files on project root?
