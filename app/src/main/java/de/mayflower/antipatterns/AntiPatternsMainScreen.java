@@ -1,22 +1,23 @@
 
     package de.mayflower.antipatterns;
 
-    import  android.app.Activity;
     import  android.os.Bundle;
-    import android.support.v4.app.FragmentActivity;
-    import android.support.v4.view.ViewPager;
+    import  android.support.v4.app.FragmentActivity;
+    import  android.support.v4.view.ViewPager;
     import  android.view.Menu;
-    import android.view.MenuInflater;
+    import  android.view.MenuInflater;
+    import android.view.MenuItem;
 
-    import de.mayflower.antipatterns.ui.adapter.AntiPatternsMainScreenViewPagerAdapter;
+    import  de.mayflower.antipatterns.ui.adapter.AntiPatternsMainScreenViewPagerAdapter;
 
     /**********************************************************************************************
     *   The startup activity class.
     *
-    *   TODO HIGH   Try PagerTabStrip.
     *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
     *   TODO ASAP   Support latest API Level.
+    *   TODO ASAP   Remove iml (trunk.iml) files on project root?
     *
+    *   DONE        Try PagerTabStrip.
     *   DONE        Created new icon.
     *   DONE        Removed old company name.
     *   DONE        Pruned old specifier everywhere!
@@ -45,7 +46,7 @@
             //invoke super method
             super.onCreate( savedInstanceState );
 
-            AntiPatternsDebug.major.out( "AntiPatterns::onCreate()" );
+            AntiPatternsDebug.major.out( AntiPatternsMainScreen.class + "::onCreate()" );
 
             //init all systems
             AntiPatternsSystems.init( this );
@@ -60,7 +61,7 @@
             //invoke super method
             super.onStart();
 
-            AntiPatternsDebug.major.out( "AntiPatterns::onStart()" );
+            AntiPatternsDebug.major.out( AntiPatternsMainScreen.class + "::onStart()" );
 
             //submit acclaim message in output and console
             String acclaim = "Welcome to [ " + AntiPatternsVersion.getVersion() + " ]";
@@ -76,17 +77,6 @@
 
             ViewPager viewPager = (ViewPager)findViewById( R.id.main_screen_pager );
             viewPager.setAdapter(pagerAdapter);
-
-
-
-
-
-
-
-
-            //launch initial state 'acclaim'
-            //LibLauncher.launchActivity( this, AntiPatternsStateAcclaim.class, R.anim.fade_in, R.anim.fade_out );
-
         }
 
         /*****************************************************************************
@@ -95,11 +85,34 @@
         @Override
         public boolean onCreateOptionsMenu( Menu menu )
         {
-            AntiPatternsDebug.major.out( "AntiPatterns::onCreateOptionsMenu()" );
+            AntiPatternsDebug.major.out( AntiPatternsMainScreen.class + "::onCreateOptionsMenu()" );
 
             MenuInflater inflater = getMenuInflater();
             inflater.inflate( R.menu.menu_main, menu );
             return true;
         }
+/*
+        @Override
+        public boolean onCreateOptionsMenu(Menu menu) {
+            // Inflate the menu; this adds items to the action bar if it is present.
+            getMenuInflater().inflate(R.menu.gesture, menu);
+            return true;
+        }
+*/
+        @Override
+        public boolean onOptionsItemSelected(MenuItem item)
+        {
+            AntiPatternsDebug.major.out( AntiPatternsMainScreen.class + "::onOptionsItemSelected()" );
 
+            // Handle action bar item clicks here. The action bar will
+            // automatically handle clicks on the Home/Up button, so long
+            // as you specify a parent activity in AndroidManifest.xml.
+/*
+            int id = item.getItemId();
+            if (id == R.id.action_settings) {
+                return true;
+            }
+*/
+            return super.onOptionsItemSelected(item);
+        }
     }

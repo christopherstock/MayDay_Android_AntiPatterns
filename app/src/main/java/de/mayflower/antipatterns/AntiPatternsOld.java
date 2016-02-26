@@ -33,7 +33,7 @@
             //assign singleton context
             singleton = this;
 
-            AntiPatternsDebug.major.out( "AntiPatterns::onCreate()" );
+            AntiPatternsDebug.major.out( AntiPatternsOld.class + "::onCreate()" );
 
             //init all systems
             AntiPatternsSystems.init(this);

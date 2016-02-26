@@ -2,12 +2,11 @@
     package de.mayflower.antipatterns.ui.adapter;
 
     import android.content.Context;
-    import android.os.Bundle;
     import android.support.v4.app.Fragment;
     import android.support.v4.app.FragmentManager;
     import android.support.v4.app.FragmentPagerAdapter;
 
-    import de.mayflower.antipatterns.AntiPatternsViewPagerFragment;
+    import de.mayflower.antipatterns.AntiPatternsMainScreenViewPagerFragment;
 
     /************************************************************************
     *   The adapter for the main screen view pager.
@@ -28,14 +27,7 @@
         @Override
         public Fragment getItem( int position )
         {
-            Fragment fragment = new AntiPatternsViewPagerFragment();
-
-            Bundle args = new Bundle();
-            args.putInt( "page_position", position + 1 );
-
-            fragment.setArguments( args );
-
-            return fragment;
+            return new AntiPatternsMainScreenViewPagerFragment( position );
         }
 
         @Override
