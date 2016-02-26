@@ -7,6 +7,8 @@
         <item>eus</item>
         <item>dvs</item>
         <item>smf</item>
+        <item>wts</item>
+        <item>ucs</item>
     </string-array>
 
     <string name="antipattern_name_rds">Remote Daily Standup</string>
@@ -44,6 +46,43 @@
         <item>Halte die Zeit für die Planung kurz</item>
         <item>Fokussiere Dich auf die Fertigstellung der User Stories</item>
         <item>Nutze (und optimiere gegebenenfalls) Metriken wie die Cycle Time</item>
+    </string-array>
+
+    <string name="antipattern_name_wts">Waterscrum</string>
+    <string-array name="antipattern_symptom_wts">
+        <item>Die Flexibilität von agilen Methoden wird über ein Risikomanagement mit Meilensteinen (quasi einem Checkpoint-Prozess) eingeschränkt</item>
+    </string-array>
+    <string-array name="antipattern_remedy_wts">
+        <item>Gestalte das Risikomanagement mit schnellen Releases</item>
+        <item>Orientiere Dich dazu am Kundenfeedback</item>
+    </string-array>
+
+    <string name="antipattern_name_ucs">Use Case Stories</string>
+    <string-array name="antipattern_symptom_ucs">
+        <item>User Stories sind bereits so detailliert vorgegeben, dass das Team sie als Vorgabe sieht und nicht mehr diskutiert</item>
+    </string-array>
+    <string-array name="antipattern_remedy_ucs">
+        <item>Begreife User Stories als Promise of Conversation</item>
+        <item>Steige zum Sprint-Beginn mit einer Diskussion über die Story ein, statt direkt die Akzeptanzkriterien durchzugehen</item>
+    </string-array>
+    
+    <string name="antipattern_name_ipl">Implicit Leadership</string>
+    <string-array name="antipattern_symptom_ipl">
+        <item>Das Team richtet sich allein nach dem anerkannten Kollegen ohne Commitment auf die konkrete Implementierung; auch um Konfliktsituationen zu vermeiden</item>
+        <item>Es gibt keinen teamübergrei­fenden Know-how-Aufbau</item>
+    </string-array>
+    <string-array name="antipattern_remedy_ipl">
+        <item>Trefft Entscheidungen gemeinsam</item>
+        <item>Nutzt Pair Programming</item>
+        <item>Nutzt  agiles Modelling</item>
+    </string-array>
+
+    <string name="antipattern_name_"></string>
+    <string-array name="antipattern_symptom_">
+        <item></item>
+    </string-array>
+    <string-array name="antipattern_remedy_">
+        <item></item>
     </string-array>
 
 </resources>
