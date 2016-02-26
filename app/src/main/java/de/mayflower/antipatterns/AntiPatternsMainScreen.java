@@ -7,24 +7,22 @@
     import  android.view.Menu;
     import  android.view.MenuInflater;
     import  android.view.MenuItem;
-
     import  de.mayflower.antipatterns.ui.adapter.AntiPatternsMainScreenViewPagerAdapter;
 
     /**********************************************************************************************
     *   The startup activity class.
     *
-    *   TODO ASAP   Resolve the ViewPager- cached views problem.
-    *
     *   TODO ASAP   Button in detailed view for returning.
-    *   TODO HIGH   Explicitly return to the last ViewPager page.
-    *   TODO HIGH   Animate returning from detailed view via back button hardkey.
-    *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
-    *   TODO INIT   Hold and pass all data in instance fields!
+    *   TODO WEAK   Hold and pass all data in instance fields!
     *   TODO WEAK   Support latest API Level.
     *   TODO WEAK   Remove all old classes and references.
+    *   TODO WEAK   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
     *
-    *   DONE        Check if the ViewPager TabStrip can be clickable!
-    *   DONE        Try animations between activity change.
+    *   DONE        Fixed returning to the last ViewPager page.
+    *   DONE        Animated returning from detailed view via back button hardkey.
+    *   DONE        Resolved the ViewPager- cached views problem.
+    *   DONE        Checkd if the ViewPager TabStrip can be clickable!
+    *   DONE        Tried animations between activity change.
     *   DONE        Removed item press event colliding with swipe touch.
     *   DONE        Remove iml (trunk.iml) and unused module files on project root?
     *   DONE        Try PagerTabStrip.

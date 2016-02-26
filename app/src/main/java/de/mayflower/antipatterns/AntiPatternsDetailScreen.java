@@ -1,8 +1,10 @@
 
     package de.mayflower.antipatterns;
 
-    import android.app.Activity;
-    import android.os.Bundle;
+    import  android.app.Activity;
+    import  android.os.Bundle;
+    import de.mayflower.lib.api.LibAPI;
+    import de.mayflower.lib.api.LibModernAPI5;
 
     /**********************************************************************************************
     *   The details screen that contains the detailed anti pattern description.
@@ -22,6 +24,8 @@
             super.onCreate( savedInstanceState );
 
             AntiPatternsDebug.major.out( AntiPatternsDetailScreen.class + "::onCreate()" );
+
+            setContentView( R.layout.antipatterns_detail_screen );
         }
 
         /*****************************************************************************
@@ -35,6 +39,23 @@
 
             AntiPatternsDebug.major.out( AntiPatternsDetailScreen.class + "::onStart()" );
 
-            setContentView( R.layout.antipatterns_detail_screen );
+
+        }
+
+        @Override
+        public void onBackPressed()
+        {
+            super.onBackPressed();
+
+            //only operative since API-level 5
+            if ( !LibAPI.isSdkLevelLower5() )
+            {
+                LibModernAPI5.overridePendingTransition
+                (
+                    this,
+                    R.anim.push_right_in,
+                    R.anim.push_right_out
+                );
+            }
         }
     }
