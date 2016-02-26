@@ -457,7 +457,7 @@
         }
 
         /*****************************************************************************************
-        *   4.12 - Requests to send feedback for one image to Synapsy ( Abuse, Spam etc. ).
+        *   4.12 - Requests to send feedback for one image to our company. ( Abuse, Spam etc. ).
         *
         *   @param  activity    The according activity context.
         *   @param  category    The category group for this feedback.

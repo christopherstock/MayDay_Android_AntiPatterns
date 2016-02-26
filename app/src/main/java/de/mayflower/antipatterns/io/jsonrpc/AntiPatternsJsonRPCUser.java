@@ -97,7 +97,7 @@
         *   3.3 - Requests to send feedback.
         *
         *   @param  activity    The according activity context.
-        *   @param  feedback    The general feedback to send to Synapsy.
+        *   @param  feedback    The general feedback to send to our company.
         *   @return             The response JSONObject.
         *   @throws Throwable   If any error occurs on connecting or streaming JSON-RPC-data.
         *****************************************************************************************/

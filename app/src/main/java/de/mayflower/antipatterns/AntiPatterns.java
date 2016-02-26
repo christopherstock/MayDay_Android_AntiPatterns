@@ -11,14 +11,14 @@
     /**********************************************************************************************
     *   The startup activity class.
     *
-    *   TODO ASAP   Create mayflower certification file.
-    *   TODO ASAP   Test on device!
-    *   TODO ASAP   Prune old specifier everywhere!
-    *   TODO ASAP   Remove specifier 'synapsy'.
-    *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
-    *   TODO ASAP   Support latest API Level.
-    *   TODO ASAP   Create new icon.
-    *
+     *   TODO ASAP   Remove old company name.
+     *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
+     *   TODO ASAP   Support latest API Level.
+     *   TODO ASAP   Create new icon.
+     *
+    *   DONE        Prune old specifier everywhere!
+    *   DONE        Test on device!
+    *   DONE        Create mayflower certification file.
     *   DONE        Renamed all classes to 'AntiPatterns'.
     *   DONE        Fixed linebreaks in all files.
     *   DONE        Pruned class header in all files.
