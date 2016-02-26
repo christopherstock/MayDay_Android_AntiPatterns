@@ -3,11 +3,11 @@ apply plugin: 'com.android.application'
 android {
 
     signingConfigs {
-        synapsy {
-            keyAlias 'synapsy'
-            keyPassword 'j3lw86cr3ms9i6ql5x8ubv5wb042lrr7'
-            storeFile file('C:/Users/Stock/workspaces/android/SynapsyPicFood/_BAUSTELLE/certification/synapsy.keystore')
-            storePassword 'heaven'
+        mayflower {
+            keyAlias 'mayflower'
+            keyPassword 'lde903ufm945njg035l2'
+            storePassword 'k5nb9b8njt9hj59kg1rgi'
+            storeFile file('C:/Users/Stock/workspaces/android/MayDay_Android_AntiPatterns/_ASSETS/cert/keystore.jks')
         }
     }
     compileSdkVersion 22
@@ -19,7 +19,7 @@ android {
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
-        signingConfig signingConfigs.synapsy
+        signingConfig signingConfigs.mayflower
     }
     buildTypes {
         release {
