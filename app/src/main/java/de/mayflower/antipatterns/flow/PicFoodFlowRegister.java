@@ -1,35 +1,32 @@
-/*  $Id: PicFoodFlowRegister.java 50640 2013-08-20 08:28:37Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.flow;
 
-    import de.mayflower.antipatterns.*;
-import de.mayflower.antipatterns.PicFoodProject.Features;
-import  de.mayflower.antipatterns.PicFoodSettings.*;
-import  de.mayflower.antipatterns.action.*;
-import  de.mayflower.antipatterns.idm.*;
-import  de.mayflower.antipatterns.io.*;
-import de.mayflower.antipatterns.io.PicFoodSave.SaveKey;
-import  de.mayflower.antipatterns.io.jsonrpc.*;
-import  de.mayflower.antipatterns.state.*;
-import  de.mayflower.antipatterns.state.auth.*;
-import  org.json.*;
-import  android.app.*;
-import  android.content.*;
-import  android.graphics.*;
-import  android.net.*;
-import  de.mayflower.lib.io.*;
-import  de.mayflower.lib.ui.*;
-import  de.mayflower.lib.ui.dialog.*;
-import  de.mayflower.lib.util.*;
-import de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtException;
+    import  de.mayflower.antipatterns.*;
+    import  de.mayflower.antipatterns.PicFoodProject.Features;
+    import  de.mayflower.antipatterns.PicFoodSettings.*;
+    import  de.mayflower.antipatterns.action.*;
+    import  de.mayflower.antipatterns.idm.*;
+    import  de.mayflower.antipatterns.io.*;
+    import  de.mayflower.antipatterns.io.PicFoodSave.SaveKey;
+    import  de.mayflower.antipatterns.io.jsonrpc.*;
+    import  de.mayflower.antipatterns.state.*;
+    import  de.mayflower.antipatterns.state.auth.*;
+    import  org.json.*;
+    import  android.app.*;
+    import  android.content.*;
+    import  android.graphics.*;
+    import  android.net.*;
+    import  de.mayflower.lib.io.*;
+    import  de.mayflower.lib.ui.*;
+    import  de.mayflower.lib.ui.dialog.*;
+    import  de.mayflower.lib.util.*;
+    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtException;
 
     /**********************************************************************************************
     *   Holds data for the state 'register'.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50640 $ $Date: 2013-08-20 10:28:37 +0200 (Di, 20 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/flow/PicFoodFlowRegister.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodFlowRegister
     {

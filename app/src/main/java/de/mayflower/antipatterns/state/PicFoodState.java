@@ -1,17 +1,13 @@
-/*  $Id: PicFoodState.java 50543 2013-08-09 13:46:59Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.state;
 
-    import de.mayflower.antipatterns.*;
+    import  de.mayflower.antipatterns.*;
     import  de.mayflower.antipatterns.action.*;
     import  de.mayflower.antipatterns.state.acclaim.*;
     import  de.mayflower.antipatterns.state.auth.*;
     import  de.mayflower.antipatterns.state.pivotal.*;
-
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
     import  de.mayflower.lib.ui.*;
-
     import  android.app.Activity;
     import  android.view.*;
     import  android.widget.*;
@@ -19,9 +15,8 @@
     /**********************************************************************************************
     *   This class sets up every Actvity, which represent one different state of the application.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50543 $ $Date: 2013-08-09 15:46:59 +0200 (Fr, 09 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/state/PicFoodState.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public enum PicFoodState implements LibState
     {

@@ -25,9 +25,8 @@
     /**********************************************************************************************
     *   Holds all actions the user can trigger.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50667 $ $Date: 2013-08-22 09:22:59 +0200 (Do, 22 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/action/PicFoodActionPush.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public enum PicFoodActionPush implements Runnable
     {

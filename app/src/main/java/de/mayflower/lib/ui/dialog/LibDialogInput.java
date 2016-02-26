@@ -1,21 +1,18 @@
-/*  $Id: LibDialogInput.java 50571 2013-08-13 09:11:29Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.ui.dialog;
 
     import  android.app.*;
     import  android.content.*;
     import  android.view.*;
     import  android.widget.*;
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
     import  de.mayflower.lib.ui.*;
 
     /*****************************************************************************
     *   Handles input dialogs.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50571 $ $Date: 2013-08-13 11:11:29 +0200 (Di, 13 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/ui/dialog/LibDialogInput.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     *****************************************************************************/
     public abstract class LibDialogInput
     {

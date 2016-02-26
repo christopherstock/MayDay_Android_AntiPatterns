@@ -5,9 +5,8 @@
     *   An intentional exception being launched for debug purposes.
     *   This exception shall be thrown if a http response delivers a content-type that is not expected.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50257 $ $Date: 2013-07-30 12:57:31 +0200 (Di, 30 Jul 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/util/LibUnexpectedContentTypeException.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     *************************************************************************************************/
     public class LibUnexpectedContentTypeException extends RuntimeException
     {

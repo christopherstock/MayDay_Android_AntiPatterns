@@ -1,6 +1,4 @@
-/*  $Id: PicFoodFlowNewEntry.java 50546 2013-08-09 14:19:00Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.flow;
 
     import de.mayflower.antipatterns.*;
@@ -26,9 +24,8 @@
     /**********************************************************************************************
     *   Holds data for the state 'new entry'.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50546 $ $Date: 2013-08-09 16:19:00 +0200 (Fr, 09 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/flow/PicFoodFlowNewEntry.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodFlowNewEntry
     {

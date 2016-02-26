@@ -1,20 +1,16 @@
-/*  $Id: LibViewPagerAdapter.java 50587 2013-08-14 09:04:26Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.ui.adapter;
 
     import  android.os.Parcelable;
     import  android.support.v4.view.PagerAdapter;
     import  android.view.*;
-
     import  de.mayflower.lib.ui.*;
 
     /************************************************************************
     *   Represents the adapter that serves a {@link android.support.v4.view.ViewPager} with data.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50587 $ $Date: 2013-08-14 11:04:26 +0200 (Mi, 14 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/ui/adapter/LibViewPagerAdapter.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     ************************************************************************/
     public class LibViewPagerAdapter extends PagerAdapter
     {

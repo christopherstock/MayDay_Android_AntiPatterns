@@ -1,10 +1,8 @@
-/*  $Id: PicFoodUI.java 50547 2013-08-09 14:52:33Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.ui;
 
     import  java.util.*;
-    import de.mayflower.antipatterns.*;
+    import  de.mayflower.antipatterns.*;
     import  de.mayflower.antipatterns.PicFoodProject.Features;
     import  de.mayflower.antipatterns.PicFoodSettings.Image;
     import  de.mayflower.antipatterns.ui.adapter.*;
@@ -12,16 +10,15 @@
     import  android.content.*;
     import  android.graphics.drawable.*;
     import  android.widget.*;
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
     import  de.mayflower.lib.ui.*;
     import  de.mayflower.lib.ui.adapter.*;
 
     /*****************************************************************************
     *   Delivers ui information that is specific for the PicFood project.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50547 $ $Date: 2013-08-09 16:52:33 +0200 (Fr, 09 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/ui/PicFoodUI.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     *****************************************************************************/
     public abstract class PicFoodUI
     {

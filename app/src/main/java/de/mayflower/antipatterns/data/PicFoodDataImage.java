@@ -1,33 +1,30 @@
-/*  $Id: PicFoodDataImage.java 50644 2013-08-20 13:37:58Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.data;
 
     import  org.json.*;
-import de.mayflower.antipatterns.*;
-import  de.mayflower.antipatterns.PicFoodProject.*;
-import  de.mayflower.antipatterns.PicFoodSettings.*;
-import  de.mayflower.antipatterns.action.*;
-import  de.mayflower.antipatterns.flow.*;
-import  de.mayflower.antipatterns.idm.*;
-import  de.mayflower.antipatterns.io.*;
-import  de.mayflower.antipatterns.ui.*;
-import  de.mayflower.antipatterns.ui.PicFoodUI.*;
-import  android.app.*;
-import  android.graphics.drawable.*;
-import  android.view.*;
-import  android.widget.*;
-import de.mayflower.lib.*;
-import  de.mayflower.lib.io.*;
-import  de.mayflower.lib.ui.*;
-import  de.mayflower.lib.ui.widget.*;
+    import  de.mayflower.antipatterns.*;
+    import  de.mayflower.antipatterns.PicFoodProject.*;
+    import  de.mayflower.antipatterns.PicFoodSettings.*;
+    import  de.mayflower.antipatterns.action.*;
+    import  de.mayflower.antipatterns.flow.*;
+    import  de.mayflower.antipatterns.idm.*;
+    import  de.mayflower.antipatterns.io.*;
+    import  de.mayflower.antipatterns.ui.*;
+    import  de.mayflower.antipatterns.ui.PicFoodUI.*;
+    import  android.app.*;
+    import  android.graphics.drawable.*;
+    import  android.view.*;
+    import  android.widget.*;
+    import  de.mayflower.lib.*;
+    import  de.mayflower.lib.io.*;
+    import  de.mayflower.lib.ui.*;
+    import  de.mayflower.lib.ui.widget.*;
 
     /**********************************************************************************************
     *   Represents all vital information for one PicFood image.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50644 $ $Date: 2013-08-20 15:37:58 +0200 (Di, 20 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/data/PicFoodDataImage.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodDataImage implements PicFoodData
     {

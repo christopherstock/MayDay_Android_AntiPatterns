@@ -1,9 +1,7 @@
-/*  $Id: PicFoodFlowProfile.java 50564 2013-08-12 11:44:08Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.flow;
 
-    import de.mayflower.antipatterns.*;
+    import  de.mayflower.antipatterns.*;
     import  de.mayflower.antipatterns.action.*;
     import  de.mayflower.antipatterns.data.*;
     import  de.mayflower.antipatterns.idm.*;
@@ -12,8 +10,7 @@
     import  de.mayflower.antipatterns.state.pivotal.*;
     import  org.json.*;
     import  android.app.*;
-
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
     import  de.mayflower.lib.ui.*;
     import  de.mayflower.lib.ui.dialog.*;
     import  de.mayflower.lib.util.*;
@@ -22,9 +19,8 @@
     /**********************************************************************************************
     *   Manages the users' profiles.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50564 $ $Date: 2013-08-12 13:44:08 +0200 (Mo, 12 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/flow/PicFoodFlowProfile.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodFlowProfile
     {

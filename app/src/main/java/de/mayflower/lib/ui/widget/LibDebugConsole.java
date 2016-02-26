@@ -1,6 +1,4 @@
-/*  $Id: LibDebugConsole.java 50541 2013-08-09 12:37:45Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.ui.widget;
 
     import  java.util.*;
@@ -13,9 +11,8 @@
     *   Represents a debug-console that can be connected to a {@link TextView}
     *   and be used to show output on the screen of a running application.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50541 $ $Date: 2013-08-09 14:37:45 +0200 (Fr, 09 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/ui/widget/LibDebugConsole.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     ************************************************************************/
     public class LibDebugConsole
     {

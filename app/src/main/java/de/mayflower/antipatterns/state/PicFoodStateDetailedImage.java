@@ -1,9 +1,7 @@
-/*  $Id: PicFoodStateDetailedImage.java 50542 2013-08-09 13:12:27Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.state;
 
-    import de.mayflower.antipatterns.*;
+    import  de.mayflower.antipatterns.*;
     import  de.mayflower.antipatterns.action.*;
     import  de.mayflower.antipatterns.state.PicFoodState.*;
     import  android.app.*;
@@ -13,9 +11,8 @@
     /**********************************************************************************************
     *   The activity 'detailed image'.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50542 $ $Date: 2013-08-09 15:12:27 +0200 (Fr, 09 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/state/PicFoodStateDetailedImage.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodStateDetailedImage extends Activity
     {

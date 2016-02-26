@@ -1,6 +1,4 @@
-/*  $Id: PicFoodDataComment.java 50587 2013-08-14 09:04:26Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.data;
 
     import de.mayflower.antipatterns.*;
@@ -19,9 +17,8 @@
     /**********************************************************************************************
     *   Represents one comment. Each comment is assigned to one specific image.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50587 $ $Date: 2013-08-14 11:04:26 +0200 (Mi, 14 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/data/PicFoodDataComment.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodDataComment implements PicFoodData
     {

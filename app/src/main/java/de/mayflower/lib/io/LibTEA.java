@@ -1,20 +1,16 @@
-/*  $Id: LibTEA.java 50543 2013-08-09 13:46:59Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.io;
 
     import  java.io.*;
-
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
     import  de.mayflower.lib.ui.*;
 
     /*******************************************************************************************
     *   The Tiny Encryption Algorithm is a simple encryption and decryption-system.
     *   More information can be found on {@link "http://de.wikipedia.org/wiki/Tiny_Encryption_Algorithm"}.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50543 $ $Date: 2013-08-09 15:46:59 +0200 (Fr, 09 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/io/LibTEA.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     *******************************************************************************************/
     public final class LibTEA
     {

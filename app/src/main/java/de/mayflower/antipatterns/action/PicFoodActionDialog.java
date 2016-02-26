@@ -1,6 +1,4 @@
-/*  $Id: PicFoodActionDialog.java 50571 2013-08-13 09:11:29Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.action;
 
     import  android.view.*;
@@ -15,9 +13,8 @@
     /**********************************************************************************************
     *   Holds all actions the user can trigger.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50571 $ $Date: 2013-08-13 11:11:29 +0200 (Di, 13 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/action/PicFoodActionDialog.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public enum PicFoodActionDialog implements Runnable
     {

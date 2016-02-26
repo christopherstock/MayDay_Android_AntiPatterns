@@ -1,10 +1,8 @@
-/*  $Id: PicFoodAdapterManager.java 50543 2013-08-09 13:46:59Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.ui.adapter;
 
     import  java.util.*;
-    import de.mayflower.antipatterns.*;
+    import  de.mayflower.antipatterns.*;
     import  de.mayflower.antipatterns.PicFoodProject.*;
     import  de.mayflower.antipatterns.io.*;
     import  de.mayflower.antipatterns.state.*;
@@ -13,17 +11,15 @@
     import  android.content.*;
     import  android.view.*;
     import  android.widget.*;
-
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
     import  de.mayflower.lib.ui.*;
     import  de.mayflower.lib.ui.adapter.*;
 
     /************************************************************************
     *   Manages all GridViews this application makes use of.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50543 $ $Date: 2013-08-09 15:46:59 +0200 (Fr, 09 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/ui/adapter/PicFoodAdapterManager.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     ************************************************************************/
     public class PicFoodAdapterManager
     {

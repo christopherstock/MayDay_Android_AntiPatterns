@@ -1,6 +1,4 @@
-/*  $Id: PicFoodCache.java 50546 2013-08-09 14:19:00Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.io;
 
     import  java.io.*;
@@ -17,8 +15,7 @@
     import  android.graphics.*;
     import  android.graphics.drawable.*;
     import  android.text.*;
-
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
     import  de.mayflower.lib.io.*;
     import  de.mayflower.lib.ui.*;
     import  de.mayflower.lib.ui.dialog.*;
@@ -26,9 +23,8 @@
     /**********************************************************************************************
     *   Accesses the external cache system.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50546 $ $Date: 2013-08-09 16:19:00 +0200 (Fr, 09 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/io/PicFoodCache.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public abstract class PicFoodCache
     {

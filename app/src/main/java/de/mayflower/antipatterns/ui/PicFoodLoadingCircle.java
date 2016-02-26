@@ -1,15 +1,12 @@
-/*  $Id: PicFoodLoadingCircle.java 50543 2013-08-09 13:46:59Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.ui;
 
-    import de.mayflower.antipatterns.*;
+    import  de.mayflower.antipatterns.*;
     import  android.app.*;
     import  android.view.*;
     import  android.view.animation.*;
     import  android.widget.*;
-
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
 
     /*****************************************************************************
     *   Manages all tasks that are associated with displaying and changing loading circles.

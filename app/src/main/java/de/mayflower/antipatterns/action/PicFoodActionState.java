@@ -1,6 +1,4 @@
-/*  $Id: PicFoodActionState.java 50806 2013-09-02 12:28:08Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.action;
 
     import de.mayflower.antipatterns.*;
@@ -19,9 +17,8 @@
     /**********************************************************************************************
     *   Holds all actions the user can trigger.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50806 $ $Date: 2013-09-02 14:28:08 +0200 (Mo, 02 Sep 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/action/PicFoodActionState.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public enum PicFoodActionState implements Runnable
     {

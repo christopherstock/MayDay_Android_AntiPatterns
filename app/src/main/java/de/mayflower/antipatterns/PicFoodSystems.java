@@ -18,9 +18,8 @@
     *   All independent systems the application is using.
     *   All systems use lazy-initialization and only once instance is hold per system
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50634 $ $Date: 2013-08-19 15:43:10 +0200 (Mo, 19 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/PicFoodSystems.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     *****************************************************************************/
     public class PicFoodSystems
     {

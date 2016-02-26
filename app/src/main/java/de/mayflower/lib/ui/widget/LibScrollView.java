@@ -1,6 +1,4 @@
-/*  $Id: LibScrollView.java 50447 2013-08-06 14:15:19Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.ui.widget;
 
     import  android.content.*;
@@ -12,9 +10,8 @@
     /******************************************************************************************************
     *   Represents a horizontal scrolling view.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50447 $ $Date: 2013-08-06 16:15:19 +0200 (Di, 06 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/ui/widget/LibScrollView.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     ******************************************************************************************************/
     public class LibScrollView extends ScrollView
     {

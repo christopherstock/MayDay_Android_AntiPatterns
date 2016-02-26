@@ -1,6 +1,4 @@
-/*  $Id: LibDialogInputHandler.java 50578 2013-08-13 12:46:00Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.ui.dialog;
 
     import  android.content.*;
@@ -14,9 +12,8 @@
     *   Handles the InputField in input dialogs.
     *   Manages to set the same input string again ( in case of a connection problem ).
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50578 $ $Date: 2013-08-13 14:46:00 +0200 (Di, 13 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/ui/dialog/LibDialogInputHandler.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     *****************************************************************************/
     public final class LibDialogInputHandler
     {

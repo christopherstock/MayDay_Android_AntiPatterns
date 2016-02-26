@@ -11,18 +11,21 @@
     /**********************************************************************************************
     *   The startup activity class.
     *
+    *   TODO ASAP   Alter doc-block in all classes (author/version)
+    *   TODO ASAP   Rename all classes.
+    *   TODO ASAP   Remove specifier 'synapsy'.
+    *   TODO ASAP   Prune specifier 'PicFood' everywhere!
     *   TODO ASAP   Fix linebreaks in all files.
-    *   TODO ASAP   Rename Library classes package names.
-    *   TODO ASAP   Remove facebook API.
     *   TODO ASAP   Prune class header in all files.
+    *   TODO ASAP   Remove '$' everywhere!
     *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
-    *   TODO ASAP   Facebook button in state 'register' is fuzzy.
-    *   TODO ASAP   Import Facebook-data: Try to pick email and username!
     *
     *   DONE        Setup IDE and code inspection.
+    *   DONE        Rename Library classes and main app's package names.
+    *   DONE        Removed external Facebook- and Google-Cloud-Messaging-API.
     *
     *   @author     Christopher Stock
-    *   @version    0.1
+    *   @version    1.0
     ***********************************************************************************************/
     public class PicFood extends Activity
     {

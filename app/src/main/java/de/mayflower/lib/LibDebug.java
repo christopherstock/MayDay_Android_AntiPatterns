@@ -6,9 +6,8 @@
     /*********************************************************************************
     *   This class templates a debug system.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50324 $ $Date: 2013-08-01 10:18:12 +0200 (Do, 01 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/LibDebug.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     *********************************************************************************/
     public interface LibDebug
     {

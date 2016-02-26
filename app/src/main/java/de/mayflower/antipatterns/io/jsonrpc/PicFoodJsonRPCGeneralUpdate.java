@@ -1,9 +1,7 @@
-/*  $Id: PicFoodJsonRPCGeneralUpdate.java 50393 2013-08-05 07:13:28Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.io.jsonrpc;
 
-    import de.mayflower.antipatterns.*;
+    import  de.mayflower.antipatterns.*;
     import  de.mayflower.antipatterns.PicFoodProject.*;
     import  de.mayflower.antipatterns.io.*;
     import  org.apache.http.*;
@@ -14,9 +12,8 @@
     /*****************************************************************************************
     *   7. Handles all Download-requests.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50393 $ $Date: 2013-08-05 09:13:28 +0200 (Mo, 05 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/io/jsonrpc/PicFoodJsonRPCGeneralUpdate.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     *****************************************************************************************/
     public class PicFoodJsonRPCGeneralUpdate
     {

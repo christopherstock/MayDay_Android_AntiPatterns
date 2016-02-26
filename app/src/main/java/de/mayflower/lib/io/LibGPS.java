@@ -1,6 +1,4 @@
-/*  $Id: LibGPS.java 50667 2013-08-22 07:22:59Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.io;
 
     import  java.util.*;
@@ -13,9 +11,8 @@
     /**********************************************************************************************
     *   Delivers the user's current GPS coordinates.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50667 $ $Date: 2013-08-22 09:22:59 +0200 (Do, 22 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/io/LibGPS.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class LibGPS implements LocationListener
     {

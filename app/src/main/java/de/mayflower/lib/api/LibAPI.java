@@ -1,14 +1,11 @@
-/*  $Id: LibAPI.java 50182 2013-07-25 09:44:38Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.api;
 
     /*********************************************************************************
     *   Determines device api.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50182 $ $Date: 2013-07-25 11:44:38 +0200 (Do, 25 Jul 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/api/LibAPI.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     *********************************************************************************/
     public abstract class LibAPI
     {

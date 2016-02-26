@@ -4,9 +4,8 @@
     /*************************************************************************************************
     *   An intentional exception being launched for debug purposes.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50587 $ $Date: 2013-08-14 11:04:26 +0200 (Mi, 14 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/util/LibIntentionalException.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     *************************************************************************************************/
     public class LibIntentionalException extends RuntimeException
     {

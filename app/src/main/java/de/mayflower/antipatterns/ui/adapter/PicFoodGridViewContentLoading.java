@@ -1,25 +1,21 @@
-/*  $Id: PicFoodGridViewContentLoading.java 50541 2013-08-09 12:37:45Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.ui.adapter;
 
-    import de.mayflower.antipatterns.*;
+    import  de.mayflower.antipatterns.*;
     import  de.mayflower.antipatterns.action.*;
     import  de.mayflower.antipatterns.ui.*;
     import  de.mayflower.antipatterns.ui.adapter.PicFoodAdapterManager.GridViews;
     import  android.view.*;
     import  android.widget.*;
-
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
     import  de.mayflower.lib.ui.*;
     import  de.mayflower.lib.ui.adapter.*;
 
     /************************************************************************
     *   Represents a GridView item that represents a spinning loading circle.
     *
-    *   @author         $Author: schristopher $
-    *   @version        $Rev: 50541 $ $Date: 2013-08-09 14:37:45 +0200 (Fr, 09 Aug 2013) $
-    *   @see            "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/ui/adapter/PicFoodGridViewContentLoading.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     ************************************************************************/
     public class PicFoodGridViewContentLoading implements LibAdapterData
     {

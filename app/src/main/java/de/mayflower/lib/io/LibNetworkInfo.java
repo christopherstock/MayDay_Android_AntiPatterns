@@ -1,21 +1,17 @@
-/*  $Id: LibNetworkInfo.java 50543 2013-08-09 13:46:59Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.io;
 
     import  android.content.*;
     import  android.telephony.*;
-
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
 
     /************************************************************************
     *   The roaming system checks if the user is in roaming state.
     *   This can be determined by comparing the current mobile carrier's country-
     *   and network-code with a reference list.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50543 $ $Date: 2013-08-09 15:46:59 +0200 (Fr, 09 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/io/LibNetworkInfo.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     ************************************************************************/
     public class LibNetworkInfo
     {

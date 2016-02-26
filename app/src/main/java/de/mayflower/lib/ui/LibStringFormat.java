@@ -1,6 +1,4 @@
-/*  $Id: LibStringFormat.java 50361 2013-08-02 09:58:13Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.ui;
 
     import  java.text.*;
@@ -9,9 +7,8 @@
     /*******************************************************************************************************
     *   Formats strings and date objects.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50361 $ $Date: 2013-08-02 11:58:13 +0200 (Fr, 02 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/ui/LibStringFormat.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     ********************************************************************************************************/
     public class LibStringFormat
     {

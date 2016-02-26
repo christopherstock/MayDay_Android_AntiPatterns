@@ -1,13 +1,10 @@
-/*  $Id: PicFoodFlowImageUpdate.java 50591 2013-08-14 11:50:47Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.flow;
 
     import  org.json.*;
-
     import  de.mayflower.lib.io.*;
     import  de.mayflower.lib.util.LibUncaughtExceptionHandler.UncaughtException;
-    import de.mayflower.antipatterns.*;
+    import  de.mayflower.antipatterns.*;
     import  de.mayflower.antipatterns.action.*;
     import  de.mayflower.antipatterns.data.*;
     import  de.mayflower.antipatterns.data.PicFoodDataImage.ContentImageStyle;
@@ -22,9 +19,8 @@
     *   Specifies the update flow after an image action ( like, rate, comment )
     *   has been performed. Changing the image will cause a different flow than removing it.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50591 $ $Date: 2013-08-14 13:50:47 +0200 (Mi, 14 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/flow/PicFoodFlowImageUpdate.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodFlowImageUpdate
     {

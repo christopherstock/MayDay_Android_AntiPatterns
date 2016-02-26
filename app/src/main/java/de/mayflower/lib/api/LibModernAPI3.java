@@ -1,6 +1,4 @@
-/*  $Id: LibModernAPI3.java 49251 2013-05-22 09:51:24Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.api;
 
     import  android.annotation.*;
@@ -12,9 +10,8 @@
     /*********************************************************************************
     *   Holds functionality exclusively for devices that use API Level 3 or higher.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 49251 $ $Date: 2013-05-22 11:51:24 +0200 (Mi, 22 Mai 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/api/LibModernAPI3.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     *********************************************************************************/
     @SuppressLint("NewApi")
     public abstract class LibModernAPI3

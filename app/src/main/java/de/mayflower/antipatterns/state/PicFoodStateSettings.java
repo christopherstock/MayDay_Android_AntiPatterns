@@ -1,9 +1,7 @@
-/*  $Id: PicFoodStateSettings.java 50634 2013-08-19 13:43:10Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.state;
 
-    import de.mayflower.antipatterns.*;
+    import  de.mayflower.antipatterns.*;
     import  de.mayflower.antipatterns.action.*;
     import  de.mayflower.antipatterns.flow.*;
     import  de.mayflower.antipatterns.state.PicFoodState.*;
@@ -16,9 +14,8 @@
     /**********************************************************************************************
     *   The state 'settings'.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50634 $ $Date: 2013-08-19 15:43:10 +0200 (Mo, 19 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/state/PicFoodStateSettings.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodStateSettings extends Activity
     {

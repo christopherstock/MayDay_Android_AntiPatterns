@@ -1,11 +1,9 @@
-/*  $Id: LibHttpUserAgent.java 50587 2013-08-14 09:04:26Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.io.http;
 
     import  java.util.*;
     import  android.os.*;
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
     import  de.mayflower.lib.api.*;
 
     /************************************************************************
@@ -15,9 +13,8 @@
     *   {@link LibHttpUserAgentBuildConstantsModern}   to get the User-Agent for devices with SDK-Level 4 or higher.
     *   {@link LibHttpUserAgentBuildConstantsObsolete} to get the User-Agent for devices with SDK-Level 3 or lower.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50587 $ $Date: 2013-08-14 11:04:26 +0200 (Mi, 14 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/io/http/LibHttpUserAgent.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     ************************************************************************/
     public abstract class LibHttpUserAgent
     {

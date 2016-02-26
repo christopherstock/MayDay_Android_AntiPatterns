@@ -6,9 +6,8 @@
     /**************************************************************************************
     *   Extends arithmetic utility functions.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50257 $ $Date: 2013-07-30 12:57:31 +0200 (Di, 30 Jul 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/util/LibMath.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **************************************************************************************/
     public abstract class LibMath
     {

@@ -4,9 +4,8 @@
     /************************************************************************
     *   An Exception that is launched intentionally.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50336 $ $Date: 2013-08-01 17:07:50 +0200 (Do, 01 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/util/LibInternalError.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     ************************************************************************/
     public class LibInternalError extends RuntimeException
     {

@@ -1,6 +1,4 @@
-/*  $Id: PicFoodStatePivotalTabWall.java 50564 2013-08-12 11:44:08Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.state.pivotal;
 
     import de.mayflower.antipatterns.*;
@@ -17,9 +15,8 @@
     /**********************************************************************************************
     *   The third fragment.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50564 $ $Date: 2013-08-12 13:44:08 +0200 (Mo, 12 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/state/pivotal/PicFoodStatePivotalTabWall.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodStatePivotalTabWall extends Fragment
     {

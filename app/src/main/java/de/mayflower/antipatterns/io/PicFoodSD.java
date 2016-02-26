@@ -1,22 +1,17 @@
-/*  $Id: PicFoodSD.java 50557 2013-08-12 10:09:40Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.io;
 
     import  java.io.*;
     import  android.os.*;
-
     import  de.mayflower.lib.ui.*;
-
     import  de.mayflower.antipatterns.PicFoodProject.Paramounts;
     import  de.mayflower.antipatterns.data.*;
 
     /**********************************************************************************************
     *   Specifies the locations of all files on the SD-card.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50557 $ $Date: 2013-08-12 12:09:40 +0200 (Mo, 12 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/io/PicFoodSD.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public abstract class PicFoodSD
     {

@@ -1,10 +1,8 @@
-/*  $Id: PicFoodStatePivotal.java 50578 2013-08-13 12:46:00Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.state.pivotal;
 
     import  java.util.*;
-    import de.mayflower.antipatterns.*;
+    import  de.mayflower.antipatterns.*;
     import  de.mayflower.antipatterns.action.*;
     import  de.mayflower.antipatterns.io.*;
     import  de.mayflower.antipatterns.io.PicFoodSave.*;
@@ -25,9 +23,8 @@
     *   This class implements the Fragment activity that maintains a TabHost using a ViewPager
     *   and represents the pivotal menu.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50578 $ $Date: 2013-08-13 14:46:00 +0200 (Di, 13 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/state/pivotal/PicFoodStatePivotal.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodStatePivotal extends FragmentActivity implements TabHost.OnTabChangeListener, ViewPager.OnPageChangeListener
     {

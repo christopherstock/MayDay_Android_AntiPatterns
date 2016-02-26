@@ -1,6 +1,4 @@
-/*  $Id: PicFoodDebug.java 50644 2013-08-20 13:37:58Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns;
 
     import  java.util.*;
@@ -17,9 +15,8 @@
     *   Represents the debug system consisting of switchable debug groups
     *   formed by the enum constants. Grouped debug outs can be toggled.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50644 $ $Date: 2013-08-20 15:37:58 +0200 (Di, 20 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/PicFoodDebug.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     *****************************************************************************/
     public enum PicFoodDebug implements LibDebug
     {

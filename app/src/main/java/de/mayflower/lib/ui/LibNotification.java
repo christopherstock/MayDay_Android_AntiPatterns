@@ -1,6 +1,4 @@
-/*  $Id: LibNotification.java 50238 2013-07-29 15:23:21Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.ui;
 
     import  android.app.*;
@@ -12,9 +10,8 @@
     /************************************************************************
     *   Manages notifications.
     *
-    *   @author         $Author: schristopher $
-    *   @version        $Rev: 50238 $ $Date: 2013-07-29 17:23:21 +0200 (Mo, 29 Jul 2013) $
-    *   @see            "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/ui/LibNotification.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     ************************************************************************/
     public class LibNotification
     {

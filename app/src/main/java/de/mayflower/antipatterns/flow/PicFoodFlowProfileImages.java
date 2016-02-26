@@ -1,6 +1,4 @@
-/*  $Id: PicFoodFlowProfileImages.java 50564 2013-08-12 11:44:08Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.flow;
 
     import de.mayflower.antipatterns.*;
@@ -21,9 +19,8 @@
     /**********************************************************************************************
     *   Manages the users' profiles.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50564 $ $Date: 2013-08-12 13:44:08 +0200 (Mo, 12 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/flow/PicFoodFlowProfileImages.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodFlowProfileImages
     {

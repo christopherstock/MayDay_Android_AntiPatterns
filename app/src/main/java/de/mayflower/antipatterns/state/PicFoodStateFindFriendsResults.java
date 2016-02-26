@@ -1,6 +1,4 @@
-/*  $Id: PicFoodStateFindFriendsResults.java 50505 2013-08-07 13:39:36Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.state;
 
     import de.mayflower.antipatterns.*;
@@ -17,9 +15,8 @@
     /**********************************************************************************************
     *   The state 'Find friends results'.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50505 $ $Date: 2013-08-07 15:39:36 +0200 (Mi, 07 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/state/PicFoodStateFindFriendsResults.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodStateFindFriendsResults extends Activity
     {

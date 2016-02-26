@@ -4,9 +4,8 @@
     /*********************************************************************************
     *   Holds all suitable values for the thread-priority setting.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50398 $ $Date: 2013-08-05 12:07:28 +0200 (Mo, 05 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/util/LibThreadPriority.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     *********************************************************************************/
     public enum LibThreadPriority
     {

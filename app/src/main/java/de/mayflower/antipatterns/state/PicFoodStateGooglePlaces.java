@@ -1,6 +1,4 @@
-/*  $Id: PicFoodStateGooglePlaces.java 50538 2013-08-09 09:04:24Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.state;
 
     import de.mayflower.antipatterns.*;
@@ -18,9 +16,8 @@
     /**********************************************************************************************
     *   The state 'Google places'.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50538 $ $Date: 2013-08-09 11:04:24 +0200 (Fr, 09 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/state/PicFoodStateGooglePlaces.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodStateGooglePlaces extends Activity
     {

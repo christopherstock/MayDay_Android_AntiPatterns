@@ -1,6 +1,4 @@
-/*  $Id: PicFoodFlowImageRemove.java 50508 2013-08-07 14:05:16Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.flow;
 
     import de.mayflower.antipatterns.*;
@@ -10,9 +8,8 @@
     /**********************************************************************************************
     *   Specify the update flow on removing an image from a GridView or a container.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50508 $ $Date: 2013-08-07 16:05:16 +0200 (Mi, 07 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/flow/PicFoodFlowImageRemove.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodFlowImageRemove
     {

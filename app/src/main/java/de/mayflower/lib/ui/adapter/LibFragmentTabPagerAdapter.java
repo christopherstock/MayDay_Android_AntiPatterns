@@ -1,6 +1,4 @@
-/*  $Id: LibFragmentTabPagerAdapter.java 50398 2013-08-05 10:07:28Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.ui.adapter;
 
     import  java.util.List;
@@ -11,9 +9,8 @@
     /**********************************************************************************************
     *   Serves the fragments when paging.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50398 $ $Date: 2013-08-05 12:07:28 +0200 (Mo, 05 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/ui/adapter/LibFragmentTabPagerAdapter.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class LibFragmentTabPagerAdapter extends FragmentPagerAdapter
     {

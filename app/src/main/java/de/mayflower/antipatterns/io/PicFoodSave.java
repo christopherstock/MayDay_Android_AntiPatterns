@@ -1,6 +1,4 @@
-/*  $Id: PicFoodSave.java 50584 2013-08-13 15:22:31Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.io;
 
     import  de.mayflower.antipatterns.PicFoodProject.*;
@@ -9,9 +7,8 @@
     /**********************************************************************************************
     *   Accesses the internal and persistent Setting system.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50584 $ $Date: 2013-08-13 17:22:31 +0200 (Di, 13 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/io/PicFoodSave.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public abstract class PicFoodSave
     {

@@ -1,6 +1,4 @@
-/*  $Id: PicFoodFlowProfileFollow.java 50565 2013-08-12 13:05:39Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.flow;
 
     import de.mayflower.antipatterns.*;
@@ -21,9 +19,8 @@
     /**********************************************************************************************
     *   Manages the followers / followings data.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50565 $ $Date: 2013-08-12 15:05:39 +0200 (Mo, 12 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/flow/PicFoodFlowProfileFollow.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodFlowProfileFollow
     {

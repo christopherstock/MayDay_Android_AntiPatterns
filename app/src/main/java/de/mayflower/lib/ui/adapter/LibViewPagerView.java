@@ -1,6 +1,4 @@
-/*  $Id: LibViewPagerView.java 50508 2013-08-07 14:05:16Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.ui.adapter;
 
     import  android.view.*;
@@ -9,9 +7,8 @@
     /************************************************************************
     *   Represents one page in a ViewPager.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50508 $ $Date: 2013-08-07 16:05:16 +0200 (Mi, 07 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/ui/adapter/LibViewPagerView.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     ************************************************************************/
     public final class LibViewPagerView implements LibAdapterData
     {

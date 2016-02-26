@@ -1,6 +1,4 @@
-/*  $Id: LibJSON.java 50204 2013-07-29 06:43:54Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.io;
 
     import  org.json.*;
@@ -8,9 +6,8 @@
     /************************************************************************
     *   Static functions to extend the system's JSON-parser.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50204 $ $Date: 2013-07-29 08:43:54 +0200 (Mo, 29 Jul 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/io/LibJSON.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     ************************************************************************/
     public class LibJSON
     {

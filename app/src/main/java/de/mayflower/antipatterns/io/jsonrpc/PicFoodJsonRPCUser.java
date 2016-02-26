@@ -1,9 +1,7 @@
-/*  $Id: PicFoodJsonRPCUser.java 50543 2013-08-09 13:46:59Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.io.jsonrpc;
 
-    import de.mayflower.antipatterns.*;
+    import  de.mayflower.antipatterns.*;
     import  de.mayflower.antipatterns.PicFoodSettings.JsonRPC;
     import  de.mayflower.antipatterns.PicFoodProject.*;
     import  de.mayflower.antipatterns.idm.*;
@@ -12,16 +10,14 @@
     import  android.app.*;
     import  android.content.*;
     import  android.graphics.*;
-
     import  de.mayflower.lib.io.*;
     import  de.mayflower.lib.ui.*;
 
     /*****************************************************************************************
     *   3. Handles all Json-RPC-requests of the group 'user'.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50543 $ $Date: 2013-08-09 15:46:59 +0200 (Fr, 09 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/io/jsonrpc/PicFoodJsonRPCUser.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     *****************************************************************************************/
     public class PicFoodJsonRPCUser
     {

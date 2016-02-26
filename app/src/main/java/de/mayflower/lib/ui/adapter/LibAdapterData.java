@@ -1,18 +1,14 @@
-/*  $Id: LibAdapterData.java 50543 2013-08-09 13:46:59Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.ui.adapter;
 
     import  android.view.*;
-
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
 
     /************************************************************************
     *   Represents one item in an adapter.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50543 $ $Date: 2013-08-09 15:46:59 +0200 (Fr, 09 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/ui/adapter/LibAdapterData.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     ************************************************************************/
     public interface LibAdapterData
     {

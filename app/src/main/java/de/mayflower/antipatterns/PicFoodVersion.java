@@ -1,6 +1,4 @@
-/*  $Id: PicFoodVersion.java 50676 2013-08-22 13:24:48Z schristopher $
- *  ============================================================================================================
- */
+
     package de.mayflower.antipatterns;
 
     import  de.mayflower.antipatterns.PicFoodProject.*;
@@ -8,9 +6,8 @@
     /***************************************************************************************************
     *   Logs all versions of this app.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50676 $ $Date: 2013-08-22 15:24:48 +0200 (Do, 22 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/PicFoodVersion.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     ***************************************************************************************************/
     public enum PicFoodVersion
     {

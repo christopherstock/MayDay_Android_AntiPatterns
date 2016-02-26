@@ -1,22 +1,19 @@
-/*  $Id: LibGridView.java 50546 2013-08-09 14:19:00Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.ui;
 
     import  android.content.*;
     import  android.util.*;
     import  android.view.*;
     import  android.widget.*;
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
     import  de.mayflower.lib.api.*;
     import  de.mayflower.lib.ui.adapter.*;
 
     /************************************************************************
     *   Represents a custom GridView.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50546 $ $Date: 2013-08-09 16:19:00 +0200 (Fr, 09 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/ui/LibGridView.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     ************************************************************************/
     public class LibGridView extends GridView implements AdapterView.OnItemClickListener, AbsListView.OnScrollListener
     {

@@ -8,9 +8,8 @@
     *   binary data.  See RFCs <a href="http://www.ietf.org/rfc/rfc2045.txt">2045</a>
     *   and <a href="http://www.ietf.org/rfc/rfc3548.txt">3548</a>.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50587 $ $Date: 2013-08-14 11:04:26 +0200 (Mi, 14 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src_lib/com/synapsy/android/lib/io/LibBase64.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     ************************************************************************/
     public abstract class LibBase64
     {

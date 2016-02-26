@@ -1,6 +1,4 @@
-/*  $Id: PicFoodStateFollowDetails.java 50552 2013-08-12 08:56:31Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.state;
 
     import de.mayflower.antipatterns.*;
@@ -19,9 +17,8 @@
     /**********************************************************************************************
     *   The state 'Follow details'.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50552 $ $Date: 2013-08-12 10:56:31 +0200 (Mo, 12 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/state/PicFoodStateFollowDetails.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodStateFollowDetails extends Activity
     {

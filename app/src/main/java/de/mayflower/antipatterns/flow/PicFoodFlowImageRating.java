@@ -1,16 +1,14 @@
-/*  $Id: PicFoodFlowImageRating.java 50555 2013-08-12 09:22:12Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.antipatterns.flow;
 
-    import de.mayflower.antipatterns.*;
+    import  de.mayflower.antipatterns.*;
     import  de.mayflower.antipatterns.action.*;
     import  de.mayflower.antipatterns.data.*;
     import  de.mayflower.antipatterns.idm.*;
     import  de.mayflower.antipatterns.io.jsonrpc.*;
     import  de.mayflower.antipatterns.ui.adapter.PicFoodAdapterManager.GridViews;
     import  org.json.*;
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
     import  de.mayflower.lib.io.*;
     import  de.mayflower.lib.ui.dialog.*;
     import  de.mayflower.lib.util.*;
@@ -19,9 +17,8 @@
     /**********************************************************************************************
     *   Specifies the flow for image-ratings tasks.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50555 $ $Date: 2013-08-12 11:22:12 +0200 (Mo, 12 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/flow/PicFoodFlowImageRating.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     **********************************************************************************************/
     public class PicFoodFlowImageRating
     {
