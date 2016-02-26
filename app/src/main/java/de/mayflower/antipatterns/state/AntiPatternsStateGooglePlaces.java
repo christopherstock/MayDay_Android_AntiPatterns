@@ -35,7 +35,7 @@
             //invoke super method
             super.onCreate( savedInstanceState );
 
-            //PicFoodDebug.googlePlaces.out( "GooglePlaces::onCreate() - singleton is [" + singleton + "]" );
+            //AntiPatternsDebug.googlePlaces.out( "GooglePlaces::onCreate() - singleton is [" + singleton + "]" );
 
             //assign singleton
             singleton = this;
@@ -64,7 +64,7 @@
             //invoke super-method
             super.onStart();
 
-            //PicFoodDebug.googlePlaces.out( "GooglePlaces::onStart() - singleton is [" + singleton + "]" );
+            //AntiPatternsDebug.googlePlaces.out( "GooglePlaces::onStart() - singleton is [" + singleton + "]" );
 
             //check if data shall be updated
             String scanGPSAndUpdateDataNextOnStartSetting = AntiPatternsSave.loadSetting(this, SaveKey.EStateGooglePlacesScanGPSAndUpdateDataNextOnStart);

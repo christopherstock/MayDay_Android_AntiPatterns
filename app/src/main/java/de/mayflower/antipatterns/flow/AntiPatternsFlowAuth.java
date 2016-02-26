@@ -122,7 +122,7 @@
                     AntiPatternsActionDialog.EDialogLoginTechnicalError.run();
 
                     //report this exception!
-                    //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Error on logging in" ), "", UncaughtException.ENo );
+                    //AntiPatternsDebug.DEBUG_THROWABLE( new AntiPatternsInternalError( "Error on logging in" ), "", UncaughtException.ENo );
                     AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
                 }
             }
@@ -207,7 +207,7 @@
                     AntiPatternsActionDialog.EDialogLostPasswordTechnicalError.run();
 
                     //report this exception!
-                    //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Error on lost-password-streaming" ), "", UncaughtException.ENo );
+                    //AntiPatternsDebug.DEBUG_THROWABLE( new AntiPatternsInternalError( "Error on lost-password-streaming" ), "", UncaughtException.ENo );
                     AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
                 }
             }

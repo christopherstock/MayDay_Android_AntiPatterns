@@ -134,7 +134,7 @@
             //check tracing visibility views
             if ( iTracingVisibilityViews != null )
             {
-                //PicFoodDebug.bitmapRecycling.out( "Calling back [" + iTracingVisibilityViews.length + "] views that changed scrolling" );
+                //AntiPatternsDebug.bitmapRecycling.out( "Calling back [" + iTracingVisibilityViews.length + "] views that changed scrolling" );
 
                 //browse all views
                 for ( int i = 0; i < iTracingVisibilityViews.length; ++i )
@@ -148,7 +148,7 @@
                     //notify visibility
                     iTracingVisibilityViews[ i ].setVisibility( visible );
 
-                    //PicFoodDebug.bitmapRecycling.out( " View [] is visible [" + isVisible + "]" );
+                    //AntiPatternsDebug.bitmapRecycling.out( " View [] is visible [" + isVisible + "]" );
                 }
             }
         }

@@ -82,7 +82,7 @@
                 else
                 {
                     //do NOT show 'technical error' but report this exception
-                    //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Logout threw an Exception" ), "Invalid JsonRPC-Response!", UncaughtException.ENo );
+                    //AntiPatternsDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Logout threw an Exception" ), "Invalid JsonRPC-Response!", UncaughtException.ENo );
                     AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
                 }
             }
@@ -164,7 +164,7 @@
                     AntiPatternsActionDialog.EDialogFeedbackTechnicalError.run();
 
                     //report this exception
-                    //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Error on sending feedback" ), "", UncaughtException.ENo );
+                    //AntiPatternsDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Error on sending feedback" ), "", UncaughtException.ENo );
                     AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
                 }
             }
@@ -256,7 +256,7 @@
                     AntiPatternsActionDialog.EDialogDeleteAccountTechnicalError.run();
 
                     //report this exception
-                    //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Throwable being raised on removing user" ), "Invalid JsonRPC-Response!", UncaughtException.ENo );
+                    //AntiPatternsDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Throwable being raised on removing user" ), "Invalid JsonRPC-Response!", UncaughtException.ENo );
                     AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
                 }
             }
@@ -380,7 +380,7 @@
                     AntiPatternsActionDialog.EDialogChangePasswordTechnicalError.run();
 
                     //report this exception
-                    //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Throwable being raised on removing user" ), "Invalid JsonRPC-Response!", UncaughtException.ENo );
+                    //AntiPatternsDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Throwable being raised on removing user" ), "Invalid JsonRPC-Response!", UncaughtException.ENo );
                     AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
                 }
             }

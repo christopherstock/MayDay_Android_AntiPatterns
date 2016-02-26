@@ -277,7 +277,7 @@
                     AntiPatternsActionDialog.EDialogRegisterTechnicalError.run();
 
                     //report this exception!
-                    //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Technical error on registering" ), "", UncaughtException.ENo );
+                    //AntiPatternsDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Technical error on registering" ), "", UncaughtException.ENo );
                     AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
                 }
             }

@@ -95,7 +95,7 @@
                                 //callback if successful
                                 if ( bd != null && bd.getBitmap() != null )
                                 {
-                                    //PicFoodDebug.imageOrder.out( "Received image [" + urlReplaced + "], desired [" + imageSizeInPixel + "] recveived [" + bd.getBitmap().getWidth() + "]x[" + bd.getBitmap().getHeight() + "]" );
+                                    //AntiPatternsDebug.imageOrder.out( "Received image [" + urlReplaced + "], desired [" + imageSizeInPixel + "] recveived [" + bd.getBitmap().getWidth() + "]x[" + bd.getBitmap().getHeight() + "]" );
 
                                     AntiPatternsDebug.imageOrder.out( " Assigning streamed image.." );
                                     AntiPatternsDebug.imageOrder.out( "" );

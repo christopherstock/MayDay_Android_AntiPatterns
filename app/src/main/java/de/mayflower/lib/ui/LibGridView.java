@@ -185,7 +185,7 @@
         ************************************************************************/
         public final void setActionOnBottomReach( Runnable newActionOnBottomReach )
         {
-            //PicFoodDebug.major.out( "setActionOnBottomReach: [" + newActionOnBottomReach + "]" );
+            //AntiPatternsDebug.major.out( "setActionOnBottomReach: [" + newActionOnBottomReach + "]" );
 
             iActionOnBottomReach = newActionOnBottomReach;
         }
@@ -224,7 +224,7 @@
         @Override
         public void onScroll( AbsListView alv, int firstVisibleItem, int visibleItemCount, int totalItemCount )
         {
-            //PicFoodDebug.gridview.out( "onScroll [" + alv + "][" + firstVisibleItem + "][" + visibleItemCount + "] lastVisible: [" + lastVisibleItem + "] totalCount: [" + totalItemCount + "]" );
+            //AntiPatternsDebug.gridview.out( "onScroll [" + alv + "][" + firstVisibleItem + "][" + visibleItemCount + "] lastVisible: [" + lastVisibleItem + "] totalCount: [" + totalItemCount + "]" );
 
             //check if an action to perform on scrolling to bottom is available
             if ( iActionOnBottomReach != null )
@@ -280,7 +280,7 @@
         public void onScrollStateChanged( AbsListView alv, int i1 )
         {
             //implemented by OnScrollListener - ignore this event
-            //PicFoodDebug.gridview.out( "onScrollStateChanged [" + alv + "][" + i1 + "]" );
+            //AntiPatternsDebug.gridview.out( "onScrollStateChanged [" + alv + "][" + i1 + "]" );
         }
 /*
         public void recycleAllViews()

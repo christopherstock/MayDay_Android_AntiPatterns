@@ -108,7 +108,7 @@
                             )
                     );
 
-            //PicFoodDebug.updateAfterImageAction.out( "parsed [" + newImages.size() + "] images from JSON." );
+            //AntiPatternsDebug.updateAfterImageAction.out( "parsed [" + newImages.size() + "] images from JSON." );
 
             //add new user-images to stack and increase the offset
             iImagesOffset += newImages.length;

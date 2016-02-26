@@ -178,8 +178,8 @@
             }
             catch ( IOException ioe )
             {
-                //PicFoodDebug.googlePlaces.out( "IO-Exception occured on using GooglePlaces-API!" );
-                //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Usage of Google-Places-API threw an Exception" ), "", UncaughtException.ENo );
+                //AntiPatternsDebug.googlePlaces.out( "IO-Exception occured on using GooglePlaces-API!" );
+                //AntiPatternsDebug.DEBUG_THROWABLE( new AntiPatternsInternalError( "Usage of Google-Places-API threw an Exception" ), "", UncaughtException.ENo );
 
                 //dismiss progress dialog and show 'no network'
                 LibDialogProgress.dismissProgressDialogUIThreaded( AntiPatternsState.EGooglePlaces.getActivity() );
@@ -188,7 +188,7 @@
             catch ( Throwable t )
             {
                 AntiPatternsDebug.googlePlaces.out( "Using the GooglePlaces-API threw an Exception!" );
-                //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Usage of Google-Places-API threw an Exception" ), "", UncaughtException.ENo );
+                //AntiPatternsDebug.DEBUG_THROWABLE( new AntiPatternsInternalError( "Usage of Google-Places-API threw an Exception" ), "", UncaughtException.ENo );
                 AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
 
                 //dismiss progress dialog
@@ -315,8 +315,8 @@
             }
             catch ( IOException ioe )
             {
-                //PicFoodDebug.imageSearch.out( "IO-Exception occured on using GooglePlaces-API!" );
-                //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Usage of Google-Places-API threw an Exception" ), "", UncaughtException.ENo );
+                //AntiPatternsDebug.imageSearch.out( "IO-Exception occured on using GooglePlaces-API!" );
+                //AntiPatternsDebug.DEBUG_THROWABLE( new AntiPatternsInternalError( "Usage of Google-Places-API threw an Exception" ), "", UncaughtException.ENo );
 
                 //dismiss progress dialog and show 'no network'
                 LibDialogProgress.dismissProgressDialogUIThreaded( AntiPatternsState.EGooglePlaces.getActivity() );
@@ -325,7 +325,7 @@
             catch ( Throwable t )
             {
                 AntiPatternsDebug.googlePlaces.out( "Using the GooglePlaces-API threw an Exception!" );
-                //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Usage of Google-Places-API threw an Exception" ), "", UncaughtException.ENo );
+                //AntiPatternsDebug.DEBUG_THROWABLE( new AntiPatternsInternalError( "Usage of Google-Places-API threw an Exception" ), "", UncaughtException.ENo );
                 AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
 
                 //dismiss progress dialog

@@ -121,7 +121,7 @@
             catch ( Throwable t )
             {
                 AntiPatternsDebug.pickImage.out( "Throwable being raised on receiving cropped image data:" );
-                //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Receiving cropped image data threw an Exception" ), "Invalid JsonRPC-Response!", UncaughtException.ENo );
+                //AntiPatternsDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Receiving cropped image data threw an Exception" ), "Invalid JsonRPC-Response!", UncaughtException.ENo );
                 AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
 
                 //leave to state 'pivotal menu'
@@ -210,7 +210,7 @@
                     AntiPatternsActionDialog.EDialogUploadNewEntryTechnicalError.run();
 
                     //report this exception!
-                    //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Technical error on uploading new entry" ), "", UncaughtException.ENo );
+                    //AntiPatternsDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Technical error on uploading new entry" ), "", UncaughtException.ENo );
                     AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
                 }
             }

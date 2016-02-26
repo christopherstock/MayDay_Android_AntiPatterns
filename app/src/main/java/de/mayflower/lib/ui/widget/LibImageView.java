@@ -41,7 +41,7 @@
                 &&  ( (BitmapDrawable)getDrawable() ).getBitmap().isRecycled()
             )
             {
-                //PicFoodDebug.bitmapRecycling.out( ">> DENIED onDraw FROM DRAWING A RECYCLED BITMAP!" );
+                //AntiPatternsDebug.bitmapRecycling.out( ">> DENIED onDraw FROM DRAWING A RECYCLED BITMAP!" );
             }
             else
             {

@@ -50,7 +50,7 @@
                 if ( !iCurrentlyVisible )
                 {
                     iCurrentlyVisible = true;
-                    //PicFoodDebug.bitmapRecycling.out( "View becomes visible - ordering bitmaps" );
+                    //AntiPatternsDebug.bitmapRecycling.out( "View becomes visible - ordering bitmaps" );
 
                     //order the bitmaps for this wall-image
                     iImg.orderImageThreaded( iState );
@@ -62,7 +62,7 @@
                 if ( iCurrentlyVisible )
                 {
                     iCurrentlyVisible = false;
-                    //PicFoodDebug.bitmapRecycling.out( "View becomes hidden - recycling bitmaps" );
+                    //AntiPatternsDebug.bitmapRecycling.out( "View becomes hidden - recycling bitmaps" );
 
                     //recycle all Bitmap
                     iImg.recycleBitmaps();

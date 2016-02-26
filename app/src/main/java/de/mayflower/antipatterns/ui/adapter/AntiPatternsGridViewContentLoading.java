@@ -146,7 +146,7 @@
             ImageView loadingCircle = (ImageView)ret.findViewById( R.id.loading_circle );
 
             //set according loading icon
-          //PicFoodDebug.bugfix.out( " create view with [" + iLoadingState + "]" );
+          //AntiPatternsDebug.bugfix.out( " create view with [" + iLoadingState + "]" );
             switch ( iLoadingState )
             {
                 case ELoadingCircle:

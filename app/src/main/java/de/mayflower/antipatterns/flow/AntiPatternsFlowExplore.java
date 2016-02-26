@@ -95,17 +95,17 @@
                         exploreOffset += newExploreImages.size();
 
                         //prune existent loading-items
-                        PicFoodUI.pruneLoadingItems( exploreData );
+                        AntiPatternsUI.pruneLoadingItems( exploreData );
 
                         //create new adapter data
-                        for ( PicFoodDataImage exploreImage : newExploreImages )
+                        for ( AntiPatternsDataImage exploreImage : newExploreImages )
                         {
                             //create new item
-                            LibAdapterData newItem = new PicFoodGridViewContent
+                            LibAdapterData newItem = new AntiPatternsGridViewContent
                             (
                                 state,
                                 exploreImage,
-                                PicFoodAction.ENone,
+                                AntiPatternsAction.ENone,
                                 GridViews.EExplore
                             );
 
@@ -114,7 +114,7 @@
                         }
 
                         //output after ordering
-                        PicFoodDebug.limitOffset.out
+                        AntiPatternsDebug.limitOffset.out
                         (
                                 "AFTER ordering explore-images"
                             +   " exploreImagesSize     [" + exploreData.size()    + "] "
@@ -125,21 +125,21 @@
                         Runnable actionOnBottomReach = null;
                         if ( newExploreImages.size() >= JsonRPC.LIMIT_IMAGES_EXPLORE )
                         {
-                            PicFoodDebug.limitOffset.out( "Set loading item on last position" );
+                            AntiPatternsDebug.limitOffset.out( "Set loading item on last position" );
 
                             //add loading icon
-                            lastBottomLoadingItem = new PicFoodGridViewContentLoading( state, false, false );
+                            lastBottomLoadingItem = new AntiPatternsGridViewContentLoading( state, false, false );
                             exploreData.addElement( lastBottomLoadingItem );
 
                             //set action to perform on scrolling to the bottom
-                            actionOnBottomReach = PicFoodActionUpdate.EUpdateExploreAreaNextOffset;
+                            actionOnBottomReach = AntiPatternsActionUpdate.EUpdateExploreAreaNextOffset;
                         }
 
                         //remove loading-circle
-                        if ( overlayIcon != null ) PicFoodLoadingCircle.removeLoadingCircleUIThreaded( state.getActivity(), overlayIcon );
+                        if ( overlayIcon != null ) AntiPatternsLoadingCircle.removeLoadingCircleUIThreaded( state.getActivity(), overlayIcon );
 
                         //assign new adapter data to GridView 'explore'
-                        PicFoodAdapterManager.getSingleton( state.getActivity(), GridViews.EExplore ).changeDataUIThreaded( state, exploreData, actionOnBottomReach );
+                        AntiPatternsAdapterManager.getSingleton( state.getActivity(), GridViews.EExplore ).changeDataUIThreaded( state, exploreData, actionOnBottomReach );
 */
                         break;
                     }

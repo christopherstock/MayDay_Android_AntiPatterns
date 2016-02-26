@@ -141,7 +141,7 @@
         *****************************************************************************************/
         public static final void sessionExpired( LibState state )
         {
-            //PicFoodDebug.major.out( "The session has EXPIRED! The user will be redirected to the login-page!" );
+            //AntiPatternsDebug.major.out( "The session has EXPIRED! The user will be redirected to the login-page!" );
 
             lastStateBeforeSessionExpired = state;
 

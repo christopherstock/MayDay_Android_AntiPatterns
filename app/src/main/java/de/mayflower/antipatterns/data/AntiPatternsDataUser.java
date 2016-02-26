@@ -19,7 +19,7 @@
     import  de.mayflower.lib.ui.*;
 
     /**********************************************************************************************
-    *   Represents one PicFood user.
+    *   Represents one AntiPatterns user.
     *
     *   @author     Christopher Stock
     *   @version    1.0
@@ -304,8 +304,8 @@
                     context,
                     iButtonBlock,
                     R.string.state_foreign_profile_button_block,
-                    PicFoodSystems.getFonts().TYPEFACE_REGULAR,
-                    PicFoodActionPush.EPushUserBlock
+                    AntiPatternsSystems.getFonts().TYPEFACE_REGULAR,
+                    AntiPatternsActionPush.EPushUserBlock
                 );
 */
             }
@@ -327,7 +327,7 @@
             //description
             TextView description = (TextView)ret.findViewById( R.id.description );
             description.setTextColor( LibResource.getResourceColor( activity, R.color.text_gridview_item_description ) );
-            LibUI.setupTextView( description, PicFoodSystems.getFonts().TYPEFACE_REGULAR, desc );
+            LibUI.setupTextView( description, AntiPatternsSystems.getFonts().TYPEFACE_REGULAR, desc );
 */
             //icon
             iIconView = (ImageView)ret.findViewById( R.id.icon );
@@ -468,7 +468,7 @@
                 iIconDrawable.getBitmap().recycle();
                 iIconDrawable = null;
 
-                //PicFoodDebug.bitmapRecycling.out( " recycled icon successfully" );
+                //AntiPatternsDebug.bitmapRecycling.out( " recycled icon successfully" );
             }
         }
     }

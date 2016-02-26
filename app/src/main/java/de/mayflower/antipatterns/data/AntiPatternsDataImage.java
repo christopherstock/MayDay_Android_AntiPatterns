@@ -21,7 +21,7 @@
     import  de.mayflower.lib.ui.widget.*;
 
     /**********************************************************************************************
-    *   Represents all vital information for one PicFood image.
+    *   Represents all vital information for one AntiPatterns image.
     *
     *   @author     Christopher Stock
     *   @version    1.0
@@ -1181,7 +1181,7 @@
                 iImageDrawable.getBitmap().recycle();
                 iImageDrawable = null;
 
-                //PicFoodDebug.bitmapRecycling.out( " recycled image successfully" );
+                //AntiPatternsDebug.bitmapRecycling.out( " recycled image successfully" );
             }
 
             //recycle the icon for this wall-image
@@ -1196,7 +1196,7 @@
                 iIconDrawable.getBitmap().recycle();
                 iIconDrawable = null;
 
-                //PicFoodDebug.bitmapRecycling.out( " recycled icon successfully" );
+                //AntiPatternsDebug.bitmapRecycling.out( " recycled icon successfully" );
             }
         }
     }

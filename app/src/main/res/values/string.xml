@@ -35,11 +35,11 @@
         <!-- state 'acclaim' -->
         <string name="state_acclaim_register">Register</string>
         <string name="state_acclaim_login">Login</string>
-        <string name="state_acclaim_page1">Looking for the best dinner in your area?</string>
-        <string name="state_acclaim_page2">PicFood is the first social network for rating meals.</string>
-        <string name="state_acclaim_page3">With PicFood, you can rate your local gastronomy or view other dinner recommendations.</string>
-        <string name="state_acclaim_page4">Follow your friends, have fun and stay up-to-date with their latest food snapshots.</string>
-        <string name="state_acclaim_page5">Please login or register a new account by pressing one of the buttons below.</string>
+        <string name="state_acclaim_page1">Anti Patterns Acclaim Text 1</string>
+        <string name="state_acclaim_page2">Anti Patterns Acclaim Text 2</string>
+        <string name="state_acclaim_page3">Anti Patterns Acclaim Text 3</string>
+        <string name="state_acclaim_page4">Anti Patterns Acclaim Text 4</string>
+        <string name="state_acclaim_page5">Anti Patterns Acclaim Text 5</string>
 
         <!-- state 'login' -->
         <string name="state_login_headline">Login</string>
@@ -242,7 +242,7 @@
 
         <!-- dialog 'register failed' -->
         <string name="dialog_register_failed_title">Registration failed</string>
-        <string name="dialog_register_failed_body">Registering PicFood has failed.&lt;br&gt;&lt;br&gt;Please try again later!</string>
+        <string name="dialog_register_failed_body">Registering Anti Patterns has failed.&lt;br&gt;&lt;br&gt;Please try again later!</string>
         <string name="dialog_register_failed_button_ok">@android:string/ok</string>
 
         <!-- dialog 'passwords differ' -->
@@ -362,8 +362,8 @@
         <string name="dialog_image_options_report_abuse">Report abuse</string>
         <string name="dialog_image_options_share_image">Share</string>
         <string name="dialog_image_share_chooser_title">Share image via</string>
-        <string name="dialog_image_share_subject">Image from PicFood user {username}</string>
-        <string name="dialog_image_share_body">Find this great picture from {username} on PicFood!\n\nThe image has been posted by {username} on {date}.\n\n{url}</string>
+        <string name="dialog_image_share_subject">Image from Anti Patterns user {username}</string>
+        <string name="dialog_image_share_body">Find this great picture from {username} on Anti Patterns!\n\nThe image has been posted by {username} on {date}.\n\n{url}</string>
 
         <!-- dialog 'comment' -->
         <string name="dialog_comment_title">Send comment</string>
@@ -446,12 +446,12 @@
 
         <!-- dialog 'find friends via facebook no results' -->
         <string name="dialog_find_friends_facebook_no_results_title">No results</string>
-        <string name="dialog_find_friends_facebook_no_results_body">None of your facebook friends that use PicFood have been found.</string>
+        <string name="dialog_find_friends_facebook_no_results_body">None of your facebook friends that use Anti Patterns have been found.</string>
         <string name="dialog_find_friends_facebook_no_results_button_ok">@android:string/ok</string>
 
         <!-- dialog 'find friends via phonenumber no results' -->
         <string name="dialog_find_friends_phonenumber_no_results_title">No results</string>
-        <string name="dialog_find_friends_phonenumber_no_results_body">None of your contacts that use PicFood have been found.</string>
+        <string name="dialog_find_friends_phonenumber_no_results_body">None of your contacts that use Anti Patterns have been found.</string>
         <string name="dialog_find_friends_phonenumber_no_results_button_ok">@android:string/ok</string>
 
         <!-- dialog 'search images' -->
@@ -499,23 +499,23 @@
 
         <!-- dialog 'session expired' -->
         <string name="dialog_session_expired_title">Session expired</string>
-        <string name="dialog_session_expired_body">Sorry, but your PicFood-session has just expired.&lt;br&gt;&lt;br&gt;Please login to start a new session!</string>
+        <string name="dialog_session_expired_body">Sorry, but your Anti Patterns-session has just expired.&lt;br&gt;&lt;br&gt;Please login to start a new session!</string>
         <string name="dialog_session_expired_button_ok">@android:string/ok</string>
 
         <!-- dialog 'no update available' -->
         <string name="dialog_no_update_title">No update available</string>
-        <string name="dialog_no_update_body">You are using the latest version of PicFood.</string>
+        <string name="dialog_no_update_body">You are using the latest version of Anti Patterns.</string>
         <string name="dialog_no_update_button_ok">@android:string/ok</string>
 
         <!-- dialog 'update optional' -->
         <string name="dialog_update_optional_title">Update available</string>
-        <string name="dialog_update_optional_body">A new version of PicFood is available.\n\nPlease update to the latest version.</string>
+        <string name="dialog_update_optional_body">A new version of Anti Patterns is available.\n\nPlease update to the latest version.</string>
         <string name="dialog_update_optional_button_ok">@android:string/ok</string>
         <string name="dialog_update_optional_button_cancel">Cancel</string>
 
         <!-- dialog 'update required' -->
         <string name="dialog_update_required_title">Update available</string>
-        <string name="dialog_update_required_body">A new version of PicFood is available.\n\nPlease update to the latest version.</string>
+        <string name="dialog_update_required_body">A new version of Anti Patterns is available.\n\nPlease update to the latest version.</string>
         <string name="dialog_update_required_button_ok">@android:string/ok</string>
 
         <!-- dialog 'change profile' -->

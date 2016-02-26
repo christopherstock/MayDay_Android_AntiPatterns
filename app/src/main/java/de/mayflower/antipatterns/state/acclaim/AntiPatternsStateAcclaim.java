@@ -186,7 +186,7 @@
         @Override
         public final void onPageSelected( int i )
         {
-            //PicFoodDebug.bugfix.out( ">>>>>>>>>>> onPageSelected - " + i );
+            //AntiPatternsDebug.bugfix.out( ">>>>>>>>>>> onPageSelected - " + i );
 
             //remember the last selected index
             lastPageIndex = i;

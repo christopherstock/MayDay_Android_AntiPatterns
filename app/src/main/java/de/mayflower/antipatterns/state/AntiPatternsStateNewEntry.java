@@ -61,7 +61,7 @@
             //invoke super method
             super.onCreate( bundle );
 
-            //PicFoodDebug.newEntryReturning.out( getClass().getName() + "::onCreate [" + this + "] [" + handlerComment + "]" );
+            //AntiPatternsDebug.newEntryReturning.out( getClass().getName() + "::onCreate [" + this + "] [" + handlerComment + "]" );
 
             //assign singleton
             singleton = this;
@@ -139,7 +139,7 @@
             //invoke super method
             super.onStart();
 
-            //PicFoodDebug.newEntryReturning.out( getClass().getName() + "::onStart" );
+            //AntiPatternsDebug.newEntryReturning.out( getClass().getName() + "::onStart" );
 
             //unselect all buttons
             unselectAllButtonsUIThreaded();
@@ -276,7 +276,7 @@
             //invoke super method
             super.onActivityResult( requestCode, responseCode, data );
 
-            //PicFoodDebug.newEntryReturning.out( getClass().getName() + "::onActivityResult( " + requestCode + ", " + responseCode + ", " + data + ")" );
+            //AntiPatternsDebug.newEntryReturning.out( getClass().getName() + "::onActivityResult( " + requestCode + ", " + responseCode + ", " + data + ")" );
 
             //switch requestCode
             switch ( requestCode )

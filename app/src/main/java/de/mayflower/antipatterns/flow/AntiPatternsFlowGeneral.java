@@ -95,7 +95,7 @@
                     );
 
                     //report this exception!
-                    //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Error on streaming terms" ), "", UncaughtException.ENo );
+                    //AntiPatternsDebug.DEBUG_THROWABLE( new AntiPatternsInternalError( "Error on streaming terms" ), "", UncaughtException.ENo );
                     AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
                 }
             }
@@ -167,7 +167,7 @@
                     );
 
                     //report this exception!
-                    //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Error on streaming privacy policy" ), "", UncaughtException.ENo );
+                    //AntiPatternsDebug.DEBUG_THROWABLE( new AntiPatternsInternalError( "Error on streaming privacy policy" ), "", UncaughtException.ENo );
                     AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
                 }
             }
@@ -329,7 +329,7 @@
                     actionOnTechnicalError.run();
 
                     //report this exception!
-                    //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Error on streaming privacy policy" ), "", UncaughtException.ENo );
+                    //AntiPatternsDebug.DEBUG_THROWABLE( new AntiPatternsInternalError( "Error on streaming privacy policy" ), "", UncaughtException.ENo );
                     AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
                 }
             }

@@ -187,7 +187,7 @@
                     actionOnTechnicalError.run();
 
                     //report this exception
-                    //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Error on sending feedback" ), "", UncaughtException.ENo );
+                    //AntiPatternsDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Error on sending feedback" ), "", UncaughtException.ENo );
                     AntiPatternsDebug.DEBUG_THROWABLE(t, "Throwable caught on loading food ratings", UncaughtException.ENo);
                 }
             }

@@ -43,7 +43,7 @@
         *********************************************************************************/
         public static final BitmapDrawable getBitmapDrawableFromHttpOrCache( Context context, String url ) throws Throwable
         {
-            //PicFoodDebug.imageCache.out( "Fetching bitmap from http OR cache [" + url + "]" );
+            //AntiPatternsDebug.imageCache.out( "Fetching bitmap from http OR cache [" + url + "]" );
 
             //icon target object
             byte[]                  cachedBytes         = null;
@@ -76,7 +76,7 @@
 
                 //show StatusCode
                 int statusCode = httpResponse.getStatusLine().getStatusCode();
-              //PicFoodDebug.googlePlaces.out( "Received StatusCode [" + statusCode + "]" );
+              //AntiPatternsDebug.googlePlaces.out( "Received StatusCode [" + statusCode + "]" );
 
                 //get body
                 HttpEntity      entity          = httpResponse.getEntity();
