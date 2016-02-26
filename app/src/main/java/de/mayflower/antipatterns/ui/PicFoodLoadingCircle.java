@@ -11,9 +11,8 @@
     /*****************************************************************************
     *   Manages all tasks that are associated with displaying and changing loading circles.
     *
-    *   @author     $Author: schristopher $
-    *   @version    $Rev: 50543 $ $Date: 2013-08-09 15:46:59 +0200 (Fr, 09 Aug 2013) $
-    *   @see        "$URL: http://svn.synapsy.net/svn/Synapsy/PicFood/android/PicFood_1_0/trunk/src/net/picfood/ui/PicFoodLoadingCircle.java $"
+    *   @author     Christopher Stock
+    *   @version    1.0
     *****************************************************************************/
     public abstract class PicFoodLoadingCircle
     {

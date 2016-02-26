@@ -11,15 +11,15 @@
     /**********************************************************************************************
     *   The startup activity class.
     *
-    *   TODO ASAP   Alter doc-block in all classes (author/version)
     *   TODO ASAP   Rename all classes.
     *   TODO ASAP   Remove specifier 'synapsy'.
     *   TODO ASAP   Prune specifier 'PicFood' everywhere!
-    *   TODO ASAP   Fix linebreaks in all files.
-    *   TODO ASAP   Prune class header in all files.
-    *   TODO ASAP   Remove '$' everywhere!
     *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
     *
+    *   DONE        Fixed linebreaks in all files.
+    *   DONE        Pruned class header in all files.
+    *   DONE        Removed '$' everywhere.
+    *   DONE        Altered doc-block in all classes (author/version).
     *   DONE        Setup IDE and code inspection.
     *   DONE        Rename Library classes and main app's package names.
     *   DONE        Removed external Facebook- and Google-Cloud-Messaging-API.
