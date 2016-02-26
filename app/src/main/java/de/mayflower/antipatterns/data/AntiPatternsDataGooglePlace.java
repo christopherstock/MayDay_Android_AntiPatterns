@@ -124,7 +124,7 @@
             catch ( Throwable t )
             {
                 AntiPatternsDebug.googlePlacesParser.out( "Parsing GooglePlaces-Results raised an Exception:" );
-                //PicFoodDebug.DEBUG_THROWABLE( new PicFoodInternalError( "Parsing Google-Places-Result raised an Exception" ), "", UncaughtException.ENo );
+                //AntiPatternsDebug.DEBUG_THROWABLE( new AntiPatternsInternalError( "Parsing Google-Places-Result raised an Exception" ), "", UncaughtException.ENo );
                 AntiPatternsDebug.DEBUG_THROWABLE(t, "", UncaughtException.ENo);
             }
 
@@ -283,7 +283,7 @@
                 iIconDrawable.getBitmap().recycle();
                 iIconDrawable = null;
 
-                //PicFoodDebug.bitmapRecycling.out( " recycled icon successfully" );
+                //AntiPatternsDebug.bitmapRecycling.out( " recycled icon successfully" );
             }
         }
 

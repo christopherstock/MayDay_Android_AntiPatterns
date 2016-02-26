@@ -163,7 +163,7 @@
                 else
                 {
                     LibUI.setupTextView( iFollowersLink, AntiPatternsSystems.getFonts().TYPEFACE_BOLD, captionFollowers );
-                    LibUI.setupTextViewColorStateList( context, iFollowersLink, R.color.net_picfood_link_text );
+                    LibUI.setupTextViewColorStateList( context, iFollowersLink, R.color.de_mayflower_antipatterns_link_text);
 
                     LibUI.setOnClickAction
                     (
@@ -199,7 +199,7 @@
                 else
                 {
                     LibUI.setupTextView( iFollowingsLink, AntiPatternsSystems.getFonts().TYPEFACE_BOLD, captionFollowing );
-                    LibUI.setupTextViewColorStateList( context, iFollowingsLink, R.color.net_picfood_link_text );
+                    LibUI.setupTextViewColorStateList( context, iFollowingsLink, R.color.de_mayflower_antipatterns_link_text);
 
                     LibUI.setOnClickAction
                     (

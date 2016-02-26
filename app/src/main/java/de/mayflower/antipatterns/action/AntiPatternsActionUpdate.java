@@ -104,7 +104,6 @@
         protected final void execute()
         {
             AntiPatternsDebug.major.out( "EXECUTE Action: [" + this + "]" );
-          //PicFoodDebug.major.mem();
 
             switch ( this )
             {
@@ -113,17 +112,14 @@
                     //reset offset and wall-entries
                     AntiPatternsFlowWall.reset();
 
-                    //clear user wall
-                    //PicFoodAdapterManager.getSingleton( PicFoodState.EPivotalMenu.getActivity(), GridViews.EUserWall ).clearDataUIThreaded( PicFoodState.EPivotalMenu.getActivity() );
-
                     //update user's wall
                     AntiPatternsFlowWall.orderNextUserWallImages
-                            (
-                                    AntiPatternsState.EPivotalMenu,
-                                    AntiPatternsStatePivotalTabWall.singleton.iOverlayIcon,
-                                    AntiPatternsAction.ENone,
-                                    AntiPatternsAction.ENone
-                            );
+                    (
+                        AntiPatternsState.EPivotalMenu,
+                        AntiPatternsStatePivotalTabWall.singleton.iOverlayIcon,
+                        AntiPatternsAction.ENone,
+                        AntiPatternsAction.ENone
+                    );
                     break;
                 }
 

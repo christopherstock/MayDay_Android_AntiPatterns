@@ -126,7 +126,7 @@
             iStyle                  = aStyle;
             iLinkUsername           = aLinkUsername;
 
-            AntiPatternsDebug.dataImage.out( "Created PicFoodImage:" );
+            AntiPatternsDebug.dataImage.out( "Created AntiPatternsImage:" );
             AntiPatternsDebug.dataImage.out( "imageId            [" + iImageID                                                                                   + "]"                       );
             AntiPatternsDebug.dataImage.out( "imageURL           [" + iURL                                                                                       + "]"                       );
             AntiPatternsDebug.dataImage.out( "iLike              [" + iILike                                                                                     + "]"                       );
@@ -804,7 +804,7 @@
                 if ( iCountFoodRatings > JsonRPC.LIMIT_INITIAL_FOOD_RATINGS )
                 {
                     //make it bold and highlighted
-                    LibUI.setupTextViewColorStateList( state.getActivity(), ratingCount, R.color.net_picfood_link_text );
+                    LibUI.setupTextViewColorStateList( state.getActivity(), ratingCount, R.color.de_mayflower_antipatterns_link_text);
 
                     //assign action
                     LibUI.setOnClickAction
@@ -1076,7 +1076,7 @@
             {
                 //bold font and OnClickAction for username
                 LibUI.setupTextView( textView, AntiPatternsSystems.getFonts().TYPEFACE_BOLD, user.iUserName );
-                LibUI.setupTextViewColorStateList( activity, textView, R.color.net_picfood_link_text );
+                LibUI.setupTextViewColorStateList( activity, textView, R.color.de_mayflower_antipatterns_link_text);
                 LibUI.setOnClickAction
                 (
                     textView,
@@ -1112,7 +1112,7 @@
         private void linkCommentCount( final LibState state, TextView text )
         {
             //make it bold and highlighted
-            LibUI.setupTextViewColorStateList( state.getActivity(), text, R.color.net_picfood_link_text );
+            LibUI.setupTextViewColorStateList( state.getActivity(), text, R.color.de_mayflower_antipatterns_link_text);
 
             //assign action
             LibUI.setOnClickAction
@@ -1144,7 +1144,7 @@
         private void linkLikesCount( final LibState state, TextView text )
         {
             //make it bold and highlighted
-            LibUI.setupTextViewColorStateList( state.getActivity(), text, R.color.net_picfood_link_text );
+            LibUI.setupTextViewColorStateList( state.getActivity(), text, R.color.de_mayflower_antipatterns_link_text);
 
             //assign action
             LibUI.setOnClickAction

@@ -15,11 +15,11 @@
         public static final class Paramounts
         {
             /** The internal name of this project. This value is used in the exception emails. */
-            public      static  final   String              PROJECT_NAME                                        = "PicFood";
+            public      static  final   String              PROJECT_NAME                                        = "AntiPatterns";
             /** The prefix for the composed user-agent. */
-            public      static  final   String              USER_AGENT_PREFIX                                   = "PicFood/" + Paramounts.PROJECT_VERSION;
+            public      static  final   String              USER_AGENT_PREFIX                                   = "AntiPatterns/" + Paramounts.PROJECT_VERSION;
             /** The project specifier. This value must not specify special chars because it is used as the global settings group for the persistent storage and for the root-folder on the SD-card. */
-            public      static  final   String              PROJECT_SPECIFIER                                   = "PicFood";
+            public      static  final   String              PROJECT_SPECIFIER                                   = "AntiPatterns";
             /** The current project version. */
             public      static  final   String              PROJECT_VERSION                                     = AntiPatternsVersion.values()[ 0 ].getClientVersionNumber();
         }
@@ -218,15 +218,6 @@
                 public  static  final   String              GOOGLE_PLACES_API_BROWSER_KEY                       = "AIzaSyD3l2ustIclBbTtbB2MaMfqVuYlxU0GBIM";
                 /** Location types to find with nearby searches via the Google Places API. */
                 public  static  final   String              GOOGLE_PLACES_TYPES                                 = "food%7Cbar%7Ccafe%7Ccampground%7Cmeal_delivery%7Crestaurant%7Cnight_club";       // %7C == |
-            }
-
-            /*****************************************************************************************
-            *   The Google Cloud Messaging API.
-            *****************************************************************************************/
-            public static final class GCM
-            {
-                /** This is the ID of the 'PicFood' project in Google's API-console. */
-                public  static  final   String              PROJECT_ID                                          = "206229860086";
             }
         }
 

@@ -3,7 +3,7 @@
 <!-- image text link -->
 <TextView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:textColor="@color/net_picfood_link_text"
+    android:textColor="@color/de_mayflower_antipatterns_link_text"
     android:textSize="@dimen/text_image_link"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"

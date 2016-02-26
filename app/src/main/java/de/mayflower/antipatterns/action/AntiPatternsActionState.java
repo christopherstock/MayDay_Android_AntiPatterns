@@ -81,7 +81,6 @@
         protected final void execute()
         {
             AntiPatternsDebug.major.out( "EXECUTE Action: [" + this + "]" );
-          //PicFoodDebug.major.mem();
 
             switch ( this )
             {

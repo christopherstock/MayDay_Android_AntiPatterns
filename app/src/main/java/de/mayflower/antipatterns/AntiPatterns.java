@@ -11,8 +11,8 @@
     /**********************************************************************************************
     *   The startup activity class.
     *
-     *   TODO ASAP   Prune specifier 'PicFood' everywhere!
-     *   TODO ASAP   Remove specifier 'synapsy'.
+    *   TODO ASAP   Prune old specifier everywhere!
+    *   TODO ASAP   Remove specifier 'synapsy'.
     *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
     *
     *   DONE        Renamed all classes to 'AntiPatterns'.
@@ -46,7 +46,7 @@
             //assign singleton context
             singleton = this;
 
-            AntiPatternsDebug.major.out( "PicFood::onCreate()" );
+            AntiPatternsDebug.major.out( "AntiPatterns::onCreate()" );
 
             //init all systems
             AntiPatternsSystems.init(AntiPatternsState.EStartup);
@@ -72,7 +72,7 @@
             //perform initial debug
             {
                 //test all json-RPC connections on the new server
-                //PicFoodJsonRPCTest.test( this );
+                //AntiPatternsJsonRPCTest.test( this );
             }
         }
 /*

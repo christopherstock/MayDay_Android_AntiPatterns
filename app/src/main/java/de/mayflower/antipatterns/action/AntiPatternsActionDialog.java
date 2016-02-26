@@ -161,7 +161,7 @@
         protected final void execute()
         {
             AntiPatternsDebug.major.out( "EXECUTE Action: [" + this + "]" );
-          //PicFoodDebug.major.mem();
+          //AntiPatternsDebug.major.mem();
 
             switch ( this )
             {
@@ -1667,25 +1667,7 @@
                     );
                     break;
                 }
-/*
-                case EDialogSearchImagesLocationRequired:
-                {
-                    //show dialog 'location required'
-                    LibDialogDefault.showUIThreaded
-                    (
-                        PicFoodState.EPivotalMenu.getActivity(),
-                        R.string.dialog_search_images_location_required_title,
-                        R.string.dialog_search_images_location_required__body,
-                        R.string.dialog_search_images_location_required_button_ok,
-                        PicFoodActionDialog.EDialogSearchImages,
-                        0,
-                        null,
-                        true,
-                        PicFoodActionDialog.EDialogSearchImages,
-                    );
-                    break;
-                }
-*/
+
                 case EDialogSearchImagesGooglePlacesNoResults:
                 {
                     LibDialogDefault.showUIThreaded

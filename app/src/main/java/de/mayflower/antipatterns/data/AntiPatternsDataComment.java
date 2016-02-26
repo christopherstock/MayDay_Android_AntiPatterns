@@ -147,7 +147,7 @@
                 iIconDrawable.getBitmap().recycle();
                 iIconDrawable = null;
 
-                //PicFoodDebug.bitmapRecycling.out( " recycled icon successfully" );
+                //AntiPatternsDebug.bitmapRecycling.out( " recycled icon successfully" );
             }
         }
     }
