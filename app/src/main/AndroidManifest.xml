@@ -14,18 +14,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
-    <!-- optional ( requires disabling features ) -->
-<!--
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-    <uses-permission android:name="de.mayflower.picfood.permission.C2D_MESSAGE" android:protectionLevel="signature" />
-    <permission android:name="de.mayflower.picfood.permission.C2D_MESSAGE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
--->
-
-    <!-- sdk support is now from API level 17 on -->
+    <!-- sdk support -->
     <uses-sdk
         android:minSdkVersion="3"
         android:targetSdkVersion="22" />
@@ -41,7 +32,7 @@
         >
 
         <!-- startup activity -->
-        <activity android:name="de.mayflower.antipatterns.PicFood" android:label="@string/appname" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale">
+        <activity android:name=".AntiPatterns" android:label="@string/appname" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -49,64 +40,49 @@
         </activity>
 
         <!-- login activity -->
-        <activity android:name="de.mayflower.antipatterns.state.auth.PicFoodStateLogin" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" />
+        <activity android:name=".state.auth.AntiPatternsStateLogin" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" />
 
         <!-- register activity -->
-        <activity android:name="de.mayflower.antipatterns.state.auth.PicFoodStateRegister" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" />
+        <activity android:name=".state.auth.AntiPatternsStateRegister" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" />
 
         <!-- lost password activity -->
-        <activity android:name="de.mayflower.antipatterns.state.auth.PicFoodStateLostPassword" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" />
+        <activity android:name=".state.auth.AntiPatternsStateLostPassword" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" />
 
         <!-- settings activity -->
-        <activity android:name="de.mayflower.antipatterns.state.PicFoodStateSettings" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+        <activity android:name=".state.AntiPatternsStateSettings" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
 
         <!-- acclaim activity -->
-        <activity android:name="de.mayflower.antipatterns.state.acclaim.PicFoodStateAcclaim" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+        <activity android:name=".state.acclaim.AntiPatternsStateAcclaim" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
 
         <!-- title-splash activity -->
-        <activity android:name="de.mayflower.antipatterns.state.PicFoodStateTitleSplash" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+        <activity android:name=".state.AntiPatternsStateTitleSplash" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
 
         <!-- pivotal activity -->
-        <activity android:name="de.mayflower.antipatterns.state.pivotal.PicFoodStatePivotal" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+        <activity android:name=".state.pivotal.AntiPatternsStatePivotal" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
 
         <!-- google Places activity -->
-        <activity android:name="de.mayflower.antipatterns.state.PicFoodStateGooglePlaces" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+        <activity android:name=".state.AntiPatternsStateGooglePlaces" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
 
         <!-- new entry activity -->
-        <activity android:name="de.mayflower.antipatterns.state.PicFoodStateNewEntry" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+        <activity android:name=".state.AntiPatternsStateNewEntry" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
 
         <!-- foreign profile activity -->
-        <activity android:name="de.mayflower.antipatterns.state.PicFoodStateForeignProfile" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+        <activity android:name=".state.AntiPatternsStateForeignProfile" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
 
         <!-- detailed image activity -->
-        <activity android:name="de.mayflower.antipatterns.state.PicFoodStateDetailedImage" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+        <activity android:name=".state.AntiPatternsStateDetailedImage" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
 
         <!-- image properties activity -->
-        <activity android:name="de.mayflower.antipatterns.state.PicFoodStateImageProperties" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+        <activity android:name=".state.AntiPatternsStateImageProperties" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
 
         <!-- follow details activity -->
-        <activity android:name="de.mayflower.antipatterns.state.PicFoodStateFollowDetails" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+        <activity android:name=".state.AntiPatternsStateFollowDetails" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
 
         <!-- find friends results -->
-        <activity android:name="de.mayflower.antipatterns.state.PicFoodStateFindFriendsResults" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
+        <activity android:name=".state.AntiPatternsStateFindFriendsResults" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
 
         <!-- search images results -->
-        <activity android:name="de.mayflower.antipatterns.state.PicFoodStateSearchImagesResults" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
-
-        <!-- facebook login activity -->
-        <activity android:name="com.facebook.LoginActivity" />
-
-        <!-- facebook SDK app-id -->
-        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
-
-        <!-- GCM receiver -->
-        <receiver android:name="de.mayflower.antipatterns.PicFoodReceiverGCM" android:permission="com.google.android.c2dm.permission.SEND" >
-            <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-                <category android:name="de.mayflower.picfood" />
-            </intent-filter>
-        </receiver>
+        <activity android:name=".state.AntiPatternsStateSearchImagesResults" android:launchMode="singleTop" android:configChanges="orientation|keyboard|keyboardHidden|locale" android:screenOrientation="portrait" />
 
     </application>
 
