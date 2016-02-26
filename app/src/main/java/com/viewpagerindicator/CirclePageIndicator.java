@@ -16,7 +16,7 @@
  */
 package com.viewpagerindicator;
 
-    import  net.picfood.*;
+    import de.mayflower.antipatterns.*;
     import  android.content.Context;
     import  android.content.res.Resources;
     import  android.content.res.TypedArray;

@@ -16,7 +16,7 @@
  */
 package com.viewpagerindicator;
 
-    import  net.picfood.*;
+    import de.mayflower.antipatterns.*;
     import  android.content.Context;
     import  android.support.v4.view.PagerAdapter;
     import  android.support.v4.view.ViewPager;

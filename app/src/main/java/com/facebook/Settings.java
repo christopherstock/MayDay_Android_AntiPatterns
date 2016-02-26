@@ -27,9 +27,7 @@
     import  com.facebook.internal.Utility;
     import  com.facebook.model.GraphObject;
     import  com.facebook.internal.Validate;
-    import  net.picfood.*;
-
-    import  net.picfood.*;
+    import de.mayflower.antipatterns.*;
 
     import  org.json.JSONException;
     import  org.json.JSONObject;

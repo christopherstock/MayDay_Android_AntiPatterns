@@ -1,6 +1,4 @@
-/*  $Id: LibMath.java 50257 2013-07-30 10:57:31Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.util;
 
     import  android.graphics.*;

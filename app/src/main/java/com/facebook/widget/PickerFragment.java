@@ -35,11 +35,9 @@
     import  com.facebook.*;
     import  com.facebook.model.GraphObject;
     import  com.facebook.internal.SessionTracker;
-    import  net.picfood.*;
+    import de.mayflower.antipatterns.*;
 
     import  java.util.*;
-
-    import  net.picfood.*;
 
     /**
      * Provides functionality common to SDK UI elements that allow the user to pick one or more

@@ -34,12 +34,10 @@
     import  com.facebook.internal.SessionAuthorizationType;
     import  com.facebook.internal.SessionTracker;
     import  com.facebook.internal.Utility;
-    import  net.picfood.*;
+    import de.mayflower.antipatterns.*;
 
     import  java.util.Collections;
     import  java.util.List;
-
-    import  net.picfood.*;
 
     /**
      * A Log In/Log Out button that maintains session state and logs

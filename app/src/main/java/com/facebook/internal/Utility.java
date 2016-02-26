@@ -28,9 +28,7 @@
     import  android.webkit.CookieSyncManager;
     import  com.facebook.*;
     import  com.facebook.model.GraphObject;
-    import  net.picfood.*;
-
-    import  net.picfood.*;
+    import de.mayflower.antipatterns.*;
 
     import  org.json.JSONArray;
     import  org.json.JSONException;

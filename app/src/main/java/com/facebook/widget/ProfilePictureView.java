@@ -31,11 +31,9 @@
     import  com.facebook.LoggingBehavior;
     import  com.facebook.internal.Logger;
     import  com.facebook.internal.Utility;
-    import  net.picfood.*;
+    import de.mayflower.antipatterns.*;
 
     import  java.net.MalformedURLException;
-
-    import  net.picfood.*;
 
     /**
      * View that displays the profile photo of a supplied profile ID, while conforming

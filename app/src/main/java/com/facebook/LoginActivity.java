@@ -16,14 +16,12 @@
 
     package com.facebook;
 
-    import  net.picfood.*;
+    import de.mayflower.antipatterns.*;
 
     import  android.app.Activity;
     import  android.content.Intent;
     import  android.os.Bundle;
     import  android.view.View;
-
-    import  net.picfood.*;
 
     /**
      * This Activity is a necessary part of the overall Facebook login process

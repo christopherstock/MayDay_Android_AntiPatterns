@@ -1,6 +1,4 @@
-/*  $Id: LibDebug.java 50324 2013-08-01 08:18:12Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib;
 
     import  de.mayflower.lib.ui.widget.LibDebugConsole.ConsoleColor;

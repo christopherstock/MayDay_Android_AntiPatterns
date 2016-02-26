@@ -52,7 +52,7 @@
 
                     <!-- view pager title strip -->
 <!--
-                    <net.picfood.ui.viewpagerindicator.PicFoodTitlePageIndicator
+                    <de.mayflower.picfood.ui.viewpagerindicator.PicFoodTitlePageIndicator
                         android:id="@+id/acclaim_view_pager_title_strip"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

@@ -1,6 +1,4 @@
-/*  $Id: Lib.java 50546 2013-08-09 14:19:00Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib;
 
     import  java.io.*;
@@ -10,7 +8,7 @@
     import  android.app.*;
     import  android.content.*;
     import  android.content.pm.*;
-    import  android.content.pm.Signature;
+    import android.content.pm.Signature;
     import  android.graphics.*;
     import  android.net.*;
     import  android.telephony.*;

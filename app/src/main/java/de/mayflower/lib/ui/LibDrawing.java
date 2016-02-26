@@ -1,6 +1,4 @@
-/*  $Id: LibDrawing.java 50543 2013-08-09 13:46:59Z schristopher $
- *  ==============================================================================================================
- */
+
     package de.mayflower.lib.ui;
 
     import  android.graphics.*;

@@ -36,7 +36,7 @@ package com.viewpagerindicator;
     import  android.view.View;
     import  android.view.ViewConfiguration;
     import  java.util.ArrayList;
-    import  net.picfood.*;
+    import de.mayflower.antipatterns.*;
 
 /**
  * A TitlePageIndicator is a PageIndicator which displays the title of left view

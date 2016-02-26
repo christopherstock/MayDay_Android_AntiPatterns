@@ -26,7 +26,7 @@
     import  android.os.Bundle;
     import  android.text.TextUtils;
     import  android.webkit.CookieSyncManager;
-    import  net.picfood.R;
+    import  de.mayflower.antipatterns.R;
     import  com.facebook.internal.ServerProtocol;
     import  com.facebook.internal.Utility;
     import  com.facebook.model.GraphMultiResult;

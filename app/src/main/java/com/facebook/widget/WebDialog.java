@@ -16,7 +16,7 @@
 
     package com.facebook.widget;
 
-    import  net.picfood.*;
+    import de.mayflower.antipatterns.*;
 
     import  android.annotation.SuppressLint;
     import  android.app.Dialog;
@@ -45,7 +45,6 @@
     import  com.facebook.internal.ServerProtocol;
     import  com.facebook.internal.Utility;
     import  com.facebook.internal.Validate;
-    import  net.picfood.*;
 
     /**
      * This class provides a mechanism for displaying Facebook Web dialogs inside a Dialog. Helper

@@ -17,9 +17,7 @@
     package com.facebook;
 
     import  com.facebook.internal.Utility;
-    import  net.picfood.*;
-
-    import  net.picfood.*;
+    import de.mayflower.antipatterns.*;
 
     import  org.json.JSONException;
     import  org.json.JSONObject;

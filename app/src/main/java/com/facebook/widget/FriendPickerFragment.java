@@ -24,14 +24,12 @@
     import  android.util.AttributeSet;
     import  com.facebook.*;
     import  com.facebook.model.GraphUser;
-    import  net.picfood.*;
+    import de.mayflower.antipatterns.*;
 
     import  java.util.Arrays;
     import  java.util.HashSet;
     import  java.util.List;
     import  java.util.Set;
-
-    import  net.picfood.*;
 
     /**
      * Provides a Fragment that displays a list of a user's friends and allows one or more of the

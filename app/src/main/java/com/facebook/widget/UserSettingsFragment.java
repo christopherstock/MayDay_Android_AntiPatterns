@@ -27,13 +27,11 @@
     import  android.widget.TextView;
     import  com.facebook.*;
     import  com.facebook.model.GraphUser;
-    import  net.picfood.*;
+    import de.mayflower.antipatterns.*;
 
     import  java.net.MalformedURLException;
     import  java.net.URL;
     import  java.util.List;
-
-    import  net.picfood.*;
 
     /**
      * A Fragment that displays a Login/Logout button as well as the user's
