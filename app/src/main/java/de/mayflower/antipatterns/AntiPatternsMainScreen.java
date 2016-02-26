@@ -19,8 +19,8 @@
     *   TODO ASAP   Resolve the ViewPager- cached views problem.
     *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
     *   TODO ASAP   Support latest API Level.
-    *   TODO ASAP   Remove iml (trunk.iml) files on project root?
     *
+    *   DONE        Remove iml (trunk.iml) and unused module files on project root?
     *   DONE        Try PagerTabStrip.
     *   DONE        Created new icon.
     *   DONE        Removed old company name.
