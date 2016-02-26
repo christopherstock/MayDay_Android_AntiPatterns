@@ -18,7 +18,7 @@
         android:orientation="vertical"
         android:gravity="center_horizontal|center_vertical"
         android:baselineAligned="true"
-        android:background="@drawable/net_picfood_bg_detailed_image"
+        android:background="@drawable/de_mayflower_antipattern_bg_detailed_image"
         android:layout_margin="@dimen/content_distance_normal"
         >
 
@@ -99,7 +99,7 @@
                 android:adjustViewBounds="true"
                 android:paddingTop="@dimen/content_distance_normal"
                 android:paddingLeft="@dimen/content_distance_normal"
-                android:src="@drawable/net_picfood_options"
+                android:src="@drawable/de_mayflower_antipattern_options"
                 />
 
         </LinearLayout>

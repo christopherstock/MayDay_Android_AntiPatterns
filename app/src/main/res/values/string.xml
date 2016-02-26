@@ -8,7 +8,7 @@
         <string name="empty_string"></string>
 
         <!-- app name -->
-        <string name="appname">PicFood</string>
+        <string name="appname">Anti Patterns</string>
 
         <!-- facebook app-id and app-secret -->
         <string name="facebook_app_id">506768242721819</string>

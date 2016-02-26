@@ -192,7 +192,7 @@
             iIconDrawable = bd;
 
             //update ImageView
-            AntiPatternsUI.setNewImageUIThreaded(state.getActivity(), bd, iIconView, R.drawable.net_picfood_loading_image);
+            AntiPatternsUI.setNewImageUIThreaded(state.getActivity(), bd, iIconView, R.drawable.de_mayflower_antipattern_loading_image);
         }
 
         @Override
@@ -253,17 +253,17 @@
             //check if loaded icon is present
             if ( iIconDrawable == null )
             {
-                iIconView.setImageResource( R.drawable.net_picfood_loading_icon_place );
+                iIconView.setImageResource( R.drawable.de_mayflower_antipattern_loading_icon_place);
             }
             else
             {
-                AntiPatternsUI.setNewImage(state.getActivity(), iIconDrawable, iIconView, R.drawable.net_picfood_loading_icon_place);
+                AntiPatternsUI.setNewImage(state.getActivity(), iIconDrawable, iIconView, R.drawable.de_mayflower_antipattern_loading_icon_place);
 
                 //iIconView.setImageDrawable( iIconDrawable );
             }
 
             //bg
-            ret.setBackgroundResource( R.drawable.net_picfood_bg_grid_item );
+            ret.setBackgroundResource( R.drawable.de_mayflower_antipattern_bg_grid_item);
 
             return ret;
         }
@@ -277,7 +277,7 @@
                 //change the image 1st
                 iIconView.setImageDrawable( null );
                 iIconView.setImageBitmap(   null );
-                iIconView.setImageResource( R.drawable.net_picfood_loading_icon_place );
+                iIconView.setImageResource( R.drawable.de_mayflower_antipattern_loading_icon_place);
 
                 //recycle and ditch old image
                 iIconDrawable.getBitmap().recycle();

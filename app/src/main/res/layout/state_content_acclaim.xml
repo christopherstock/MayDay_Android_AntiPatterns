@@ -82,7 +82,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/drop_shadow_height"
-                    android:background="@drawable/net_picfood_drop_shadow_vert_footer"
+                    android:background="@drawable/de_mayflower_antipattern_drop_shadow_vert_footer"
                     />
 
             </RelativeLayout>
@@ -134,7 +134,7 @@
                     android:layout_height="@dimen/acclaim_logo_height"
                     android:scaleType="centerInside"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/net_picfood_logo_orange"
+                    android:src="@drawable/de_mayflower_antipattern_logo_orange"
                     android:layout_marginBottom="@dimen/content_distance_normal"
                     />
 

@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:scrollbarStyle="outsideOverlay"
-    android:scrollbarThumbHorizontal="@drawable/net_picfood_scrollbar"
-    android:scrollbarThumbVertical="@drawable/net_picfood_scrollbar"
+    android:scrollbarThumbHorizontal="@drawable/de_mayflower_antipattern_scrollbar"
+    android:scrollbarThumbVertical="@drawable/de_mayflower_antipattern_scrollbar"
     android:scrollbarSize="@dimen/scrollbar_width"
     android:fadingEdgeLength="@dimen/fading_edge_size"
     android:requiresFadingEdge="vertical"
@@ -32,7 +32,7 @@
             android:layout_height="@dimen/content_top_logo_height"
             android:scaleType="centerInside"
             android:adjustViewBounds="true"
-            android:src="@drawable/net_picfood_logo_hamburger"
+            android:src="@drawable/de_mayflower_antipattern_logo_hamburger"
             />
 
         <!-- item 'Find Friends' -->

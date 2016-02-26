@@ -21,8 +21,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbarStyle="outsideOverlay"
-            android:scrollbarThumbHorizontal="@drawable/net_picfood_scrollbar"
-            android:scrollbarThumbVertical="@drawable/net_picfood_scrollbar"
+            android:scrollbarThumbHorizontal="@drawable/de_mayflower_antipattern_scrollbar"
+            android:scrollbarThumbVertical="@drawable/de_mayflower_antipattern_scrollbar"
             android:scrollbarSize="@dimen/scrollbar_width"
             android:fadingEdgeLength="@dimen/fading_edge_size"
             android:requiresFadingEdge="vertical"
@@ -66,7 +66,7 @@
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/empty_string"
-                android:src="@drawable/net_picfood_loading_circle"
+                android:src="@drawable/de_mayflower_antipattern_loading_circle"
                 android:visibility="invisible"
                 />
 

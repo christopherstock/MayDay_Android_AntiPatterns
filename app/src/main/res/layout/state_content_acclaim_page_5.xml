@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbarStyle="outsideOverlay"
-    android:scrollbarThumbHorizontal="@drawable/net_picfood_scrollbar"
-    android:scrollbarThumbVertical="@drawable/net_picfood_scrollbar"
+    android:scrollbarThumbHorizontal="@drawable/de_mayflower_antipattern_scrollbar"
+    android:scrollbarThumbVertical="@drawable/de_mayflower_antipattern_scrollbar"
     android:scrollbarSize="@dimen/scrollbar_width"
     android:fadingEdgeLength="@dimen/fading_edge_size"
     android:requiresFadingEdge="vertical"
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center_horizontal|center_vertical"
-            android:background="@drawable/net_picfood_acclaim_dialog_bg"
+            android:background="@drawable/de_mayflower_antipattern_acclaim_dialog_bg"
             android:padding="@dimen/acclaim_dialog_padding"
             >
 
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:scaleType="centerInside"
                 android:adjustViewBounds="true"
-                android:src="@drawable/net_picfood_logo_tomate"
+                android:src="@drawable/de_mayflower_antipattern_logo_tomate"
                 />
 
             <!-- spacer -->

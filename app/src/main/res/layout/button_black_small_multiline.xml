@@ -6,8 +6,8 @@
     android:layout_height="@dimen/button_small_height"
     android:textStyle="normal"
     android:textSize="@dimen/text_button_small"
-    android:textColor="@drawable/net_picfood_button_black_fg"
-    android:background="@drawable/net_picfood_button_black_small_bg"
+    android:textColor="@drawable/de_mayflower_antipattern_button_black_fg"
+    android:background="@drawable/de_mayflower_antipattern_button_black_small_bg"
     android:minWidth="@dimen/button_small_min_width"
     android:singleLine="false"
     />

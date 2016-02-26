@@ -5,7 +5,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/net_picfood_title_splash_background"
+    android:background="@drawable/de_mayflower_antipattern_title_splash_background"
     >
 
     <!-- This LinearLayout is NOT useless! Fullscreen is only granted if a RelativeLayout is wrapping this! -->
@@ -29,7 +29,7 @@
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/empty_string"
-                android:src="@drawable/net_picfood_logo_tortelini"
+                android:src="@drawable/de_mayflower_antipattern_logo_tortelini"
                 />
         </RelativeLayout>
 
@@ -44,7 +44,7 @@
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/empty_string"
-                android:src="@drawable/net_picfood_loading_circle"
+                android:src="@drawable/de_mayflower_antipattern_loading_circle"
                 />
         </RelativeLayout>
 
@@ -60,7 +60,7 @@
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/empty_string"
-                android:src="@drawable/net_picfood_title_splash_image_bottom"
+                android:src="@drawable/de_mayflower_antipattern_title_splash_image_bottom"
                 />
         </RelativeLayout>
 

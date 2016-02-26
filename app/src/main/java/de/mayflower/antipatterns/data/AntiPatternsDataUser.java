@@ -129,7 +129,7 @@
 
             //setup loading image
             iIconView = (ImageView)ret.findViewById( R.id.profile_image );
-            iIconView.setImageResource( R.drawable.net_picfood_loading_icon_user );
+            iIconView.setImageResource( R.drawable.de_mayflower_antipattern_loading_icon_user);
 
             //setup 'you follow' text
             TextView youFollow = (TextView)ret.findViewById( R.id.you_follow );
@@ -334,16 +334,16 @@
             //check if loaded icon is present
             if ( iIconDrawable == null )
             {
-                iIconView.setImageResource( R.drawable.net_picfood_loading_icon_user );
+                iIconView.setImageResource( R.drawable.de_mayflower_antipattern_loading_icon_user);
             }
             else
             {
                 //iIconView.setImageDrawable( iIconDrawable );
-                AntiPatternsUI.setNewImage(state.getActivity(), iIconDrawable, iIconView, R.drawable.net_picfood_loading_icon_user);
+                AntiPatternsUI.setNewImage(state.getActivity(), iIconDrawable, iIconView, R.drawable.de_mayflower_antipattern_loading_icon_user);
             }
 
             //bg
-            ret.setBackgroundResource( R.drawable.net_picfood_bg_grid_item );
+            ret.setBackgroundResource( R.drawable.de_mayflower_antipattern_bg_grid_item);
 
             return ret;
         }
@@ -450,7 +450,7 @@
             iIconDrawable = bd;
 
             //assign directly if required
-            AntiPatternsUI.setNewImageUIThreaded(state.getActivity(), bd, iIconView, R.drawable.net_picfood_loading_icon_user);
+            AntiPatternsUI.setNewImageUIThreaded(state.getActivity(), bd, iIconView, R.drawable.de_mayflower_antipattern_loading_icon_user);
         }
 
         @Override
@@ -462,7 +462,7 @@
                 //change the image 1st
                 iIconView.setImageDrawable( null );
                 iIconView.setImageBitmap(   null );
-                iIconView.setImageResource( R.drawable.net_picfood_loading_icon_user );
+                iIconView.setImageResource( R.drawable.de_mayflower_antipattern_loading_icon_user);
 
                 //recycle and ditch old image
                 iIconDrawable.getBitmap().recycle();

@@ -128,7 +128,7 @@
             ViewGroup ret = (ViewGroup)LibUI.getInflatedLayoutById( state.getActivity(), R.layout.content_grid_view_loading );
 
             //set unselectable bg
-            ret.setBackgroundResource( R.drawable.net_picfood_selector_transparent );
+            ret.setBackgroundResource( R.drawable.de_mayflower_antipattern_selector_transparent);
 
             //hide top spacer if desired
             if ( !iShowTopSpacer )

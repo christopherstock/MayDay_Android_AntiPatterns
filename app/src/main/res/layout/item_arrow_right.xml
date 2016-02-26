@@ -9,7 +9,7 @@
     android:layout_weight="0.0"
     android:scaleType="centerInside"
     android:adjustViewBounds="true"
-    android:src="@drawable/net_picfood_arrow_right"
+    android:src="@drawable/de_mayflower_antipattern_arrow_right"
     android:paddingTop="@dimen/content_distance_normal"
     android:paddingBottom="@dimen/content_distance_normal"
     android:paddingRight="@dimen/item_padding_right"

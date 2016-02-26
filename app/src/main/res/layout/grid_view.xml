@@ -11,9 +11,9 @@
     android:stretchMode="columnWidth"
     android:gravity="left|top"
     android:scrollbarStyle="outsideOverlay"
-    android:scrollbarThumbHorizontal="@drawable/net_picfood_scrollbar"
-    android:scrollbarThumbVertical="@drawable/net_picfood_scrollbar"
+    android:scrollbarThumbHorizontal="@drawable/de_mayflower_antipattern_scrollbar"
+    android:scrollbarThumbVertical="@drawable/de_mayflower_antipattern_scrollbar"
     android:scrollbarSize="@dimen/scrollbar_width"
     android:fadingEdgeLength="@dimen/fading_edge_size"
-    android:listSelector="@drawable/net_picfood_selector_white"
+    android:listSelector="@drawable/de_mayflower_antipattern_selector_white"
     />

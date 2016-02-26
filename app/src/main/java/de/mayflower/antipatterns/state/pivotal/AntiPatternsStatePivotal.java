@@ -147,11 +147,11 @@
         private void initialiseTabHost()
         {
             iTabHost.setup();
-            addTab( iTabHost, iTabHost.newTabSpec( TAB_TAG_WALL    ).setIndicator( LibUI.createImageView( this, R.drawable.net_picfood_pivotal_item_wall_fg,      ScaleType.CENTER_INSIDE ) ) );
-            addTab( iTabHost, iTabHost.newTabSpec( TAB_TAG_EXPLORE ).setIndicator( LibUI.createImageView( this, R.drawable.net_picfood_pivotal_item_explore_fg,   ScaleType.CENTER_INSIDE ) ) );
-            addTab( iTabHost, iTabHost.newTabSpec( TAB_TAG_UPLOAD  ).setIndicator( LibUI.createImageView( this, R.drawable.net_picfood_pivotal_item_upload_fg,    ScaleType.CENTER_INSIDE ) ) );
-          //addTab( iTabHost, iTabHost.newTabSpec( TAB_TAG_NEWS    ).setIndicator( LibUI.createImageView( this, R.drawable.net_picfood_pivotal_item_news_fg,      ScaleType.CENTER_INSIDE ) ) );
-            addTab( iTabHost, iTabHost.newTabSpec( TAB_TAG_PROFILE ).setIndicator( LibUI.createImageView( this, R.drawable.net_picfood_pivotal_item_profile_fg,   ScaleType.CENTER_INSIDE ) ) );
+            addTab( iTabHost, iTabHost.newTabSpec( TAB_TAG_WALL    ).setIndicator( LibUI.createImageView( this, R.drawable.de_mayflower_antipattern_pivotal_item_wall_fg,      ScaleType.CENTER_INSIDE ) ) );
+            addTab( iTabHost, iTabHost.newTabSpec( TAB_TAG_EXPLORE ).setIndicator( LibUI.createImageView( this, R.drawable.de_mayflower_antipattern_pivotal_item_explore_fg,   ScaleType.CENTER_INSIDE ) ) );
+            addTab( iTabHost, iTabHost.newTabSpec( TAB_TAG_UPLOAD  ).setIndicator( LibUI.createImageView( this, R.drawable.de_mayflower_antipattern_pivotal_item_upload_fg,    ScaleType.CENTER_INSIDE ) ) );
+          //addTab( iTabHost, iTabHost.newTabSpec( TAB_TAG_NEWS    ).setIndicator( LibUI.createImageView( this, R.drawable.de_mayflower_antipattern_pivotal_item_news_fg,      ScaleType.CENTER_INSIDE ) ) );
+            addTab( iTabHost, iTabHost.newTabSpec( TAB_TAG_PROFILE ).setIndicator( LibUI.createImageView( this, R.drawable.de_mayflower_antipattern_pivotal_item_profile_fg,   ScaleType.CENTER_INSIDE ) ) );
 
             // Default to first tab
             //onTabChanged("Tab1");
@@ -188,7 +188,7 @@
             TabWidget tabWidget = iTabHost.getTabWidget();
             for ( int i = 0; i < tabWidget.getChildCount(); ++i )
             {
-                tabWidget.getChildAt( i ).setBackgroundResource( R.drawable.net_picfood_bg_pivotal_tab );
+                tabWidget.getChildAt( i ).setBackgroundResource( R.drawable.de_mayflower_antipattern_bg_pivotal_tab);
             }
         }
 

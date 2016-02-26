@@ -153,7 +153,7 @@
                 gridView.iPaddingVertID,
                 gridView.iColumnCount,
                 android.R.color.transparent,
-                R.drawable.net_picfood_selector_transparent,
+                R.drawable.de_mayflower_antipattern_selector_transparent,
                 R.layout.grid_view,
                 LibResource.getResourceDimensionInPixel( context, R.dimen.fading_edge_size ),
                 ( gridView == GridViews.EExplore ? AntiPatternsImage.getImageSizeToOrder(context, ImageSize.ETiledImage) : -1 ),

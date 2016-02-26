@@ -52,27 +52,27 @@
             iItems = new ViewGroup[]
             {
                 //find friends
-                LibUI.setupItem(  this,     R.id.item_find_friends,         R.id.text_find_friends,             R.drawable.net_picfood_bg_item,                 R.string.state_settings_item_find_friends,          AntiPatternsActionPush.EPushFindFriends,                 AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
+                LibUI.setupItem(  this,     R.id.item_find_friends,         R.id.text_find_friends,             R.drawable.de_mayflower_antipattern_bg_item,                 R.string.state_settings_item_find_friends,          AntiPatternsActionPush.EPushFindFriends,                 AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
                 //send feedback
-                LibUI.setupItem(  this,     R.id.item_send_feedback,        R.id.text_send_feedback,            R.drawable.net_picfood_bg_item,                 R.string.state_settings_item_send_feedback,         AntiPatternsActionPush.EPushSendFeedback,                AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
+                LibUI.setupItem(  this,     R.id.item_send_feedback,        R.id.text_send_feedback,            R.drawable.de_mayflower_antipattern_bg_item,                 R.string.state_settings_item_send_feedback,         AntiPatternsActionPush.EPushSendFeedback,                AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
                 //privacy policy
-                LibUI.setupItem(  this,     R.id.item_privacy_policy,       R.id.text_privacy_policy,           R.drawable.net_picfood_bg_item,                 R.string.state_settings_item_privacy_policy,        AntiPatternsActionPush.EPushSettingsPrivacyPolicy,       AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
+                LibUI.setupItem(  this,     R.id.item_privacy_policy,       R.id.text_privacy_policy,           R.drawable.de_mayflower_antipattern_bg_item,                 R.string.state_settings_item_privacy_policy,        AntiPatternsActionPush.EPushSettingsPrivacyPolicy,       AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
                 //terms and conditions
-                LibUI.setupItem(  this,     R.id.item_terms_and_conditions, R.id.text_terms_and_conditions,     R.drawable.net_picfood_bg_item,                 R.string.state_settings_item_terms_and_conditions,  AntiPatternsActionPush.EPushSettingsTermsAndConditions,  AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
+                LibUI.setupItem(  this,     R.id.item_terms_and_conditions, R.id.text_terms_and_conditions,     R.drawable.de_mayflower_antipattern_bg_item,                 R.string.state_settings_item_terms_and_conditions,  AntiPatternsActionPush.EPushSettingsTermsAndConditions,  AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
                 //change profile
-                LibUI.setupItem(  this,     R.id.item_change_profile,       R.id.text_change_profile,           R.drawable.net_picfood_bg_item,                 R.string.state_settings_item_change_profile,        AntiPatternsActionPush.EPushChangeProfile,               AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
+                LibUI.setupItem(  this,     R.id.item_change_profile,       R.id.text_change_profile,           R.drawable.de_mayflower_antipattern_bg_item,                 R.string.state_settings_item_change_profile,        AntiPatternsActionPush.EPushChangeProfile,               AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
                 //change profile image
-                LibUI.setupItem(  this,     R.id.item_change_profile_image, R.id.text_change_profile_image,     R.drawable.net_picfood_bg_item,                 R.string.state_settings_item_change_profile_image,  AntiPatternsActionPush.EPushChangeProfileImage,          AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
+                LibUI.setupItem(  this,     R.id.item_change_profile_image, R.id.text_change_profile_image,     R.drawable.de_mayflower_antipattern_bg_item,                 R.string.state_settings_item_change_profile_image,  AntiPatternsActionPush.EPushChangeProfileImage,          AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
                 //logout
-                LibUI.setupItem(  this,     R.id.item_logout,               R.id.text_logout,                   R.drawable.net_picfood_bg_item,                 R.string.state_settings_item_logout,                AntiPatternsActionPush.EPushLogout,                      AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
+                LibUI.setupItem(  this,     R.id.item_logout,               R.id.text_logout,                   R.drawable.de_mayflower_antipattern_bg_item,                 R.string.state_settings_item_logout,                AntiPatternsActionPush.EPushLogout,                      AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
                 //change password
-                LibUI.setupItem(  this,     R.id.item_change_password,      R.id.text_change_password,          R.drawable.net_picfood_bg_item,                 R.string.state_settings_item_change_password,       AntiPatternsActionPush.EPushChangePassword,              AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
+                LibUI.setupItem(  this,     R.id.item_change_password,      R.id.text_change_password,          R.drawable.de_mayflower_antipattern_bg_item,                 R.string.state_settings_item_change_password,       AntiPatternsActionPush.EPushChangePassword,              AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
                 //delete image cache
-                LibUI.setupItem(  this,     R.id.item_delete_image_cache,   R.id.text_delete_image_cache,       R.drawable.net_picfood_bg_item,                 R.string.state_settings_item_delete_image_cache,    AntiPatternsActionPush.EPushDeleteImageCache,            AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
+                LibUI.setupItem(  this,     R.id.item_delete_image_cache,   R.id.text_delete_image_cache,       R.drawable.de_mayflower_antipattern_bg_item,                 R.string.state_settings_item_delete_image_cache,    AntiPatternsActionPush.EPushDeleteImageCache,            AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
                 //delete account
-                LibUI.setupItem(  this,     R.id.item_delete_account,       R.id.text_delete_account,           R.drawable.net_picfood_bg_item,                 R.string.state_settings_item_delete_account,        AntiPatternsActionPush.EPushDeleteAccount,               AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
+                LibUI.setupItem(  this,     R.id.item_delete_account,       R.id.text_delete_account,           R.drawable.de_mayflower_antipattern_bg_item,                 R.string.state_settings_item_delete_account,        AntiPatternsActionPush.EPushDeleteAccount,               AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
                 //check for updates
-                LibUI.setupItem(  this,     R.id.item_check_update,         R.id.text_check_update,             R.drawable.net_picfood_bg_item,                 R.string.state_settings_item_check_update,          AntiPatternsActionPush.EPushSettingsCheckUpdate,         AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
+                LibUI.setupItem(  this,     R.id.item_check_update,         R.id.text_check_update,             R.drawable.de_mayflower_antipattern_bg_item,                 R.string.state_settings_item_check_update,          AntiPatternsActionPush.EPushSettingsCheckUpdate,         AntiPatternsSystems.getFonts().TYPEFACE_BOLD   ),
             };
         }
 

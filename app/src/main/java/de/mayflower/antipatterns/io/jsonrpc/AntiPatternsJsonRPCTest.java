@@ -109,7 +109,7 @@
                             (
                                     activity,
                                     null,
-                                    LibResource.getResourceBitmapDrawable(activity, R.drawable.net_picfood_settings_select).getBitmap(),
+                                    LibResource.getResourceBitmapDrawable(activity, R.drawable.de_mayflower_antipattern_settings_select).getBitmap(),
                                     "Best seafood ever! #seafood",
                                     null
                             );

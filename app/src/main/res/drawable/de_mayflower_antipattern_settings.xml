@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- unselected -->
+    <item android:drawable="@drawable/de_mayflower_antipattern_settings_unselect" android:state_selected="false" android:state_pressed="false" />
+
+    <!-- focused -->
+    <item android:drawable="@drawable/de_mayflower_antipattern_settings_hover" android:state_selected="false" android:state_focused="true" />
+
+    <!-- pressed -->
+    <item android:drawable="@drawable/de_mayflower_antipattern_settings_hover" android:state_selected="false" android:state_pressed="true" />
+
+    <!-- selected -->
+    <item android:drawable="@drawable/de_mayflower_antipattern_settings_select" android:state_selected="true" />
+
+</selector>

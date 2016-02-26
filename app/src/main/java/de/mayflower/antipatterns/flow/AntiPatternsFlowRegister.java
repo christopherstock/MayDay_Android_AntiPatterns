@@ -295,7 +295,7 @@
             AntiPatternsDebug.pickImage.out( "Order Username-Check [" + usernameToCheck + "]" );
 
             //activate icon 'check-user'
-            AntiPatternsStateRegister.setCheckUsernameIconUIThreaded(true, R.drawable.net_picfood_user_check);
+            AntiPatternsStateRegister.setCheckUsernameIconUIThreaded(true, R.drawable.de_mayflower_antipattern_user_check);
 
             //order username-check in a new thread
             new Thread()
@@ -315,19 +315,19 @@
                             if (usernameExists )
                             {
                                 //highlight 'free'
-                                AntiPatternsStateRegister.setCheckUsernameIconUIThreaded(true, R.drawable.net_picfood_user_free);
+                                AntiPatternsStateRegister.setCheckUsernameIconUIThreaded(true, R.drawable.de_mayflower_antipattern_user_free);
                             }
                             else
                             {
                                 //highlight 'existent'
-                                AntiPatternsStateRegister.setCheckUsernameIconUIThreaded(true, R.drawable.net_picfood_user_existent);
+                                AntiPatternsStateRegister.setCheckUsernameIconUIThreaded(true, R.drawable.de_mayflower_antipattern_user_existent);
                             }
                         }
                     }
                     catch ( Throwable t )
                     {
                         //abort this request if a Throwable has been raised
-                        AntiPatternsStateRegister.setCheckUsernameIconUIThreaded(false, R.drawable.net_picfood_user_check);
+                        AntiPatternsStateRegister.setCheckUsernameIconUIThreaded(false, R.drawable.de_mayflower_antipattern_user_check);
                     }
                 }
             }.start();

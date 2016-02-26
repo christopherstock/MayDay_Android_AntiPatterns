@@ -11,11 +11,11 @@
     /**********************************************************************************************
     *   The startup activity class.
     *
-    *   TODO ASAP   Rename all classes.
-    *   TODO ASAP   Remove specifier 'synapsy'.
-    *   TODO ASAP   Prune specifier 'PicFood' everywhere!
+     *   TODO ASAP   Prune specifier 'PicFood' everywhere!
+     *   TODO ASAP   Remove specifier 'synapsy'.
     *   TODO HIGH   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
     *
+    *   DONE        Renamed all classes to 'AntiPatterns'.
     *   DONE        Fixed linebreaks in all files.
     *   DONE        Pruned class header in all files.
     *   DONE        Removed '$' everywhere.

@@ -111,7 +111,7 @@
                 if ( AntiPatternsFlowRegister.lastPickedBitmap != null ) iContainerProfileImage.setImageBitmap( AntiPatternsFlowRegister.lastPickedBitmap );
 
                 //setup item 'choose profile image'
-                iItemChooseProfileImage = LibUI.setupItem( this, R.id.item_choose_profile_image, R.id.text_choose_profile_image, R.drawable.net_picfood_bg_item, R.string.state_register_choose_profile_image, AntiPatternsActionPush.EPushRegisterChooseProfileImage, AntiPatternsSystems.getFonts().TYPEFACE_BOLD );
+                iItemChooseProfileImage = LibUI.setupItem( this, R.id.item_choose_profile_image, R.id.text_choose_profile_image, R.drawable.de_mayflower_antipattern_bg_item, R.string.state_register_choose_profile_image, AntiPatternsActionPush.EPushRegisterChooseProfileImage, AntiPatternsSystems.getFonts().TYPEFACE_BOLD );
             }
 
             //reference and hide username check icon
@@ -257,7 +257,7 @@
             else
             {
                 //hide icon 'check-user'
-                setCheckUsernameIconUIThreaded( false, R.drawable.net_picfood_user_check );
+                setCheckUsernameIconUIThreaded( false, R.drawable.de_mayflower_antipattern_user_check);
             }
         }
 

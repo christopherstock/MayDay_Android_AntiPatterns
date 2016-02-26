@@ -50,7 +50,7 @@
         public static final void showAndStartLoadingCircle( final Activity activity, final ImageView loadingCircle )
         {
             //assign image 'loading circle' overlay-icon
-            loadingCircle.setImageResource( R.drawable.net_picfood_loading_circle );
+            loadingCircle.setImageResource( R.drawable.de_mayflower_antipattern_loading_circle);
 
             //disable clicks
             loadingCircle.setClickable( false );
@@ -143,7 +143,7 @@
             loadingCircle.clearAnimation();
 
             //change icon to 'no network'
-            loadingCircle.setImageResource( R.drawable.net_picfood_no_network );
+            loadingCircle.setImageResource( R.drawable.de_mayflower_antipattern_no_network);
 
             //enable clicks and set onClick-action if this shall be supported
             if ( actionOnClick == null )

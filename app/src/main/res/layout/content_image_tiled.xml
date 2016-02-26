@@ -39,7 +39,7 @@
             <!-- border overlay -->
             <de.mayflower.lib.ui.widget.LibImageView
                 android:id="@+id/tiles_image_border"
-                android:src="@drawable/net_picfood_explore_border"
+                android:src="@drawable/de_mayflower_antipattern_explore_border"
                 android:contentDescription="@string/empty_string"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

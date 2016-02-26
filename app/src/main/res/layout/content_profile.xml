@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="left|top"
-    android:background="@drawable/net_picfood_bg_detailed_image"
+    android:background="@drawable/de_mayflower_antipattern_bg_detailed_image"
     android:paddingLeft="@dimen/content_distance_normal"
     android:paddingRight="@dimen/content_distance_normal"
     android:paddingTop="@dimen/content_distance_normal"

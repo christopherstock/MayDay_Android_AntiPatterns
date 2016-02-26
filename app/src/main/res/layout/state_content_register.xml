@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:scrollbarStyle="outsideOverlay"
-    android:scrollbarThumbHorizontal="@drawable/net_picfood_scrollbar"
-    android:scrollbarThumbVertical="@drawable/net_picfood_scrollbar"
+    android:scrollbarThumbHorizontal="@drawable/de_mayflower_antipattern_scrollbar"
+    android:scrollbarThumbVertical="@drawable/de_mayflower_antipattern_scrollbar"
     android:scrollbarSize="@dimen/scrollbar_width"
     android:fadingEdgeLength="@dimen/fading_edge_size"
     android:requiresFadingEdge="vertical"
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center_horizontal|top"
-            android:background="@drawable/net_picfood_bg_form"
+            android:background="@drawable/de_mayflower_antipattern_bg_form"
             android:layout_marginTop="@dimen/content_distance_normal"
             android:layout_marginBottom="@dimen/content_distance_normal"
             >
@@ -72,7 +72,7 @@
                     android:layout_height="@dimen/inputfield_height"
                     android:scaleType="centerInside"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/net_picfood_user_check"
+                    android:src="@drawable/de_mayflower_antipattern_user_check"
                     android:layout_marginRight="@dimen/content_distance_normal"
                     />
 
@@ -167,7 +167,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center_horizontal|top"
-            android:background="@drawable/net_picfood_bg_form"
+            android:background="@drawable/de_mayflower_antipattern_bg_form"
             android:layout_marginTop="@dimen/content_distance_normal"
             android:layout_marginBottom="@dimen/content_distance_normal"
             >
@@ -233,7 +233,7 @@
                 android:layout_height="@dimen/register_camera_icon_size"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
-                android:src="@drawable/net_picfood_icon_camera"
+                android:src="@drawable/de_mayflower_antipattern_icon_camera"
                 android:layout_marginLeft="@dimen/content_distance_normal"
                 android:layout_marginRight="@dimen/content_distance_normal"
                 />

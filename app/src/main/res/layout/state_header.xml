@@ -18,7 +18,7 @@
         android:layout_height="match_parent"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
-        android:src="@drawable/net_picfood_arrow_left"
+        android:src="@drawable/de_mayflower_antipattern_arrow_left"
         android:paddingLeft="@dimen/header_margin_x"
         android:paddingRight="@dimen/header_margin_x"
         />
@@ -31,7 +31,7 @@
         android:layout_height="match_parent"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
-        android:src="@drawable/net_picfood_search"
+        android:src="@drawable/de_mayflower_antipattern_search"
         android:paddingLeft="@dimen/header_margin_x"
         android:paddingRight="@dimen/header_margin_x"
         />
@@ -59,7 +59,7 @@
             android:layout_height="match_parent"
             android:scaleType="centerInside"
             android:adjustViewBounds="true"
-            android:src="@drawable/net_picfood_logo_olive"
+            android:src="@drawable/de_mayflower_antipattern_logo_olive"
             android:layout_marginLeft="@dimen/header_margin_x"
             android:layout_marginBottom="@dimen/header_margin_y"
             />
@@ -74,7 +74,7 @@
         android:layout_height="match_parent"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
-        android:src="@drawable/net_picfood_settings"
+        android:src="@drawable/de_mayflower_antipattern_settings"
         android:paddingLeft="@dimen/header_margin_x"
         android:paddingRight="@dimen/header_margin_x"
         />

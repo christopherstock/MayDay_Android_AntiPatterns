@@ -111,7 +111,7 @@
             iIconView = (RelativeLayout)findViewById( R.id.bg_icons );
 
             //assign map image
-            iIconView.setBackgroundResource( R.drawable.net_picfood_acclaim_bg );
+            iIconView.setBackgroundResource( R.drawable.de_mayflower_antipattern_acclaim_bg);
         }
 
         /**********************************************************************************************

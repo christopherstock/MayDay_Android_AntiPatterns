@@ -840,7 +840,7 @@
                         R.string.dialog_rate_food_body,
                         R.string.dialog_rate_food_button_cancel,
                         AntiPatternsActionUnselect.EUnselectButtonsImage,
-                        new int[]       { R.drawable.net_picfood_rating_big_green,  R.drawable.net_picfood_rating_big_yellow,   R.drawable.net_picfood_rating_big_red,  },
+                        new int[]       { R.drawable.de_mayflower_antipattern_rating_big_green,  R.drawable.de_mayflower_antipattern_rating_big_yellow,   R.drawable.de_mayflower_antipattern_rating_big_red,  },
                         new Runnable[]  { EPushImageRateHighest,                    EPushImageRateMedium,                       EPushImageRateLowest,                   },
                         R.dimen.button_smiley,
                         R.layout.dialog_layout_image_buttons,

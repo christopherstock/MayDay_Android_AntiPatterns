@@ -36,7 +36,7 @@
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"
             android:contentDescription="@string/empty_string"
-            android:src="@drawable/net_picfood_loading_circle"
+            android:src="@drawable/de_mayflower_antipattern_loading_circle"
             />
 
         <!-- spacer below icon -->
