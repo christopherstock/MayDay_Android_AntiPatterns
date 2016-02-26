@@ -2,8 +2,7 @@
 
 <resources>
 
-    <string name="antipattern_name_rds">Remote Daily Standup Meeting</string>
-    <string name="antipattern_enname_rds">Remote Daily Standup</string>
+    <string name="antipattern_name_rds">Remote Daily Standup</string>
     <string-array name="antipattern_symptom_rds">
         <item>Meetings sind nicht vorbereitet</item>
         <item>Kommunikation läuft in parallelen Chats und Informationen aus Mimik, Gestik und sozialer Interaktion sind nicht möglich</item>
@@ -14,13 +13,12 @@
         <item>Bereite Dich als Teilnehmer auf Deinen Termin vor</item>
     </string-array>
 
-    <string name="antipattern_name_"></string>
-    <string name="antipattern_enname_"></string>
-    <string-array name="antipattern_symptom_">
-        <item></item>
+    <string name="antipattern_name_eus">Epic User Stories</string>
+    <string-array name="antipattern_symptom_eus">
+        <item>Deine User Stories sind zu groß und umfassen zum Beispiel mehr als nur ein Feature</item>
     </string-array>
-    <string-array name="antipattern_remedy_">
-        <item></item>
+    <string-array name="antipattern_remedy_eus">
+        <item>Unterstütze den Product Owner bei der Formulierung der User Stories</item>
     </string-array>
 
 </resources>
