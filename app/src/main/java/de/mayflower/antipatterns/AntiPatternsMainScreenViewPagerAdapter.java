@@ -1,5 +1,5 @@
 
-    package de.mayflower.antipatterns.ui.adapter;
+    package de.mayflower.antipatterns;
 
     import android.support.v4.app.Fragment;
     import android.support.v4.app.FragmentManager;

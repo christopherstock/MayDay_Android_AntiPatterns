@@ -7,7 +7,6 @@
     import  android.view.Menu;
     import  android.view.MenuInflater;
     import  android.view.MenuItem;
-    import  de.mayflower.antipatterns.ui.adapter.AntiPatternsMainScreenViewPagerAdapter;
 
     /**********************************************************************************************
     *   The startup activity class.

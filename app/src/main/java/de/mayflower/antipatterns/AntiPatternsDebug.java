@@ -3,7 +3,6 @@
 
     import  java.util.*;
     import de.mayflower.antipatterns.AntiPatternsProject.*;
-    import  de.mayflower.antipatterns.io.jsonrpc.*;
     import  android.util.*;
     import de.mayflower.lib.*;
     import  de.mayflower.lib.ui.*;
@@ -300,7 +299,7 @@
                 @Override
                 public void run()
                 {
-                    AntiPatternsJsonRPCExceptionMail.handleExceptionEmail();
+                    //AntiPatternsJsonRPCExceptionMail.handleExceptionEmail();
                 }
             }.start();
         }
