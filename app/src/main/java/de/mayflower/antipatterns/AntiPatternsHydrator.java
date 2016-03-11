@@ -9,7 +9,6 @@
     import de.mayflower.antipatterns.AntiPatternsProject.Debug;
     import de.mayflower.antipatterns.AntiPatternsProject.Features;
     import de.mayflower.lib.LibResource;
-    import de.mayflower.lib.LibStringFormat;
 
     /*****************************************************************************
     *   Represents the debug system consisting of switchable debug groups

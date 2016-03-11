@@ -158,11 +158,6 @@
             if ( iDebug ) DEBUG_THROWABLE( t );
         }
 
-        @Override
-        public final void mem()
-        {
-            if ( iDebug ) DEBUG_OUT_MEMORY();
-        }
 
         /*****************************************************************************
         *   Shows the stack-trace of the specified throwable in a scrollable dialog.
@@ -235,32 +230,6 @@
             if ( Debug.DEBUG_MODE )
             {
                 Log.e( tag, "" + msg );
-            }
-        }
-
-        /*****************************************************************************
-        *   Outputs all available information concerning the Android heap status.
-        *****************************************************************************/
-        private static final void DEBUG_OUT_MEMORY()
-        {
-            if ( Debug.DEBUG_MODE )
-            {
-                Runtime r               = Runtime.getRuntime();
-
-                String  memMax          = LibStringFormat.getSingleton().formatNumber( r.maxMemory()                                   );
-                String  memFree         = LibStringFormat.getSingleton().formatNumber( r.freeMemory()                                  );
-                String  memUsed         = LibStringFormat.getSingleton().formatNumber( r.totalMemory()                                 );
-                String  freeNativeHeap  = LibStringFormat.getSingleton().formatNumber( android.os.Debug.getNativeHeapFreeSize()        );
-                String  nativeHeap      = LibStringFormat.getSingleton().formatNumber( android.os.Debug.getNativeHeapSize()            );
-                String  nativeHeapAlloc = LibStringFormat.getSingleton().formatNumber( android.os.Debug.getNativeHeapAllocatedSize()   );
-
-                DEBUG_OUT( "memory", "==============================================" );
-                DEBUG_OUT( "memory", "memMax:           [" + memMax             + "]" );
-                DEBUG_OUT( "memory", "memFree:          [" + memFree            + "]" );
-                DEBUG_OUT( "memory", "memUsed:          [" + memUsed            + "]" );
-                DEBUG_OUT( "memory", "freeNativeHeap:   [" + freeNativeHeap     + "]" );
-                DEBUG_OUT( "memory", "nativeHeapLimit:  [" + nativeHeap         + "]" );
-                DEBUG_OUT( "memory", "nativeHeapAlloc:  [" + nativeHeapAlloc    + "]" );
             }
         }
 
