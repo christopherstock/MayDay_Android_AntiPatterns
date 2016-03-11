@@ -60,9 +60,10 @@
             categories = new Category[ categoryIds.length ];
             for ( int i = 0; i < categoryIds.length; i++)
             {
+                Integer id = Integer.parseInt( categoryIds[i] );
                 categories[ i ] = new Category
                 (
-                    Integer.parseInt( categoryIds[i] ),
+                    id,
                     categoryTitles[i],
                     categoryItems[i]
                 );

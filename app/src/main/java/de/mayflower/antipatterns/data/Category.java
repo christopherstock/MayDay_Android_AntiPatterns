@@ -7,7 +7,7 @@
         private     String          name                = null;
         private     Integer[]       patterns            = null;
 
-        public Category( Integer Id, String name, Integer[] patterns )
+        public Category( Integer id, String name, Integer[] patterns )
         {
             this.id       = id;
             this.name     = name;
