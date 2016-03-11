@@ -25,20 +25,13 @@
 
         public final void init()
         {
-            fragments = new AntiPatternsMainScreenViewPagerFragment[]
+            Category[] cats = AntiPatternsHydrator.categories;
+            AntiPatternsMainScreenViewPagerFragment[] fragments = new AntiPatternsMainScreenViewPagerFragment[cats.length];
+            for ( int i = 0; i < cats.length; i++ )
             {
-                new AntiPatternsMainScreenViewPagerFragment(),
-                new AntiPatternsMainScreenViewPagerFragment(),
-                new AntiPatternsMainScreenViewPagerFragment(),
-                new AntiPatternsMainScreenViewPagerFragment(),
-                new AntiPatternsMainScreenViewPagerFragment(),
-            };
-
-            fragments[ 0 ].init( 0, "Title 1" );
-            fragments[ 1 ].init( 1, "Title 2" );
-            fragments[ 2 ].init( 2, "Title 3" );
-            fragments[ 3 ].init( 3, "Title 4" );
-            fragments[ 4 ].init( 4, "Title 5" );
+                fragments[i] = new AntiPatternsMainScreenViewPagerFragment();
+                fragments[i].init( cats[i].getId(), cats[i].getName());
+            }
         }
 
         @Override

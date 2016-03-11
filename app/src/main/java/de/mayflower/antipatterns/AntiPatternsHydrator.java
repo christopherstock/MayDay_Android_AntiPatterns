@@ -18,6 +18,9 @@
         public      static          Category[]          categories          = null;
         public      static          Pattern[]           patterns            = null;
 
+        public static Category[] categories;
+        public static Pattern[] patterns;
+
         public static void hydrateCategories(Context context)
         {
             String[] categoryIds = LibResource.getResourceStringArray( context, "antipattern_category_ids" );
@@ -67,6 +70,7 @@
                     categoryItems[i]
                 );
             }
+
         }
 
         public static void hydratePatterns( Context context )
