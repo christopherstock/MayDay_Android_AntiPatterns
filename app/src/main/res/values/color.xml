@@ -5,14 +5,16 @@
     <!-- color adjustments -->
 
         <!-- project -->
+        <color name="project_fg">#ff0000</color>
+
         <color name="project_color_select">#ffa91c3e</color>
-        <color name="project_fg">#ff3b3b3b</color>
         <color name="project_black">#ff000000</color>
         <color name="project_grey">#ffaeafaf</color>
         <color name="project_grey_light">#ffc9c9c9</color>
 
         <!-- screen -->
         <color name="screen_bg">#ffffffff</color>
+
         <color name="screen_bg_gradient_top">#ffd9d9da</color>
         <color name="screen_bg_gradient_bottom">#ffd9d9da</color>
         <color name="screen_bg_external">#ff000000</color>
