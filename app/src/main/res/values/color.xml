@@ -12,6 +12,7 @@
         <color name="project_grey_light">#ffc9c9c9</color>
 
         <!-- screen -->
+        <color name="screen_bg">#ffffffff</color>
         <color name="screen_bg_gradient_top">#ffd9d9da</color>
         <color name="screen_bg_gradient_bottom">#ffd9d9da</color>
         <color name="screen_bg_external">#ff000000</color>
@@ -61,6 +62,7 @@
         <color name="user_profile_bg_unselect">@color/screen_fg_bright</color>
 
         <!-- items -->
+        <color name="item_bg">#ffffffff</color>
         <color name="item_bg_unselect">@color/screen_fg_bright</color>
         <color name="item_bg_hover">@color/screen_fg_bright_hover</color>
         <color name="item_bg_select">@color/project_color_select</color>

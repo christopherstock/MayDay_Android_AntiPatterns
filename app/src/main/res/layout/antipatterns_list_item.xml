@@ -9,6 +9,7 @@
     android:orientation="horizontal"
     android:gravity="left|center_vertical"
     android:baselineAligned="false"
+    android:background="@color/item_bg"
     >
 
     <!-- text -->
