@@ -44,23 +44,7 @@
 
 
 
-            String test1 = LibResource.getResourceString( this, R.string.app_name );
-            AntiPatternsDebug.major.out(">> app_name 1: [" + test1 + "]");
-
-            String[] test2 = LibResource.getResourceStringArray( this, R.array.antipattern_category_ids);
-            for (String s : test2)
-            {
-                AntiPatternsDebug.major.out(">> app_array 2: [" + s + "]");
-            }
-
-            String test3 = LibResource.getResourceString( this, "app_name" );
-            AntiPatternsDebug.major.out(">> app_name 3: [" + test3 + "]");
-
-            String[] test4 = LibResource.getResourceStringArray( this, "antipattern_category_ids" );
-            for (String s : test4)
-            {
-                AntiPatternsDebug.major.out(">> app_array 4: [" + s + "]");
-            }
+            AntiPatternsHydrator.test( this );
         }
 
         /*****************************************************************************
