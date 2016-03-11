@@ -49,13 +49,13 @@
             String[] symptoms = pattern.getSymptomps();
             String symptomtext = "";
             for ( int i=0; i < symptoms.length; i++ ) {
-                symptomtext = symptomtext + "* " + symptoms[i] + "\n";
+                symptomtext = symptomtext + "• " + symptoms[i] + "\n";
             }
             symptomview.setText(symptomtext);
             String[] remedies = pattern.getRemedies();
             String remedytext = "";
             for ( int i=0; i < remedies.length; i++ ) {
-                remedytext = remedytext + "* " + remedies[i] + "\n";
+                remedytext = remedytext + "• " + remedies[i] + "\n";
             }
             remedyview.setText(remedytext);
 
