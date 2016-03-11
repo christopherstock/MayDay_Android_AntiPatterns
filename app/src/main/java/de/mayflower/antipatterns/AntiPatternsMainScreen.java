@@ -41,7 +41,8 @@
 
             setContentView(R.layout.antipatterns_main_screen);
 
-            AntiPatternsHydrator.hydrateData( this );
+            AntiPatternsHydrator.hydrateData(     this );
+            AntiPatternsHydrator.hydratePatterns( this );
 
             setupPagerAdapter();
         }

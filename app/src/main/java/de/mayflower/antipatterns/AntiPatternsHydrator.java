@@ -2,6 +2,7 @@
     package de.mayflower.antipatterns;
 
     import  android.content.Context;
+    import  java.util.*;
     import  de.mayflower.lib.LibResource;
 
     /*****************************************************************************
@@ -60,17 +61,41 @@
 
         }
 
-
-        private static void hydrateCategories( Context context )
+        public static void hydratePatterns( Context context )
         {
+            String[] simulatedPatternIds = new String[] { "0", "1", };
 
+            Hashtable<Integer, String>   patternTitles   = new Hashtable<Integer, String>();
+            Hashtable<Integer, String[]> patternProblems = new Hashtable<Integer, String[]>();
+            Hashtable<Integer, String[]> patternRemedies = new Hashtable<Integer, String[]>();
 
-        }
+            for ( String simulatedParentId : simulatedPatternIds )
+            {
+                String title = LibResource.getResourceString(
+                    context,
+                    "antipattern_" + simulatedParentId + "_title"
+                );
 
-        private static void hydratePatterns( Context context )
-        {
+                String[] problems = LibResource.getResourceStringArray(
+                    context,
+                    "antipattern_" + simulatedParentId + "_problems"
+                );
 
+                String[] remedies = LibResource.getResourceStringArray(
+                    context,
+                    "antipattern_" + simulatedParentId + "_remedies"
+                );
 
+                AntiPatternsDebug.major.out(" >> AP title [" + title + "]");
+                for ( String s : problems )
+                {
+                    AntiPatternsDebug.major.out(" >> AP problem [" + s + "]");
+                }
+                for ( String s : remedies )
+                {
+                    AntiPatternsDebug.major.out(" >> AP remedy [" + s + "]");
+                }
+            }
         }
 
 
