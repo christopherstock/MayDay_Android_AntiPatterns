@@ -16,18 +16,6 @@
     public abstract class LibResource
     {
         /*********************************************************************************
-        *   Delivers a String resource as a Spanned-object.
-        *
-        *   @param  context     The current system context.
-        *   @param  id          The resource-id of the String to pick.
-        *   @return             A Spanned String object.
-        *********************************************************************************/
-        public static final Spanned getResourceSpannedString( Context context, int id )
-        {
-            return Html.fromHtml( context.getResources().getString( id ) );
-        }
-
-        /*********************************************************************************
         *   Delivers a String resource.
         *
         *   @param  context     The current system context.
@@ -37,6 +25,34 @@
         public static final String getResourceString( Context context, int id )
         {
             return context.getResources().getString( id );
+        }
+
+        /*********************************************************************************
+        *   Delivers a String array resource.
+        *
+        *   @param  context     The current system context.
+        *   @param  id          The resource-id of the String to pick.
+        *   @return             The according String resource.
+        *********************************************************************************/
+        public static final String[] getResourceStringArray( Context context, int id )
+        {
+            return context.getResources().getStringArray( id );
+        }
+
+
+
+
+
+        /*********************************************************************************
+        *   Delivers a String resource as a Spanned-object.
+        *
+        *   @param  context     The current system context.
+        *   @param  id          The resource-id of the String to pick.
+        *   @return             A Spanned String object.
+        *********************************************************************************/
+        public static final Spanned getResourceSpannedString( Context context, int id )
+        {
+            return Html.fromHtml( context.getResources().getString( id ) );
         }
 
         /*********************************************************************************

@@ -1,0 +1,24 @@
+
+    @version 0.1
+
+    Fixed returning to the last ViewPager page.
+    Animated returning from detailed view via back button hardkey.
+    Resolved the ViewPager- cached views problem.
+    Checkd if the ViewPager TabStrip can be clickable!
+    Tried animations between activity change.
+    Removed item press event colliding with swipe touch.
+    Remove iml (trunk.iml) and unused module files on project root?
+    Try PagerTabStrip.
+    Created new icon.
+    Removed old company name.
+    Pruned old specifier everywhere!
+    Testd on device!
+    Created mayflower certification file.
+    Renamed all classes to 'AntiPatterns'.
+    Fixed linebreaks in all files.
+    Pruned class header in all files.
+    Removed '$' everywhere.
+    Altered doc-block in all classes (author/version).
+    Setup IDE and code inspection.
+    Rename Library classes and main app's package names.
+    Removed external Facebook- and Google-Cloud-Messaging-API.

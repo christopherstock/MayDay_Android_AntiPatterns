@@ -8,36 +8,19 @@
     import  android.view.MenuInflater;
     import  android.view.MenuItem;
 
+    import de.mayflower.lib.LibResource;
+
     /**********************************************************************************************
     *   The startup activity class.
     *
+    *   TODO ASAP   Move TODO list to trello board.
+    *   TODO ASAP   Rename remove 'AntiPatterns' from all classes.
+    *   TODO ASAP   Move classes to appropriate subpackages.
     *   TODO ASAP   Button in detailed view for returning.
     *   TODO WEAK   Hold and pass all data in instance fields!
     *   TODO WEAK   Support latest API Level.
     *   TODO WEAK   Remove all old classes and references.
     *   TODO WEAK   Remove ALL inspection issues AND/OR warnings and confectionate Inspection profile!
-    *
-    *   DONE        Fixed returning to the last ViewPager page.
-    *   DONE        Animated returning from detailed view via back button hardkey.
-    *   DONE        Resolved the ViewPager- cached views problem.
-    *   DONE        Checkd if the ViewPager TabStrip can be clickable!
-    *   DONE        Tried animations between activity change.
-    *   DONE        Removed item press event colliding with swipe touch.
-    *   DONE        Remove iml (trunk.iml) and unused module files on project root?
-    *   DONE        Try PagerTabStrip.
-    *   DONE        Created new icon.
-    *   DONE        Removed old company name.
-    *   DONE        Pruned old specifier everywhere!
-    *   DONE        Testd on device!
-    *   DONE        Created mayflower certification file.
-    *   DONE        Renamed all classes to 'AntiPatterns'.
-    *   DONE        Fixed linebreaks in all files.
-    *   DONE        Pruned class header in all files.
-    *   DONE        Removed '$' everywhere.
-    *   DONE        Altered doc-block in all classes (author/version).
-    *   DONE        Setup IDE and code inspection.
-    *   DONE        Rename Library classes and main app's package names.
-    *   DONE        Removed external Facebook- and Google-Cloud-Messaging-API.
     *
     *   @author     Christopher Stock
     *   @version    1.0
@@ -58,6 +41,24 @@
             setContentView(R.layout.antipatterns_main_screen);
 
             setupPagerAdapter();
+
+
+
+            String test1 = LibResource.getResourceString( this, R.string.app_name );
+            AntiPatternsDebug.major.out(">> app_name: [" + test1 + "]");
+
+
+            String[] test2 = LibResource.getResourceStringArray( this, R.array.antipattern_all );
+            for (String test3 : test2)
+            {
+                AntiPatternsDebug.major.out(">> app_array: [" + test3 + "]");
+            }
+
+
+
+
+
+
         }
 
         /*****************************************************************************
