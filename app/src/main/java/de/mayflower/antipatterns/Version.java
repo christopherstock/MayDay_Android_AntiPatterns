@@ -1,7 +1,7 @@
 
     package de.mayflower.antipatterns;
 
-    import  de.mayflower.antipatterns.AntiPatternsProject.*;
+    import de.mayflower.antipatterns.Settings.*;
 
     /***************************************************************************************************
     *   Logs all versions of this app.
@@ -9,7 +9,7 @@
     *   @author     Christopher Stock
     *   @version    1.0
     ***************************************************************************************************/
-    public enum AntiPatternsVersion
+    public enum Version
     {
         /** */  VERSION_1_0_0(  "1.0.0",    1,      "1.0.0",        "26.02.2016 11:29:28",      "BASE",                     "" ),
 
@@ -39,7 +39,7 @@
         *   @param  aCodename               The internal codename for this version.
         *   @param  aLog                    A log-text with latest changes for this version.
         ******************************************************************************************/
-        private AntiPatternsVersion(String aClientVersionNumber, int aVersionCode, String aBackendVersionNumber, String aReleaseDate, String aCodename, String aLog)
+        private Version(String aClientVersionNumber, int aVersionCode, String aBackendVersionNumber, String aReleaseDate, String aCodename, String aLog)
         {
             iClientVersionNumber    = aClientVersionNumber;
             iVersionCode            = aVersionCode;

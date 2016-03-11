@@ -33,7 +33,7 @@
             //invoke super method
             super.onCreate(savedInstanceState);
 
-            AntiPatternsDebug.major.out("Welcome to [" + AntiPatternsVersion.getVersion() + "]");
+            AntiPatternsDebug.major.out("Welcome to [" + Version.getVersion() + "]");
 
             AntiPatternsPatternCountService countService = new AntiPatternsPatternCountService();
             countService.init(this);
