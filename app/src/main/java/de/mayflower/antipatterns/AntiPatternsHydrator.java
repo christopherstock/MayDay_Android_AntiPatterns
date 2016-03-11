@@ -17,6 +17,7 @@
     {
         public      static          Category[]          categories          = null;
         public      static          Pattern[]           patterns            = null;
+        private     static          Integer             current             = 0;
 
         public static void hydrate(Context context, AntiPatternsPatternCountService countService)
         {
@@ -133,5 +134,22 @@
             }
 
             return patternIds.values().toArray(new Integer[]{});
+        }
+
+        public static Pattern getCurrentPattern()
+        {
+            if ( null == current ) {
+                current = 0;
+            }
+            if ( null != patterns) {
+                return patterns[current];
+            } else {
+                return null;
+            }
+
+        }
+        public static void setCurrent(Integer current)
+        {
+            AntiPatternsHydrator.current = current;
         }
     }

@@ -27,6 +27,8 @@
         {
             AntiPatternsDebug.major.out("Item [" + this.index + "] in page [" + this.index + "] touched!");
 
+            AntiPatternsHydrator.setCurrent(this.index); // register pattern to show
+
             LibLauncher.launchActivity(
                     this.context,
                     AntiPatternsDetailScreen.class,
