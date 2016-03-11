@@ -45,22 +45,22 @@
 
 
             String test1 = LibResource.getResourceString( this, R.string.app_name );
-            AntiPatternsDebug.major.out(">> app_name: [" + test1 + "]");
+            AntiPatternsDebug.major.out(">> app_name 1: [" + test1 + "]");
 
             String[] test2 = LibResource.getResourceStringArray( this, R.array.antipattern_all );
-            for (String test3 : test2)
+            for (String s : test2)
             {
-                AntiPatternsDebug.major.out(">> app_array: [" + test3 + "]");
+                AntiPatternsDebug.major.out(">> app_array 2: [" + s + "]");
             }
 
+            String test3 = LibResource.getResourceString( this, "app_name" );
+            AntiPatternsDebug.major.out(">> app_name 3: [" + test3 + "]");
 
-
-
-
-
-
-
-
+            String[] test4 = LibResource.getResourceStringArray( this, "antipattern_all" );
+            for (String s : test4)
+            {
+                AntiPatternsDebug.major.out(">> app_array 4: [" + s + "]");
+            }
         }
 
         /*****************************************************************************

@@ -117,19 +117,7 @@
             );
         }
 
-        /************************************************************************
-        *   Sets up a {@link Button} with the major attributes.
-        *
-        *   @param  context         The current system context.
-        *   @param  button          The Button to configure.
-        *   @param  textID          The resource-ID for the caption of this button.
-        *   @param  typeface        The typeface to use for the caption.
-        *   @param  action          The OnClick-action.
-        ************************************************************************/
-        public static final void setupButton( Context context, Button button, int textID, Typeface typeface, Runnable action )
-        {
-            setupButton( button, LibResource.getResourceSpannedString( context, textID ), typeface, action, Gravity.CENTER_HORIZONTAL|Gravity.CENTER_VERTICAL );
-        }
+
 
         /************************************************************************
         *   Sets up a {@link Button} with the major attributes.
@@ -149,18 +137,7 @@
             setOnClickAction( button, action );
         }
 
-        /************************************************************************
-        *   Sets up a {@link TextView} with the major attributes.
-        *
-        *   @param  context         The current system context.
-        *   @param  textView        The TextView to configure.
-        *   @param  typeface        The typeface to use for the caption.
-        *   @param  textID          The resource-ID for the caption of this button.
-        ************************************************************************/
-        public static final void setupTextView( Context context, TextView textView, Typeface typeface, int textID )
-        {
-            setupTextView( textView, typeface,  LibResource.getResourceSpannedString( context, textID ) );
-        }
+
 
         /************************************************************************
         *   Sets up a {@link TextView} with the major attributes.
@@ -197,23 +174,7 @@
             }
         }
 
-        /************************************************************************
-        *   Sets up an item in The according activity context.
-        *   This is represented by a TextView and a LinearLayout in the bg.
-        *
-        *   @param  activity            The activity where this item is specified.
-        *   @param  itemID              The resource-layout-ID of the item's background layout.
-        *   @param  textID              The resource-ID of the TextView component.
-        *   @param  backgroundID        The resource-color-ID for the background of the bg layout.
-        *   @param  captionID           The resource-ID of the caption to assign to the TextView.
-        *   @param  action              The action to launch when this item is clicked.
-        *   @param  typeface            The Typeface to use for the caption.
-        *   @return                     The assembled item in a view container.
-        ************************************************************************/
-        public static final ViewGroup setupItem( Activity activity, int itemID, int textID, int backgroundID, int captionID, Runnable action, Typeface typeface )
-        {
-            return setupItem( activity, itemID, textID, backgroundID, LibResource.getResourceSpannedString( activity, captionID ), action, typeface );
-        }
+
 
         /************************************************************************
         *   Sets up an item in The according activity context.
@@ -692,28 +653,7 @@
             activity.getWindow().setSoftInputMode( WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN );
         }
 
-        /************************************************************************
-        *   Creates a <b>square</b> {@link ImageButton}.
-        *
-        *   @param  context     The current system context.
-        *   @param  imageID     The image to set for this Button.
-        *   @param  action      The action to perform on clicking this Button.
-        *   @param  sizeID      The maximum width and height to set for this Button.
-        *   @return             The assembled ImageButton.
-        ************************************************************************/
-        public static final ImageButton createImageButton( Context context, int imageID, Runnable action, int sizeID )
-        {
-            ImageButton ret = new ImageButton( context );
 
-            ret.setImageResource(    imageID );
-            ret.setAdjustViewBounds( true );
-            ret.setScaleType(        ScaleType.CENTER_INSIDE );
-            ret.setMaxWidth(         LibResource.getResourceDimensionInPixel( context, sizeID ) );
-            ret.setMaxHeight(        LibResource.getResourceDimensionInPixel( context, sizeID ) );
-            setOnClickAction(        ret, action );
-
-            return ret;
-        }
 
         /************************************************************************
         *   Adds a view to another view on the UI-Thread.
@@ -759,18 +699,7 @@
             );
         }
 
-        /************************************************************************
-        *   Turns the current activity into fullscreen mode.
-        *
-        *   @param  activity        The activity to push into fullscreen mode.
-        *   @param  showStatusBar   Determines, if the status ( notification- )
-        *                           bar shall persist on the screen.
-        ************************************************************************/
-        public static final void requestFullscreen( Activity activity, boolean showStatusBar )
-        {
-            activity.requestWindowFeature( Window.FEATURE_NO_TITLE );
-            if ( !showStatusBar ) activity.getWindow().setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN );
-        }
+
 
         /************************************************************************
         *   Returns the child index of the specified view in the specified viewGroup.
