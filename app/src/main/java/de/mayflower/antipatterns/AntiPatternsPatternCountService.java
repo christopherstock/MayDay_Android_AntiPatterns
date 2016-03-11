@@ -65,15 +65,10 @@
 
             while (entries.hasNext()) {
                 LinkedHashMap.Entry entry = (LinkedHashMap.Entry) entries.next();
-
-                for (Pattern pattern: patternList) {
-                    int key = Integer.parseInt(entry.getKey().toString());
-
-                    if (Integer.valueOf(key).compareTo(pattern.getId()) == 0) {
-                        sortedPatternIdList[topCounter] = pattern.getId();
-                        break;
-                    }
-                }
+                
+                int key = Integer.parseInt(entry.getKey().toString());
+                
+                sortedPatternIdList[topCounter] = Integer.valueOf(key);
 
                 topCounter += 1;
 
