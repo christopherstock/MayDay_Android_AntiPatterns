@@ -37,8 +37,7 @@
 
             AntiPatternsDebug.major.out("Welcome to [" + AntiPatternsVersion.getVersion() + "]");
 
-            AntiPatternsHydrator.hydrateCategories(this);
-            AntiPatternsHydrator.hydratePatterns(this);
+            AntiPatternsHydrator.hydrate(this);
 
             setContentView(R.layout.antipatterns_main_screen);
 

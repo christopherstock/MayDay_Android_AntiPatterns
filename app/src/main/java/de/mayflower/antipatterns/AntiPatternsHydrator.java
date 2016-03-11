@@ -18,6 +18,12 @@
         public      static          Category[]          categories          = null;
         public      static          Pattern[]           patterns            = null;
 
+        public static void hydrate(Context context)
+        {
+            hydrateCategories(context);
+            hydratePatterns(context);
+        }
+
         public static void hydrateCategories(Context context)
         {
             String[] categoryIds = LibResource.getResourceStringArray( context, "antipattern_category_ids" );
@@ -73,13 +79,14 @@
 
         public static void hydratePatterns( Context context )
         {
-            String[] simulatedPatternIds = new String[] { "0", "1", };
+            Integer[] simulatedPatternIds = getPatternIds();
 
             Hashtable<Integer, String>   patternTitles   = new Hashtable<Integer, String>();
             Hashtable<Integer, String[]> patternProblems = new Hashtable<Integer, String[]>();
             Hashtable<Integer, String[]> patternRemedies = new Hashtable<Integer, String[]>();
 
-            for ( String simulatedParentId : simulatedPatternIds )
+            patterns = new Pattern[simulatedPatternIds.length];
+            for ( Integer simulatedParentId : simulatedPatternIds )
             {
                 String title = LibResource.getResourceString(
                     context,
@@ -95,6 +102,7 @@
                         context,
                         "antipattern_" + simulatedParentId + "_remedies"
                 );
+                patterns[simulatedParentId] = new Pattern(simulatedParentId, title, problems, remedies);
 
                 AntiPatternsDebug.major.out(" >> AP title [" + title + "]");
                 for ( String s : problems )
@@ -106,5 +114,17 @@
                     AntiPatternsDebug.major.out(" >> AP remedy [" + s + "]");
                 }
             }
+        }
+        private static Integer[] getPatternIds()
+        {
+            Hashtable<Integer, Integer> patternIds = new Hashtable<Integer, Integer>();
+            for ( int i=0; i < categories.length; i++ ) {
+                Integer[] pats = categories[i].getPatterns();
+                for ( int j=0; j < pats.length; j++ ) {
+                    patternIds.put(pats[j], pats[j]);
+                }
+            }
+
+            return patternIds.values().toArray(new Integer[]{});
         }
     }
