@@ -39,25 +39,13 @@
                 LinearLayout item = (LinearLayout)inflater.inflate( R.layout.antipatterns_list_item, container, false );
 
                 final int index = i;
-                item.setOnClickListener
-                (
-                    new View.OnClickListener()
-                    {
-                        @Override
-                        public void onClick( View view )
-                        {
-                            AntiPatternsDebug.major.out("Item [" + index + "] in page [" + index + "] touched!");
 
-                            LibLauncher.launchActivity
-                            (
-                                AntiPatternsMainScreenViewPagerFragment.this.getActivity(),
-                                AntiPatternsDetailScreen.class,
-                                R.anim.push_left_in,
-                                R.anim.push_left_out
-                            );
-                        }
-                    }
+                AntiPatternsItemClickListener clickListener = new AntiPatternsItemClickListener(
+                    index,
+                    AntiPatternsMainScreenViewPagerFragment.this.getActivity()
                 );
+
+                item.setOnClickListener(clickListener);
 
                 sv.addView( item );
             }
