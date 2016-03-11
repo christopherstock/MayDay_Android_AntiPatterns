@@ -3,7 +3,10 @@
 
     import  android.app.Activity;
     import  android.os.Bundle;
+    import android.view.LayoutInflater;
     import android.view.MotionEvent;
+    import android.view.View;
+    import android.widget.TextView;
 
     import de.mayflower.lib.api.LibAPI;
     import de.mayflower.lib.api.LibModernAPI5;
@@ -26,11 +29,21 @@
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             //invoke super method
-            super.onCreate( savedInstanceState );
+            super.onCreate(savedInstanceState);
 
-            AntiPatternsDebug.major.out( AntiPatternsDetailScreen.class + "::onCreate()" );
+            AntiPatternsDebug.major.out(AntiPatternsDetailScreen.class + "::onCreate()");
 
-            setContentView( R.layout.antipatterns_detail_screen );
+            //setContentView( R.layout.antipatterns_detail_screen );
+
+            LayoutInflater inflater = this.getLayoutInflater();
+            View rootView = inflater.inflate(R.layout.antipatterns_detail_screen, null, false);
+            TextView titleview = (TextView)rootView.findViewById(R.id.detail_view_title);
+            TextView explanationview = (TextView)rootView.findViewById(R.id.detail_view_explanation);
+
+            titleview.setText("Hallo Welt");
+            explanationview.setText("Wer das liest, ist doof");
+
+            setContentView(rootView);
         }
 
         /*****************************************************************************
