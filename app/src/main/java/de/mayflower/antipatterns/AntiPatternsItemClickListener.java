@@ -1,31 +1,37 @@
-package de.mayflower.antipatterns;
 
-import android.app.Activity;
-import android.view.View;
+    package de.mayflower.antipatterns;
 
-import de.mayflower.lib.LibLauncher;
+    import  android.app.Activity;
+    import  android.view.View;
+    import  de.mayflower.lib.LibLauncher;
 
-public class AntiPatternsItemClickListener implements View.OnClickListener
-{
-    private int      index;
-    private Activity context;
-
-    public AntiPatternsItemClickListener(int index, Activity context)
+    /**********************************************************************************************
+    *   This class represents the item click listener for the antipattern item list.
+    *
+    *   @author     Christian Heldt.
+    *   @version    1.0
+    ***********************************************************************************************/
+    public class AntiPatternsItemClickListener implements View.OnClickListener
     {
-        this.index = index;
-        this.context = context;
-    }
+        private                 int                 index                       = 0;
+        private                 Activity            context                     = null;
 
-    @Override
-    public void onClick(View view)
-    {
-        AntiPatternsDebug.major.out("Item [" + this.index + "] in page [" + this.index + "] touched!");
+        public AntiPatternsItemClickListener( int index, Activity context )
+        {
+            this.index   = index;
+            this.context = context;
+        }
 
-        LibLauncher.launchActivity(
-                this.context,
-                AntiPatternsDetailScreen.class,
-                R.anim.push_left_in,
-                R.anim.push_left_out
-        );
+        @Override
+        public void onClick( View view )
+        {
+            AntiPatternsDebug.major.out("Item [" + this.index + "] in page [" + this.index + "] touched!");
+
+            LibLauncher.launchActivity(
+                    this.context,
+                    AntiPatternsDetailScreen.class,
+                    R.anim.push_left_in,
+                    R.anim.push_left_out
+            );
+        }
     }
-}

@@ -45,7 +45,7 @@
                     AntiPatternsMainScreenViewPagerFragment.this.getActivity()
                 );
 
-                item.setOnClickListener(clickListener);
+                item.setOnClickListener( clickListener );
 
                 sv.addView( item );
             }
