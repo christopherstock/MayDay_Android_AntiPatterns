@@ -1,37 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- general -->
+
     <string name="app_name">AntiPatterns</string>
-    <string name="action_settings">Settings</string>
+    <string name="menu_action_settings">Settings</string>
     <string name="empty_string" />
 
-    <string-array name="antipattern_all">
-        <item>rds</item>
-        <item>eus</item>
-        <item>dvs</item>
-        <item>smf</item>
-        <item>wts</item>
-        <item>ucs</item>
+    <!-- antipattern categories -->
+
+    <string-array name="antipattern_category_ids">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
     </string-array>
 
-    <string name="antipattern_name_rds">Remote Daily Standup</string>
-    <string-array name="antipattern_symptom_rds">
+    <string name="antipattern_category_0_title">Category 1</string>
+    <string-array name="antipattern_category_0_items">
+        <item>0</item>
+    </string-array>
+
+    <string name="antipattern_category_1_title">Category 2</string>
+    <string-array name="antipattern_category_1_items">
+        <item>1</item>
+    </string-array>
+
+    <string name="antipattern_category_2_title">Category 3</string>
+    <string-array name="antipattern_category_2_items">
+        <item>2</item>
+    </string-array>
+
+    <string name="antipattern_category_3_title">Category 4</string>
+    <string-array name="antipattern_category_3_items">
+        <item>3</item>
+    </string-array>
+
+    <string name="antipattern_category_4_title">Category 5</string>
+    <string-array name="antipattern_category_4_items">
+        <item>4</item>
+    </string-array>
+
+    <!-- antipattern items -->
+
+    <string name="antipattern_0_title">Remote Daily Standup</string>
+    <string-array name="antipattern_0_problems">
         <item>Meetings sind nicht vorbereitet</item>
         <item>Kommunikation läuft in parallelen Chats und Informationen aus Mimik, Gestik und sozialer Interaktion sind nicht möglich</item>
     </string-array>
-    <string-array name="antipattern_remedy_rds">
+    <string-array name="antipattern_0_remedies">
         <item>Nutze Audio-/Video-Tools.</item>
         <item>Erinnere Teilnehmer an anstehende Termine</item>
         <item>Bereite Dich als Teilnehmer auf Deinen Termin vor</item>
     </string-array>
 
-    <string name="antipattern_name_eus">Epic User Stories</string>
-    <string-array name="antipattern_symptom_eus">
+    <string name="antipattern_1_title">Epic User Stories</string>
+    <string-array name="antipattern_1_problems">
         <item>Deine User Stories sind zu groß und umfassen zum Beispiel mehr als nur ein Feature</item>
     </string-array>
-    <string-array name="antipattern_remedy_eus">
+    <string-array name="antipattern_1_remedies">
         <item>Unterstütze den Product Owner bei der Formulierung der User Stories</item>
     </string-array>
+
+
+
+
+
+
+
+
+
+
+
 
     <string name="antipattern_name_dvs">Developer Stories</string>
     <string-array name="antipattern_symptom_dvs">
@@ -80,12 +122,6 @@
         <item>Nutzt  agiles Modelling</item>
     </string-array>
 
-    <string name="antipattern_name_"></string>
-    <string-array name="antipattern_symptom_">
-        <item></item>
-    </string-array>
-    <string-array name="antipattern_remedy_">
-        <item></item>
-    </string-array>
+
 
 </resources>

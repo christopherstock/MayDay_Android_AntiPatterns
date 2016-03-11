@@ -33,7 +33,7 @@
         *********************************************************************************/
         public static final String[] getResourceStringArray( Context context, int id )
         {
-            return context.getResources().getStringArray(id);
+            return context.getResources().getStringArray( id );
         }
 
         /*********************************************************************************
