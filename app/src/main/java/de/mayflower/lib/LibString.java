@@ -1,5 +1,5 @@
 
-    package de.mayflower.lib.ui;
+    package de.mayflower.lib;
 
     import  java.util.*;
     import  java.util.regex.*;

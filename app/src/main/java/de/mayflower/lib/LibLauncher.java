@@ -9,7 +9,6 @@
     import  android.net.*;
     import  android.provider.*;
     import  de.mayflower.lib.api.*;
-    import  de.mayflower.lib.ui.*;
 
     /*********************************************************************************
     *   Launches internal or external system activities.

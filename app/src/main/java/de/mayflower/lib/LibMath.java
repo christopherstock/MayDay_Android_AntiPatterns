@@ -1,5 +1,5 @@
 
-    package de.mayflower.lib.util;
+    package de.mayflower.lib;
 
     import  android.graphics.*;
 

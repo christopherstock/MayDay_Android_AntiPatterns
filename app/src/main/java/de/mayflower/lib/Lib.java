@@ -13,7 +13,6 @@
     import  android.net.*;
     import  android.telephony.*;
     import  de.mayflower.lib.api.*;
-    import  de.mayflower.lib.io.*;
 
     /*********************************************************************************
     *   Holds static utility functionality.
@@ -399,29 +398,5 @@
                 }
             }
             return true;
-        }
-
-        /*********************************************************************************
-        *   Prints the Base64-encoded SHA of all signatures of the given package.
-        *
-        *   @param  activity    The according activity context.
-        *   @param  packageName The packagename of the package to print all signatures for.
-        *********************************************************************************/
-        public static final void printHashKey( Activity activity, String packageName )
-        {
-            try
-            {
-                PackageInfo info = activity.getPackageManager().getPackageInfo( packageName, PackageManager.GET_SIGNATURES );
-                for ( Signature signature : info.signatures )
-                {
-                    MessageDigest md = MessageDigest.getInstance( "SHA" );
-                    md.update( signature.toByteArray() );
-
-                    System.out.println( "TEMPTAGHASH KEY: [" + LibBase64.encodeToString( md.digest() ) + "]" );
-                }
-            }
-            catch ( Throwable t )
-            {
-            }
         }
     }

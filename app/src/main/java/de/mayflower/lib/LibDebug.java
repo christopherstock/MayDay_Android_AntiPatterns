@@ -1,8 +1,6 @@
 
     package de.mayflower.lib;
 
-    import  de.mayflower.lib.ui.widget.LibDebugConsole.ConsoleColor;
-
     /*********************************************************************************
     *   This class templates a debug system.
     *

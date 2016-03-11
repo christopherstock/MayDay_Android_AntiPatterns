@@ -5,7 +5,6 @@
     import  de.mayflower.antipatterns.AntiPatternsProject.*;
     import  android.util.*;
     import  de.mayflower.lib.*;
-    import  de.mayflower.lib.ui.*;
 
     /*****************************************************************************
     *   Represents the debug system consisting of switchable debug groups

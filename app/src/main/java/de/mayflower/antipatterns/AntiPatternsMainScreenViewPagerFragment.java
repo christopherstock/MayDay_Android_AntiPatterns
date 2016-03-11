@@ -8,7 +8,7 @@
     import  android.view.ViewGroup;
     import  android.widget.LinearLayout;
     import  de.mayflower.lib.LibLauncher;
-    import  de.mayflower.lib.util.LibMath;
+    import de.mayflower.lib.LibMath;
 
     public class AntiPatternsMainScreenViewPagerFragment extends Fragment
     {
