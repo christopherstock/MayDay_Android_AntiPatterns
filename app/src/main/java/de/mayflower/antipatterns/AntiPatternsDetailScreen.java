@@ -48,7 +48,7 @@
             super.onBackPressed();
 
             //only operative since API-level 5
-            if ( !LibAPI.isSdkLevelLower5() )
+            if ( !LibAPI.isSdkLevelLowerThen(5) )
             {
                 LibModernAPI5.overridePendingTransition
                 (
