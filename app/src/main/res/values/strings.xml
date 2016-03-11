@@ -48,80 +48,196 @@
     <string name="antipattern_0_title">Remote Daily Standup</string>
     <string-array name="antipattern_0_problems">
         <item>Meetings sind nicht vorbereitet</item>
-        <item>Kommunikation läuft in parallelen Chats und Informationen aus Mimik, Gestik und sozialer Interaktion sind nicht möglich</item>
+        <item>Kommunikation läuft in parallelen Chats und Informationen aus Mimik, Gestik und sozialer Interaktion sind nicht möglich.</item>
     </string-array>
     <string-array name="antipattern_0_remedies">
         <item>Nutze Audio-/Video-Tools.</item>
-        <item>Erinnere Teilnehmer an anstehende Termine</item>
-        <item>Bereite Dich als Teilnehmer auf Deinen Termin vor</item>
+        <item>Erinnere Teilnehmer an anstehende Termine.</item>
+        <item>Bereite Dich als Teilnehmer auf Deinen Termin vor.</item>
     </string-array>
 
     <string name="antipattern_1_title">Epic User Stories</string>
     <string-array name="antipattern_1_problems">
-        <item>Deine User Stories sind zu groß und umfassen zum Beispiel mehr als nur ein Feature</item>
+        <item>Deine User Stories sind zu groß und umfassen zum Beispiel mehr als nur ein Feature.</item>
     </string-array>
     <string-array name="antipattern_1_remedies">
-        <item>Unterstütze den Product Owner bei der Formulierung der User Stories</item>
+        <item>Unterstütze den Product Owner bei der Formulierung der User Stories.</item>
     </string-array>
 
-
-
-
-
-
-
-
-
-
-
-
-    <string name="antipattern_name_dvs">Developer Stories</string>
-    <string-array name="antipattern_symptom_dvs">
-        <item>Deine User Stories formulieren nicht den wirtschaftlichen Mehrwert, sondern richten sich z.B. nach rein technischen Kriterien</item>
+    <string name="antipattern_2_title">Technical User Stories</string>
+    <string-array name="antipattern_2_problems">
+        <item>Deine User Stories formulieren nicht den wirtschaftlichen Mehrwert, sondern richten sich z.B. nach rein technischen Kriterien.</item>
     </string-array>
-    <string-array name="antipattern_remedy_dvs">
-        <item>Führe ein Story Mapping Workshop durch, um Deine Stories von den Zielen Deiner Personas ableiten zu können</item>
-    </string-array>
+    <string-array name="antipattern_2_remedies">
+        <item>Führe ein Story Mapping Workshop durch, um Deine Stories von den Zielen Deiner Personas ableiten zu können.</item>
+    </string-array>  
 
-    <string name="antipattern_name_smf">Scrummerfall</string>
-    <string-array name="antipattern_symptom_smf">
-        <item>Im Sprint laufen Planung, Entwicklung und Test sequenziell ab, statt parallel</item>
+    <string name="antipattern_3_title">Scrummerfall</string>
+    <string-array name="antipattern_3_problems">
+        <item>Im Sprint laufen Planung, Entwicklung und Test sequenziell ab, statt parallel.</item>
     </string-array>
-    <string-array name="antipattern_remedy_smf">
-        <item>Halte die Zeit für die Planung kurz</item>
-        <item>Fokussiere Dich auf die Fertigstellung der User Stories</item>
-        <item>Nutze (und optimiere gegebenenfalls) Metriken wie die Cycle Time</item>
+    <string-array name="antipattern_3_remedies">
+        <item>Halte die Zeit für die Planung kurz.</item>
+        <item>Fokussiere Dich auf die Fertigstellung der User Stories.</item>
+        <item>Nutze (und optimiere gegebenenfalls) Metriken wie die Cycle Time.</item>    
+    </string-array> 
+
+    <string name="antipattern_4_title">Waterscrum</string>
+    <string-array name="antipattern_4_problems">
+        <item>Die Flexibilität von agilen Methoden wird über ein Risikomanagement mit Meilensteinen (quasi einem Checkpoint-Prozess) eingeschränkt.</item>
+    </string-array>
+    <string-array name="antipattern_4_remedies">
+        <item>Gestalte das Risikomanagement mit schnellen Releases.</item>
+        <item>Orientiere Dich dazu am Kundenfeedback.</item>    
     </string-array>
 
-    <string name="antipattern_name_wts">Waterscrum</string>
-    <string-array name="antipattern_symptom_wts">
-        <item>Die Flexibilität von agilen Methoden wird über ein Risikomanagement mit Meilensteinen (quasi einem Checkpoint-Prozess) eingeschränkt</item>
+    <string name="antipattern_5_title">Use Case Stories</string>
+    <string-array name="antipattern_5_problems">
+        <item>User Stories sind bereits so detailliert vorgegeben, dass das Team sie als Vorgabe sieht und nicht mehr diskutiert.</item>
     </string-array>
-    <string-array name="antipattern_remedy_wts">
-        <item>Gestalte das Risikomanagement mit schnellen Releases</item>
-        <item>Orientiere Dich dazu am Kundenfeedback</item>
-    </string-array>
-
-    <string name="antipattern_name_ucs">Use Case Stories</string>
-    <string-array name="antipattern_symptom_ucs">
-        <item>User Stories sind bereits so detailliert vorgegeben, dass das Team sie als Vorgabe sieht und nicht mehr diskutiert</item>
-    </string-array>
-    <string-array name="antipattern_remedy_ucs">
-        <item>Begreife User Stories als Promise of Conversation</item>
-        <item>Steige zum Sprint-Beginn mit einer Diskussion über die Story ein, statt direkt die Akzeptanzkriterien durchzugehen</item>
+    <string-array name="antipattern_5_remedies">
+        <item>Begreife User Stories als "Promise of Conversation".</item>
+        <item>Steige zum Sprint-Beginn mit einer Diskussion über die Story ein, statt direkt die Akzeptanzkriterien durchzugehen.</item>
     </string-array>
 
-    <string name="antipattern_name_ipl">Implicit Leadership</string>
-    <string-array name="antipattern_symptom_ipl">
-        <item>Das Team richtet sich allein nach dem anerkannten Kollegen ohne Commitment auf die konkrete Implementierung; auch um Konfliktsituationen zu vermeiden</item>
-        <item>Es gibt keinen teamübergrei­fenden Know-how-Aufbau</item>
+    <string name="antipattern_6_title">Implicit Leadership</string>
+    <string-array name="antipattern_6_problems">
+        <item>Das Team richtet sich allein nach dem anerkannten Kollegen, ohne Commitment auf die konkrete Implemen­tierung; auch um Konfliktsitu­ationen zu vermeiden.</item>
+        <item>Es gibt keinen teamübergrei­fenden Know-how-Aufbau.</item>    
     </string-array>
-    <string-array name="antipattern_remedy_ipl">
-        <item>Trefft Entscheidungen gemeinsam</item>
-        <item>Nutzt Pair Programming</item>
-        <item>Nutzt  agiles Modelling</item>
+    <string-array name="antipattern_6_remedies">
+        <item>Trefft Entscheidungen gemeinsam.</item>
+        <item>Nutzt Pair Programming. Nutzt  agiles Modelling.</item>    
     </string-array>
 
+    <string name="antipattern_7_title">Group Thinking</string>
+    <string-array name="antipattern_7_problems">
+        <item>Im Meeting werden  eigene Meinungen an die Gruppenmeinung angepasst – und so neue Impulse durch individuelle Einschätzungen gedämpft.</item>
+    </string-array>
+    <string-array name="antipattern_7_remedies">
+        <item>Nutzt neutrale Abstimmungsverfahren wie das verdeckte Dot Voting oder Kartendecks.</item>   
+    </string-array>
 
+    <string name="antipattern_8_title">Group Narcissism</string>
+    <string-array name="antipattern_8_problems">
+        <item>Das Team bleibt lieber unter sich, weil es vom Input anderer nicht viel erwartet. Ein Austausch mit fremden Ideen findet nicht mehr statt.</item>
+    </string-array>
+    <string-array name="antipattern_8_remedies">
+        <item>Arbeite  mit anderen Teams zusammen, oder stellt Euch gemeinsame Ziele auf.</item>
+        <item>Nutze Slacktime, interne Barcamps und andere Gelegenheiten, Dich mit Kollegen anderer Teams auszutauschen.</item>    
+    </string-array>  
+
+    <string name="antipattern_9_title">Mushroom Management</string>
+    <string-array name="antipattern_9_problems">
+        <item>Der kurz-, mittel- und langfristige Ausblick an die Anforderungen ist unklar.</item>
+        <item>Man bespricht strategische Änderungen ohne das Team und informiert es oft nach­träglich.</item>    
+    </string-array>
+    <string-array name="antipattern_9_remedies">
+        <item>Halte die Produkt-Roadmap transparent.</item>
+        <item>Achte auf ein DEEP-Backlog.</item>
+        <item>Berücksichtige strategische Änderungen im Grooming.</item>    
+    </string-array>
+
+    <string name="antipattern_10_title">Scrum Mum</string>
+    <string-array name="antipattern_10_problems">
+        <item>Der Scrum Master kümmert sich mit Aufmerksamkeiten bevorzugt um die Zufrieden­heit des Teams, weniger um dessen Weiterentwicklung.</item>
+    </string-array>
+    <string-array name="antipattern_10_remedies">
+        <item>Der Scrum Master fördert die Autonomie, den Informationsfluss und die Weiterentwicklung des Teams.</item>
+        <item>Der Scrum Master stützt mit Herausforderungen, statt Aufmerksamkeiten.</item>    
+    </string-array>
+
+    <string name="antipattern_11_title">Need for Guidance</string>
+    <string-array name="antipattern_11_problems">
+        <item>Das Team erwartet Führung durch Scrum Master und PO, um auf der sicheren Seite zu stehen; es bringt sich wenig in Prozesse abseits konkreter Umsetzung ein.</item>
+    </string-array>
+    <string-array name="antipattern_11_remedies">
+        <item>Arbeite an einem gemein­samen mentalen Modell für Vision und Ziel des Produkts.</item>
+        <item>Scrum Master und PO er­mutigen das Team, Entschei­dungen zu treffen.</item>    
+    </string-array>
+
+    <string name="antipattern_12_title">Princess Scrum</string>
+    <string-array name="antipattern_12_problems">
+        <item>Scrum wird nur als vorüber­gehender Hype gesehen und der Nutzen des Modells verniedlicht.</item>
+        <item>Agile Methoden werden im Grunde abgelehnt.</item>    
+    </string-array>
+    <string-array name="antipattern_12_remedies">
+        <item>Erkläre die Hintergründe der höheren Wertschöpfung mit Scrum sachlich und differen­ziert.</item>
+    </string-array>
+
+    <string name="antipattern_13_title">The Epic Release</string>
+    <string-array name="antipattern_13_problems">
+        <item>Ihr entwickelt zwar agil, aber mit langen Releasezyklen, z.B. quartalsweise.</item>
+        <item>Nutzerfeedback steht Euch dementsprechend nur mit großer Verzögerung zur Verfügung.</item>    
+    </string-array>
+    <string-array name="antipattern_13_remedies">
+        <item>Führe ein Continuous Deployment ein.</item>
+    </string-array>
+
+    <string name="antipattern_14_title">Bugfixing Sprint</string>
+    <string-array name="antipattern_14_problems">
+        <item>Ein Sprint ist für das Bugfixing reserviert und mit der Planbarkeit ist es dahin.</item>
+    </string-array>
+    <string-array name="antipattern_14_remedies">
+        <item>Kümmere Dich im regulären Sprint kontinuierlich um das Bugfixing.</item>
+    </string-array>
+
+    <string name="antipattern_15_title">Rubber Band Development</string>
+    <string-array name="antipattern_15_problems">
+        <item>Ihr entwickelt zwar agil, aber mit langen Releasezyklen, z.B. quartalsweise.</item>
+        <item>Nutzerfeedback steht Euch dementsprechend nur mit großer Verzögerung zur Verfügung.</item>    
+    </string-array>
+    <string-array name="antipattern_15_remedies">
+        <item>Führe ein Continuous Deployment ein.</item>
+    </string-array>
+
+    <string name="antipattern_16_title">Design by Intuition</string>
+    <string-array name="antipattern_16_problems">
+        <item>Die Produktvision beruht auf intuitiven Einfällen und der Brillianz von Management und Entwicklung.</item>
+        <item>Es gibt keine Kommunikation mit den Endanwendern.</item>    
+    </string-array>
+    <string-array name="antipattern_16_remedies">
+        <item>Formuliere gemeinsam mit dem Kunden die Produktvision.</item>
+        <item>Präsentiere und bewerte kontinuierlich die Entwick­lung gegenüber der Vision.</item>    
+    </string-array>
+  
+    <string name="antipattern_17_title">Bigger is better</string>
+    <string-array name="antipattern_17_problems">
+        <item>Einzelne Funktionalitäten werden kontinuierlich ergänzt, um das Produkt "noch mächtiger", "vollstän­diger" oder "hochwertiger" zu machen. Der Kernnutzen verbessert sich jedoch kaum.</item>
+    </string-array>
+    <string-array name="antipattern_17_remedies">
+        <item>Halte Dich an Prinzipien wie MVP und MMF.</item>
+        <item>Priorisiere die Features und Teile ein Release in kleinere Pre-Releases auf, um früh Feedback zu erhalten.</item>    
+    </string-array>
+
+    <string name="antipattern_18_title">Bug Zombies</string>
+    <string-array name="antipattern_18_problems">
+        <item>Bugs werden nicht mehr kontinuierlich behoben und häufen sich heimlich an.</item>
+    </string-array>
+    <string-array name="antipattern_18_remedies">
+        <item>Mache Bugs transparent.</item>
+        <item>Schaffe im Team ein Be­wusstsein für das Bugfixing.</item>
+        <item>Stelle Zeit und Ressourcen für das Bugflxing zur Verfügung.</item>    
+    </string-array>
+
+    <string name="antipattern_19_title">The King's Daily</string>
+    <string-array name="antipattern_19_problems">
+        <item>Ein Stakeholder (z.B. ein Manager) leitet die Daily Standups, zeigt dabei auf jedes Teammitglied und fragt nach erfolgten Updates.</item>
+    </string-array>
+    <string-array name="antipattern_19_remedies">
+        <item>Erinnere daran, dass das Daily in erster Linie für die Synchronisation des Teams da ist.</item>
+        <item>Bitte weitere Stakeholder, ihre Anliegen außerhalb des Dailies in einem eigenen Termin zu besprechen.</item>    
+    </string-array>
+
+    <string name="antipattern_20_title">Joker</string>
+    <string-array name="antipattern_20_problems">
+        <item>Ihr fahrt Agil nach Hand­buch, aber die versprochene Besserung bleibt aus.</item>
+        <item>Auf agile Coachings wird verzichtet, damit die Arbeit nicht liegenbleibt.</item>    
+    </string-array>
+    <string-array name="antipattern_20_remedies">
+        <item>Frag Mayflower nach einem Team Coaching on the Job.</item>
+        <item>Verzeihe uns die schamlose Eigenwerbung.</item>
+        <item>Ehrlich, wir begleiten Dein Team im Projekt und helfen Dir, ohne Dich zu belasten.</item>    
+    </string-array>
 
 </resources>
