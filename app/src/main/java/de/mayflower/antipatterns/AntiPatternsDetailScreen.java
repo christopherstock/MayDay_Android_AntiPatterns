@@ -1,13 +1,15 @@
 
     package de.mayflower.antipatterns;
 
-    import  android.app.Activity;
-    import  android.os.Bundle;
+    import android.content.Intent;
+    import android.app.Activity;
+    import android.os.Bundle;
     import android.view.LayoutInflater;
     import android.view.MotionEvent;
     import android.view.View;
     import android.widget.TextView;
 
+    import de.mayflower.antipatterns.data.Pattern;
     import de.mayflower.lib.api.LibAPI;
     import de.mayflower.lib.api.LibModernAPI5;
 
@@ -22,6 +24,7 @@
 
         private float touchStartX           = 0;
         private float touchEndX             = 0;
+        private static final String ARG_ITEM_ID = "pattern_id";
 
         /*****************************************************************************
          * Being invoked when this activity is being created.
@@ -41,9 +44,20 @@
             TextView symptomview = (TextView)rootView.findViewById(R.id.detail_view_symptoms);
             TextView remedyview = (TextView)rootView.findViewById(R.id.detail_view_remedies);
 
-            titleview.setText("Hallo Welt");
-            symptomview.setText("Wer das liest, ist doof");
-            remedyview.setText("Wer das liest, ist auch doof");
+            Pattern pattern = AntiPatternsHydrator.getCurrentPattern();
+            titleview.setText(pattern.getName());
+            String[] symptoms = pattern.getSymptomps();
+            String symptomtext = "";
+            for ( int i=0; i < symptoms.length; i++ ) {
+                symptomtext = symptomtext + "* " + symptoms[i] + "\n";
+            }
+            symptomview.setText(symptomtext);
+            String[] remedies = pattern.getRemedies();
+            String remedytext = "";
+            for ( int i=0; i < remedies.length; i++ ) {
+                remedytext = remedytext + "* " + remedies[i] + "\n";
+            }
+            remedyview.setText(remedytext);
 
             setContentView(rootView);
         }
