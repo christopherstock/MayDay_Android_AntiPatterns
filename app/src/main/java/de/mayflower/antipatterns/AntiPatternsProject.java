@@ -220,15 +220,4 @@
                 public  static  final   String              GOOGLE_PLACES_TYPES                                 = "food%7Cbar%7Ccafe%7Ccampground%7Cmeal_delivery%7Crestaurant%7Cnight_club";       // %7C == |
             }
         }
-
-        /*****************************************************************************************
-        *   All assets that are shipped with the APK.
-        *****************************************************************************************/
-        public static final class Assets
-        {
-            /** The name of the file in the 'asset' folder that holds the desired TrueType font with 'regular' style. */
-            public      static  final   String              FILENAME_ASSET_FONT_REGULAR                         = "font_myriad_pro_regular.ttf";
-            /** The name of the file in the 'asset' folder that holds the desired TrueType font with 'bold' style. */
-            public      static  final   String              FILENAME_ASSET_FONT_BOLD                            = "font_myriad_pro_bold.ttf";
-        }
     }

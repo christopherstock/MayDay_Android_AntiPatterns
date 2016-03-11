@@ -1,8 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- general -->
+
     <string name="app_name">AntiPatterns</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="menu_action_settings">Settings</string>
+    <string name="empty_string" />
+
+    <!-- antipattern categories -->
+
+    <string-array name="antipattern_category_ids">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="antipattern_category_0_title">Category 1</string>
+    <string-array name="antipattern_category_0_items">
+        <item>0</item>
+    </string-array>
+
+    <string name="antipattern_category_1_title">Category 2</string>
+    <string-array name="antipattern_category_1_items">
+        <item>1</item>
+    </string-array>
+
+    <string name="antipattern_category_2_title">Category 3</string>
+    <string-array name="antipattern_category_2_items">
+        <item>2</item>
+    </string-array>
+
+    <string name="antipattern_category_3_title">Category 4</string>
+    <string-array name="antipattern_category_3_items">
+        <item>3</item>
+    </string-array>
+
+    <string name="antipattern_category_4_title">Category 5</string>
+    <string-array name="antipattern_category_4_items">
+        <item>4</item>
+    </string-array>
+
+    <!-- antipattern items -->
+
+    <string name="antipattern_0_title">Remote Daily Standup</string>
+    <string-array name="antipattern_0_problems">
+        <item>Meetings sind nicht vorbereitet</item>
+        <item>Kommunikation läuft in parallelen Chats und Informationen aus Mimik, Gestik und sozialer Interaktion sind nicht möglich</item>
+    </string-array>
+    <string-array name="antipattern_0_remedies">
+        <item>Nutze Audio-/Video-Tools.</item>
+        <item>Erinnere Teilnehmer an anstehende Termine</item>
+        <item>Bereite Dich als Teilnehmer auf Deinen Termin vor</item>
+    </string-array>
+
+    <string name="antipattern_1_title">Epic User Stories</string>
+    <string-array name="antipattern_1_problems">
+        <item>Deine User Stories sind zu groß und umfassen zum Beispiel mehr als nur ein Feature</item>
+    </string-array>
+    <string-array name="antipattern_1_remedies">
+        <item>Unterstütze den Product Owner bei der Formulierung der User Stories</item>
+    </string-array>
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="antipattern_name_dvs">Developer Stories</string>
+    <string-array name="antipattern_symptom_dvs">
+        <item>Deine User Stories formulieren nicht den wirtschaftlichen Mehrwert, sondern richten sich z.B. nach rein technischen Kriterien</item>
+    </string-array>
+    <string-array name="antipattern_remedy_dvs">
+        <item>Führe ein Story Mapping Workshop durch, um Deine Stories von den Zielen Deiner Personas ableiten zu können</item>
+    </string-array>
+
+    <string name="antipattern_name_smf">Scrummerfall</string>
+    <string-array name="antipattern_symptom_smf">
+        <item>Im Sprint laufen Planung, Entwicklung und Test sequenziell ab, statt parallel</item>
+    </string-array>
+    <string-array name="antipattern_remedy_smf">
+        <item>Halte die Zeit für die Planung kurz</item>
+        <item>Fokussiere Dich auf die Fertigstellung der User Stories</item>
+        <item>Nutze (und optimiere gegebenenfalls) Metriken wie die Cycle Time</item>
+    </string-array>
+
+    <string name="antipattern_name_wts">Waterscrum</string>
+    <string-array name="antipattern_symptom_wts">
+        <item>Die Flexibilität von agilen Methoden wird über ein Risikomanagement mit Meilensteinen (quasi einem Checkpoint-Prozess) eingeschränkt</item>
+    </string-array>
+    <string-array name="antipattern_remedy_wts">
+        <item>Gestalte das Risikomanagement mit schnellen Releases</item>
+        <item>Orientiere Dich dazu am Kundenfeedback</item>
+    </string-array>
+
+    <string name="antipattern_name_ucs">Use Case Stories</string>
+    <string-array name="antipattern_symptom_ucs">
+        <item>User Stories sind bereits so detailliert vorgegeben, dass das Team sie als Vorgabe sieht und nicht mehr diskutiert</item>
+    </string-array>
+    <string-array name="antipattern_remedy_ucs">
+        <item>Begreife User Stories als Promise of Conversation</item>
+        <item>Steige zum Sprint-Beginn mit einer Diskussion über die Story ein, statt direkt die Akzeptanzkriterien durchzugehen</item>
+    </string-array>
+
+    <string name="antipattern_name_ipl">Implicit Leadership</string>
+    <string-array name="antipattern_symptom_ipl">
+        <item>Das Team richtet sich allein nach dem anerkannten Kollegen ohne Commitment auf die konkrete Implementierung; auch um Konfliktsituationen zu vermeiden</item>
+        <item>Es gibt keinen teamübergrei­fenden Know-how-Aufbau</item>
+    </string-array>
+    <string-array name="antipattern_remedy_ipl">
+        <item>Trefft Entscheidungen gemeinsam</item>
+        <item>Nutzt Pair Programming</item>
+        <item>Nutzt  agiles Modelling</item>
+    </string-array>
+
+
 
 </resources>

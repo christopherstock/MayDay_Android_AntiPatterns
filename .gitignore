@@ -6,3 +6,7 @@
 /build
 /.idea
 /MayDay_Android_AntiPatterns.iml
+/app/app.iml
+/app/build.gradle
+/build.gradle
+/app/build

@@ -1,8 +1,6 @@
 
     package de.mayflower.lib;
 
-    import  de.mayflower.lib.ui.widget.LibDebugConsole.ConsoleColor;
-
     /*********************************************************************************
     *   This class templates a debug system.
     *
@@ -31,14 +29,6 @@
         *   @param  t       The Throwable to output.
         *********************************************************************************/
         public abstract void trace( Throwable t );
-
-        /*********************************************************************************
-        *   Logs a message to an on-screen console.
-        *
-        *   @param  msg     The message to log.
-        *   @param  col     The console color to use for logging the given message.
-        *********************************************************************************/
-        public abstract void log( String msg, ConsoleColor col );
 
         /*********************************************************************************
         *   Performs an output of memory information.
