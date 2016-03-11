@@ -27,10 +27,10 @@
         {
             Category[] cats = AntiPatternsHydrator.categories;
             AntiPatternsMainScreenViewPagerFragment[] fragments = new AntiPatternsMainScreenViewPagerFragment[cats.length];
-            for ( int i = 0; i < cats.length; i++ )
+            for ( int i = 0; i < AntiPatternsHydrator.categories.length; i++ )
             {
                 fragments[i] = new AntiPatternsMainScreenViewPagerFragment();
-                fragments[i].init( cats[i].getId(), cats[i].getName());
+                fragments[i].init( AntiPatternsHydrator.categories[i].getId(), AntiPatternsHydrator.categories[i].getName());
             }
         }
 

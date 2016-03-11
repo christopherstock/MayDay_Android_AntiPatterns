@@ -37,10 +37,10 @@
 
             AntiPatternsDebug.major.out("Welcome to [" + AntiPatternsVersion.getVersion() + "]");
 
-            setContentView(R.layout.antipatterns_main_screen);
-
             AntiPatternsHydrator.hydrateCategories(this);
             AntiPatternsHydrator.hydratePatterns(this);
+
+            setContentView(R.layout.antipatterns_main_screen);
 
             setupPagerAdapter();
         }
