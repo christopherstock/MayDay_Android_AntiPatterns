@@ -1,14 +1,8 @@
 
     package de.mayflower.antipatterns;
 
-    import android.content.Context;
-    import android.util.Log;
-
-    import java.util.Vector;
-
-    import de.mayflower.antipatterns.AntiPatternsProject.Debug;
-    import de.mayflower.antipatterns.AntiPatternsProject.Features;
-    import de.mayflower.lib.LibResource;
+    import  android.content.Context;
+    import  de.mayflower.lib.LibResource;
 
     /*****************************************************************************
     *   Represents the debug system consisting of switchable debug groups
@@ -19,6 +13,57 @@
     *****************************************************************************/
     public final class AntiPatternsHydrator
     {
+
+
+        public static void hydrateData( Context context )
+        {
+            String[] categoryIds    = LibResource.getResourceStringArray( context, "antipattern_category_ids" );
+            for ( String s : categoryIds )
+            {
+                AntiPatternsDebug.major.out( ">> category ID [" + s + "]" );
+            }
+
+            String[] categoryTitles = new String[ categoryIds.length ];
+            for ( int i = 0; i < categoryTitles.length; ++i )
+            {
+                categoryTitles[i] = LibResource.getResourceString(
+                    context,
+                    "antipattern_category_" + i + "_title"
+                );
+            }
+
+            for ( String s : categoryTitles )
+            {
+                AntiPatternsDebug.major.out( ">> category Title [" + s + "]" );
+            }
+
+            String[][] categoryItems = new String[ categoryIds.length ][];
+            for ( int i = 0; i < categoryItems.length; ++i )
+            {
+
+
+                //categoryItems[i] = new String[];
+            }
+
+
+
+
+        }
+
+
+        private static void hydrateCategories( Context context )
+        {
+
+
+        }
+
+        private static void hydratePatterns( Context context )
+        {
+
+
+        }
+
+
         public static void test( Context context )
         {
             String test1 = LibResource.getResourceString(context, R.string.app_name);
@@ -38,6 +83,10 @@
             {
                 AntiPatternsDebug.major.out(">> app_array 4: [" + s + "]");
             }
+
+
+
+
         }
 
 
