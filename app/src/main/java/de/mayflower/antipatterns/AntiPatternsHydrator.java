@@ -40,13 +40,23 @@
             String[][] categoryItems = new String[ categoryIds.length ][];
             for ( int i = 0; i < categoryItems.length; ++i )
             {
+                categoryItems[i] = LibResource.getResourceStringArray(
+                    context,
+                    "antipattern_category_" + i + "_items"
+                );
+
+                for ( String s : categoryItems[i] )
+                {
+                    AntiPatternsDebug.major.out(" >> category id [" + i + "] item [" + s + "]");
+                }
+
+
+
+
 
 
                 //categoryItems[i] = new String[];
             }
-
-
-
 
         }
 
