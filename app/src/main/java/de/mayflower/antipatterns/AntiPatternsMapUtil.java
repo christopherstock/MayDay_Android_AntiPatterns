@@ -9,9 +9,6 @@
 
     public class AntiPatternsMapUtil
     {
-        public final static int SORT_ASC = 0;
-        public final static int SORT_DESC = 1;
-
         public static enum SORT_ORDER {
             ASC,
             DESC
