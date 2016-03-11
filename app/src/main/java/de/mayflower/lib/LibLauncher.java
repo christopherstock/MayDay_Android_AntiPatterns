@@ -211,55 +211,6 @@
         }
 
         /*********************************************************************************
-        *   Launches the system's image crop activity. This happens with a call to
-        *   {@link Activity#startActivityForResult(Intent, int)}, so a requestCode must be specified.
-        *
-        *   @param  imageURI        The uri of the source image to crop resides.
-        *   @param  cropURI         The uri of the destination where the cropped image is saved.
-        *   @param  activity        The according activity context.
-        *   @param  requestCode     The request code to propagate to the crop-activity.
-        *   @param  aspectX         The desired horizontal aspect-ratio for the cropping rect.
-        *   @param  aspectY         The desired vertical aspect-ratio for the cropping rect.
-        *********************************************************************************/
-        public static final void launchImageCrop( Uri imageURI, Uri cropURI, Activity activity, int requestCode, int aspectX, int aspectY )
-        {
-            Intent queryIntent = new Intent( "com.android.camera.action.CROP" );
-            queryIntent.setType( "image/*" );
-
-            //resolve all suitable activities
-            List<ResolveInfo> list = activity.getPackageManager().queryIntentActivities( queryIntent, 0 );
-
-            //check if suitable activity has been found
-            int size = list.size();
-            if ( size == 0 )
-            {
-                LibUI.showToastUIThreaded( activity, "Unable to find image crop activity!", true );
-                return;
-            }
-
-            //pick 1st resolve info and create new intent
-            Intent      cropIntent   = new Intent( queryIntent );
-            ResolveInfo res = list.get( 0 );
-
-          //i.setComponent( new ComponentName( res.activityInfo.packageName, res.activityInfo.name ) );
-            cropIntent.setClassName( res.activityInfo.packageName, res.activityInfo.name );
-
-            //set image-url
-            cropIntent.setData( imageURI );
-
-            //put extra data
-            cropIntent.putExtra( "aspectX",         aspectX                                     );
-            cropIntent.putExtra( "aspectY",         aspectY                                     );
-            cropIntent.putExtra( "return-data",     false                                       );
-            cropIntent.putExtra( "crop",            true                                        );
-            cropIntent.putExtra( "setWallpaper",    false                                       );
-            cropIntent.putExtra( "output",          cropURI                                     );
-
-            //launch external activity
-            activity.startActivityForResult( cropIntent, requestCode );
-        }
-
-        /*********************************************************************************
         *   Launches the system's 'share'-activity in order to share the specified url.
         *
         *   @param  context         The current system context.
