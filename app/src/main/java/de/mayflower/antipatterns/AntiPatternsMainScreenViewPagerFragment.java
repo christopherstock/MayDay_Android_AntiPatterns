@@ -8,7 +8,6 @@
     import  android.view.ViewGroup;
     import  android.widget.LinearLayout;
     import  de.mayflower.lib.LibLauncher;
-    import de.mayflower.lib.LibMath;
 
     public class AntiPatternsMainScreenViewPagerFragment extends Fragment
     {
@@ -33,7 +32,7 @@
             View      rootView = inflater.inflate( R.layout.antipatterns_main_screen_view_pager_fragment, container, false );
             ViewGroup sv       = (ViewGroup)rootView.findViewById( R.id.view_pager_scrollview_content );
 
-            int itemsToCreate = LibMath.getRandom(2, 20);
+            int itemsToCreate = 10;
             for ( int i = 0; i < itemsToCreate; ++i )
             {
                 LinearLayout item = (LinearLayout)inflater.inflate( R.layout.antipatterns_list_item, container, false );
