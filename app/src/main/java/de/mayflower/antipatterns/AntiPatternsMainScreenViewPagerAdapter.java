@@ -26,7 +26,7 @@
         public final void init()
         {
             Category[] cats = AntiPatternsHydrator.categories;
-            AntiPatternsMainScreenViewPagerFragment[] fragments = new AntiPatternsMainScreenViewPagerFragment[cats.length];
+            fragments = new AntiPatternsMainScreenViewPagerFragment[cats.length];
             for ( int i = 0; i < AntiPatternsHydrator.categories.length; i++ )
             {
                 fragments[i] = new AntiPatternsMainScreenViewPagerFragment();
