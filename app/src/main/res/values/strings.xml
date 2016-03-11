@@ -20,27 +20,68 @@
 
     <string name="antipattern_category_0_title">Management</string>
     <string-array name="antipattern_category_0_items">
-        <item>0</item>
+        <item>9</item>
+        <item>16</item>
+        <item>17</item>
+        <item>19</item>
+        <item>20</item>    
     </string-array>
 
     <string name="antipattern_category_1_title">Team</string>
     <string-array name="antipattern_category_1_items">
-        <item>1</item>
+        <item>0</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>10</item>
+        <item>11</item>
+        <item>13</item>
+        <item>15</item>
+        <item>19</item>
+        <item>20</item>  
     </string-array>
 
     <string name="antipattern_category_2_title">Product Owner</string>
     <string-array name="antipattern_category_2_items">
+        <item>0</item>
+        <item>1</item>
         <item>2</item>
+        <item>5</item>
+        <item>9</item>
+        <item>11</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>20</item>    
     </string-array>
 
     <string name="antipattern_category_3_title">Scrum Master</string>
     <string-array name="antipattern_category_3_items">
+        <item>0</item>
         <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>    
     </string-array>
 
     <string name="antipattern_category_4_title">Prozess</string>
     <string-array name="antipattern_category_4_items">
-        <item>4</item>
+        <item>3</item>
+        <item>14</item>
+        <item>17</item>
+        <item>18</item>    
     </string-array>
 
     <!-- antipattern items -->
