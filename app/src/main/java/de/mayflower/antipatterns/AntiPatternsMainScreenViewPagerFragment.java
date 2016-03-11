@@ -7,10 +7,7 @@
     import  android.view.View;
     import  android.view.ViewGroup;
     import  android.widget.LinearLayout;
-    import android.widget.TextView;
-
-    import de.mayflower.antipatterns.data.Pattern;
-    import  de.mayflower.lib.LibLauncher;
+    import  android.widget.TextView;
 
     public class AntiPatternsMainScreenViewPagerFragment extends Fragment
     {
@@ -35,15 +32,29 @@
             View      rootView = inflater.inflate( R.layout.antipatterns_main_screen_view_pager_fragment, container, false );
             ViewGroup sv       = (ViewGroup)rootView.findViewById( R.id.view_pager_scrollview_content );
 
-            int itemsToCreate = 10;
-            Integer[] patternIds = AntiPatternsHydrator.categories[index].getPatterns();
+            AntiPatternsPatternCountService countService = new AntiPatternsPatternCountService();
+            countService.init(this.getActivity());
+
+            Integer[] patternIds;
+
+            if ( Integer.valueOf(index).compareTo(AntiPatternsPatternCountService.TOP_10_CATEGORY_ID) == 0) {
+                patternIds = countService.getSortedTopPatternIdList(10, AntiPatternsHydrator.patterns);
+            } else {
+                patternIds = AntiPatternsHydrator.categories[index].getPatterns();
+            }
+
             for ( int i = 0; i < patternIds.length; ++i )
             {
-                LinearLayout item     = (LinearLayout)inflater.inflate( R.layout.antipatterns_list_item, container, false );
+                LinearLayout item     = (LinearLayout)inflater.inflate(R.layout.antipatterns_list_item, container, false);
                 TextView     textView = (TextView)item.findViewById(R.id.text_item_title);
 
+                String patternLabel = AntiPatternsHydrator.patterns[i].getName();
 
-                textView.setText( AntiPatternsHydrator.patterns[i].getName() );
+                if ( Integer.valueOf(index).compareTo(AntiPatternsPatternCountService.TOP_10_CATEGORY_ID) == 0) {
+                    patternLabel = AntiPatternsHydrator.patterns[i].getNameWithCounter();
+                }
+
+                textView.setText( patternLabel );
 
                 AntiPatternsItemClickListener clickListener = new AntiPatternsItemClickListener(
                     i,

@@ -12,6 +12,8 @@
 
     public class AntiPatternsPatternCountService
     {
+        public final static Integer TOP_10_CATEGORY_ID = 5;
+
         private SharedPreferences sharedPreferences = null;
 
         public void init(Activity activity)
@@ -45,7 +47,7 @@
             return sharedPreferences.getInt(patternId.toString(), 0);
         }
 
-        public Pattern[] getSortedTopPatternList(int top, Pattern[] patternList)
+        public Integer[] getSortedTopPatternIdList(int top, Pattern[] patternList)
         {
             Map counters = sharedPreferences.getAll();
 
@@ -55,7 +57,7 @@
                 top = counters.size();
             }
 
-            Pattern[] sortedPatternList = new Pattern[top];
+            Integer[] sortedPatternIdList = new Integer[top];
 
             Iterator entries = counters.entrySet().iterator();
 
@@ -67,8 +69,8 @@
                 for (Pattern pattern: patternList) {
                     int key = Integer.parseInt(entry.getKey().toString());
 
-                    if (Integer.valueOf(key).compareTo(pattern.getId()) < 0) {
-                        sortedPatternList[topCounter] = pattern;
+                    if (Integer.valueOf(key).compareTo(pattern.getId()) == 0) {
+                        sortedPatternIdList[topCounter] = pattern.getId();
                         break;
                     }
                 }
@@ -80,7 +82,7 @@
                 }
             }
 
-            return sortedPatternList;
+            return sortedPatternIdList;
         }
 
         private void editIntegerValue(String key, int value)

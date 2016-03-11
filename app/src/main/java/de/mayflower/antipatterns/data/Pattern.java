@@ -20,10 +20,7 @@
 
         public Integer getId() { return id; }
 
-        public String getName()
-        {
-            return name;
-        }
+        public String getName() { return name; }
 
         public String[] getSymptomps()
         {
@@ -36,4 +33,6 @@
         }
 
         public Integer getCounter() { return counter; }
+
+        public String getNameWithCounter() { return name +  " (" + counter  + ")"; }
     }
