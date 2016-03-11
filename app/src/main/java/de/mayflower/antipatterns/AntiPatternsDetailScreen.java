@@ -63,7 +63,7 @@
                 case MotionEvent.ACTION_UP:
                     this.touchEndX = event.getX();
 
-                    float deltaX = touchStartX - touchEndX;
+                    float deltaX = touchEndX - touchStartX;
 
                     if (deltaX > MIN_SWIPE_DISTANCE) {
                         super.onBackPressed();
