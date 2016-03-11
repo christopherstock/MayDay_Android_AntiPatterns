@@ -47,12 +47,14 @@
             String test1 = LibResource.getResourceString( this, R.string.app_name );
             AntiPatternsDebug.major.out(">> app_name: [" + test1 + "]");
 
-
             String[] test2 = LibResource.getResourceStringArray( this, R.array.antipattern_all );
             for (String test3 : test2)
             {
                 AntiPatternsDebug.major.out(">> app_array: [" + test3 + "]");
             }
+
+
+
 
 
 
