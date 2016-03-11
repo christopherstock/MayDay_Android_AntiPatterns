@@ -9,6 +9,7 @@
     import  android.widget.LinearLayout;
     import android.widget.TextView;
 
+    import de.mayflower.antipatterns.data.Pattern;
     import  de.mayflower.lib.LibLauncher;
 
     public class AntiPatternsMainScreenViewPagerFragment extends Fragment
@@ -35,16 +36,17 @@
             ViewGroup sv       = (ViewGroup)rootView.findViewById( R.id.view_pager_scrollview_content );
 
             int itemsToCreate = 10;
-            for ( int i = 0; i < itemsToCreate; ++i )
+            Integer[] patternIds = AntiPatternsHydrator.categories[index].getPatterns();
+            for ( int i = 0; i < patternIds.length; ++i )
             {
                 LinearLayout item     = (LinearLayout)inflater.inflate( R.layout.antipatterns_list_item, container, false );
                 TextView     textView = (TextView)item.findViewById(R.id.text_item_title);
 
-                textView.setText( "Test-Text" );
 
-                final int index = i;
+                textView.setText( AntiPatternsHydrator.patterns[i].getName() );
+
                 AntiPatternsItemClickListener clickListener = new AntiPatternsItemClickListener(
-                    index,
+                    i,
                     this.getActivity()
                 );
 
