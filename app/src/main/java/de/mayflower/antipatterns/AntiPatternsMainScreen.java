@@ -98,6 +98,9 @@
             return super.onOptionsItemSelected(item);
         }
 
+        /*****************************************************************************
+        *   Sets up the pager-adapter for the pager view.
+        *****************************************************************************/
         private void setupPagerAdapter()
         {
             AntiPatternsMainScreenViewPagerAdapter pagerAdapter = new AntiPatternsMainScreenViewPagerAdapter
