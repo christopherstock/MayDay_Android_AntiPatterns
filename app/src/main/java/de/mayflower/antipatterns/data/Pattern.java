@@ -18,6 +18,8 @@
             this.counter   = counter;
         }
 
+        public Integer getId() { return id; }
+
         public String getName()
         {
             return name;
@@ -33,8 +35,5 @@
             return remedies;
         }
 
-        public Integer getCounter()
-        {
-            return counter;
-        }
+        public Integer getCounter() { return counter; }
     }
