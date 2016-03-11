@@ -82,7 +82,7 @@
             Integer[] simulatedPatternIds = getPatternIds();
 
             Hashtable<Integer, String>   patternTitles   = new Hashtable<Integer, String>();
-            Hashtable<Integer, String[]> patternProblems = new Hashtable<Integer, String[]>();
+            Hashtable<Integer, String[]> patternSymptoms = new Hashtable<Integer, String[]>();
             Hashtable<Integer, String[]> patternRemedies = new Hashtable<Integer, String[]>();
 
             patterns = new Pattern[simulatedPatternIds.length];
@@ -93,9 +93,9 @@
                     "antipattern_" + simulatedParentId + "_title"
                 );
 
-                String[] problems = LibResource.getResourceStringArray(
+                String[] symptoms = LibResource.getResourceStringArray(
                         context,
-                        "antipattern_" + simulatedParentId + "_problems"
+                        "antipattern_" + simulatedParentId + "_symptoms"
                 );
 
                 String[] remedies = LibResource.getResourceStringArray(
@@ -105,13 +105,13 @@
                 patterns[simulatedParentId] = new Pattern(
                         simulatedParentId,
                         title,
-                        problems,
+                        symptoms,
                         remedies,
                         countService.readCounter(simulatedParentId)
                 );
 
                 AntiPatternsDebug.major.out(" >> AP title [" + title + "]");
-                for ( String s : problems )
+                for ( String s : symptoms )
                 {
                     AntiPatternsDebug.major.out(" >> AP problem [" + s + "]");
                 }
@@ -121,6 +121,7 @@
                 }
             }
         }
+
         private static Integer[] getPatternIds()
         {
             Hashtable<Integer, Integer> patternIds = new Hashtable<Integer, Integer>();

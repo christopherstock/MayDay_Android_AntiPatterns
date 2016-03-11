@@ -22,3 +22,4 @@
     Setup IDE and code inspection.
     Rename Library classes and main app's package names.
     Removed external Facebook- and Google-Cloud-Messaging-API.
+    Rename 'problems' to 'symptoms'.

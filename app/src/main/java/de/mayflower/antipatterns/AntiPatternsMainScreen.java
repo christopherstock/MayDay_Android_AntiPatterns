@@ -11,8 +11,6 @@
     /**********************************************************************************************
     *   The startup activity class.
     *
-    *   TODO ASAP   Move TODO list to trello board.
-    *   TODO ASAP   Rename 'problems' to 'symptoms'.
     *   TODO ASAP   Rename remove 'AntiPatterns' from all classes.
     *   TODO ASAP   Move classes to appropriate subpackages.
     *   TODO ASAP   Button in detailed view for returning.
