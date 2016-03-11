@@ -33,14 +33,6 @@
         public abstract void trace( Throwable t );
 
         /*********************************************************************************
-        *   Logs a message to an on-screen console.
-        *
-        *   @param  msg     The message to log.
-        *   @param  col     The console color to use for logging the given message.
-        *********************************************************************************/
-        public abstract void log( String msg, ConsoleColor col );
-
-        /*********************************************************************************
         *   Performs an output of memory information.
         *********************************************************************************/
         public abstract void mem();

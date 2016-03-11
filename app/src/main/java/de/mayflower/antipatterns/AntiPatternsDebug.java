@@ -2,13 +2,10 @@
     package de.mayflower.antipatterns;
 
     import  java.util.*;
-    import de.mayflower.antipatterns.AntiPatternsProject.*;
+    import  de.mayflower.antipatterns.AntiPatternsProject.*;
     import  android.util.*;
-    import de.mayflower.lib.*;
+    import  de.mayflower.lib.*;
     import  de.mayflower.lib.ui.*;
-    import  de.mayflower.lib.ui.widget.*;
-    import  de.mayflower.lib.ui.widget.LibDebugConsole.*;
-    import  de.mayflower.lib.util.LibUncaughtExceptionHandler.*;
 
     /*****************************************************************************
     *   Represents the debug system consisting of switchable debug groups
@@ -151,12 +148,6 @@
         }
 
         @Override
-        public final void log( String msg, ConsoleColor col )
-        {
-            if ( iDebug ) LibDebugConsole.getSingleton().appendOutputUIThreaded( col, msg );
-        }
-
-        @Override
         public final void err( Object obj )
         {
             DEBUG_ERR( toString(), obj );
@@ -181,7 +172,7 @@
         *****************************************************************************/
         private static final void DEBUG_THROWABLE( Throwable t )
         {
-            DEBUG_THROWABLE( t, null, UncaughtException.ENo );
+            DEBUG_THROWABLE( t, null );
         }
 
         /*****************************************************************************
@@ -191,9 +182,8 @@
         *   @param  extraMessage    The extra string to display at the end of the
         *                           stack-trace. This can be any additional information
         *                           that helps to trace this error, e.g. a http-response-body.
-        *   @param  type            Specifies if this throwable has been an uncaught one.
         *****************************************************************************/
-        public static final void DEBUG_THROWABLE( Throwable t, String extraMessage, UncaughtException type )
+        public static final void DEBUG_THROWABLE( Throwable t, String extraMessage )
         {
             //debug out the throwable
             DEBUG_OUT_THROWABLE( t );
@@ -201,8 +191,7 @@
             //pack stackTraceString
             stackTraceString =
             (
-                    ( type == UncaughtException.EYes ? "this has been an UNCAUGHT exception caught by the UncaughtExceptionHandler!\n\n" : "" )
-                +   "["
+                    "["
                 +   t.getMessage()
                 +   "]["
                 +   t
