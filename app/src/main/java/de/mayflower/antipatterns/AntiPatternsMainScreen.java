@@ -33,11 +33,14 @@
         protected void onCreate( Bundle savedInstanceState )
         {
             //invoke super method
-            super.onCreate( savedInstanceState );
+            super.onCreate(savedInstanceState);
 
             AntiPatternsDebug.major.out("Welcome to [" + AntiPatternsVersion.getVersion() + "]");
 
-            AntiPatternsHydrator.hydrate(this);
+            AntiPatternsPatternCountService countService = new AntiPatternsPatternCountService();
+            countService.init(this);
+
+            AntiPatternsHydrator.hydrate(this, countService);
 
             setContentView(R.layout.antipatterns_main_screen);
 
