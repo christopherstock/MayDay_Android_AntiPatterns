@@ -18,27 +18,27 @@
         <item>5</item>
     </string-array>
 
-    <string name="antipattern_category_0_title">Category 1</string>
+    <string name="antipattern_category_0_title">Management</string>
     <string-array name="antipattern_category_0_items">
         <item>0</item>
     </string-array>
 
-    <string name="antipattern_category_1_title">Category 2</string>
+    <string name="antipattern_category_1_title">Team</string>
     <string-array name="antipattern_category_1_items">
         <item>1</item>
     </string-array>
 
-    <string name="antipattern_category_2_title">Category 3</string>
+    <string name="antipattern_category_2_title">Product Owner</string>
     <string-array name="antipattern_category_2_items">
         <item>2</item>
     </string-array>
 
-    <string name="antipattern_category_3_title">Category 4</string>
+    <string name="antipattern_category_3_title">Scrum Master</string>
     <string-array name="antipattern_category_3_items">
         <item>3</item>
     </string-array>
 
-    <string name="antipattern_category_4_title">Category 5</string>
+    <string name="antipattern_category_4_title">Prozess</string>
     <string-array name="antipattern_category_4_items">
         <item>4</item>
     </string-array>
