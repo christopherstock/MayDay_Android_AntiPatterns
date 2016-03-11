@@ -18,10 +18,10 @@
         public      static          Category[]          categories          = null;
         public      static          Pattern[]           patterns            = null;
 
-        public static void hydrate(Context context)
+        public static void hydrate(Context context, AntiPatternsPatternCountService countService)
         {
             hydrateCategories(context);
-            hydratePatterns(context);
+            hydratePatterns(context, countService);
         }
 
         public static void hydrateCategories(Context context)
@@ -77,7 +77,7 @@
 
         }
 
-        public static void hydratePatterns( Context context )
+        public static void hydratePatterns( Context context, AntiPatternsPatternCountService countService )
         {
             Integer[] simulatedPatternIds = getPatternIds();
 
@@ -102,7 +102,13 @@
                         context,
                         "antipattern_" + simulatedParentId + "_remedies"
                 );
-                patterns[simulatedParentId] = new Pattern(simulatedParentId, title, problems, remedies);
+                patterns[simulatedParentId] = new Pattern(
+                        simulatedParentId,
+                        title,
+                        problems,
+                        remedies,
+                        countService.readCounter(simulatedParentId)
+                );
 
                 AntiPatternsDebug.major.out(" >> AP title [" + title + "]");
                 for ( String s : problems )
