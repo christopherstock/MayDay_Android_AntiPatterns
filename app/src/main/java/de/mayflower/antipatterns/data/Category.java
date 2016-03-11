@@ -3,11 +3,11 @@
 
     public class Category
     {
-        private Integer id;
-        private String name;
-        private Integer[] patterns;
+        private     Integer         id                  = null;
+        private     String          name                = null;
+        private     Integer[]       patterns            = null;
 
-        public Category(Integer Id, String name, Integer[] patterns)
+        public Category( Integer Id, String name, Integer[] patterns )
         {
             this.id       = id;
             this.name     = name;
@@ -18,13 +18,14 @@
         {
             return name;
         }
+
         public Integer[] getPatterns()
         {
             return patterns;
         }
+
         public Integer getId()
         {
             return id;
         }
     }
-    

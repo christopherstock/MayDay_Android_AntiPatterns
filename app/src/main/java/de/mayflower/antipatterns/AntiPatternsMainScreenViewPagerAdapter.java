@@ -27,8 +27,6 @@
         {
             fragments = new AntiPatternsMainScreenViewPagerFragment[]
             {
-                Catego
-                Pattern[] = Category.getPa
                 new AntiPatternsMainScreenViewPagerFragment(),
                 new AntiPatternsMainScreenViewPagerFragment(),
                 new AntiPatternsMainScreenViewPagerFragment(),

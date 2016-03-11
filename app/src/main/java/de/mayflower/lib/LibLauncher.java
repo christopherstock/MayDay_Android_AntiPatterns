@@ -31,7 +31,7 @@
             if ( animIn != -1 && animOut != -1 )
             {
                 //only operative since API-level 5
-                if ( !LibAPI.isSdkLevelLower5() )
+                if ( !LibAPI.isSdkLevelLowerThan( 5 ) )
                 {
                     LibModernAPI5.overridePendingTransition( context, animIn, animOut );
                 }

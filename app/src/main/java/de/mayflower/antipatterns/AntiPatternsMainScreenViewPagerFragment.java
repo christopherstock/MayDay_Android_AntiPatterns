@@ -7,6 +7,8 @@
     import  android.view.View;
     import  android.view.ViewGroup;
     import  android.widget.LinearLayout;
+    import android.widget.TextView;
+
     import  de.mayflower.lib.LibLauncher;
 
     public class AntiPatternsMainScreenViewPagerFragment extends Fragment
@@ -35,13 +37,15 @@
             int itemsToCreate = 10;
             for ( int i = 0; i < itemsToCreate; ++i )
             {
-                LinearLayout item = (LinearLayout)inflater.inflate( R.layout.antipatterns_list_item, container, false );
+                LinearLayout item     = (LinearLayout)inflater.inflate( R.layout.antipatterns_list_item, container, false );
+                TextView     textView = (TextView)item.findViewById(R.id.text_item_title);
+
+                textView.setText( "Test-Text" );
 
                 final int index = i;
-
                 AntiPatternsItemClickListener clickListener = new AntiPatternsItemClickListener(
                     index,
-                    AntiPatternsMainScreenViewPagerFragment.this.getActivity()
+                    this.getActivity()
                 );
 
                 item.setOnClickListener( clickListener );

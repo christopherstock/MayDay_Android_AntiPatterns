@@ -8,8 +8,6 @@
     import  android.view.MenuInflater;
     import  android.view.MenuItem;
 
-    import de.mayflower.lib.LibResource;
-
     /**********************************************************************************************
     *   The startup activity class.
     *
@@ -41,8 +39,8 @@
 
             setContentView(R.layout.antipatterns_main_screen);
 
-            AntiPatternsHydrator.hydrateData(     this );
-            AntiPatternsHydrator.hydratePatterns( this );
+            AntiPatternsHydrator.hydrateCategories(this);
+            AntiPatternsHydrator.hydratePatterns(this);
 
             setupPagerAdapter();
         }
