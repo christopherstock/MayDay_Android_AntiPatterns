@@ -38,10 +38,12 @@
             LayoutInflater inflater = this.getLayoutInflater();
             View rootView = inflater.inflate(R.layout.antipatterns_detail_screen, null, false);
             TextView titleview = (TextView)rootView.findViewById(R.id.detail_view_title);
-            TextView explanationview = (TextView)rootView.findViewById(R.id.detail_view_explanation);
+            TextView symptomview = (TextView)rootView.findViewById(R.id.detail_view_symptoms);
+            TextView remedyview = (TextView)rootView.findViewById(R.id.detail_view_remedies);
 
             titleview.setText("Hallo Welt");
-            explanationview.setText("Wer das liest, ist doof");
+            symptomview.setText("Wer das liest, ist doof");
+            remedyview.setText("Wer das liest, ist auch doof");
 
             setContentView(rootView);
         }
