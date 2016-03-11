@@ -3,20 +3,28 @@
 
     public class Category
     {
+        private Integer id;
         private String name;
-        private Pattern[] patterns;
+        private Integer[] patterns;
 
-        public Category(String name, Pattern[] patterns)
+        public Category(Integer Id, String name, Integer[] patterns)
         {
+            this.id       = id;
             this.name     = name;
             this.patterns = patterns;
         }
 
-        public String getName() {
+        public String getName()
+        {
             return name;
         }
-        public Pattern[] getPatterns() {
+        public Integer[] getPatterns()
+        {
             return patterns;
+        }
+        public Integer getId()
+        {
+            return id;
         }
     }
     

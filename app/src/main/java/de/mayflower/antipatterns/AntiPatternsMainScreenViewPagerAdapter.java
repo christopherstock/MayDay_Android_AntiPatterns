@@ -6,6 +6,7 @@
     import android.support.v4.app.FragmentPagerAdapter;
 
     import de.mayflower.antipatterns.AntiPatternsMainScreenViewPagerFragment;
+    import de.mayflower.antipatterns.data.*;
 
     /************************************************************************
     *   The adapter for the main screen view pager.
@@ -26,6 +27,8 @@
         {
             fragments = new AntiPatternsMainScreenViewPagerFragment[]
             {
+                Catego
+                Pattern[] = Category.getPa
                 new AntiPatternsMainScreenViewPagerFragment(),
                 new AntiPatternsMainScreenViewPagerFragment(),
                 new AntiPatternsMainScreenViewPagerFragment(),

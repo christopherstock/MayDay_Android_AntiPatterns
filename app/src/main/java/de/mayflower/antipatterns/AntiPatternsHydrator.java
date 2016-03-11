@@ -3,6 +3,8 @@
 
     import  android.content.Context;
     import  java.util.*;
+
+    import de.mayflower.antipatterns.data.*;
     import  de.mayflower.lib.LibResource;
 
     /*****************************************************************************
@@ -15,6 +17,8 @@
     public final class AntiPatternsHydrator
     {
 
+        public static Category[] categories;
+        public static Pattern[] patterns;
 
         public static void hydrateData( Context context )
         {
@@ -38,25 +42,32 @@
                 AntiPatternsDebug.major.out( ">> category Title [" + s + "]" );
             }
 
-            String[][] categoryItems = new String[ categoryIds.length ][];
+            Integer[][] categoryItems = new Integer[ categoryIds.length ][];
+            String[] items;
             for ( int i = 0; i < categoryItems.length; ++i )
             {
-                categoryItems[i] = LibResource.getResourceStringArray(
+                items = LibResource.getResourceStringArray(
                     context,
                     "antipattern_category_" + i + "_items"
                 );
 
-                for ( String s : categoryItems[i] )
+                for ( int j = 0; j < items.length; j++ )
                 {
-                    AntiPatternsDebug.major.out(" >> category id [" + i + "] item [" + s + "]");
+                    AntiPatternsDebug.major.out(" >> category id [" + i + "] item [" + items[j] + "]");
+                    categoryItems[i][j] = Integer.parseInt(items[j]);
                 }
 
 
-
-
-
-
                 //categoryItems[i] = new String[];
+            }
+
+            for ( int i = 0; i < categoryIds.length; i++)
+            {
+                Category item = new Category(
+                    Integer.parseInt(categoryIds[i]),
+                    categoryTitles[i],
+                    categoryItems[i]
+                );
             }
 
         }
