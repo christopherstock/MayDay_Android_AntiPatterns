@@ -1,7 +1,7 @@
 
     package de.mayflower.antipatterns;
 
-    import  de.mayflower.antipatterns.AntiPatternsProject.*;
+    import de.mayflower.antipatterns.Settings.*;
 
     /***************************************************************************************************
     *   Logs all versions of this app.
