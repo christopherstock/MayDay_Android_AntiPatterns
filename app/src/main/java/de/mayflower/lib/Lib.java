@@ -22,48 +22,6 @@
     *********************************************************************************/
     public abstract class Lib
     {
-        /** The amount of centimeters for one inch. */
-        public  static  final   float                   CM_PER_INCH                     = 2.54f;
-
-        /** The amount of milliseconds for one minute. */
-        public  static  final   long                    MILLIS_PER_SECOND               = 1000;
-
-        /** The amount of milliseconds for one minute. */
-        public  static  final   long                    MILLIS_PER_MINUTE               = 60 * MILLIS_PER_SECOND;
-
-        /** The amount of milliseconds for one hour. */
-        public  static  final   long                    MILLIS_PER_HOUR                 = 60 * MILLIS_PER_MINUTE;
-
-        /** The amount of milliseconds for one day. */
-        public  static  final   long                    MILLIS_PER_DAY                  = 24 * MILLIS_PER_HOUR;
-
-        /** The amount of milliseconds for one week. */
-        public  static  final   long                    MILLIS_PER_WEEK                 = 7 * MILLIS_PER_DAY;
-
-        /** The amount of milliseconds for an avarage month. */
-        public  static  final   long                    MILLIS_PER_MONTH                = 30 * MILLIS_PER_DAY;
-
-        /** The amount of milliseconds for an avarage year. */
-        public  static  final   long                    MILLIS_PER_YEAR                 = 365 * MILLIS_PER_DAY;
-
-        /** The number of bytes in 1 KB. */
-        public  static  final   long                    BYTES_1_KB                      = 1024;
-
-        /** The number of bytes in 256 KB. */
-        public  static  final   long                    BYTES_256_KB                    = 256  * BYTES_1_KB;
-
-        /** The number of bytes in 1 MegaByte. */
-        public  static  final   long                    BYTES_1_MB                      = 1024 * BYTES_1_KB;
-
-        /** The number of bytes in 1 GigaByte. */
-        public  static  final   long                    BYTES_1_GB                      = 1024 * BYTES_1_MB;
-
-        /** The number of bytes in 1 TerraByte. */
-        public  static  final   long                    BYTES_1_TB                      = 1024 * BYTES_1_GB;
-
-        /** The package-name of Google's AndroidMarket. */
-        public  static  final   String                  PACKAGE_NAME_ANDROID_MARKET     = "com.android.vending";
-
         /*********************************************************************************
         *   Checks if an object is contained in a stack of objects.
         *
