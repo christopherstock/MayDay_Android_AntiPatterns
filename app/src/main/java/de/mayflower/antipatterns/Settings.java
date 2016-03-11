@@ -15,7 +15,7 @@
         public static final class Paramounts
         {
             /** The internal name of this project. This value is used in the exception emails. */
-            public      static      final       String          PROJECT_NAME                = "AntiPatterns";
+            public      static      final   String      PROJECT_NAME            = "AntiPatterns";
         }
 
         /*****************************************************************************************
@@ -24,6 +24,6 @@
         public static final class Debug
         {
             /** Enables or disabled the debug mode. */
-            protected   static      final       boolean         DEBUG_MODE                  = true;
+            public      static      final   boolean     DEBUG_MODE              = true;
         }
     }
