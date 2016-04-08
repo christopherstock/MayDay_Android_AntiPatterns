@@ -7,13 +7,8 @@ import java.util.Map;
 import de.mayflower.antipatterns.AntiPatternsMapUtil;
 import de.mayflower.antipatterns.AntiPatternsMapUtil.SORT_ORDER;
 
-public class MyTest {
-
-    @Test
-    public void MyTest_simpleTest_ReturnsTrue() {
-        assertThat(true, is(true));
-    }
-
+public class AntiPatternsMapUtilTest {
+    
     @Test
     public void MyTest_mapUtilTest_sortsIntegersAsc() {
         Map<Integer, Integer> result;
