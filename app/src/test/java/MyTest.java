@@ -1,15 +1,10 @@
 import org.junit.Test;
-import java.util.regex.Pattern;
 
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-import de.mayflower.antipatterns.AntiPatternsMapUtil;
+import static org.hamcrest.core.Is.*;
+import static org.junit.Assert.*;
 import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Map;
+import de.mayflower.antipatterns.AntiPatternsMapUtil;
 import de.mayflower.antipatterns.AntiPatternsMapUtil.SORT_ORDER;
 
 public class MyTest {
@@ -21,7 +16,7 @@ public class MyTest {
 
     @Test
     public void MyTest_mapUtilTest_sortsIntegersAsc() {
-        Map<Integer, Integer> result = new LinkedHashMap<Integer, Integer>();
+        Map<Integer, Integer> result;
         Map<Integer, Integer> sorted =getSorted(SORT_ORDER.ASC);
         Map<Integer, Integer> unsorted =getUnsorted();
 
@@ -31,7 +26,7 @@ public class MyTest {
     }
     @Test
     public void MyTest_mapUtilTest_sortsIntegersDesc() {
-        Map<Integer, Integer> result = new LinkedHashMap<Integer, Integer>();
+        Map<Integer, Integer> result;
         Map<Integer, Integer> sorted =getSorted(SORT_ORDER.DESC);
         Map<Integer, Integer> unsorted =getUnsorted();
 
@@ -40,7 +35,7 @@ public class MyTest {
         assertTrue(expected);
     }
     private Map<Integer, Integer> getSorted(SORT_ORDER order) {
-        Map<Integer, Integer> sorted = new LinkedHashMap<Integer, Integer>();
+        Map<Integer, Integer> sorted = new LinkedHashMap<>();
         switch(order) {
             case ASC:
                 sorted.put(2,1);
@@ -56,9 +51,9 @@ public class MyTest {
         return sorted;
     }
     private Map<Integer, Integer> getUnsorted() {
-        Map<Integer, Integer> unsorted = new LinkedHashMap<Integer, Integer>();
-        unsorted.put(1, 3);
-        unsorted.put(2, 1);
+        Map<Integer, Integer> unsorted = new LinkedHashMap<>();
+        unsorted.put(1,3);
+        unsorted.put(2,1);
         unsorted.put(3,2);
         return unsorted;
     }
