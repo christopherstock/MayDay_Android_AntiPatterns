@@ -1,10 +1,11 @@
+package de.mayflower.antipatterns;
+
 import org.junit.Test;
 
-import static org.hamcrest.core.Is.*;
 import static org.junit.Assert.*;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import de.mayflower.antipatterns.AntiPatternsMapUtil;
+
 import de.mayflower.antipatterns.AntiPatternsMapUtil.SORT_ORDER;
 
 public class AntiPatternsMapUtilTest {

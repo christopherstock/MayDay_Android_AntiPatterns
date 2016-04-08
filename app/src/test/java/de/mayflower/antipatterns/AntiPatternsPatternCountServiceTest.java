@@ -1,3 +1,5 @@
+package de.mayflower.antipatterns;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -8,8 +10,6 @@ import org.junit.runner.*;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-
-import de.mayflower.antipatterns.AntiPatternsPatternCountService;
 
 import static org.mockito.Mockito.*;
 
