@@ -25,7 +25,8 @@ public class AntiPatternsPatternCountServiceTest
     AntiPatternsPatternCountService antiPatternsPatternCountService;
 
     @Test
-    public void readCounter_ReturnsExpectedValue() {
+    public void readCounter_ReturnsExpectedValue()
+    {
         Integer actualCounter = new Integer(10);
 
         initActivityMock();
@@ -35,7 +36,6 @@ public class AntiPatternsPatternCountServiceTest
         antiPatternsPatternCountService.init(activityMock);
 
         Integer expectedCounter = antiPatternsPatternCountService.readCounter(2);
-
 
         assertEquals(expectedCounter, actualCounter);
     }
