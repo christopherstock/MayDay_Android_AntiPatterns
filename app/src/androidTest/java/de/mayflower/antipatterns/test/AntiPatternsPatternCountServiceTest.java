@@ -1,3 +1,5 @@
+package de.mayflower.antipatterns.test;
+
 import android.app.Activity;
 import android.app.Instrumentation;
 import android.content.Context;

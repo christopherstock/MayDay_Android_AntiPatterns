@@ -1,3 +1,5 @@
+package de.mayflower.antipatterns.test;
+
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.*;
@@ -6,12 +8,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import de.mayflower.antipatterns.AntiPatternsMapUtil;
 import de.mayflower.antipatterns.AntiPatternsMapUtil.SORT_ORDER;
-import android.support.test.runner.AndroidJUnit4;
-import android.test.suitebuilder.annotation.SmallTest;
-import org.junit.runner.RunWith;
 
-@RunWith(AndroidJUnit4.class)
-@SmallTest
 public class AntiPatternsMapUtilTest {
     
     @Test
