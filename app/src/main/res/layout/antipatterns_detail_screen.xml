@@ -4,7 +4,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/list_item"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:baselineAligned="false"
@@ -13,14 +13,14 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
 
         <TextView
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/detail_view_title"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="200.0dp"
             android:textStyle="bold"
             android:textColor="#fff"
@@ -37,7 +37,7 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_vertical"
         android:padding="20dp">
@@ -46,29 +46,36 @@
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/detail_view_symptomtitle"
             android:theme="@style/DetailScreenSubHeadline"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
             android:text="Kennst Du das?" />
+
+        <ListView
+            android:id="@+id/detail_view_symptoms_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
         <TextView
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/detail_view_symptoms"
-            android:theme="@style/DetailScreenSubText"
-            android:layout_width="fill_parent"
+            android:theme="@style/DetailScreenSubItem"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
         <TextView
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:theme="@style/DetailScreenSubHeadline"
             android:id="@+id/detail_view_remedytitle"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
             android:text="So wird es besser" />
         <TextView
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/detail_view_remedies"
-            android:theme="@style/DetailScreenSubText"
+            android:theme="@style/DetailScreenSubItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
         />
