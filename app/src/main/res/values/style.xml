@@ -12,6 +12,7 @@
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:singleLine">false</item>
         <item name="android:maxLines">3</item>
+        <item name="android:paddingTop">10dp</item>
         <item name="android:paddingBottom">10dp</item>
         <item name="android:gravity">center_horizontal</item>
     </style>
@@ -22,13 +23,10 @@
         <item name="android:includeFontPadding">true</item>
         <item name="android:lineSpacingMultiplier">1.0</item>
         <item name="android:fadingEdge">none</item>
-        <item name="android:gravity">left</item>
-        <item name="android:paddingBottom">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">10dp</item>
         <item name="android:singleLine">false</item>
-        <!--<item name="android:maxLines">3</item>-->
     </style>
-
-
 
     <!-- The app's style - Disabled Title-bar -->
     <style name="AppTheme2" parent="android:Theme.Black">

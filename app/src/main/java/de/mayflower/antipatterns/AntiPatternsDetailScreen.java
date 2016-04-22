@@ -1,12 +1,13 @@
 
     package de.mayflower.antipatterns;
 
-    import android.content.Intent;
     import android.app.Activity;
+    import android.graphics.Canvas;
     import android.os.Bundle;
     import android.view.LayoutInflater;
     import android.view.MotionEvent;
     import android.view.View;
+    import android.widget.LinearLayout;
     import android.widget.TextView;
 
     import de.mayflower.antipatterns.data.Pattern;
@@ -26,6 +27,7 @@
         private float touchEndX             = 0;
         private static final String ARG_ITEM_ID = "pattern_id";
 
+
         /*****************************************************************************
          * Being invoked when this activity is being created.
          *****************************************************************************/
@@ -36,28 +38,24 @@
 
             AntiPatternsDebug.major.out(AntiPatternsDetailScreen.class + "::onCreate()");
 
-            //setContentView( R.layout.antipatterns_detail_screen );
-
             LayoutInflater inflater = this.getLayoutInflater();
             View rootView = inflater.inflate(R.layout.antipatterns_detail_screen, null, false);
             TextView titleview = (TextView)rootView.findViewById(R.id.detail_view_title);
-            TextView symptomview = (TextView)rootView.findViewById(R.id.detail_view_symptoms);
-            TextView remedyview = (TextView)rootView.findViewById(R.id.detail_view_remedies);
 
             Pattern pattern = AntiPatternsHydrator.getCurrentPattern();
             titleview.setText(pattern.getName());
-            String[] symptoms = pattern.getSymptomps();
-            String symptomtext = "";
-            for ( int i=0; i < symptoms.length; i++ ) {
-                symptomtext = symptomtext + "• " + symptoms[i] + "\n";
-            }
-            symptomview.setText(symptomtext);
-            String[] remedies = pattern.getRemedies();
-            String remedytext = "";
-            for ( int i=0; i < remedies.length; i++ ) {
-                remedytext = remedytext + "• " + remedies[i] + "\n";
-            }
-            remedyview.setText(remedytext);
+            
+            this.populateList(
+                    pattern.getSymptomps(),
+                    (LinearLayout) rootView.findViewById(R.id.detail_view_symptoms_list),
+                    inflater
+            );
+
+            this.populateList(
+                    pattern.getRemedies(),
+                    (LinearLayout) rootView.findViewById(R.id.detail_view_remedies_list),
+                    inflater
+            );
 
             setContentView(rootView);
         }
@@ -103,6 +101,19 @@
 
             }
             return super.onTouchEvent(event);
+        }
+
+        private void populateList(
+                String[] listItems,
+                LinearLayout listContainer,
+                LayoutInflater inflater
+        ) {
+            for (String listItem: listItems) {
+                TextView listItemTextView = (TextView) inflater.inflate(R.layout.detail_view_list_item, listContainer, false);
+                listItemTextView.setText(listItem);
+
+                listContainer.addView(listItemTextView);
+            }
         }
 
 
