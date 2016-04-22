@@ -7,8 +7,11 @@
     import android.view.LayoutInflater;
     import android.view.MotionEvent;
     import android.view.View;
+    import android.widget.Button;
     import android.widget.LinearLayout;
     import android.widget.TextView;
+
+    import java.util.Locale;
 
     import de.mayflower.antipatterns.data.Pattern;
     import de.mayflower.lib.api.LibAPI;
@@ -27,6 +30,8 @@
         private float touchEndX             = 0;
         private static final String ARG_ITEM_ID = "pattern_id";
 
+        private AntiPatternsPatternCountService counterService;
+
 
         /*****************************************************************************
          * Being invoked when this activity is being created.
@@ -44,7 +49,10 @@
 
             Pattern pattern = AntiPatternsHydrator.getCurrentPattern();
             titleview.setText(pattern.getName());
-            
+
+            this.counterService = new AntiPatternsPatternCountService();
+            this.counterService.init(this);
+
             this.populateList(
                     pattern.getSymptomps(),
                     (LinearLayout) rootView.findViewById(R.id.detail_view_symptoms_list),
@@ -56,6 +64,23 @@
                     (LinearLayout) rootView.findViewById(R.id.detail_view_remedies_list),
                     inflater
             );
+
+            TextView counterDisplay = (TextView) rootView.findViewById(R.id.detail_view_display_counter);
+            counterDisplay.setText(Integer.toString(this.counterService.readCounter(pattern.getId())));
+
+            Button counterIncrementButton = (Button) rootView.findViewById(R.id.detail_view_increment_counter);
+
+            final AntiPatternsPatternCountService finalCounterService = counterService;
+            final Integer finalPatternId = pattern.getId();
+            final TextView finalCounterDisplay = counterDisplay;
+
+            counterIncrementButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    finalCounterService.incrementCounter(finalPatternId);
+                    finalCounterDisplay.setText(Integer.toString(finalCounterService.readCounter(finalPatternId)));
+                }
+            });
 
             setContentView(rootView);
         }
