@@ -7,102 +7,106 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:gravity="left|center_vertical"
     android:baselineAligned="false"
     android:background="@color/screen_bg"
     >
 
     <LinearLayout
-        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res/de.mayflower.antipatterns"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
-
+        android:layout_height="wrap_content">
 
         <TextView
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/detail_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="200.0dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="30.0dp"
+            android:includeFontPadding="true"
+            android:lineSpacingMultiplier="1.0"
+            android:fadingEdge="none"
+            android:gravity="center"
+            android:singleLine="false"
+            android:maxLines="3"
+            android:background="@color/project_purple"
+            />
+
+        <TextView
+            android:id="@+id/detail_view_display_counter"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="-30pt"
+            android:layout_width="60pt"
+            android:layout_height="60pt"
+            android:textSize="20pt"
+            android:textColor="@android:color/black"
+            android:background="@drawable/rounded_button_normal"
+            />
+
+        <Button
+            android:id="@+id/detail_view_increment_counter"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="-45pt"
+            android:layout_marginRight="50pt"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:text="+"
+            android:textSize="10pt"
+            android:textColor="@drawable/selector_rounded_button_text_color"
+            android:background="@drawable/selector_rounded_button_background"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/detail_view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0pt">
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/text_item"
-            android:textSize="@dimen/text_item_caption"
-            android:includeFontPadding="true"
-            android:lineSpacingMultiplier="1.0"
-            android:fadingEdge="none"
             android:layout_gravity="top|center_vertical"
+            android:paddingLeft="10pt"
+            android:paddingRight="10pt">
+            <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/detail_view_symptomtitle"
+                android:theme="@style/DetailScreenSubHeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kennst Du das?"
+                />
 
-            android:singleLine="false"
-            android:maxLines="3"
+            <LinearLayout
+                android:id="@+id/detail_view_symptoms_list"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
-            />
-    </LinearLayout>
+            <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:theme="@style/DetailScreenSubHeadline"
+                android:id="@+id/detail_view_remedytitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="So wird es besser"
+                />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center_vertical">
-
-        <TextView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/detail_view_symptomtitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/text_item"
-            android:textSize="@dimen/text_item_caption"
-            android:includeFontPadding="true"
-            android:lineSpacingMultiplier="1.0"
-            android:fadingEdge="none"
-            android:layout_gravity="top|center_vertical"
-
-            android:singleLine="false"
-            android:maxLines="3"
-
-            android:text="Kennst Du das?" />
-        <TextView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/detail_view_symptoms"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/text_item"
-            android:textSize="@dimen/text_profile"
-            android:includeFontPadding="true"
-            android:lineSpacingMultiplier="1.0"
-            android:fadingEdge="none"
-            android:layout_gravity="top|left"
-
-            android:singleLine="false"
-            android:maxLines="3"
-            />
-        <TextView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/detail_view_remedytitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/text_item"
-            android:textSize="@dimen/text_item_caption"
-            android:includeFontPadding="true"
-            android:lineSpacingMultiplier="1.0"
-            android:fadingEdge="none"
-            android:layout_gravity="top|center_vertical"
-
-            android:singleLine="false"
-            android:maxLines="3"
-            android:text="So wird es besser" />
-        <TextView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/detail_view_remedies"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/text_item"
-            android:textSize="@dimen/text_profile"
-            android:includeFontPadding="true"
-            android:lineSpacingMultiplier="1.0"
-            android:fadingEdge="none"
-            android:layout_gravity="left|top"
-
-            android:singleLine="false"
-            android:maxLines="3"
-        />
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/detail_view_remedies_list"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

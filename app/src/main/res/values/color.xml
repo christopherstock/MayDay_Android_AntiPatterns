@@ -11,6 +11,7 @@
         <color name="project_black">#ff000000</color>
         <color name="project_grey">#ffaeafaf</color>
         <color name="project_grey_light">#ffc9c9c9</color>
+        <color name="project_purple">#532C6D</color>
 
         <!-- screen -->
         <color name="screen_bg">#ffffffff</color>
