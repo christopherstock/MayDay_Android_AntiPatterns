@@ -37,7 +37,7 @@ public class AntiPatternsMapUtilTest {
         assertTrue(expected);
     }
     private Map<Integer, Integer> getSorted(SORT_ORDER order) {
-        Map<Integer, Integer> sorted = new LinkedHashMap<>();
+        Map<Integer, Integer> sorted = new LinkedHashMap<Integer, Integer>();
         switch(order) {
             case ASC:
                 sorted.put(2,1);
@@ -53,7 +53,7 @@ public class AntiPatternsMapUtilTest {
         return sorted;
     }
     private Map<Integer, Integer> getUnsorted() {
-        Map<Integer, Integer> unsorted = new LinkedHashMap<>();
+        Map<Integer, Integer> unsorted = new LinkedHashMap<Integer, Integer>();
         unsorted.put(1,3);
         unsorted.put(2,1);
         unsorted.put(3,2);
