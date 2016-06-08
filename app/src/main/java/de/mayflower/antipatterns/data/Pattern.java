@@ -22,7 +22,7 @@
 
         public String getName() { return name; }
 
-        public String[] getSymptomps()
+        public String[] getSymptoms()
         {
             return symptomps;
         }
