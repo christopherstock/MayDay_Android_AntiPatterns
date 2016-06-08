@@ -46,7 +46,7 @@
 
             Pattern pattern = AntiPatternsHydrator.getCurrentPattern();
             titleview.setText(pattern.getName());
-            String[] symptoms = pattern.getSymptomps();
+            String[] symptoms = pattern.getSymptoms();
             String symptomtext = "";
             for ( int i=0; i < symptoms.length; i++ ) {
                 symptomtext = symptomtext + "• " + symptoms[i] + "\n";
