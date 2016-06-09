@@ -10,3 +10,6 @@
 /app/build.gradle
 /build.gradle
 /app/build
+.bundle
+Gemfile.lock
+vendor
