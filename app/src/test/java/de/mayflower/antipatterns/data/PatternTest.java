@@ -25,7 +25,7 @@
 
             Assert.assertEquals( p.getId(),              new Integer( 17 ) );
             Assert.assertEquals( p.getName(),            "Chrisy" );
-            Assert.assertEquals( p.getSymptomps(),       new String[] { "test1", "test2", "test3", } );
+            Assert.assertEquals( p.getSymptoms(),       new String[] { "test1", "test2", "test3", } );
             Assert.assertEquals( p.getRemedies(),        new String[] { "test4", "test5", "test6", } );
             Assert.assertEquals( p.getCounter(),         new Integer( 42 ) );
             Assert.assertEquals( p.getNameWithCounter(), "Chrisy (42)" );
