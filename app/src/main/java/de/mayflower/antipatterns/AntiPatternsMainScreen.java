@@ -81,5 +81,14 @@
 
             ViewPager viewPager = (ViewPager)findViewById( R.id.main_screen_pager );
             viewPager.setAdapter(pagerAdapter);
+            AntipatternsApplication app = (AntipatternsApplication) this.getApplication();
+            viewPager.setCurrentItem(app.getCurrentPosition());
         }
+
+        public void onPageSelected(int pos)
+        {
+            AntipatternsApplication app = (AntipatternsApplication) this.getApplication();
+            app.setCurrentPosition(pos);
+        }
+
     }

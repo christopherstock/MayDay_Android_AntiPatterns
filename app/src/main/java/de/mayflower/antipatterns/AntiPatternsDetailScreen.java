@@ -2,8 +2,10 @@
     package de.mayflower.antipatterns;
 
     import android.app.Activity;
+    import android.content.Context;
     import android.graphics.Canvas;
     import android.os.Bundle;
+    import android.support.v4.view.ViewPager;
     import android.view.LayoutInflater;
     import android.view.MotionEvent;
     import android.view.View;
@@ -74,11 +76,17 @@
             final Integer finalPatternId = pattern.getId();
             final TextView finalCounterDisplay = counterDisplay;
 
+            final AntipatternsApplication app = (AntipatternsApplication) this.getApplication();
+            final ViewPager viewPager = (ViewPager)findViewById( R.id.main_screen_pager );
+            final Context context = (Context) this;
             counterIncrementButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     finalCounterService.incrementCounter(finalPatternId);
                     finalCounterDisplay.setText(Integer.toString(finalCounterService.readCounter(finalPatternId)));
+                    AntiPatternsHydrator.updatePatternCount(finalCounterService.readCounter(finalPatternId), context);
+                    viewPager.setCurrentItem(app.getCurrentPosition());
+
                 }
             });
 

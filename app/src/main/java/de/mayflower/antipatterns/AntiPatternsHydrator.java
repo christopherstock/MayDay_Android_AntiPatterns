@@ -1,6 +1,7 @@
 
     package de.mayflower.antipatterns;
 
+    import android.app.Activity;
     import  android.content.Context;
     import  java.util.*;
     import  de.mayflower.antipatterns.data.*;
@@ -18,6 +19,7 @@
         public      static          Category[]          categories          = null;
         public      static          Pattern[]           patterns            = null;
         private     static          Integer             current             = 0;
+        final static int TOP10_CATEGORY = 5;
 
         public static void hydrate(Context context, AntiPatternsPatternCountService countService)
         {
@@ -123,6 +125,16 @@
             }
         }
 
+        private static void generateTop10(Context context) {
+            AntiPatternsPatternCountService countService = new AntiPatternsPatternCountService();
+            countService.init((Activity)context);
+
+            Integer[] patternIds;
+            patternIds = countService.getSortedTopPatternIdList(10, AntiPatternsHydrator.patterns);
+
+            categories[TOP10_CATEGORY].setPatterns(patternIds);
+        }
+
         private static Integer[] getPatternIds()
         {
             Hashtable<Integer, Integer> patternIds = new Hashtable<Integer, Integer>();
@@ -148,6 +160,11 @@
             }
 
         }
+        public static void updatePatternCount(int newCount, Context context) {
+            patterns[current].setCounter(newCount);
+            generateTop10(context);
+        }
+
         public static void setCurrent(Integer current)
         {
             AntiPatternsHydrator.current = current;

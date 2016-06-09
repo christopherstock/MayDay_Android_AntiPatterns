@@ -28,4 +28,9 @@
         {
             return id;
         }
+
+        public void setPatterns(Integer[] pat)
+        {
+            this.patterns = pat;
+        }
     }

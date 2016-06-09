@@ -34,5 +34,7 @@
 
         public Integer getCounter() { return counter; }
 
+        public void setCounter(int c) { this.counter = c; }
+
         public String getNameWithCounter() { return name +  " (" + counter  + ")"; }
     }
