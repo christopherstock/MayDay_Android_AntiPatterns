@@ -37,11 +37,6 @@
 
             Integer[] patternIds;
 
-//            if ( Integer.valueOf(index).compareTo(AntiPatternsPatternCountService.TOP_10_CATEGORY_ID) == 0) {
-//                patternIds = countService.getSortedTopPatternIdList(10, AntiPatternsHydrator.patterns);
-//            } else {
-//                patternIds = AntiPatternsHydrator.categories[index].getPatterns();
-//            }
             patternIds = AntiPatternsHydrator.categories[index].getPatterns();
 
             for ( int i = 0; i < patternIds.length; ++i )
@@ -51,7 +46,7 @@
 
                 String patternLabel = AntiPatternsHydrator.patterns[i].getName();
 
-                if ( Integer.valueOf(index).compareTo(AntiPatternsPatternCountService.TOP_10_CATEGORY_ID) == 0) {
+                if ( Integer.valueOf(index).compareTo(AntiPatternsHydrator.TOP10_CATEGORY) == 0) {
                     patternLabel = AntiPatternsHydrator.patterns[i].getNameWithCounter();
                 }
 

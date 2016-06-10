@@ -25,6 +25,7 @@
         {
             hydrateCategories(context);
             hydratePatterns(context, countService);
+            generateTop10(context);
         }
 
         public static void hydrateCategories(Context context)

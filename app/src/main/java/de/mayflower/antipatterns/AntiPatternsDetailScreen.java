@@ -75,18 +75,18 @@
             final AntiPatternsPatternCountService finalCounterService = counterService;
             final Integer finalPatternId = pattern.getId();
             final TextView finalCounterDisplay = counterDisplay;
+            final AntiPatternsDetailScreen detailScreen = this;
 
-            final AntipatternsApplication app = (AntipatternsApplication) this.getApplication();
-            final ViewPager viewPager = (ViewPager)findViewById( R.id.main_screen_pager );
-            final Context context = (Context) this;
             counterIncrementButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     finalCounterService.incrementCounter(finalPatternId);
-                    finalCounterDisplay.setText(Integer.toString(finalCounterService.readCounter(finalPatternId)));
-                    AntiPatternsHydrator.updatePatternCount(finalCounterService.readCounter(finalPatternId), context);
-                    //viewPager.setCurrentItem(app.getCurrentPosition());
-
+                    finalCounterDisplay.setText(
+                            Integer.toString(finalCounterService.readCounter(finalPatternId))
+                    );
+                    AntiPatternsHydrator.updatePatternCount(
+                            finalCounterService.readCounter(finalPatternId), detailScreen
+                    );
                 }
             });
 
