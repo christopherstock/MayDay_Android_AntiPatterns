@@ -25,6 +25,7 @@
     <!-- all application components - attribute android:name and the Application-context-class are history! -->
     <application
         android:largeHeap="true"
+        android:name=".AntipatternsApplication"
         android:hardwareAccelerated="true"
         android:allowBackup="true"
         android:icon="@drawable/app_icon"
