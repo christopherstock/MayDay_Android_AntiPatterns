@@ -85,7 +85,7 @@
                     finalCounterService.incrementCounter(finalPatternId);
                     finalCounterDisplay.setText(Integer.toString(finalCounterService.readCounter(finalPatternId)));
                     AntiPatternsHydrator.updatePatternCount(finalCounterService.readCounter(finalPatternId), context);
-                    viewPager.setCurrentItem(app.getCurrentPosition());
+                    //viewPager.setCurrentItem(app.getCurrentPosition());
 
                 }
             });

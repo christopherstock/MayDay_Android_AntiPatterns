@@ -37,11 +37,12 @@
 
             Integer[] patternIds;
 
-            if ( Integer.valueOf(index).compareTo(AntiPatternsPatternCountService.TOP_10_CATEGORY_ID) == 0) {
-                patternIds = countService.getSortedTopPatternIdList(10, AntiPatternsHydrator.patterns);
-            } else {
-                patternIds = AntiPatternsHydrator.categories[index].getPatterns();
-            }
+//            if ( Integer.valueOf(index).compareTo(AntiPatternsPatternCountService.TOP_10_CATEGORY_ID) == 0) {
+//                patternIds = countService.getSortedTopPatternIdList(10, AntiPatternsHydrator.patterns);
+//            } else {
+//                patternIds = AntiPatternsHydrator.categories[index].getPatterns();
+//            }
+            patternIds = AntiPatternsHydrator.categories[index].getPatterns();
 
             for ( int i = 0; i < patternIds.length; ++i )
             {
