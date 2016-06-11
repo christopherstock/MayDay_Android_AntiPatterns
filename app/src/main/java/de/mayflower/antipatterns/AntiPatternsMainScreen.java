@@ -8,6 +8,8 @@
     import  android.view.MenuInflater;
     import  android.view.MenuItem;
 
+    import de.mayflower.lib.LibLauncher;
+
     /**********************************************************************************************
     *   The startup activity class.
     *
@@ -22,7 +24,7 @@
     *   @author     Christopher Stock
     *   @version    1.0
     ***********************************************************************************************/
-    public class AntiPatternsMainScreen extends FragmentActivity
+    public class AntiPatternsMainScreen extends FragmentActivity implements ListFragmentCallbackInterface
     {
         /*****************************************************************************
         *   Being invoked when this activity is being created.
@@ -85,10 +87,15 @@
             viewPager.setCurrentItem(app.getCurrentPosition());
         }
 
-        public void onPageSelected(int pos)
-        {
-            AntipatternsApplication app = (AntipatternsApplication) this.getApplication();
-            app.setCurrentPosition(pos);
-        }
+        @Override
+        public void onItemSelected(Integer patternId) {
+            AntiPatternsHydrator.setCurrent(patternId); // register pattern to show
 
+            LibLauncher.launchActivity(
+                    this,
+                    AntiPatternsDetailScreen.class,
+                    R.anim.push_left_in,
+                    R.anim.push_left_out
+            );
+        }
     }

@@ -67,7 +67,6 @@ public class AntiPatternsPatternCountServiceTest extends ActivityInstrumentation
 
     }
 
-
     private void setUpSharedPreferences() {
         mySharedPreferences = myActivity.getPreferences(Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = mySharedPreferences.edit();

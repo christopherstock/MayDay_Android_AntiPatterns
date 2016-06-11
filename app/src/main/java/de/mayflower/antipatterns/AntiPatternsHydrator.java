@@ -161,6 +161,7 @@
             }
 
         }
+
         public static void updatePatternCount(int newCount, Context context) {
             patterns[current].setCounter(newCount);
             generateTop10(context);
@@ -169,5 +170,19 @@
         public static void setCurrent(Integer current)
         {
             AntiPatternsHydrator.current = current;
+        }
+
+        public static Pattern[] getPatternsForCategory(Integer categoryId)
+        {
+            Category category             = categories[categoryId];
+            Integer[] patternIds          = category.getPatterns();
+            Pattern[] patternsForCategory = new Pattern[patternIds.length];
+
+
+            for (int i=0; i < patternIds.length; i++) {
+                patternsForCategory[i] = patterns[patternIds[i]];
+            }
+
+            return patternsForCategory;
         }
     }

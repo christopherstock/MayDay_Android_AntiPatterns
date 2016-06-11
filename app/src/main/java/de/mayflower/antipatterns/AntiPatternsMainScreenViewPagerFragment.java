@@ -1,93 +1,74 @@
+package de.mayflower.antipatterns;
 
-    package de.mayflower.antipatterns;
+import android.app.Activity;
+import android.os.Bundle;
+import android.support.v4.app.ListFragment;
+import android.view.View;
+import android.widget.ListView;
 
-    import  android.os.Bundle;
-    import  android.support.v4.app.Fragment;
-    import  android.view.LayoutInflater;
-    import  android.view.View;
-    import  android.view.ViewGroup;
-    import  android.widget.LinearLayout;
-    import  android.widget.TextView;
+import de.mayflower.antipatterns.data.Category;
 
-    public class AntiPatternsMainScreenViewPagerFragment extends Fragment
+public class AntiPatternsMainScreenViewPagerFragment extends ListFragment
+{
+    private Category                      category;
+    private ListFragmentCallbackInterface callbacks = dummyCallbacks;
+
+    /**
+     * A dummy implementation of the {@link ListFragmentCallbackInterface} interface that does
+     * nothing. Used only when this fragment is not attached to an activity.
+     */
+    private static ListFragmentCallbackInterface dummyCallbacks = new ListFragmentCallbackInterface() {
+        @Override
+        public void onItemSelected(Integer patternId) {
+        }
+    };
+
+    public void init(Category category)
     {
-        private int            index = 0;
-        private String         title = null;
-        private LayoutInflater inflater;
-        private ViewGroup      container;
-        private Bundle         savedInstanceState;
-
-        public void init( int index, String title )
-        {
-            this.index = index;
-            this.title = title;
-        }
-
-        @Override
-        public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState )
-        {
-            super.onCreateView( inflater, container, savedInstanceState );
-
-            // TODO refactor!
-
-            AntiPatternsDebug.major.out("onCreateView for fragment [" + index + "]");
-
-            View rootView = updateFragment(inflater, container, savedInstanceState);
-
-            this.inflater           = inflater;
-            this.container          = container;
-            this.savedInstanceState = savedInstanceState;
-
-            return rootView;
-        }
-
-        @Override
-        public void onResume() {
-            if (index == AntiPatternsHydrator.TOP10_CATEGORY) {
-                updateFragment(inflater, container, savedInstanceState);
-            }
-            super.onResume();
-        }
-
-        private View updateFragment(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-            View      rootView = inflater.inflate( R.layout.antipatterns_main_screen_view_pager_fragment, container, false );
-            ViewGroup sv       = (ViewGroup)rootView.findViewById( R.id.view_pager_scrollview_content );
-
-            AntiPatternsPatternCountService countService = new AntiPatternsPatternCountService();
-            countService.init(this.getActivity());
-
-            Integer[] patternIds;
-
-            patternIds = AntiPatternsHydrator.categories[index].getPatterns();
-
-            for ( int i = 0; i < patternIds.length; ++i )
-            {
-                Integer currentPattern = patternIds[i];
-                LinearLayout item     = (LinearLayout)inflater.inflate(R.layout.antipatterns_list_item, container, false);
-                TextView     textView = (TextView)item.findViewById(R.id.text_item_title);
-
-                String patternLabel = AntiPatternsHydrator.patterns[currentPattern].getName();
-
-                if ( Integer.valueOf(index).compareTo(AntiPatternsHydrator.TOP10_CATEGORY) == 0) {
-                    patternLabel = AntiPatternsHydrator.patterns[currentPattern].getNameWithCounter();
-                }
-
-                textView.setText( patternLabel );
-
-                AntiPatternsItemClickListener clickListener = new AntiPatternsItemClickListener(
-                    currentPattern,
-                    this.getActivity()
-                );
-
-                item.setOnClickListener( clickListener );
-
-                sv.addView( item );
-            }
-
-            return rootView;
-        }
-        public String getTitle()
-        {
-            return title;
-        }
+        this.category = category;
     }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        AntiPatternsListAdapter listAdapter = new AntiPatternsListAdapter(
+                getActivity(),
+                AntiPatternsHydrator.getPatternsForCategory(category.getId())
+        );
+
+        setListAdapter(listAdapter);
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+
+        // Activities containing this fragment must implement its callbacks.
+        if (!(activity instanceof ListFragmentCallbackInterface)) {
+            throw new IllegalStateException("Activity must implement fragment's callbacks.");
+        }
+
+        callbacks = (ListFragmentCallbackInterface) activity;
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+
+        // Reset the active callbacks interface to the dummy implementation.
+        callbacks = dummyCallbacks;
+    }
+
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        super.onListItemClick(l, v, position, id);
+
+        callbacks.onItemSelected(category.getPatterns()[position]);
+    }
+
+    public String getTitle()
+    {
+        return category.getName();
+    }
+}

@@ -1,42 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!-- state container -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/view_pager_fragment"
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pattern_list_view"
+    android:name="de.mayflower.antipatterns.AntiPatternsMainScreenViewPagerFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="left|top"
-    android:background="@color/screen_bg"
-    >
-
-    <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbarStyle="outsideOverlay"
-        android:scrollbarThumbHorizontal="@drawable/de_mayflower_antipattern_scrollbar"
-        android:scrollbarThumbVertical="@drawable/de_mayflower_antipattern_scrollbar"
-        android:scrollbarSize="@dimen/scrollbar_width"
-        android:fadingEdgeLength="@dimen/fading_edge_size"
-        android:requiresFadingEdge="vertical"
-        android:fadeScrollbars="true"
-        >
-
-        <!-- scrollbar content -->
-        <LinearLayout
-            android:id="@+id/view_pager_scrollview_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal|top"
-            android:paddingLeft="@dimen/content_distance_wmx_normal"
-            android:paddingRight="@dimen/content_distance_wmx_normal"
-            android:paddingBottom="@dimen/content_distance_wmx_normal"
-            >
-
-        </LinearLayout>
-
-    </ScrollView>
-
-</LinearLayout>
+    tools:context=".AntiPatternsMainScreen"
+    tools:layout="@android:layout/list_content" />
