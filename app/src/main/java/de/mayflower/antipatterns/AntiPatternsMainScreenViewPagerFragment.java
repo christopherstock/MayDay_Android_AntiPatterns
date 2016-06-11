@@ -41,19 +41,20 @@
 
             for ( int i = 0; i < patternIds.length; ++i )
             {
+                Integer currentPattern = patternIds[i];
                 LinearLayout item     = (LinearLayout)inflater.inflate(R.layout.antipatterns_list_item, container, false);
                 TextView     textView = (TextView)item.findViewById(R.id.text_item_title);
 
-                String patternLabel = AntiPatternsHydrator.patterns[i].getName();
+                String patternLabel = AntiPatternsHydrator.patterns[currentPattern].getName();
 
                 if ( Integer.valueOf(index).compareTo(AntiPatternsHydrator.TOP10_CATEGORY) == 0) {
-                    patternLabel = AntiPatternsHydrator.patterns[i].getNameWithCounter();
+                    patternLabel = AntiPatternsHydrator.patterns[currentPattern].getNameWithCounter();
                 }
 
                 textView.setText( patternLabel );
 
                 AntiPatternsItemClickListener clickListener = new AntiPatternsItemClickListener(
-                    i,
+                    currentPattern,
                     this.getActivity()
                 );
 
