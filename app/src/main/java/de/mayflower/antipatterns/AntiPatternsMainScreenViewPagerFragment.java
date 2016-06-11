@@ -11,8 +11,11 @@
 
     public class AntiPatternsMainScreenViewPagerFragment extends Fragment
     {
-        private                             int         index                   = 0;
-        private                             String      title                   = null;
+        private int            index = 0;
+        private String         title = null;
+        private LayoutInflater inflater;
+        private ViewGroup      container;
+        private Bundle         savedInstanceState;
 
         public void init( int index, String title )
         {
@@ -29,6 +32,24 @@
 
             AntiPatternsDebug.major.out("onCreateView for fragment [" + index + "]");
 
+            View rootView = updateFragment(inflater, container, savedInstanceState);
+
+            this.inflater           = inflater;
+            this.container          = container;
+            this.savedInstanceState = savedInstanceState;
+
+            return rootView;
+        }
+
+        @Override
+        public void onResume() {
+            if (index == AntiPatternsHydrator.TOP10_CATEGORY) {
+                updateFragment(inflater, container, savedInstanceState);
+            }
+            super.onResume();
+        }
+
+        private View updateFragment(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View      rootView = inflater.inflate( R.layout.antipatterns_main_screen_view_pager_fragment, container, false );
             ViewGroup sv       = (ViewGroup)rootView.findViewById( R.id.view_pager_scrollview_content );
 
@@ -65,7 +86,6 @@
 
             return rootView;
         }
-
         public String getTitle()
         {
             return title;
