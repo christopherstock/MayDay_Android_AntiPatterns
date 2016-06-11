@@ -2,9 +2,12 @@ package de.mayflower.antipatterns;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ListView;
 
 import de.mayflower.antipatterns.data.Category;
@@ -39,6 +42,17 @@ public class AntiPatternsMainScreenViewPagerFragment extends ListFragment
         );
 
         setListAdapter(listAdapter);
+
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View ich = super.onCreateView(inflater, container, savedInstanceState);
+        ListView lv = (ListView) ich.findViewById(android.R.id.list);
+        lv.setDivider(new ColorDrawable(getResources().getColor(R.color.separator_line)));
+        lv.setDividerHeight(0);
+
+        return ich;
     }
 
     @Override
