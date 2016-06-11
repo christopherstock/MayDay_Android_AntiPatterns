@@ -83,35 +83,35 @@
 
         public static void hydratePatterns( Context context, AntiPatternsPatternCountService countService )
         {
-            Integer[] simulatedPatternIds = getPatternIds();
+            Integer[] patternIds = getPatternIds();
 
             Hashtable<Integer, String>   patternTitles   = new Hashtable<Integer, String>();
             Hashtable<Integer, String[]> patternSymptoms = new Hashtable<Integer, String[]>();
             Hashtable<Integer, String[]> patternRemedies = new Hashtable<Integer, String[]>();
 
-            patterns = new Pattern[simulatedPatternIds.length];
-            for ( Integer simulatedParentId : simulatedPatternIds )
+            patterns = new Pattern[patternIds.length];
+            for ( Integer patternId : patternIds )
             {
                 String title = LibResource.getResourceString(
                     context,
-                    "antipattern_" + simulatedParentId + "_title"
+                    "antipattern_" + patternId + "_title"
                 );
 
                 String[] symptoms = LibResource.getResourceStringArray(
                         context,
-                        "antipattern_" + simulatedParentId + "_symptoms"
+                        "antipattern_" + patternId + "_symptoms"
                 );
 
                 String[] remedies = LibResource.getResourceStringArray(
                         context,
-                        "antipattern_" + simulatedParentId + "_remedies"
+                        "antipattern_" + patternId + "_remedies"
                 );
-                patterns[simulatedParentId] = new Pattern(
-                        simulatedParentId,
+                patterns[patternId] = new Pattern(
+                        patternId,
                         title,
                         symptoms,
                         remedies,
-                        countService.readCounter(simulatedParentId)
+                        countService.readCounter(patternId)
                 );
 
                 AntiPatternsDebug.major.out(" >> AP title [" + title + "]");
