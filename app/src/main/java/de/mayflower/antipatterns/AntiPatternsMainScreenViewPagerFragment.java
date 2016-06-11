@@ -1,6 +1,7 @@
 package de.mayflower.antipatterns;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.view.View;
@@ -70,5 +71,19 @@ public class AntiPatternsMainScreenViewPagerFragment extends ListFragment
     public String getTitle()
     {
         return category.getName();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        AntiPatternsListAdapter listAdapter = (AntiPatternsListAdapter) getListAdapter();
+
+        if (category != null && category.getId() == AntiPatternsHydrator.TOP10_CATEGORY) {
+            AntiPatternsHydrator.generateTop10((Context) getActivity());
+            listAdapter.sort();
+        }
+
+        listAdapter.notifyDataSetChanged();
     }
 }

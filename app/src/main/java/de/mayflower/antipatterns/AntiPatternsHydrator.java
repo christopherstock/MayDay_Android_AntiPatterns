@@ -126,7 +126,7 @@
             }
         }
 
-        private static void generateTop10(Context context) {
+        public static void generateTop10(Context context) {
             AntiPatternsPatternCountService countService = new AntiPatternsPatternCountService();
             countService.init((Activity)context);
 

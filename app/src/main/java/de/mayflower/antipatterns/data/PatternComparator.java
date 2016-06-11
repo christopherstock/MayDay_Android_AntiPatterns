@@ -7,7 +7,7 @@ public class PatternComparator implements Comparator<Pattern>
     @Override
     public int compare(Pattern pattern, Pattern t1) {
 
-        int counterDiff = pattern.getCounter() - t1.getCounter();
+        int counterDiff = t1.getCounter() - pattern.getCounter();
 
         if (counterDiff == 0) {
             return pattern.getId() - t1.getId();

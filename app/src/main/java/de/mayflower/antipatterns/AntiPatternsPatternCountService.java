@@ -12,7 +12,6 @@
 
     public class AntiPatternsPatternCountService
     {
-        public static final Integer TOP_10_CATEGORY_ID = 5;
         public static final String SHARED_PREFERENCES_NAME = "de.mayflower.antipatterns.counter";
 
         private SharedPreferences sharedPreferences = null;
