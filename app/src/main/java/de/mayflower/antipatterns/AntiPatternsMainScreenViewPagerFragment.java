@@ -11,11 +11,13 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import de.mayflower.antipatterns.data.Category;
+import de.mayflower.antipatterns.data.Pattern;
 
 public class AntiPatternsMainScreenViewPagerFragment extends ListFragment
 {
     private Category                      category;
     private ListFragmentCallbackInterface callbacks = dummyCallbacks;
+    private ListView                      myListView;
 
     /**
      * A dummy implementation of the {@link ListFragmentCallbackInterface} interface that does
@@ -51,6 +53,7 @@ public class AntiPatternsMainScreenViewPagerFragment extends ListFragment
         ListView lv = (ListView) ich.findViewById(android.R.id.list);
         lv.setDivider(new ColorDrawable(getResources().getColor(R.color.separator_line)));
         lv.setDividerHeight(0);
+        myListView = lv;
 
         return ich;
     }
@@ -79,7 +82,8 @@ public class AntiPatternsMainScreenViewPagerFragment extends ListFragment
     public void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
 
-        callbacks.onItemSelected(category.getPatterns()[position]);
+        Pattern pat = (Pattern) myListView.getItemAtPosition(position);
+        callbacks.onItemSelected(pat.getId());
     }
 
     public String getTitle()
