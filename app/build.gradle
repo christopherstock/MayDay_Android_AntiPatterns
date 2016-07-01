@@ -44,12 +44,3 @@ dependencies {
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1' // für UI testing
 
 }
-
-def props = new Properties()
-
-props.load(new FileInputStream(rootProject.file("release.properties")))
-
-android.signingConfigs.release.storeFile rootProject.file(props.keyStore)
-android.signingConfigs.release.storePassword props.keyStorePassword
-android.signingConfigs.release.keyAlias props.keyAlias
-android.signingConfigs.release.keyPassword props.keyAliasPassword
