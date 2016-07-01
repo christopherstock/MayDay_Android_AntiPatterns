@@ -48,7 +48,7 @@ public class AntiPatternsPatternCountServiceTest
 
     private void initActivityMock()
     {
-        when(activityMock.getPreferences(Context.MODE_PRIVATE)).thenReturn(this.sharedPreferencesMock);
+        when(activityMock.getSharedPreferences(AntiPatternsPatternCountService.SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE)).thenReturn(this.sharedPreferencesMock);
     }
 
 }
