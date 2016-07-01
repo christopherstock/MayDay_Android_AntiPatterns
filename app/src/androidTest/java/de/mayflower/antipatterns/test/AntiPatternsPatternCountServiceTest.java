@@ -1,7 +1,5 @@
 package de.mayflower.antipatterns.test;
 
-import android.app.Activity;
-import android.app.Instrumentation;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.test.InstrumentationRegistry;
@@ -9,11 +7,9 @@ import android.support.test.runner.AndroidJUnit4;
 import android.test.ActivityInstrumentationTestCase2;
 import android.test.suitebuilder.annotation.SmallTest;
 
-import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.*;
+import org.junit.runner.RunWith;
 
 import de.mayflower.antipatterns.AntiPatternsMainScreen;
 import de.mayflower.antipatterns.AntiPatternsPatternCountService;
@@ -68,7 +64,7 @@ public class AntiPatternsPatternCountServiceTest extends ActivityInstrumentation
     }
 
     private void setUpSharedPreferences() {
-        mySharedPreferences = myActivity.getPreferences(Context.MODE_PRIVATE);
+        mySharedPreferences = myActivity.getSharedPreferences(AntiPatternsPatternCountService.SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = mySharedPreferences.edit();
         editor.putInt(fixturePatternId.toString(), fixtureSeedValue);
         editor.commit();
