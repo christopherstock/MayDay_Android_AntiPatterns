@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    signingConfigs {
+        mayflower {
+            keyAlias 'mayflower'
+            keyPassword 'lde903ufm945njg035l2'
+            storePassword 'k5nb9b8njt9hj59kg1rgi'
+            storeFile file('/MayDay_Android_AntiPatterns/_ASSETS/cert/keystore.jks')
+        }
+    }
+    compileSdkVersion 22
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        applicationId 'de.mayflower.antipatterns'
+        minSdkVersion 8
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        signingConfig signingConfigs.mayflower
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    testCompile 'junit:junit:4.12'          // für Local-Tests
+    testCompile "org.mockito:mockito-core:1.9.5" // Für mock
+    androidTestCompile 'junit:junit:4.12'   // Für Instrumented tests
+    androidTestCompile 'com.android.support.test:runner:0.4' // Für Instrumented tests
+    androidTestCompile 'com.android.support.test:rules:0.4'  // Für Instrumented tests
+    androidTestCompile 'com.android.support:support-annotations:22.1.1' // gegen Versionskonflikte
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1' // für UI testing
+
+}
+
+def props = new Properties()
+
+props.load(new FileInputStream(rootProject.file("release.properties")))
+
+android.signingConfigs.release.storeFile rootProject.file(props.keyStore)
+android.signingConfigs.release.storePassword props.keyStorePassword
+android.signingConfigs.release.keyAlias props.keyAlias
+android.signingConfigs.release.keyPassword props.keyAliasPassword
