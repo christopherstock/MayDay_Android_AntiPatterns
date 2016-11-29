@@ -19,8 +19,8 @@
 -->
     <!-- sdk support -->
     <uses-sdk
-        android:minSdkVersion="3"
-        android:targetSdkVersion="22" />
+        android:minSdkVersion="11"
+        android:targetSdkVersion="24" />
 
     <!-- all application components - attribute android:name and the Application-context-class are history! -->
     <application
